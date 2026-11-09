@@ -1,0 +1,65 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261027-1225 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 7
+    Start 7: test_dual_sensor_fov
+
+7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_dual_sensor_fov.txt" "--command" "/workspace/ws/build/atas_optimizer/test_dual_sensor_fov" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+7: Working Directory: /workspace/ws/build/atas_optimizer
+7: Test timeout computed to be: 60
+7: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+7:  - /workspace/ws/build/atas_optimizer/test_dual_sensor_fov --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml
+7: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+7: [==========] Running 9 tests from 1 test suite.
+7: [----------] Global test environment set-up.
+7: [----------] 9 tests from DualSensorFovTest
+7: [ RUN      ] DualSensorFovTest.LidarFovAzimuthElevationAndRange
+7: [       OK ] DualSensorFovTest.LidarFovAzimuthElevationAndRange (0 ms)
+7: [ RUN      ] DualSensorFovTest.CameraFovAzimuthElevationAndRange
+7: [       OK ] DualSensorFovTest.CameraFovAzimuthElevationAndRange (0 ms)
+7: [ RUN      ] DualSensorFovTest.AnySensorFovBooleanUnion
+7: [       OK ] DualSensorFovTest.AnySensorFovBooleanUnion (0 ms)
+7: [ RUN      ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors
+7: [       OK ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors (0 ms)
+7: [ RUN      ] DualSensorFovTest.NodeParametersConfiguration
+7: [INFO] [1793103911.149011967] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+7: [       OK ] DualSensorFovTest.NodeParametersConfiguration (79 ms)
+7: [ RUN      ] DualSensorFovTest.TargetUgvInFovEvaluation
+7: [       OK ] DualSensorFovTest.TargetUgvInFovEvaluation (0 ms)
+7: [ RUN      ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost
+7: [       OK ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost (0 ms)
+7: [ RUN      ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov
+7: [       OK ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov (0 ms)
+7: [ RUN      ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint
+7: [       OK ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint (0 ms)
+7: [----------] 9 tests from DualSensorFovTest (81 ms total)
+7: 
+7: [----------] Global test environment tear-down
+7: [==========] 9 tests from 1 test suite ran. (81 ms total)
+7: [  PASSED  ] 9 tests.
+7: -- run_test.py: return code 0
+7: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+1/1 Test #7: test_dual_sensor_fov .............   Passed    0.71 sec
+
+The following tests passed:
+	test_dual_sensor_fov
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   0.71 sec*proc (1 test)
+
+Total Test time (real) =   0.72 sec

@@ -1,0 +1,8 @@
+# Array of generic metric entries with metadata
+std_msgs/Header header
+bool model_based
+string params_hash
+float64 window_sec
+bool warming_up
+uint32 n_frames_in_window
+MetricEntry[] entries

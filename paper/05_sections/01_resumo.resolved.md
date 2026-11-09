@@ -1,0 +1,11 @@
+# Resumo
+
+A escolta cooperativa de robôs terrestres por enxames de veículos aéreos não tripulados em ambientes urbanos densos demanda visibilidade ininterrupta dos alvos e rigorosa contenção energética. Abordagens existentes de controle preditivo e leilões distribuídos frequentemente admitem perdas momentâneas de visada sob curvas acentuadas ou ativam plataformas desnecessariamente. Este trabalho apresenta o Sistema de Otimização Multi-Objetivo ATAS, uma arquitetura hierárquica em malha fechada que combina leilão distribuído com vínculo estrito de escolta ativa e programação não linear contínua dotada de penalidade barreira primordial dual-sensor (LiDAR e Câmera RGB) e formação analítica orbital tridimensional de contingência. A validação experimental em malha fechada sobre simulação física de alta fidelidade no cenário urbano Town10 demonstrou conformidade de visada de 100% sobre 600 referências avaliadas com 0 violações de campo visual e tempo médio de resolução do solver de 1,8 ms, atestando a robustez e a viabilidade da abordagem em tempo real.
+
+**Palavras-chave:** Robótica de Enxames, Otimização Multi-Objetivo, Percepção Cooperativa, Leilão CBBA, ROS 2 Jazzy.
+
+## Abstract
+
+Cooperative escorting of unmanned ground vehicles by aerial swarms in dense urban environments requires uninterrupted target visibility and strict energy conservation. Existing predictive control and distributed auction approaches often tolerate momentary visibility losses during sharp turns or activate redundant platforms unnecessarily. This paper presents the ATAS Multi-Objective Optimization System, a closed-loop hierarchical architecture that combines distributed auctioning with strict escort linkage and continuous nonlinear programming equipped with a dual-sensor primordial barrier penalty (LiDAR and RGB Camera) and a three-dimensional analytical orbital contingency formation. Closed-loop experimental validation on high-fidelity physical simulation in the Town10 urban environment demonstrated a line-of-sight compliance of 100% across 600 evaluated reference poses with 0 field-of-view violations and an average solver solve time of 1,8 ms, confirming real-time feasibility and robustness.
+
+**Keywords:** Swarm Robotics, Multi-Objective Optimization, Cooperative Perception, CBBA Auction, ROS 2 Jazzy.

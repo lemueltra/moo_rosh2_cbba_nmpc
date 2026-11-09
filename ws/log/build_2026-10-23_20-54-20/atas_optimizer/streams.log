@@ -1,0 +1,53 @@
+[0.013s] Invoking command in '/workspace/ws/build/atas_optimizer': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[0.035s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.226s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.231s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.250s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.257s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.266s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.276s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.324s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.325s] -- Found rmw_cyclonedds_cpp: 2.2.4 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.341s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.391s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.401s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.413s] -- Found vision_msgs: 4.1.1 (/opt/ros/jazzy/share/vision_msgs/cmake)
+[0.469s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.542s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.548s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.549s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.549s] -- Configured cppcheck include dirs: /workspace/ws/src/atas_optimizer/include;$<BUILD_INTERFACE:/workspace/ws/src/atas_optimizer/include>
+[0.549s] -- Configured cppcheck exclude dirs and/or files: 
+[0.550s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.550s] -- Configured cpplint exclude dirs and/or files: 
+[0.550s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.550s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.550s] -- Added test 'lint_cmake' to check CMake code style
+[0.551s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.551s] -- Added test 'uncrustify' to check C / C++ code style
+[0.551s] -- Configured uncrustify additional arguments: 
+[0.551s] -- Added test 'xmllint' to check XML markup files
+[0.552s] -- Configuring done (0.5s)
+[0.566s] -- Generating done (0.0s)
+[0.569s] -- Build files have been written to: /workspace/ws/build/atas_optimizer
+[0.598s] [ 14%] Built target gtest
+[0.598s] [ 28%] Built target gtest_main
+[0.604s] [ 42%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o[0m
+[0.604s] [ 42%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.606s] [ 50%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/cbba_agent.cpp.o[0m
+[0.611s] [ 57%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o[0m
+[0.614s] [ 64%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.618s] [ 71%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o[0m
+[0.621s] [ 78%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o[0m
+[0.624s] [ 85%] [32m[1mLinking CXX executable atas_optimizer_node[0m
+[0.635s] [ 92%] [32m[1mLinking CXX executable test_cbba[0m
+[0.712s] [ 92%] Built target test_cbba
+[0.780s] [ 92%] Built target atas_optimizer_node
+[1.662s] [01m[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:[m[K In member function ‘[01m[Kvirtual void ViewpointOptimizerTest_MultiDroneRepulsiveSafetyBarrier_Test::[01;32m[KTestBody[m[K()[m[K’:
+[1.662s] [01m[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:50:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass atas_optimizer::ViewpointOptimizer[m[K’ has no member named ‘[01m[Kset_safety_distance[m[K’
+[1.662s]    50 |   opt.[01;31m[Kset_safety_distance[m[K(6.0);
+[1.662s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.662s] gmake[2]: *** [CMakeFiles/test_viewpoint.dir/build.make:76: CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o] Error 1
+[1.662s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/test_viewpoint.dir/all] Error 2
+[1.663s] gmake: *** [Makefile:146: all] Error 2
+[1.665s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '2': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20

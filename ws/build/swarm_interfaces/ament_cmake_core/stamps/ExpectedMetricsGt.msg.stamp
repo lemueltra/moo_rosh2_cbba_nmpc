@@ -1,0 +1,93 @@
+# Structured expected perception metrics WITH Ground Truth (G01-G20)
+std_msgs/Header header
+bool model_based
+string params_hash
+float64 window_sec
+bool warming_up
+uint32 n_frames_in_window
+
+# G01 / G02 / G03 - AP, APH, F1
+float64 map
+float64 maph
+string[] classes
+float64[] ap_per_class
+float64[] aph_per_class
+float64[] f1_max_per_class
+float64[] optimal_conf_per_class
+
+# G04 - Analyzer Ratios
+float64[] ratio_tp_per_class
+float64[] ratio_fp_per_class
+float64[] ratio_fn_per_class
+
+# G05 - Error Statistics (GT - Est)
+float64[] err_dist_mean_per_class
+float64[] err_dist_rms_per_class
+float64[] err_yaw_mean_per_class
+float64[] err_yaw_std_per_class
+float64[] err_vel_mean_per_class
+
+# G06 - MOTP
+float64[] motp_per_class
+
+# G07 - CLEAR MOTA & ID Switches
+float64[] mota_per_class
+float64[] id_switch_per_class
+
+# G08 - Trajectory Prediction
+float64 pred_ade
+float64 pred_fde
+float64 pred_miss_rate
+
+# G09 - BEV Corner Dispersion
+float64[] corner_mean_per_class
+float64[] corner_p95_per_class
+
+# G10 - Heading Flip Rate
+float64[] flip_rate_per_class
+float64 mflip_rate
+
+# G11 - Nearest Surface Footprint Distance
+float64[] nsurf_mean_per_class
+
+# G12 - Expected Calibration Error
+float64 ece
+float64 ece_macro
+
+# G13 - Confident Error Rate
+float64 confident_error_rate
+float64 confident_errors_per_frame
+
+# G14 - Class Confusion Matrix
+string[] confusion_pairs
+float64[] confusion_values
+
+# G15 & G16 - Critical Reachability & Collision Weighted AP
+float64 critical_fp
+float64 critical_fn
+float64 cw_map
+float64[] cw_map_per_class
+
+# G17 - Consecutive FN Duration Span
+float64[] fn_span_mean_per_class
+
+# G18 - Frame Pass Rates
+float64 pass_rate_num_tp
+float64 pass_rate_num_gt_tp
+float64 pass_rate_metrics_score
+
+# G19 - nuScenes Errors
+float64[] err_ate_per_class
+float64[] err_aoe_per_class
+float64[] err_ase_per_class
+float64[] err_ave_per_class
+
+# G20 - Stratified Base Counts
+uint32 n_gt_total
+float64 expected_tp_total
+float64 expected_fp_total
+float64 expected_fn_total
+uint32[] n_gt_per_class
+float64[] expected_tp_per_class
+float64[] expected_fp_per_class
+float64[] expected_fn_per_class

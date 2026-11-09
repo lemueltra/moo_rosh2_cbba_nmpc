@@ -1,0 +1,8 @@
+# State of one UGV of the pooled fleet (frame 'map', SI units)
+uint32 ugv_id
+bool active
+float64 x
+float64 y
+float64 yaw
+float64 v          # longitudinal speed [m/s]
+float64 route_length_m

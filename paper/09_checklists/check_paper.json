@@ -1,0 +1,32 @@
+{
+  "checks": [
+    "claims",
+    "metric_refs",
+    "markers",
+    "sources",
+    "literal_numbers",
+    "table_text",
+    "order",
+    "pending",
+    "length"
+  ],
+  "generator": "code2paper.check",
+  "mode": "default",
+  "results": [
+    {
+      "check": "length",
+      "code": "length-over-budget",
+      "message": "the resolved sections hold 6832 words, about 19.0 pages at 359.5 words/page, and the intake declares a limit of 6; measure before cutting — the ratio is a conversion, not a measurement of this manuscript",
+      "ref": "Limite de páginas",
+      "severity": "warning"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "blocking": 0,
+    "checks": 9,
+    "findings": 1,
+    "warning": 1
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,26 @@
+[  6%] Built target gtest
+[ 13%] Built target gtest_main
+[ 17%] Building CXX object CMakeFiles/atas_optimizer_core.dir/src/cbba_agent.cpp.o
+[ 20%] Building CXX object CMakeFiles/atas_optimizer_core.dir/src/atas_optimizer_node.cpp.o
+[ 24%] Building CXX object CMakeFiles/atas_optimizer_core.dir/src/viewpoint_optimizer.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_occlusion_and_targets.dir/src/viewpoint_optimizer.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_occlusion_and_targets.dir/test/test_occlusion_and_targets.cpp.o
+[ 48%] Building CXX object CMakeFiles/test_cbba_v2.dir/test/test_cbba_v2.cpp.o
+[ 48%] Building CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o
+[ 51%] Building CXX object CMakeFiles/test_cbba_v2.dir/src/cbba_agent.cpp.o
+[ 58%] Building CXX object CMakeFiles/test_polympc_nlp.dir/src/viewpoint_optimizer.cpp.o
+[ 58%] Building CXX object CMakeFiles/test_polympc_nlp.dir/test/test_polympc_nlp.cpp.o
+[ 62%] Linking CXX executable test_cbba
+[ 62%] Built target test_cbba
+[ 65%] Linking CXX executable test_viewpoint
+[ 68%] Linking CXX executable test_occlusion_and_targets
+[ 68%] Built target test_viewpoint
+[ 68%] Built target test_occlusion_and_targets
+[ 72%] Linking CXX executable test_polympc_nlp
+[ 72%] Built target test_polympc_nlp
+[ 75%] Linking CXX executable test_cbba_v2
+[ 79%] Linking CXX shared library libatas_optimizer_core.so
+[ 79%] Built target atas_optimizer_core

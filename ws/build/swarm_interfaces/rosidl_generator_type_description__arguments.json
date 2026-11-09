@@ -1,0 +1,35 @@
+{
+  "package_name": "swarm_interfaces",
+  "output_dir": "/workspace/ws/build/swarm_interfaces/rosidl_generator_type_description/swarm_interfaces",
+  "idl_tuples": [
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneActiveSet.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneReference.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneReferenceArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneCommand.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneCommandArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneState.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneStateArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DroneStatus.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/PlannerStatus.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UavMetric.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/SwarmMetrics.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UavDetectionCount.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UavDetectionCountArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/DetectionSummary.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/OptimizerFeedback.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UavLinkLatency.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UavLinkLatencyArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UgvCommand.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UgvCommandArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UgvState.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/UgvStateArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/MetricEntry.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/MetricEntryArray.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/ExpectedMetricsGt.idl",
+    "/workspace/ws/build/swarm_interfaces/rosidl_adapter/swarm_interfaces:msg/ExpectedMetricsNoGt.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

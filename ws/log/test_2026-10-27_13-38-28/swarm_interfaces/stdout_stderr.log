@@ -1,0 +1,75 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261027-1338 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+Test project /workspace/ws/build/swarm_interfaces
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_interfaces_roundtrip
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_interfaces" "--output-file" "/workspace/ws/build/swarm_interfaces/ament_cmake_gtest/test_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+1: Working Directory: /workspace/ws/build/swarm_interfaces
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/workspace/ws/build/swarm_interfaces':
+1:  - /workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml
+1: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 16 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 16 tests from SwarmInterfacesTest
+1: [ RUN      ] SwarmInterfacesTest.DroneActiveSetMessage
+1: [       OK ] SwarmInterfacesTest.DroneActiveSetMessage (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneReferenceAndArray
+1: [       OK ] SwarmInterfacesTest.DroneReferenceAndArray (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneCommandAndArray
+1: [       OK ] SwarmInterfacesTest.DroneCommandAndArray (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneStateAndArray
+1: [       OK ] SwarmInterfacesTest.DroneStateAndArray (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneStatusAndModes
+1: [       OK ] SwarmInterfacesTest.DroneStatusAndModes (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.PlannerStatus
+1: [       OK ] SwarmInterfacesTest.PlannerStatus (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame
+1: [       OK ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed
+1: [       OK ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed
+1: [       OK ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.UgvFleetMessages
+1: [       OK ] SwarmInterfacesTest.UgvFleetMessages (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.LatencyIsPerActiveUav
+1: [       OK ] SwarmInterfacesTest.LatencyIsPerActiveUav (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact
+1: [       OK ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences
+1: [       OK ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip
+1: [       OK ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip
+1: [       OK ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip (0 ms)
+1: [ RUN      ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip
+1: [       OK ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip (0 ms)
+1: [----------] 16 tests from SwarmInterfacesTest (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 16 tests from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 16 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+1: -- run_test.py: verify result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+1/1 Test #1: test_interfaces_roundtrip ........   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   0.06 sec*proc (1 test)
+
+Total Test time (real) =   0.06 sec

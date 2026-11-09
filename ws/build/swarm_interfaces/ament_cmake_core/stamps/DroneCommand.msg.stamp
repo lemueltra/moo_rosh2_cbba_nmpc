@@ -1,0 +1,7 @@
+# Actuation velocity command for a single drone in world frame 'map' (SI units)
+uint32 drone_id
+bool active
+float64 vx
+float64 vy
+float64 yaw_rate
+float64 vz

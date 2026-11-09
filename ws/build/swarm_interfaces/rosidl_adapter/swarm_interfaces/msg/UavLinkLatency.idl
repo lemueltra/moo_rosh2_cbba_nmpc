@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/UavLinkLatency.msg
+// generated code does not contain a copyright notice
+
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Communication latency between one active UAV and its nearest UGV")
+    struct UavLinkLatency {
+      uint32 drone_id;
+
+      @verbatim (language="comment", text=
+        "nearest UGV (from /comm/nearest_ugv)")
+      uint32 ugv_id;
+
+      double latency_ms;
+
+      double distance_m;
+
+      @verbatim (language="comment", text=
+        "true = line of sight (no building in between)")
+      boolean los;
+    };
+  };
+};

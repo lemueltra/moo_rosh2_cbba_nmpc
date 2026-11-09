@@ -1,0 +1,11 @@
+# Service to spawn an actor dynamically
+string type_id
+string role_name
+geometry_msgs/Pose transform
+uint32 parent_id
+string[] attribute_keys
+string[] attribute_values
+---
+bool success
+uint32 actor_id
+string error_message

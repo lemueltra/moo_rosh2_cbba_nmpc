@@ -1,0 +1,12 @@
+.git
+.github
+repos
+ws/build
+ws/install
+ws/log
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.vscode
+.idea

@@ -1,0 +1,131 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/ExpectedMetricsNoGt.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Structured expected perception metrics WITHOUT Ground Truth (N01-N20)")
+    struct ExpectedMetricsNoGt {
+      std_msgs::msg::Header header;
+
+      boolean model_based;
+
+      string params_hash;
+
+      double window_sec;
+
+      boolean warming_up;
+
+      uint32 n_frames_in_window;
+
+      @verbatim (language="comment", text=
+        "N01 - Lateral Deviation (moving average)")
+      sequence<string> classes;
+
+      sequence<double> lateral_deviation_mean;
+
+      sequence<double> lateral_deviation_min;
+
+      sequence<double> lateral_deviation_max;
+
+      @verbatim (language="comment", text=
+        "N02 - Yaw Deviation")
+      sequence<double> yaw_deviation_mean;
+
+      @verbatim (language="comment", text=
+        "N03 - Yaw Rate (stationary)")
+      sequence<double> yaw_rate_mean;
+
+      @verbatim (language="comment", text=
+        "N04 - Predicted Path Deviation")
+      sequence<double> predicted_path_deviation_mean;
+
+      @verbatim (language="comment", text=
+        "N05, N06, N07, N08 - Object Counts")
+      sequence<double> total_objects_count;
+
+      sequence<double> average_objects_count;
+
+      sequence<double> interval_average_objects_count;
+
+      double all_object_count;
+
+      sequence<double> object_count_per_class;
+
+      @verbatim (language="comment", text=
+        "N09 - Expected Maximum Detection Range")
+      sequence<double> max_distance_per_class;
+
+      @verbatim (language="comment", text=
+        "N10 - Latencies")
+      double meas_to_tracked_latency_ms;
+
+      double prediction_latency_ms;
+
+      double total_latency_ms;
+
+      @verbatim (language="comment", text=
+        "N11 - Cross-Sensor Confirmation")
+      double cross_confirm_rate;
+
+      double unconfirmed_rate;
+
+      double missed_by_other_rate;
+
+      @verbatim (language="comment", text=
+        "N12 - Class Disagreement")
+      double class_disagree_rate;
+
+      @verbatim (language="comment", text=
+        "N13 - Range Discrepancy")
+      double range_discrepancy_mean;
+
+      double range_discrepancy_p95;
+
+      @verbatim (language="comment", text=
+        "N14 - Stationary Jitter & Size CV")
+      sequence<double> size_cv_per_class;
+
+      sequence<double> position_jitter_per_class;
+
+      @verbatim (language="comment", text=
+        "N15 - Heading Inversion Rate")
+      sequence<double> heading_inversion_rate_per_class;
+
+      @verbatim (language="comment", text=
+        "N16 - Track Quality")
+      sequence<double> track_fragments_per_class;
+
+      sequence<double> track_purity_per_class;
+
+      sequence<double> track_length_per_class;
+
+      @verbatim (language="comment", text=
+        "N17 - ECE Proxy")
+      double ece_proxy;
+
+      double unconfirmed_high_conf_rate;
+
+      @verbatim (language="comment", text=
+        "N18 - Critical Inconsistency")
+      double critical_inconsistency_per_s;
+
+      @verbatim (language="comment", text=
+        "N19 - Sensor Health & Sync")
+      double sync_offset_ms;
+
+      sequence<boolean> sensor_health;
+
+      @verbatim (language="comment", text=
+        "N20 - Flight Regime Covariates")
+      double flight_regime_altitude_m;
+
+      double flight_regime_speed_mps;
+
+      double flight_regime_climb_rate_mps;
+    };
+  };
+};

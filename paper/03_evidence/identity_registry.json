@@ -1,0 +1,864 @@
+{
+  "derived": [
+    {
+      "aggregation": "sum",
+      "id": "MET-091",
+      "members": [
+        "MET-001",
+        "MET-006",
+        "MET-011",
+        "MET-016",
+        "MET-021",
+        "MET-026",
+        "MET-031",
+        "MET-036",
+        "MET-041",
+        "MET-046",
+        "MET-051",
+        "MET-056",
+        "MET-061",
+        "MET-066",
+        "MET-071",
+        "MET-076",
+        "MET-081",
+        "MET-086"
+      ],
+      "name": "junit.tests",
+      "source_id": "AGG-001"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-092",
+      "members": [
+        "MET-002",
+        "MET-007",
+        "MET-012",
+        "MET-017",
+        "MET-022",
+        "MET-027",
+        "MET-032",
+        "MET-037",
+        "MET-042",
+        "MET-047",
+        "MET-052",
+        "MET-057",
+        "MET-062",
+        "MET-067",
+        "MET-072",
+        "MET-077",
+        "MET-082",
+        "MET-087"
+      ],
+      "name": "junit.failures",
+      "source_id": "AGG-002"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-093",
+      "members": [
+        "MET-003",
+        "MET-008",
+        "MET-013",
+        "MET-018",
+        "MET-023",
+        "MET-028",
+        "MET-033",
+        "MET-038",
+        "MET-043",
+        "MET-048",
+        "MET-053",
+        "MET-058",
+        "MET-063",
+        "MET-068",
+        "MET-073",
+        "MET-078",
+        "MET-083",
+        "MET-088"
+      ],
+      "name": "junit.errors",
+      "source_id": "AGG-003"
+    }
+  ],
+  "generator": "code2paper.evidence.registry",
+  "metrics": [
+    {
+      "aggregation": "count",
+      "id": "MET-001",
+      "locator": "copyright.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-002",
+      "locator": "copyright.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-003",
+      "locator": "copyright.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-004",
+      "locator": "copyright.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-005",
+      "locator": "copyright.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-006",
+      "locator": "cppcheck.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-007",
+      "locator": "cppcheck.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-008",
+      "locator": "cppcheck.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-009",
+      "locator": "cppcheck.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-010",
+      "locator": "cppcheck.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-011",
+      "locator": "cpplint.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-012",
+      "locator": "cpplint.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-013",
+      "locator": "cpplint.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-014",
+      "locator": "cpplint.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-015",
+      "locator": "cpplint.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-016",
+      "locator": "flake8.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-017",
+      "locator": "flake8.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-018",
+      "locator": "flake8.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-019",
+      "locator": "flake8.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-020",
+      "locator": "flake8.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-021",
+      "locator": "lint_cmake.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-022",
+      "locator": "lint_cmake.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-023",
+      "locator": "lint_cmake.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-024",
+      "locator": "lint_cmake.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-025",
+      "locator": "lint_cmake.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-026",
+      "locator": "pep257.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-027",
+      "locator": "pep257.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-028",
+      "locator": "pep257.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-029",
+      "locator": "pep257.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-030",
+      "locator": "pep257.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-031",
+      "locator": "test_adaptive_feedback.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-032",
+      "locator": "test_adaptive_feedback.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-033",
+      "locator": "test_adaptive_feedback.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-034",
+      "locator": "test_adaptive_feedback.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-035",
+      "locator": "test_adaptive_feedback.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-036",
+      "locator": "test_cbba.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-037",
+      "locator": "test_cbba.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-038",
+      "locator": "test_cbba.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-039",
+      "locator": "test_cbba.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-040",
+      "locator": "test_cbba.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-041",
+      "locator": "test_cbba_v2.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-042",
+      "locator": "test_cbba_v2.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-043",
+      "locator": "test_cbba_v2.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-044",
+      "locator": "test_cbba_v2.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-045",
+      "locator": "test_cbba_v2.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-046",
+      "locator": "test_dual_sensor_fov.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-047",
+      "locator": "test_dual_sensor_fov.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-048",
+      "locator": "test_dual_sensor_fov.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-049",
+      "locator": "test_dual_sensor_fov.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-050",
+      "locator": "test_dual_sensor_fov.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-051",
+      "locator": "test_occlusion_and_targets.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-052",
+      "locator": "test_occlusion_and_targets.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-053",
+      "locator": "test_occlusion_and_targets.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-054",
+      "locator": "test_occlusion_and_targets.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-055",
+      "locator": "test_occlusion_and_targets.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-056",
+      "locator": "test_polympc_nlp.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-057",
+      "locator": "test_polympc_nlp.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-058",
+      "locator": "test_polympc_nlp.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-059",
+      "locator": "test_polympc_nlp.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-060",
+      "locator": "test_polympc_nlp.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-061",
+      "locator": "test_test_node_integration.py.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-062",
+      "locator": "test_test_node_integration.py.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-063",
+      "locator": "test_test_node_integration.py.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-064",
+      "locator": "test_test_node_integration.py.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-065",
+      "locator": "test_test_node_integration.py.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-066",
+      "locator": "test_viewpoint.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-067",
+      "locator": "test_viewpoint.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-068",
+      "locator": "test_viewpoint.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-069",
+      "locator": "test_viewpoint.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-070",
+      "locator": "test_viewpoint.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-071",
+      "locator": "uncrustify.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-072",
+      "locator": "uncrustify.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-073",
+      "locator": "uncrustify.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-074",
+      "locator": "uncrustify.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-075",
+      "locator": "uncrustify.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-076",
+      "locator": "xmllint.xunit.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-077",
+      "locator": "xmllint.xunit.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-078",
+      "locator": "xmllint.xunit.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-079",
+      "locator": "xmllint.xunit.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-080",
+      "locator": "xmllint.xunit.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-081",
+      "locator": "test_interfaces_roundtrip.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-082",
+      "locator": "test_interfaces_roundtrip.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-083",
+      "locator": "test_interfaces_roundtrip.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-084",
+      "locator": "test_interfaces_roundtrip.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-085",
+      "locator": "test_interfaces_roundtrip.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-086",
+      "locator": "test_world_interfaces_roundtrip.gtest.xml#key=tests",
+      "name": "junit.tests",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-087",
+      "locator": "test_world_interfaces_roundtrip.gtest.xml#key=failures",
+      "name": "junit.failures",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-088",
+      "locator": "test_world_interfaces_roundtrip.gtest.xml#key=errors",
+      "name": "junit.errors",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "count",
+      "id": "MET-089",
+      "locator": "test_world_interfaces_roundtrip.gtest.xml#key=skipped",
+      "name": "junit.skipped",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "sum",
+      "id": "MET-090",
+      "locator": "test_world_interfaces_roundtrip.gtest.xml#key=time",
+      "name": "junit.duration",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-094",
+      "locator": "closed_loop_evaluation_v2.log#key=active_set_msgs",
+      "name": "active_set_msgs",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-095",
+      "locator": "closed_loop_evaluation_v2.log#key=feedback_msgs",
+      "name": "feedback_msgs",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-096",
+      "locator": "closed_loop_evaluation_v2.log#key=fov_compliance_percent",
+      "name": "fov_compliance_percent",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-097",
+      "locator": "closed_loop_evaluation_v2.log#key=fov_violations_count",
+      "name": "fov_violations_count",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-098",
+      "locator": "closed_loop_evaluation_v2.log#key=latency_msgs",
+      "name": "latency_msgs",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-099",
+      "locator": "closed_loop_evaluation_v2.log#key=mean_solve_time_ms",
+      "name": "mean_solve_time_ms",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-100",
+      "locator": "closed_loop_evaluation_v2.log#key=monitoring_duration_sec",
+      "name": "monitoring_duration_sec",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-101",
+      "locator": "closed_loop_evaluation_v2.log#key=references_msgs",
+      "name": "references_msgs",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-102",
+      "locator": "closed_loop_evaluation_v2.log#key=total_references_evaluated",
+      "name": "total_references_evaluated",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    },
+    {
+      "aggregation": "mean",
+      "id": "MET-103",
+      "locator": "closed_loop_evaluation_v2.log#key=ugv_state_msgs",
+      "name": "ugv_state_msgs",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "SRC-001",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+    },
+    {
+      "id": "SRC-002",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml"
+    },
+    {
+      "id": "SRC-003",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+    },
+    {
+      "id": "SRC-004",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+    },
+    {
+      "id": "SRC-005",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+    },
+    {
+      "id": "SRC-006",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+    },
+    {
+      "id": "SRC-007",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+    },
+    {
+      "id": "SRC-008",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+    },
+    {
+      "id": "SRC-009",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml"
+    },
+    {
+      "id": "SRC-010",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+    },
+    {
+      "id": "SRC-011",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+    },
+    {
+      "id": "SRC-012",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+    },
+    {
+      "id": "SRC-013",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml"
+    },
+    {
+      "id": "SRC-014",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"
+    },
+    {
+      "id": "SRC-015",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+    },
+    {
+      "id": "SRC-016",
+      "path": "ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+    },
+    {
+      "id": "SRC-017",
+      "path": "ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "id": "SRC-018",
+      "path": "ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+    },
+    {
+      "id": "SRC-019",
+      "path": "docs/closed_loop_evaluation_v2.log"
+    }
+  ]
+}

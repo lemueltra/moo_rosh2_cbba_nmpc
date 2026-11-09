@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.000264] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.000734] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.017410] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-R', 'xmllint'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.022047] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022223] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022337] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.022493] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.022561] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.022608] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261027-1319 - Experimental\n'}
+[0.022649] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022692] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022731] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.022766] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.022910] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.022975] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.023028] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.023113] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.023155] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.023324] (atas_optimizer) StdoutLine: {'line': b'test 16\n'}
+[0.023380] (atas_optimizer) StdoutLine: {'line': b'    Start 16: xmllint\n'}
+[0.023418] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.023450] (atas_optimizer) StdoutLine: {'line': b'16: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"\n'}
+[0.023499] (atas_optimizer) StdoutLine: {'line': b'16: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[0.023538] (atas_optimizer) StdoutLine: {'line': b'16: Test timeout computed to be: 60\n'}
+[0.063313] (atas_optimizer) StdoutLine: {'line': b"16: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[0.063423] (atas_optimizer) StdoutLine: {'line': b'16:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml\n'}
+[0.100037] (-) TimerEvent: {}
+[0.200308] (-) TimerEvent: {}
+[0.300444] (-) TimerEvent: {}
+[0.400581] (-) TimerEvent: {}
+[0.500841] (-) TimerEvent: {}
+[0.540303] (atas_optimizer) StdoutLine: {'line': b"16: File 'package.xml' is valid\n"}
+[0.540414] (atas_optimizer) StdoutLine: {'line': b'16: \n'}
+[0.540449] (atas_optimizer) StdoutLine: {'line': b'16: No problems found\n'}
+[0.550953] (atas_optimizer) StdoutLine: {'line': b'16: -- run_test.py: return code 0\n'}
+[0.551065] (atas_optimizer) StdoutLine: {'line': b"16: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml'\n"}
+[0.557180] (atas_optimizer) StdoutLine: {'line': b'1/1 Test #16: xmllint ..........................   Passed    0.53 sec\n'}
+[0.557415] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.557454] (atas_optimizer) StdoutLine: {'line': b'The following tests passed:\n'}
+[0.557486] (atas_optimizer) StdoutLine: {'line': b'\txmllint\n'}
+[0.557515] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.557543] (atas_optimizer) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[0.557570] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.557595] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.557621] (atas_optimizer) StdoutLine: {'line': b'linter     =   0.53 sec*proc (1 test)\n'}
+[0.557647] (atas_optimizer) StdoutLine: {'line': b'xmllint    =   0.53 sec*proc (1 test)\n'}
+[0.557672] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.557697] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   0.54 sec\n'}
+[0.561403] (atas_optimizer) CommandEnded: {'returncode': 0}
+[0.561554] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[0.561935] (-) EventReactorShutdown: {}

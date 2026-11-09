@@ -1,0 +1,40 @@
+[0.012s] Invoking command in '/workspace/ws/build/atas_optimizer': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[0.074s] [ 14%] Built target gtest_main
+[0.075s] [ 14%] Built target gtest
+[0.077s] [ 28%] Built target atas_optimizer_core
+[0.096s] [ 39%] Built target test_viewpoint
+[0.100s] [ 50%] Built target test_cbba
+[0.101s] [ 60%] Built target test_polympc_nlp
+[0.103s] [ 67%] Built target test_cbba_v2
+[0.104s] [ 78%] Built target test_occlusion_and_targets
+[0.109s] [ 85%] Built target test_dual_sensor_fov
+[0.110s] [ 92%] Built target atas_optimizer_node
+[0.111s] [100%] Built target test_adaptive_feedback
+[0.122s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[0.123s] Invoking command in '/workspace/ws/build/atas_optimizer': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/ws/build/atas_optimizer
+[0.133s] -- Install configuration: "Release"
+[0.133s] -- Execute custom install script
+[0.133s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/libatas_optimizer_core.so
+[0.134s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_optimizer_node
+[0.134s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+[0.134s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+[0.135s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+[0.135s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/launch/atas_optimizer.launch.py
+[0.135s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/config/atas_optimizer_params.yaml
+[0.135s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/package_run_dependencies/atas_optimizer
+[0.135s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/parent_prefix_path/atas_optimizer
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.sh
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.dsv
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.sh
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.dsv
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.bash
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.sh
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.zsh
+[0.136s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.dsv
+[0.136s] -- Symlinking: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv
+[0.145s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/packages/atas_optimizer
+[0.145s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig.cmake
+[0.145s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig-version.cmake
+[0.145s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.xml
+[0.146s] -- Installing: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_monitor
+[0.148s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/ws/build/atas_optimizer

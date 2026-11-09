@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_generator_c/swarm_world_interfaces/msg/detail/simulation_status__struct.h

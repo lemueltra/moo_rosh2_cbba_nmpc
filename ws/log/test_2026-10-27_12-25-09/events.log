@@ -1,0 +1,82 @@
+[0.000000] (-) TimerEvent: {}
+[0.000393] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.004337] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.097997] (-) TimerEvent: {}
+[0.179654] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-R', 'test_dual_sensor_fov'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.198378] (-) TimerEvent: {}
+[0.229656] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.233738] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.235112] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.236047] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.236802] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.240065] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261027-1225 - Experimental\n'}
+[0.241291] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.245165] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.246178] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.247007] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.247747] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.248528] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.249438] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.250245] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.251034] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.251833] (atas_optimizer) StdoutLine: {'line': b'test 7\n'}
+[0.252662] (atas_optimizer) StdoutLine: {'line': b'    Start 7: test_dual_sensor_fov\n'}
+[0.253467] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.254294] (atas_optimizer) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_dual_sensor_fov.txt" "--command" "/workspace/ws/build/atas_optimizer/test_dual_sensor_fov" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"\n'}
+[0.255241] (atas_optimizer) StdoutLine: {'line': b'7: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.256063] (atas_optimizer) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[0.298863] (-) TimerEvent: {}
+[0.399713] (-) TimerEvent: {}
+[0.500386] (-) TimerEvent: {}
+[0.601145] (-) TimerEvent: {}
+[0.701854] (-) TimerEvent: {}
+[0.718575] (atas_optimizer) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.720130] (atas_optimizer) StdoutLine: {'line': b'7:  - /workspace/ws/build/atas_optimizer/test_dual_sensor_fov --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml\n'}
+[0.789448] (atas_optimizer) StdoutLine: {'line': b'7: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.791123] (atas_optimizer) StdoutLine: {'line': b'7: [==========] Running 9 tests from 1 test suite.\n'}
+[0.792023] (atas_optimizer) StdoutLine: {'line': b'7: [----------] Global test environment set-up.\n'}
+[0.792444] (atas_optimizer) StdoutLine: {'line': b'7: [----------] 9 tests from DualSensorFovTest\n'}
+[0.792825] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.LidarFovAzimuthElevationAndRange\n'}
+[0.793204] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.LidarFovAzimuthElevationAndRange (0 ms)\n'}
+[0.793666] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.CameraFovAzimuthElevationAndRange\n'}
+[0.794160] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.CameraFovAzimuthElevationAndRange (0 ms)\n'}
+[0.794497] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.AnySensorFovBooleanUnion\n'}
+[0.794865] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.AnySensorFovBooleanUnion (0 ms)\n'}
+[0.795368] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors\n'}
+[0.795702] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors (0 ms)\n'}
+[0.796062] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.NodeParametersConfiguration\n'}
+[0.802039] (-) TimerEvent: {}
+[0.847366] (atas_optimizer) StdoutLine: {'line': b'7: [INFO] [1793103911.149011967] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).\n'}
+[0.870361] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.NodeParametersConfiguration (79 ms)\n'}
+[0.872651] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.TargetUgvInFovEvaluation\n'}
+[0.874141] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.TargetUgvInFovEvaluation (0 ms)\n'}
+[0.875170] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost\n'}
+[0.876083] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost (0 ms)\n'}
+[0.877022] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov\n'}
+[0.877828] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov (0 ms)\n'}
+[0.878571] (atas_optimizer) StdoutLine: {'line': b'7: [ RUN      ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint\n'}
+[0.879356] (atas_optimizer) StdoutLine: {'line': b'7: [       OK ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint (0 ms)\n'}
+[0.881057] (atas_optimizer) StdoutLine: {'line': b'7: [----------] 9 tests from DualSensorFovTest (81 ms total)\n'}
+[0.881997] (atas_optimizer) StdoutLine: {'line': b'7: \n'}
+[0.882748] (atas_optimizer) StdoutLine: {'line': b'7: [----------] Global test environment tear-down\n'}
+[0.884592] (atas_optimizer) StdoutLine: {'line': b'7: [==========] 9 tests from 1 test suite ran. (81 ms total)\n'}
+[0.885502] (atas_optimizer) StdoutLine: {'line': b'7: [  PASSED  ] 9 tests.\n'}
+[0.886250] (atas_optimizer) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[0.886971] (atas_optimizer) StdoutLine: {'line': b"7: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'\n"}
+[0.887653] (atas_optimizer) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'\n"}
+[0.902363] (-) TimerEvent: {}
+[0.949608] (atas_optimizer) StdoutLine: {'line': b'1/1 Test #7: test_dual_sensor_fov .............   Passed    0.71 sec\n'}
+[0.953706] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.955180] (atas_optimizer) StdoutLine: {'line': b'The following tests passed:\n'}
+[0.956048] (atas_optimizer) StdoutLine: {'line': b'\ttest_dual_sensor_fov\n'}
+[0.956905] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.957660] (atas_optimizer) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[0.958368] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.959057] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.959740] (atas_optimizer) StdoutLine: {'line': b'gtest    =   0.71 sec*proc (1 test)\n'}
+[0.960456] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.961144] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   0.72 sec\n'}
+[0.993357] (atas_optimizer) CommandEnded: {'returncode': 0}
+[1.000204] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[1.005372] (-) TimerEvent: {}
+[1.005855] (-) EventReactorShutdown: {}

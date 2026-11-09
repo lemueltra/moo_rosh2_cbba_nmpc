@@ -1,0 +1,432 @@
+{
+  "build_markers": [
+    "*/COLCON_IGNORE"
+  ],
+  "build_system": "colcon",
+  "components": [
+    {
+      "id": "CMP-001",
+      "io_boundary": "ros2",
+      "io_signals": [
+        "ros2",
+        "network",
+        "filesystem"
+      ],
+      "kind": "ros2_node",
+      "layer": "application",
+      "layer_rationale": "under a scripts/ directory",
+      "loc": 1431,
+      "name": "atas_monitor",
+      "path": "scripts/atas_monitor.py",
+      "public_api": [
+        "ray_intersects_box",
+        "check_occlusion",
+        "evaluate_sensor_geometry",
+        "TelemetryCollector",
+        "TerminalTUI",
+        "WebDashboardHandler",
+        "start_web_server",
+        "run_headless_audit",
+        "main"
+      ]
+    },
+    {
+      "id": "CMP-002",
+      "io_boundary": "filesystem",
+      "io_signals": [
+        "filesystem"
+      ],
+      "kind": "python_module",
+      "layer": "application",
+      "layer_rationale": "under a scripts/ directory",
+      "loc": 315,
+      "name": "extract_data",
+      "path": "scripts/extract_data.py",
+      "public_api": [
+        "clean_fenced_markdown",
+        "parse_markdown_tables",
+        "parse_code_blocks",
+        "parse_references",
+        "main"
+      ]
+    },
+    {
+      "id": "CMP-003",
+      "io_boundary": "filesystem",
+      "io_signals": [
+        "filesystem"
+      ],
+      "kind": "python_module",
+      "layer": "application",
+      "layer_rationale": "under a scripts/ directory",
+      "loc": 99,
+      "name": "generate_coverage_report",
+      "path": "scripts/generate_coverage_report.py",
+      "public_api": [
+        "main"
+      ]
+    },
+    {
+      "id": "CMP-004",
+      "io_boundary": "ros2",
+      "io_signals": [
+        "ros2",
+        "filesystem"
+      ],
+      "kind": "ros2_node",
+      "layer": "application",
+      "layer_rationale": "under a scripts/ directory",
+      "loc": 258,
+      "name": "verify_closed_loop",
+      "path": "scripts/verify_closed_loop.py",
+      "public_api": [
+        "check_dual_sensor_fov",
+        "ClosedLoopMonitor",
+        "main"
+      ]
+    },
+    {
+      "id": "CMP-005",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "config",
+      "layer": "application",
+      "layer_rationale": "kind=config is runtime plumbing by definition",
+      "loc": 64,
+      "name": "atas_optimizer_params",
+      "path": "ws/src/atas_optimizer/config/atas_optimizer_params.yaml",
+      "public_api": []
+    },
+    {
+      "id": "CMP-006",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "no public API; module-level side effects or constants",
+      "loc": 184,
+      "name": "atas_optimizer_node",
+      "path": "ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-007",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "pure_method",
+      "layer_rationale": "Módulo algorítmico puro de leilão e consenso CBBA; sem dependência ou I/O direto de middleware",
+      "loc": 132,
+      "name": "cbba_agent",
+      "path": "ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-008",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "pure_method",
+      "layer_rationale": "Otimizador NLP contínuo com formulação de barreira primordial dual-sensor FoV; sem I/O direto",
+      "loc": 223,
+      "name": "viewpoint_optimizer",
+      "path": "ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-009",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "launch_file",
+      "layer": "application",
+      "layer_rationale": "kind=launch_file is runtime plumbing by definition",
+      "loc": 61,
+      "name": "atas_optimizer.launch",
+      "path": "ws/src/atas_optimizer/launch/atas_optimizer.launch.py",
+      "public_api": [
+        "generate_launch_description"
+      ]
+    },
+    {
+      "id": "CMP-010",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "no public API; module-level side effects or constants",
+      "loc": 753,
+      "name": "atas_optimizer_node",
+      "path": "ws/src/atas_optimizer/src/atas_optimizer_node.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-011",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "pure_method",
+      "layer_rationale": "Implementação do algoritmo CBBA de formação de feixes e consenso sem chamadas de I/O de rede ou ROS",
+      "loc": 345,
+      "name": "cbba_agent",
+      "path": "ws/src/atas_optimizer/src/cbba_agent.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-012",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "no public API; module-level side effects or constants",
+      "loc": 26,
+      "name": "main",
+      "path": "ws/src/atas_optimizer/src/main.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-013",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "pure_method",
+      "layer_rationale": "Implementação do problema de otimização contínua de viewpoint (NLP) e penalidade barreira dual-sensor FoV",
+      "loc": 597,
+      "name": "viewpoint_optimizer",
+      "path": "ws/src/atas_optimizer/src/viewpoint_optimizer.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-014",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 187,
+      "name": "test_adaptive_feedback",
+      "path": "ws/src/atas_optimizer/test/test_adaptive_feedback.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-015",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 138,
+      "name": "test_cbba",
+      "path": "ws/src/atas_optimizer/test/test_cbba.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-016",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 322,
+      "name": "test_cbba_v2",
+      "path": "ws/src/atas_optimizer/test/test_cbba_v2.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-017",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 288,
+      "name": "test_dual_sensor_fov",
+      "path": "ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-018",
+      "io_boundary": "ros2",
+      "io_signals": [
+        "ros2"
+      ],
+      "kind": "ros2_node",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 158,
+      "name": "test_node_integration",
+      "path": "ws/src/atas_optimizer/test/test_node_integration.py",
+      "public_api": [
+        "generate_test_description",
+        "TestOptimizerNodeIntegration"
+      ]
+    },
+    {
+      "id": "CMP-019",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 199,
+      "name": "test_occlusion_and_targets",
+      "path": "ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-020",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 184,
+      "name": "test_polympc_nlp",
+      "path": "ws/src/atas_optimizer/test/test_polympc_nlp.cpp",
+      "public_api": []
+    },
+    {
+      "id": "CMP-021",
+      "io_boundary": "none",
+      "io_signals": [],
+      "kind": "cpp_source",
+      "layer": "application",
+      "layer_rationale": "located under a test tree; verifies, does not contribute",
+      "loc": 137,
+      "name": "test_viewpoint",
+      "path": "ws/src/atas_optimizer/test/test_viewpoint.cpp",
+      "public_api": []
+    }
+  ],
+  "counts": {
+    "application": 17,
+    "components": 21,
+    "data_files": 4,
+    "dependencies": 15,
+    "pure_method": 4
+  },
+  "data_files": [
+    "docker-compose.yml",
+    "docs/CLOSED_LOOP_AUDIT_V2.json",
+    "docs/CLOSED_LOOP_EVALUATION.json",
+    "docs/CLOSED_LOOP_EVALUATION_V2.json"
+  ],
+  "dependencies": [
+    {
+      "from": "CMP-006",
+      "to": "CMP-007",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-006",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-010",
+      "to": "CMP-006",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-011",
+      "to": "CMP-007",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-012",
+      "to": "CMP-006",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-013",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-014",
+      "to": "CMP-006",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-015",
+      "to": "CMP-007",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-016",
+      "to": "CMP-007",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-016",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-017",
+      "to": "CMP-006",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-017",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-019",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-020",
+      "to": "CMP-008",
+      "type": "includes"
+    },
+    {
+      "from": "CMP-021",
+      "to": "CMP-008",
+      "type": "includes"
+    }
+  ],
+  "entrypoints": [
+    "scripts/atas_monitor.py",
+    "scripts/extract_data.py",
+    "scripts/generate_coverage_report.py",
+    "scripts/verify_closed_loop.py",
+    "ws/src/atas_optimizer/launch/atas_optimizer.launch.py",
+    "ws/src/atas_optimizer/src/main.cpp",
+    "ws/src/atas_optimizer/test/test_cbba.cpp",
+    "ws/src/atas_optimizer/test/test_cbba_v2.cpp",
+    "ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp"
+  ],
+  "excluded": [
+    ".agents",
+    ".git",
+    ".ruff_cache",
+    "assets",
+    "build",
+    "data",
+    "docker",
+    "install",
+    "log",
+    "paper",
+    "repos",
+    "simulator",
+    "tests",
+    "ws/build",
+    "ws/install"
+  ],
+  "notes": [
+    "15 subtree(s) excluded by request: .agents, .git, .ruff_cache, assets, build, data, docker, install, log, paper, repos, simulator, tests, ws/build, ws/install",
+    "17 quoted include(s) named a header outside the scanned tree; they are not component dependencies",
+    "25 imported module(s) resolved outside the scanned tree (third-party or generated); they are not component dependencies",
+    "4 file(s) treated as data, not components (generated artefacts and datasets inflate the system otherwise)",
+    "58 angle include(s) (#include <...>) were not resolved: the system include path is not the scanned tree, so they are not claimed as component dependencies",
+    "working tree was dirty at scan time; reproduce from the commit plus a diff"
+  ],
+  "root": "261013conversa_moo_rosh2_perplexity",
+  "scanned_at": null,
+  "scanned_commit": "bc3dedcb8b6443e4b12402e815d73951ca8a847c",
+  "scanned_dirty": true,
+  "schema_version": 1,
+  "tool": "code2paper 0.1.0"
+}

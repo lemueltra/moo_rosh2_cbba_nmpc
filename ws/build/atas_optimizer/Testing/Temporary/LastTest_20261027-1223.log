@@ -1,0 +1,78 @@
+Start testing: Oct 27 12:23 UTC
+----------------------------------------------------------
+7/16 Testing: test_dual_sensor_fov
+7/16 Test: test_dual_sensor_fov
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_dual_sensor_fov.txt" "--command" "/workspace/ws/build/atas_optimizer/test_dual_sensor_fov" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+Directory: /workspace/ws/build/atas_optimizer
+"test_dual_sensor_fov" start time: Oct 27 12:23 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_dual_sensor_fov --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from DualSensorFovTest
+[ RUN      ] DualSensorFovTest.LidarFovAzimuthElevationAndRange
+[       OK ] DualSensorFovTest.LidarFovAzimuthElevationAndRange (0 ms)
+[ RUN      ] DualSensorFovTest.CameraFovAzimuthElevationAndRange
+[       OK ] DualSensorFovTest.CameraFovAzimuthElevationAndRange (0 ms)
+[ RUN      ] DualSensorFovTest.AnySensorFovBooleanUnion
+[       OK ] DualSensorFovTest.AnySensorFovBooleanUnion (0 ms)
+[ RUN      ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors
+[       OK ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors (0 ms)
+[ RUN      ] DualSensorFovTest.NodeParametersConfiguration
+[INFO] [1793103817.921215386] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] DualSensorFovTest.NodeParametersConfiguration (18 ms)
+[ RUN      ] DualSensorFovTest.TargetUgvInFovEvaluation
+[       OK ] DualSensorFovTest.TargetUgvInFovEvaluation (0 ms)
+[ RUN      ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost
+[       OK ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost (0 ms)
+[ RUN      ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:248: Failure
+Value of: opt.is_target_ugv_in_fov(fallback_ref, ugv_pos, ugv_yaw)
+  Actual: false
+Expected: true
+
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:248: Failure
+Value of: opt.is_target_ugv_in_fov(fallback_ref, ugv_pos, ugv_yaw)
+  Actual: false
+Expected: true
+
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:248: Failure
+Value of: opt.is_target_ugv_in_fov(fallback_ref, ugv_pos, ugv_yaw)
+  Actual: false
+Expected: true
+
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:248: Failure
+Value of: opt.is_target_ugv_in_fov(fallback_ref, ugv_pos, ugv_yaw)
+  Actual: false
+Expected: true
+
+[  FAILED  ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov (0 ms)
+[ RUN      ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint
+[       OK ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint (0 ms)
+[----------] 9 tests from DualSensorFovTest (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (18 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov
+
+ 1 FAILED TEST
+-- run_test.py: return code 1
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"test_dual_sensor_fov" end time: Oct 27 12:23 UTC
+"test_dual_sensor_fov" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 27 12:23 UTC
+
+gtest =   0.08 sec*proc
+

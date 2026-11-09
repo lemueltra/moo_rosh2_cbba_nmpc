@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000205] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/install/atas_optimizer'})}
+[0.000249] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.001101] (atas_optimizer) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 120, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/test.py", line 29, in test\n    return await extension.test()\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/test.py", line 44, in test\n    assert os.path.exists(args.build_base), \\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Has this package been built before?\n'}
+[0.001462] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 1}
+[0.011374] (-) EventReactorShutdown: {}

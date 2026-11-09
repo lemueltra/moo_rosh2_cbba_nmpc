@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspace/ws/build/swarm_world_interfaces/rosidl_generator_py/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "swarm_world_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/swarm_world_interfaces")

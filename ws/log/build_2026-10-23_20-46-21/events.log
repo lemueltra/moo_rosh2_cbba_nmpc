@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000263] (swarm_interfaces) JobQueued: {'identifier': 'swarm_interfaces', 'dependencies': OrderedDict()}
+[0.000499] (swarm_world_interfaces) JobQueued: {'identifier': 'swarm_world_interfaces', 'dependencies': OrderedDict()}
+[0.000523] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces'})}
+[0.000564] (swarm_interfaces) JobStarted: {'identifier': 'swarm_interfaces'}
+[0.004805] (swarm_world_interfaces) JobStarted: {'identifier': 'swarm_world_interfaces'}
+[0.006015] (swarm_interfaces) JobProgress: {'identifier': 'swarm_interfaces', 'progress': 'cmake'}
+[0.006257] (swarm_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ws/src/swarm_interfaces', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_interfaces'], 'cwd': '/workspace/ws/build/swarm_interfaces', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'PWD': '/workspace/ws/build/swarm_interfaces', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.008260] (swarm_world_interfaces) JobProgress: {'identifier': 'swarm_world_interfaces', 'progress': 'cmake'}
+[0.008545] (swarm_world_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ws/src/swarm_world_interfaces', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_world_interfaces'], 'cwd': '/workspace/ws/build/swarm_world_interfaces', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'PWD': '/workspace/ws/build/swarm_world_interfaces', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.099749] (-) TimerEvent: {}
+[0.141057] (swarm_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.142094] (swarm_world_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199805] (-) TimerEvent: {}
+[0.222192] (swarm_world_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.223204] (swarm_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.241527] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.241729] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299938] (-) TimerEvent: {}
+[0.323270] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.331358] (swarm_world_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.331651] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.332071] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.340973] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.344844] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.350916] (swarm_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.351098] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.351284] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.359591] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400036] (-) TimerEvent: {}
+[0.419345] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.419617] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.425879] (swarm_world_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.426081] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.426296] (swarm_world_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.429197] (swarm_world_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.430034] (swarm_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.430182] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.430537] (swarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.431760] (swarm_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.500121] (-) TimerEvent: {}
+[0.532097] (swarm_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.537651] (swarm_world_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.553044] (swarm_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.553179] (swarm_interfaces) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[0.553220] (swarm_interfaces) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[0.553252] (swarm_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[0.554473] (swarm_world_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.554570] (swarm_world_interfaces) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[0.554608] (swarm_world_interfaces) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[0.554641] (swarm_world_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[0.555852] (swarm_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[0.555978] (swarm_interfaces) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.556034] (swarm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[0.556100] (swarm_interfaces) StderrLine: {'line': b'  /workspace/ws/build/swarm_interfaces/ament_cmake_package_templates/templates.cmake)\n'}
+[0.556156] (swarm_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[0.556210] (swarm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.556265] (swarm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.556315] (swarm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.556363] (swarm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.556410] (swarm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:8 (find_package)\n'}
+[0.556456] (swarm_interfaces) StderrLine: {'line': b'\n'}
+[0.556503] (swarm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.556588] (swarm_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.558329] (swarm_world_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[0.558433] (swarm_world_interfaces) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.558477] (swarm_world_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[0.558515] (swarm_world_interfaces) StderrLine: {'line': b'  /workspace/ws/build/swarm_world_interfaces/ament_cmake_package_templates/templates.cmake)\n'}
+[0.558580] (swarm_world_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[0.558631] (swarm_world_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.558683] (swarm_world_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.558731] (swarm_world_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.558775] (swarm_world_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.558821] (swarm_world_interfaces) StderrLine: {'line': b'  CMakeLists.txt:8 (find_package)\n'}
+[0.558872] (swarm_world_interfaces) StderrLine: {'line': b'\n'}
+[0.558911] (swarm_world_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.558942] (swarm_world_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.560584] (swarm_interfaces) CommandEnded: {'returncode': 1}
+[0.561704] (swarm_world_interfaces) CommandEnded: {'returncode': 1}
+[0.578632] (swarm_world_interfaces) JobEnded: {'identifier': 'swarm_world_interfaces', 'rc': 1}
+[0.580704] (swarm_interfaces) JobEnded: {'identifier': 'swarm_interfaces', 'rc': 1}
+[0.591174] (atas_optimizer) JobSkipped: {'identifier': 'atas_optimizer'}
+[0.591221] (-) EventReactorShutdown: {}

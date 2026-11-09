@@ -1,0 +1,108 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/UavMetric.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Every metric the multi-objective optimizer uses, for ONE UAV slot (release 3.2.0)." "\n"
+      "" "\n"
+      "One row of the RViz2 metrics dashboard. Field for field this is what the optimizer" "\n"
+      "reads or produces; see docs/PLANO_PAINEL_METRICAS_RVIZ.md §1.1 for the source of" "\n"
+      "each field and docs/CONTRATO_OTIMIZADOR.md for the contract it belongs to.")
+    struct UavMetric {
+      std_msgs::msg::Header header;
+
+      uint32 drone_id;
+
+      @verbatim (language="comment", text=
+        "exactly /drones/state.active (objective 3: minimize)")
+      boolean active;
+
+      @verbatim (language="comment", text=
+        "DroneStatus mode: 0 inactive .. 7 plan failed")
+      uint8 mode;
+
+      @verbatim (language="comment", text=
+        "Pose in the map frame (the frame every reference is resolved into).")
+      double x;
+
+      double y;
+
+      double yaw;
+
+      @verbatim (language="comment", text=
+        "altitude: optimization variable, [2.5, 35.0] m")
+      double z;
+
+      @verbatim (language="comment", text=
+        "Kinematics. speed_3d = |(vx, vy, vz)|, limited to 5.0 m/s.")
+      double vx;
+
+      double vy;
+
+      double vz;
+
+      double speed_3d;
+
+      double yaw_rate;
+
+      @verbatim (language="comment", text=
+        "Link to the nearest UGV (objective 2). Valid only while the UAV is active AND the" "\n"
+        "communication layer has a link for it; `has_link` is the validity flag.")
+      boolean has_link;
+
+      uint32 nearest_ugv_id;
+
+      double ugv_distance_m;
+
+      double latency_ms;
+
+      @verbatim (language="comment", text=
+        "false = non-line-of-sight (NLOS penalty)")
+      boolean los;
+
+      @verbatim (language="comment", text=
+        "Objective 1: how many distinct targets this UAV's own sensors are detecting now" "\n"
+        "(union over its LiDAR and camera streams), plus how many sensor streams feed it.")
+      uint32 detections_now;
+
+      uint32 sensor_streams;
+
+      @verbatim (language="comment", text=
+        "Execution quality reported by the planner.")
+      double position_error;
+
+      double yaw_error;
+
+      @verbatim (language="comment", text=
+        "Reference currently applied to this UAV.")
+      boolean has_reference;
+
+      @verbatim (language="comment", text=
+        "true = expressed in the nearest UGV's body frame")
+      boolean reference_relative;
+
+      @verbatim (language="comment", text=
+        "as received from the optimizer")
+      @unit (value="m")
+      double reference_z_requested;
+
+      @verbatim (language="comment", text=
+        "after the [2.5, 35.0] saturation")
+      @unit (value="m")
+      double reference_z_clamped;
+
+      @verbatim (language="comment", text=
+        "true when the requested z left the operating range")
+      boolean reference_z_clamped_flag;
+
+      @verbatim (language="comment", text=
+        "time since the last reference arrived")
+      @unit (value="s")
+      double reference_age_s;
+    };
+  };
+};

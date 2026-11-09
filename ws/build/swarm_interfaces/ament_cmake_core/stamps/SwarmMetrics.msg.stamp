@@ -1,0 +1,30 @@
+# Snapshot of every metric the optimizer uses: aggregate block + one row per UAV slot.
+# Published by swarm_visualizer's metrics panel (5 Hz) and rendered by RViz2.
+# Sources are listed in docs/PLANO_PAINEL_METRICAS_RVIZ.md §1.2.
+std_msgs/Header header
+
+# --- objective 3 -----------------------------------------------------------------
+uint32 active_count            # len(active_ids): exact, never averaged
+uint32[] active_ids
+
+# --- objectives 1 and 2, 60 s sliding window (/metrics/optimizer_feedback) --------
+float64 detections_mean_60s
+float64 latency_mean_60s
+float64 latency_max_60s
+uint32 samples_in_window
+uint32 window_capacity         # 300 = 60 s x 5 Hz
+
+# --- ROI coverage (/coverage/metrics[0..2]) --------------------------------------
+float64 coverage_ratio
+float64 ugv_weighted_coverage
+float64 redundancy_score
+
+# --- health ----------------------------------------------------------------------
+float64 planner_cycle_us
+uint32 planner_deadline_misses
+uint32 clamped_references
+float64 clock_hz               # measured /clock rate
+float64 sim_time_s
+
+# --- per UAV (one entry per slot, active or not) ---------------------------------
+UavMetric[] uavs

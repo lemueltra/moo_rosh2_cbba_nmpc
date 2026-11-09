@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state_array__type_support.h

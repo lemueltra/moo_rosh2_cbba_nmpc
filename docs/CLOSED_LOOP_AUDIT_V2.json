@@ -1,0 +1,33 @@
+{
+  "timestamp_sim": 0.0,
+  "timestamp_wall": 1793121383.805497,
+  "clock_hz": 0.0,
+  "is_sim_running": false,
+  "active_ids": [],
+  "total_drones_max": 5,
+  "references": [],
+  "ugvs": {},
+  "drones": {},
+  "latencies": {},
+  "mean_latency_ms": 0.0,
+  "feedback": {
+    "mean_latency_60s": 0.0,
+    "mean_detections_60s": 0.0,
+    "samples": 0
+  },
+  "diagnostics": {
+    "global": {},
+    "cbba": {},
+    "nmpc": {},
+    "age_s": -1
+  },
+  "metrics": {
+    "total_evaluations": 0,
+    "fov_violations": 0,
+    "fov_compliance_percent": 100.0,
+    "altitude_violations": 0,
+    "chattering_switches": 0,
+    "solve_time_history": [],
+    "mean_solve_time_ms": 1.8
+  }
+}

@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_world_interfaces/msg/SensorDetection.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module swarm_world_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Single target detection from a sensor FoV evaluation")
+    struct SensorDetection {
+      uint32 actor_id;
+
+      string class_name;
+
+      geometry_msgs::msg::Pose bbox_pose_world;
+
+      geometry_msgs::msg::Vector3 bbox_extent;
+
+      double range;
+
+      double azimuth;
+
+      double elevation;
+
+      boolean occluded;
+
+      @verbatim (language="comment", text=
+        "True when part of the outline is visible and part is blocked (detected, but not in" "\n"
+        "full). occluded == true means nothing of it is visible, yet it is inside the FoV.")
+      boolean partially_occluded;
+
+      @verbatim (language="comment", text=
+        "Continuous fraction of target outline samples in FoV that are occluded [0.0, 1.0]." "\n"
+        "0.0 = completely free, 1.0 = completely occluded.")
+      double occlusion_ratio;
+
+      @verbatim (language="comment", text=
+        "Point of the target that range/azimuth/elevation refer to: the nearest visible point" "\n"
+        "of its outline. Draw the detection ray to this point, not to the bbox centre (the" "\n"
+        "centre of a building is inside the building).")
+      geometry_msgs::msg::Point aim_point;
+    };
+  };
+};

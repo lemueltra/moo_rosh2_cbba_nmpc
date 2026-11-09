@@ -1,0 +1,163 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/ExpectedMetricsGt.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Structured expected perception metrics WITH Ground Truth (G01-G20)")
+    struct ExpectedMetricsGt {
+      std_msgs::msg::Header header;
+
+      boolean model_based;
+
+      string params_hash;
+
+      double window_sec;
+
+      boolean warming_up;
+
+      uint32 n_frames_in_window;
+
+      @verbatim (language="comment", text=
+        "G01 / G02 / G03 - AP, APH, F1")
+      double map;
+
+      double maph;
+
+      sequence<string> classes;
+
+      sequence<double> ap_per_class;
+
+      sequence<double> aph_per_class;
+
+      sequence<double> f1_max_per_class;
+
+      sequence<double> optimal_conf_per_class;
+
+      @verbatim (language="comment", text=
+        "G04 - Analyzer Ratios")
+      sequence<double> ratio_tp_per_class;
+
+      sequence<double> ratio_fp_per_class;
+
+      sequence<double> ratio_fn_per_class;
+
+      @verbatim (language="comment", text=
+        "G05 - Error Statistics (GT - Est)")
+      sequence<double> err_dist_mean_per_class;
+
+      sequence<double> err_dist_rms_per_class;
+
+      sequence<double> err_yaw_mean_per_class;
+
+      sequence<double> err_yaw_std_per_class;
+
+      sequence<double> err_vel_mean_per_class;
+
+      @verbatim (language="comment", text=
+        "G06 - MOTP")
+      sequence<double> motp_per_class;
+
+      @verbatim (language="comment", text=
+        "G07 - CLEAR MOTA & ID Switches")
+      sequence<double> mota_per_class;
+
+      sequence<double> id_switch_per_class;
+
+      @verbatim (language="comment", text=
+        "G08 - Trajectory Prediction")
+      double pred_ade;
+
+      double pred_fde;
+
+      double pred_miss_rate;
+
+      @verbatim (language="comment", text=
+        "G09 - BEV Corner Dispersion")
+      sequence<double> corner_mean_per_class;
+
+      sequence<double> corner_p95_per_class;
+
+      @verbatim (language="comment", text=
+        "G10 - Heading Flip Rate")
+      sequence<double> flip_rate_per_class;
+
+      double mflip_rate;
+
+      @verbatim (language="comment", text=
+        "G11 - Nearest Surface Footprint Distance")
+      sequence<double> nsurf_mean_per_class;
+
+      @verbatim (language="comment", text=
+        "G12 - Expected Calibration Error")
+      double ece;
+
+      double ece_macro;
+
+      @verbatim (language="comment", text=
+        "G13 - Confident Error Rate")
+      double confident_error_rate;
+
+      double confident_errors_per_frame;
+
+      @verbatim (language="comment", text=
+        "G14 - Class Confusion Matrix")
+      sequence<string> confusion_pairs;
+
+      sequence<double> confusion_values;
+
+      @verbatim (language="comment", text=
+        "G15 & G16 - Critical Reachability & Collision Weighted AP")
+      double critical_fp;
+
+      double critical_fn;
+
+      double cw_map;
+
+      sequence<double> cw_map_per_class;
+
+      @verbatim (language="comment", text=
+        "G17 - Consecutive FN Duration Span")
+      sequence<double> fn_span_mean_per_class;
+
+      @verbatim (language="comment", text=
+        "G18 - Frame Pass Rates")
+      double pass_rate_num_tp;
+
+      double pass_rate_num_gt_tp;
+
+      double pass_rate_metrics_score;
+
+      @verbatim (language="comment", text=
+        "G19 - nuScenes Errors")
+      sequence<double> err_ate_per_class;
+
+      sequence<double> err_aoe_per_class;
+
+      sequence<double> err_ase_per_class;
+
+      sequence<double> err_ave_per_class;
+
+      @verbatim (language="comment", text=
+        "G20 - Stratified Base Counts")
+      uint32 n_gt_total;
+
+      double expected_tp_total;
+
+      double expected_fp_total;
+
+      double expected_fn_total;
+
+      sequence<uint32> n_gt_per_class;
+
+      sequence<double> expected_tp_per_class;
+
+      sequence<double> expected_fp_per_class;
+
+      sequence<double> expected_fn_per_class;
+    };
+  };
+};

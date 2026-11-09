@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="atas_optimizer.cpplint"
+  tests="14"
+  failures="0"
+  errors="0"
+  time="0.497"
+>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/src/cbba_agent.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/src/main.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_cbba.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <testcase
+    name="/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp"
+    classname="atas_optimizer.cpplint"/>
+  <system-out>Checked files:
+* /workspace/ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+* /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+* /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+* /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp
+* /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp
+* /workspace/ws/src/atas_optimizer/src/main.cpp
+* /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp
+* /workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp
+* /workspace/ws/src/atas_optimizer/test/test_cbba.cpp
+* /workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp
+* /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp
+* /workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp
+* /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp
+* /workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp</system-out>
+</testsuite>

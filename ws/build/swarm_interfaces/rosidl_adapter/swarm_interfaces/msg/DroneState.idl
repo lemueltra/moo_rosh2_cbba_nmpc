@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/DroneState.msg
+// generated code does not contain a copyright notice
+
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Kinematic state of a single drone in world frame 'map' (SI units)")
+    struct DroneState {
+      uint32 drone_id;
+
+      boolean active;
+
+      double x;
+
+      double y;
+
+      double yaw;
+
+      double vx;
+
+      double vy;
+
+      double yaw_rate;
+
+      double z;
+
+      double vz;
+    };
+  };
+};

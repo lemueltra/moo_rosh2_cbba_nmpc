@@ -1,0 +1,22 @@
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp: In member function ‘virtual void DualSensorFovTest_PrimordialBarrierPenaltyInEvaluateFovCost_Test::TestBody()’:
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:230:45: error: ‘double atas_optimizer::ViewpointOptimizer::evaluate_fov_cost(double, double, double, double, const atas_optimizer::Vector3d&, double, const std::vector<atas_optimizer::OptimizationTarget>&) const’ is private within this context
+  230 |   double cost_in_fov = opt.evaluate_fov_cost(12.0, 0.0, 15.0, M_PI, ugv_pos, ugv_yaw, targets);
+      |                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:20:
+/workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:214:10: note: declared private here
+  214 |   double evaluate_fov_cost(
+      |          ^~~~~~~~~~~~~~~~~
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:234:49: error: ‘double atas_optimizer::ViewpointOptimizer::evaluate_fov_cost(double, double, double, double, const atas_optimizer::Vector3d&, double, const std::vector<atas_optimizer::OptimizationTarget>&) const’ is private within this context
+  234 |   double cost_out_of_fov = opt.evaluate_fov_cost(12.0, 0.0, 15.0, 0.0, ugv_pos, ugv_yaw, targets);
+      |                            ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:214:10: note: declared private here
+  214 |   double evaluate_fov_cost(
+      |          ^~~~~~~~~~~~~~~~~
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp: In member function ‘virtual void DualSensorFovTest_ViewpointOptimizationSatisfiesPrimordialConstraint_Test::TestBody()’:
+/workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:263:6: error: ‘struct atas_optimizer::OptimizationTarget’ has no member named ‘id’
+  263 |   t1.id = 101;
+      |      ^~
+gmake[2]: *** [CMakeFiles/test_dual_sensor_fov.dir/build.make:76: CMakeFiles/test_dual_sensor_fov.dir/test/test_dual_sensor_fov.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:388: CMakeFiles/test_dual_sensor_fov.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

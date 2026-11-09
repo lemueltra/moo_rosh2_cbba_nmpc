@@ -1,0 +1,3 @@
+# Full kinematic state of all N_max drones
+std_msgs/Header header
+DroneState[] states

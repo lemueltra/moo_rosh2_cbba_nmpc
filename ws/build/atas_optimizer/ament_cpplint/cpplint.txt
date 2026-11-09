@@ -1,0 +1,42 @@
+-- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+ - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml
+
+Using '--root=/workspace/ws/src/atas_optimizer/include' argument
+
+Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+
+Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+
+Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+
+Using '--root=/workspace/ws/src/atas_optimizer/src' argument
+
+Done processing /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/src/main.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp
+
+Using '--root=/workspace/ws/src/atas_optimizer/test' argument
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_cbba.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp
+
+Done processing /workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml'

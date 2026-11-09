@@ -1,0 +1,77 @@
+[0.014s] Invoking command in '/workspace/ws/build/swarm_interfaces': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy LD_LIBRARY_PATH=/workspace/ws/install/swarm_interfaces/lib:/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib PYTHONPATH=/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.018s] UpdateCTestConfiguration  from :/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+[0.019s] Parse Config file:/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+[0.019s]    Site: dell-arch
+[0.019s]    Build name: (empty)
+[0.019s]  Add coverage exclude regular expressions.
+[0.019s] Create new tag: 20261027-1314 - Experimental
+[0.019s] UpdateCTestConfiguration  from :/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+[0.019s] Parse Config file:/workspace/ws/build/swarm_interfaces/CTestConfiguration.ini
+[0.019s] Test project /workspace/ws/build/swarm_interfaces
+[0.019s] Constructing a list of tests
+[0.019s] Done constructing a list of tests
+[0.020s] Updating test list for fixtures
+[0.020s] Added 0 tests to meet fixture requirements
+[0.020s] Checking test dependency graph...
+[0.020s] Checking test dependency graph end
+[0.020s] test 1
+[0.020s]     Start 1: test_interfaces_roundtrip
+[0.020s] 
+[0.020s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_interfaces" "--output-file" "/workspace/ws/build/swarm_interfaces/ament_cmake_gtest/test_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+[0.020s] 1: Working Directory: /workspace/ws/build/swarm_interfaces
+[0.020s] 1: Test timeout computed to be: 60
+[0.055s] 1: -- run_test.py: invoking following command in '/workspace/ws/build/swarm_interfaces':
+[0.056s] 1:  - /workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml
+[0.057s] 1: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[0.057s] 1: [==========] Running 16 tests from 1 test suite.
+[0.057s] 1: [----------] Global test environment set-up.
+[0.057s] 1: [----------] 16 tests from SwarmInterfacesTest
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneActiveSetMessage
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneActiveSetMessage (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneReferenceAndArray
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneReferenceAndArray (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneCommandAndArray
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneCommandAndArray (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneStateAndArray
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneStateAndArray (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneStatusAndModes
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneStatusAndModes (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.PlannerStatus
+[0.057s] 1: [       OK ] SwarmInterfacesTest.PlannerStatus (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed
+[0.057s] 1: [       OK ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed (0 ms)
+[0.057s] 1: [ RUN      ] SwarmInterfacesTest.UgvFleetMessages
+[0.057s] 1: [       OK ] SwarmInterfacesTest.UgvFleetMessages (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.LatencyIsPerActiveUav
+[0.058s] 1: [       OK ] SwarmInterfacesTest.LatencyIsPerActiveUav (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact
+[0.058s] 1: [       OK ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences
+[0.058s] 1: [       OK ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip
+[0.058s] 1: [       OK ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip
+[0.058s] 1: [       OK ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip (0 ms)
+[0.058s] 1: [ RUN      ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip
+[0.058s] 1: [       OK ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip (0 ms)
+[0.058s] 1: [----------] 16 tests from SwarmInterfacesTest (0 ms total)
+[0.058s] 1: 
+[0.058s] 1: [----------] Global test environment tear-down
+[0.058s] 1: [==========] 16 tests from 1 test suite ran. (0 ms total)
+[0.058s] 1: [  PASSED  ] 16 tests.
+[0.058s] 1: -- run_test.py: return code 0
+[0.058s] 1: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+[0.059s] 1: -- run_test.py: verify result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+[0.063s] 1/1 Test #1: test_interfaces_roundtrip ........   Passed    0.04 sec
+[0.063s] 
+[0.063s] 100% tests passed, 0 tests failed out of 1
+[0.063s] 
+[0.063s] Label Time Summary:
+[0.063s] gtest    =   0.04 sec*proc (1 test)
+[0.063s] 
+[0.063s] Total Test time (real) =   0.04 sec
+[0.066s] Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy LD_LIBRARY_PATH=/workspace/ws/install/swarm_interfaces/lib:/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib PYTHONPATH=/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

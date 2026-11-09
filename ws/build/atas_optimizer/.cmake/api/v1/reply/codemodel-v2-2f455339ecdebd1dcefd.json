@@ -1,0 +1,202 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-2854a495301d8bff1ddf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Release-0908a8c91ddba5d6c989.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/jazzy/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "atas_optimizer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "atas_optimizer_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atas_optimizer_core-Release-83c934933c4521eae26d.json",
+					"name" : "atas_optimizer_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atas_optimizer_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atas_optimizer_node-Release-d8caf4a7f7bd665e3686.json",
+					"name" : "atas_optimizer_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atas_optimizer_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atas_optimizer_uninstall-Release-f5142776d3074ec26bf2.json",
+					"name" : "atas_optimizer_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Release-d026e114a015667f4fff.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-Release-5920f2f3e6e660bcb73e.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_adaptive_feedback::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_adaptive_feedback-Release-631f2af2031d79feae00.json",
+					"name" : "test_adaptive_feedback",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_cbba::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_cbba-Release-9fdea5f59d623a7e8d2e.json",
+					"name" : "test_cbba",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_cbba_v2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_cbba_v2-Release-805b85dc468153636749.json",
+					"name" : "test_cbba_v2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_dual_sensor_fov::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_dual_sensor_fov-Release-e88f39d88faa4ecf29e9.json",
+					"name" : "test_dual_sensor_fov",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_occlusion_and_targets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_occlusion_and_targets-Release-ab4f843696b3a4f9fb5d.json",
+					"name" : "test_occlusion_and_targets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_polympc_nlp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_polympc_nlp-Release-def05564bc93e6192521.json",
+					"name" : "test_polympc_nlp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_viewpoint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_viewpoint-Release-2fbd61257681d5510306.json",
+					"name" : "test_viewpoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-4a907ec358f97292f879.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/ws/build/atas_optimizer",
+		"source" : "/workspace/ws/src/atas_optimizer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

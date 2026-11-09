@@ -1,0 +1,3 @@
+# Per-UAV latency to the nearest UGV (one entry per ACTIVE UAV, published at 5 Hz)
+std_msgs/Header header
+UavLinkLatency[] links

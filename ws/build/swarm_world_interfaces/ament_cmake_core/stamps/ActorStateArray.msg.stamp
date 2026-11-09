@@ -1,0 +1,3 @@
+# Array of actor live states
+std_msgs/Header header
+ActorState[] actors

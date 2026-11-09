@@ -1,0 +1,55 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261027-1317 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 8
+    Start 8: test_test_node_integration.py
+
+8: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"
+8: Working Directory: /workspace/ws/build/atas_optimizer
+8: Test timeout computed to be: 60
+8: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+8:  - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer
+8: [INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-27-13-17-36-051324-dell-arch-4201
+8: [INFO] [launch]: Default logging verbosity is set to INFO
+8: [INFO] [atas_optimizer_node-1]: process started with pid [4205]
+8: test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)
+8: Verify that feeding UGVs and latency produces valid references. ... [atas_optimizer_node-1] [INFO] [1793107056.082857346] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).
+8: ok
+8: 
+8: ----------------------------------------------------------------------
+8: Ran 1 test in 0.416s
+8: 
+8: OK
+8: [INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]
+8: [atas_optimizer_node-1] [INFO] [1793107056.487439137] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+8: [INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 4205]
+8: 
+8: ----------------------------------------------------------------------
+8: Ran 0 tests in 0.000s
+8: 
+8: NO TESTS RAN
+8: -- run_test.py: return code 0
+8: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'
+1/1 Test #8: test_test_node_integration.py ....   Passed    0.82 sec
+
+The following tests passed:
+	test_test_node_integration.py
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+launch_test    =   0.82 sec*proc (1 test)
+
+Total Test time (real) =   0.82 sec

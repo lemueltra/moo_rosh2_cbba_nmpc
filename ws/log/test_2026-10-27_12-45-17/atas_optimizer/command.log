@@ -1,0 +1,2 @@
+Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R cpplint
+Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R cpplint

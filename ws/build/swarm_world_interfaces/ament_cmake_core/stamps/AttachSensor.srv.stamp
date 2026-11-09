@@ -1,0 +1,6 @@
+# Service to attach a sensor dynamically
+SensorDefinition sensor
+---
+bool success
+uint32 sensor_id
+string error_message

@@ -1,0 +1,904 @@
+[0.007s] Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake /workspace/ws/src/swarm_interfaces -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_interfaces
+[0.016s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.201s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.242s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.278s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.279s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.909s] -- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.320s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.881s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.884s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.993s] -- Found PythonExtra: /usr/bin/python3  
+[2.330s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.417s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.423s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.425s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.520s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.522s] -- Found Threads: TRUE  
+[2.536s] -- Configuring done (2.5s)
+[2.600s] -- Generating done (0.0s)
+[2.611s] -- Build files have been written to: /workspace/ws/build/swarm_interfaces
+[2.617s] Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake /workspace/ws/src/swarm_interfaces -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_interfaces
+[2.617s] Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+[2.665s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.665s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.665s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.672s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.674s] [  3%] Built target ament_cmake_python_symlink_swarm_interfaces
+[3.005s] running egg_info
+[3.007s] creating swarm_interfaces.egg-info
+[3.043s] writing swarm_interfaces.egg-info/PKG-INFO
+[3.044s] writing dependency_links to swarm_interfaces.egg-info/dependency_links.txt
+[3.044s] writing top-level names to swarm_interfaces.egg-info/top_level.txt
+[3.044s] writing manifest file 'swarm_interfaces.egg-info/SOURCES.txt'
+[3.154s] reading manifest file 'swarm_interfaces.egg-info/SOURCES.txt'
+[3.154s] writing manifest file 'swarm_interfaces.egg-info/SOURCES.txt'
+[3.196s] [  3%] Built target ament_cmake_python_build_swarm_interfaces_egg
+[3.737s] [  3%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.903s] [  3%] Built target gtest_main
+[4.334s] [  3%] Built target swarm_interfaces__rs
+[4.561s] [  3%] Built target swarm_interfaces__rosidl_generator_type_description
+[4.572s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.583s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.461s] [  3%] Built target swarm_interfaces__cpp
+[9.733s] [  4%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_active_set__functions.c.o[0m
+[9.744s] [  4%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_active_set__description.c.o[0m
+[9.756s] [  4%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference__type_support.c.o[0m
+[9.765s] [  5%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference_array__functions.c.o[0m
+[9.765s] [  6%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference__functions.c.o[0m
+[9.767s] [  5%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference__description.c.o[0m
+[9.768s] [  6%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference_array__type_support.c.o[0m
+[9.769s] [  6%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_reference_array__description.c.o[0m
+[9.777s] [  6%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command__type_support.c.o[0m
+[9.777s] [  7%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command__description.c.o[0m
+[9.784s] [  7%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command__functions.c.o[0m
+[9.784s] [  8%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command_array__description.c.o[0m
+[9.784s] [  9%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state__description.c.o[0m
+[9.792s] [  9%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_active_set__type_support.c.o[0m
+[9.793s] [  9%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state__functions.c.o[0m
+[9.799s] [  9%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state__type_support.c.o[0m
+[9.813s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state_array__description.c.o[0m
+[9.831s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command_array__functions.c.o[0m
+[9.832s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_command_array__type_support.c.o[0m
+[10.049s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state_array__functions.c.o[0m
+[10.054s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_status__functions.c.o[0m
+[10.059s] [ 10%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_state_array__type_support.c.o[0m
+[10.065s] [ 11%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_status__description.c.o[0m
+[10.102s] [ 12%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/drone_status__type_support.c.o[0m
+[10.103s] [ 12%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/planner_status__functions.c.o[0m
+[10.105s] [ 13%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/planner_status__type_support.c.o[0m
+[10.120s] [ 13%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_metric__description.c.o[0m
+[10.131s] [ 13%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/planner_status__description.c.o[0m
+[10.174s] [ 13%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/swarm_metrics__description.c.o[0m
+[10.175s] [ 13%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_metric__functions.c.o[0m
+[10.203s] [ 14%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_metric__type_support.c.o[0m
+[10.205s] [ 14%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/swarm_metrics__functions.c.o[0m
+[10.267s] [ 15%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/swarm_metrics__type_support.c.o[0m
+[10.283s] [ 15%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count__description.c.o[0m
+[10.305s] [ 15%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count__functions.c.o[0m
+[10.314s] [ 16%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count__type_support.c.o[0m
+[10.325s] [ 16%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count_array__description.c.o[0m
+[10.364s] [ 17%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count_array__functions.c.o[0m
+[10.404s] [ 17%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_detection_count_array__type_support.c.o[0m
+[10.421s] [ 17%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/detection_summary__description.c.o[0m
+[10.429s] [ 18%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/detection_summary__functions.c.o[0m
+[10.444s] [ 18%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/optimizer_feedback__description.c.o[0m
+[10.464s] [ 19%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/optimizer_feedback__functions.c.o[0m
+[10.476s] [ 19%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/detection_summary__type_support.c.o[0m
+[10.477s] [ 19%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/optimizer_feedback__type_support.c.o[0m
+[10.495s] [ 19%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency__description.c.o[0m
+[10.504s] [ 20%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency__functions.c.o[0m
+[10.564s] [ 20%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency__type_support.c.o[0m
+[10.572s] [ 20%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency_array__description.c.o[0m
+[10.575s] [ 21%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency_array__functions.c.o[0m
+[10.628s] [ 21%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/uav_link_latency_array__type_support.c.o[0m
+[10.641s] [ 21%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command__description.c.o[0m
+[10.665s] [ 22%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command__functions.c.o[0m
+[10.705s] [ 22%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command__type_support.c.o[0m
+[10.716s] [ 23%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command_array__description.c.o[0m
+[10.720s] [ 23%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command_array__functions.c.o[0m
+[10.738s] [ 23%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_command_array__type_support.c.o[0m
+[10.740s] [ 24%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state__description.c.o[0m
+[10.801s] [ 24%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state__functions.c.o[0m
+[10.804s] [ 25%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state_array__description.c.o[0m
+[10.810s] [ 25%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state__type_support.c.o[0m
+[10.825s] [ 25%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state_array__functions.c.o[0m
+[10.839s] [ 25%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/ugv_state_array__type_support.c.o[0m
+[10.859s] [ 26%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry__description.c.o[0m
+[10.905s] [ 26%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry__functions.c.o[0m
+[10.909s] [ 26%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry__type_support.c.o[0m
+[10.932s] [ 27%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry_array__description.c.o[0m
+[10.935s] [ 27%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry_array__functions.c.o[0m
+[10.969s] [ 28%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/metric_entry_array__type_support.c.o[0m
+[10.998s] [ 28%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_gt__description.c.o[0m
+[11.007s] [ 28%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_gt__functions.c.o[0m
+[11.017s] [ 29%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_gt__type_support.c.o[0m
+[11.050s] [ 30%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support.c.o[0m
+[11.060s] [ 30%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_no_gt__functions.c.o[0m
+[11.067s] [ 30%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/swarm_interfaces/msg/detail/expected_metrics_no_gt__description.c.o[0m
+[11.808s] [ 30%] [32m[1mLinking C shared library libswarm_interfaces__rosidl_generator_c.so[0m
+[11.952s] [ 30%] Built target swarm_interfaces__rosidl_generator_c
+[11.983s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.989s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.994s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.013s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.013s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.015s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[43.313s] [ 32%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_active_set__type_support.cpp.o[0m
+[44.195s] [ 32%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_active_set__type_support.cpp.o[0m
+[44.319s] [ 33%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_reference__type_support.cpp.o[0m
+[44.441s] [ 33%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_reference_array__type_support.cpp.o[0m
+[44.583s] [ 33%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_command__type_support.cpp.o[0m
+[44.671s] [ 34%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_command_array__type_support.cpp.o[0m
+[44.750s] [ 34%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_state__type_support.cpp.o[0m
+[44.808s] [ 35%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/detection_summary__type_support.cpp.o[0m
+[44.831s] [ 35%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_state_array__type_support.cpp.o[0m
+[44.907s] [ 36%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/drone_status__type_support.cpp.o[0m
+[44.983s] [ 36%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/planner_status__type_support.cpp.o[0m
+[45.058s] [ 37%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/uav_metric__type_support.cpp.o[0m
+[45.083s] [ 38%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_active_set__type_support.c.o[0m
+[45.157s] [ 38%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/swarm_metrics__type_support.cpp.o[0m
+[45.171s] [ 38%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_reference__type_support.c.o[0m
+[45.182s] [ 38%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_active_set__type_support.cpp.o[0m
+[45.243s] [ 38%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/uav_detection_count__type_support.cpp.o[0m
+[45.244s] [ 39%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_reference_array__type_support.c.o[0m
+[45.328s] [ 40%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/uav_detection_count_array__type_support.cpp.o[0m
+[45.329s] [ 40%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_command__type_support.c.o[0m
+[45.415s] [ 40%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_command_array__type_support.c.o[0m
+[45.422s] [ 40%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/detection_summary__type_support.cpp.o[0m
+[45.453s] [ 40%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_active_set__type_support.cpp.o[0m
+[45.500s] [ 40%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/optimizer_feedback__type_support.cpp.o[0m
+[45.511s] [ 41%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_state__type_support.c.o[0m
+[45.517s] [ 41%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/optimizer_feedback__type_support.cpp.o[0m
+[45.586s] [ 41%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_state_array__type_support.c.o[0m
+[45.605s] [ 42%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/uav_link_latency__type_support.cpp.o[0m
+[45.678s] [ 42%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_status__type_support.c.o[0m
+[45.685s] [ 42%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/uav_link_latency_array__type_support.cpp.o[0m
+[45.696s] [ 43%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_reference__type_support.cpp.o[0m
+[45.760s] [ 43%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/ugv_command__type_support.cpp.o[0m
+[45.764s] [ 44%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/planner_status__type_support.c.o[0m
+[45.832s] [ 45%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/ugv_command_array__type_support.cpp.o[0m
+[45.852s] [ 45%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/uav_metric__type_support.c.o[0m
+[45.924s] [ 45%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/swarm_metrics__type_support.c.o[0m
+[45.924s] [ 45%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/ugv_state__type_support.cpp.o[0m
+[46.000s] [ 45%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/ugv_state_array__type_support.cpp.o[0m
+[46.021s] [ 46%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/uav_detection_count__type_support.c.o[0m
+[46.091s] [ 46%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/uav_detection_count_array__type_support.c.o[0m
+[46.111s] [ 47%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/metric_entry__type_support.cpp.o[0m
+[46.122s] [ 48%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_active_set__type_support_c.cpp.o[0m
+[46.165s] [ 48%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/detection_summary__type_support.c.o[0m
+[46.184s] [ 48%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/uav_link_latency__type_support.cpp.o[0m
+[46.192s] [ 48%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/metric_entry_array__type_support.cpp.o[0m
+[46.215s] [ 49%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_reference__type_support.cpp.o[0m
+[46.230s] [ 49%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_reference_array__type_support.cpp.o[0m
+[46.245s] [ 50%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/optimizer_feedback__type_support.c.o[0m
+[46.272s] [ 51%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/expected_metrics_gt__type_support.cpp.o[0m
+[46.342s] [ 51%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/uav_link_latency__type_support.c.o[0m
+[46.358s] [ 51%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/swarm_interfaces/msg/expected_metrics_no_gt__type_support.cpp.o[0m
+[46.442s] [ 51%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/uav_link_latency_array__type_support.c.o[0m
+[46.481s] [ 51%] [32m[1mLinking CXX shared library libswarm_interfaces__rosidl_typesupport_c.so[0m
+[46.526s] [ 52%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/ugv_command__type_support.c.o[0m
+[46.531s] [ 52%] Built target swarm_interfaces__rosidl_typesupport_c
+[46.588s] [ 52%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/ugv_command_array__type_support.c.o[0m
+[46.686s] [ 53%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/ugv_state__type_support.c.o[0m
+[46.731s] [ 53%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_command__type_support.cpp.o[0m
+[46.770s] [ 53%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/ugv_state_array__type_support.c.o[0m
+[46.794s] [ 53%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/uav_detection_count_array__type_support.cpp.o[0m
+[46.841s] [ 53%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_reference_array__type_support.cpp.o[0m
+[46.851s] [ 53%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/metric_entry__type_support.c.o[0m
+[46.858s] [ 53%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_reference__type_support_c.cpp.o[0m
+[46.928s] [ 54%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/metric_entry_array__type_support.c.o[0m
+[47.005s] [ 54%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/expected_metrics_gt__type_support.c.o[0m
+[47.159s] [ 54%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_state__type_support.cpp.o[0m
+[47.250s] [ 54%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/uav_detection_count__type_support.cpp.o[0m
+[47.300s] [ 54%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support.c.o[0m
+[47.513s] [ 54%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_command_array__type_support_c.cpp.o[0m
+[47.518s] [ 55%] [32m[1mLinking C shared library libswarm_interfaces__rosidl_typesupport_introspection_c.so[0m
+[47.565s] [ 55%] Built target swarm_interfaces__rosidl_typesupport_introspection_c
+[47.604s] [ 56%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_command_array__type_support.cpp.o[0m
+[47.644s] [ 56%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/ugv_command__type_support.cpp.o[0m
+[47.722s] [ 56%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_command__type_support.cpp.o[0m
+[48.008s] [ 57%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/uav_link_latency_array__type_support.cpp.o[0m
+[48.015s] [ 58%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_state_array__type_support.cpp.o[0m
+[48.075s] [ 58%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_state__type_support_c.cpp.o[0m
+[48.181s] [ 58%] [32m[1mLinking CXX static library libgtest.a[0m
+[48.262s] [ 58%] Built target gtest
+[48.276s] [ 58%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.cpp.o[0m
+[48.458s] [ 59%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/swarm_metrics__type_support.cpp.o[0m
+[48.619s] [ 59%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/drone_status__type_support.cpp.o[0m
+[48.797s] [ 59%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_status__type_support_c.cpp.o[0m
+[48.803s] [ 59%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/uav_metric__type_support.cpp.o[0m
+[48.880s] [ 60%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_status__type_support.cpp.o[0m
+[49.017s] [ 60%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/planner_status__type_support.cpp.o[0m
+[49.150s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/planner_status__type_support.cpp.o[0m
+[49.334s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/swarm_metrics__type_support_c.cpp.o[0m
+[49.414s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/swarm_metrics__type_support.cpp.o[0m
+[49.470s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_state_array__type_support.cpp.o[0m
+[49.518s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_status__type_support.cpp.o[0m
+[49.879s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_state_array__type_support.cpp.o[0m
+[49.970s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/uav_detection_count__type_support.cpp.o[0m
+[49.979s] [ 61%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/detection_summary__type_support_c.cpp.o[0m
+[50.226s] [ 62%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/drone_command_array__type_support.cpp.o[0m
+[50.251s] [ 63%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/ugv_state__type_support.cpp.o[0m
+[50.386s] [ 64%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/uav_detection_count_array__type_support.cpp.o[0m
+[50.550s] [ 65%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/uav_detection_count_array__type_support_c.cpp.o[0m
+[50.618s] [ 65%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/ugv_state_array__type_support.cpp.o[0m
+[50.830s] [ 66%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/uav_metric__type_support.cpp.o[0m
+[50.859s] [ 66%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/uav_metric__type_support.cpp.o[0m
+[50.954s] [ 67%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/metric_entry_array__type_support.cpp.o[0m
+[51.069s] [ 68%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/optimizer_feedback__type_support_c.cpp.o[0m
+[51.205s] [ 68%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/detection_summary__type_support.cpp.o[0m
+[51.340s] [ 68%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/expected_metrics_gt__type_support.cpp.o[0m
+[51.549s] [ 69%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/swarm_metrics__type_support.cpp.o[0m
+[51.581s] [ 70%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/uav_link_latency__type_support.cpp.o[0m
+[51.656s] [ 70%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/uav_detection_count__type_support_c.cpp.o[0m
+[51.736s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/expected_metrics_no_gt__type_support.cpp.o[0m
+[51.944s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/optimizer_feedback__type_support.cpp.o[0m
+[52.068s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/metric_entry__type_support.cpp.o[0m
+[52.196s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/uav_link_latency__type_support_c.cpp.o[0m
+[52.308s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/optimizer_feedback__type_support.cpp.o[0m
+[52.334s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/uav_link_latency_array__type_support.cpp.o[0m
+[52.421s] [ 71%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/ugv_command_array__type_support.cpp.o[0m
+[52.702s] [ 72%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/ugv_command__type_support_c.cpp.o[0m
+[52.768s] [ 73%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_state__type_support.cpp.o[0m
+[52.778s] [ 73%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/ugv_command__type_support.cpp.o[0m
+[52.888s] [ 73%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/uav_link_latency_array__type_support.cpp.o[0m
+[53.068s] [ 73%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_command_array__type_support.cpp.o[0m
+[53.095s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/ugv_command_array__type_support.cpp.o[0m
+[53.152s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/ugv_state__type_support_c.cpp.o[0m
+[53.399s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_command__type_support.cpp.o[0m
+[53.430s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/ugv_command__type_support.cpp.o[0m
+[53.456s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/ugv_state__type_support.cpp.o[0m
+[53.625s] [ 74%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/metric_entry__type_support_c.cpp.o[0m
+[53.689s] [ 75%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_reference_array__type_support.cpp.o[0m
+[53.760s] [ 76%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/ugv_state_array__type_support.cpp.o[0m
+[53.931s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/ugv_command_array__type_support.cpp.o[0m
+[53.973s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/swarm_interfaces/msg/drone_reference__type_support.cpp.o[0m
+[54.072s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support_c.cpp.o[0m
+[54.118s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/metric_entry__type_support.cpp.o[0m
+[54.275s] [ 77%] [32m[1mLinking CXX shared library libswarm_interfaces__rosidl_typesupport_cpp.so[0m
+[54.319s] [ 77%] Built target swarm_interfaces__rosidl_typesupport_cpp
+[54.426s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/metric_entry_array__type_support.cpp.o[0m
+[54.464s] [ 77%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/ugv_state__type_support.cpp.o[0m
+[54.792s] [ 78%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/expected_metrics_gt__type_support.cpp.o[0m
+[54.860s] [ 79%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/expected_metrics_gt__type_support_c.cpp.o[0m
+[54.902s] [ 80%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/metric_entry__type_support.cpp.o[0m
+[55.334s] [ 80%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/ugv_state_array__type_support.cpp.o[0m
+[55.709s] [ 80%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support.cpp.o[0m
+[55.720s] [ 80%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/metric_entry_array__type_support_c.cpp.o[0m
+[55.805s] [ 81%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/expected_metrics_gt__type_support.cpp.o[0m
+[55.805s] [ 81%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/expected_metrics_no_gt__type_support.cpp.o[0m
+[55.809s] [ 81%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/metric_entry_array__type_support.cpp.o[0m
+[56.248s] [ 81%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/uav_link_latency_array__type_support_c.cpp.o[0m
+[56.250s] [ 81%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/ugv_command_array__type_support_c.cpp.o[0m
+[56.251s] [ 82%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/ugv_state_array__type_support_c.cpp.o[0m
+[56.251s] [ 83%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/uav_metric__type_support_c.cpp.o[0m
+[56.489s] [ 84%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/uav_detection_count_array__type_support.cpp.o[0m
+[56.489s] [ 84%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/detection_summary__type_support.cpp.o[0m
+[56.490s] [ 85%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/uav_link_latency__type_support.cpp.o[0m
+[56.853s] [ 85%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/planner_status__type_support_c.cpp.o[0m
+[56.936s] [ 86%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_state_array__type_support_c.cpp.o[0m
+[57.089s] [ 86%] [32m[1mLinking CXX shared library libswarm_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[57.114s] [ 87%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_command__type_support_c.cpp.o[0m
+[57.140s] [ 87%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/planner_status__type_support.cpp.o[0m
+[57.141s] [ 87%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/swarm_interfaces/msg/detail/dds_fastrtps/uav_detection_count__type_support.cpp.o[0m
+[57.201s] [ 87%] Built target swarm_interfaces__rosidl_typesupport_introspection_cpp
+[57.230s] [ 87%] [32mBuilding CXX object CMakeFiles/test_interfaces_roundtrip.dir/test/test_interfaces_roundtrip.cpp.o[0m
+[57.231s] [ 87%] [32mBuilding CXX object CMakeFiles/swarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_reference_array__type_support_c.cpp.o[0m
+[57.868s] [ 87%] [32m[1mLinking CXX shared library libswarm_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[57.948s] [ 87%] Built target swarm_interfaces__rosidl_typesupport_fastrtps_c
+[57.960s] [ 87%] [32m[1mLinking CXX shared library libswarm_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[58.030s] [ 87%] Built target swarm_interfaces__rosidl_typesupport_fastrtps_cpp
+[58.048s] [ 87%] Built target swarm_interfaces
+[58.069s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[59.669s] [ 89%] [32m[1mLinking CXX executable test_interfaces_roundtrip[0m
+[59.730s] [ 89%] Built target test_interfaces_roundtrip
+[60.913s] [ 89%] Built target swarm_interfaces__py
+[60.925s] [ 89%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_active_set_s.c.o[0m
+[60.926s] [ 89%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_state_s.c.o[0m
+[60.926s] [ 90%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_state_array_s.c.o[0m
+[60.926s] [ 90%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_status_s.c.o[0m
+[60.926s] [ 91%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_uav_metric_s.c.o[0m
+[60.928s] [ 92%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_reference_s.c.o[0m
+[60.928s] [ 92%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_reference_array_s.c.o[0m
+[60.928s] [ 92%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_command_s.c.o[0m
+[60.929s] [ 93%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_drone_command_array_s.c.o[0m
+[60.929s] [ 93%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_planner_status_s.c.o[0m
+[61.093s] [ 93%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_ugv_state_s.c.o[0m
+[61.106s] [ 94%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_ugv_state_array_s.c.o[0m
+[61.114s] [ 94%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_metric_entry_s.c.o[0m
+[61.114s] [ 94%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_metric_entry_array_s.c.o[0m
+[61.120s] [ 95%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_expected_metrics_gt_s.c.o[0m
+[61.134s] [ 96%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_expected_metrics_no_gt_s.c.o[0m
+[61.135s] [ 96%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_ugv_command_array_s.c.o[0m
+[61.135s] [ 96%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_ugv_command_s.c.o[0m
+[61.135s] [ 96%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_uav_link_latency_array_s.c.o[0m
+[61.135s] [ 97%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_uav_link_latency_s.c.o[0m
+[61.135s] [ 97%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_optimizer_feedback_s.c.o[0m
+[61.137s] [ 97%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_detection_summary_s.c.o[0m
+[61.161s] [ 98%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_uav_detection_count_array_s.c.o[0m
+[61.162s] [ 98%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_uav_detection_count_s.c.o[0m
+[61.205s] [ 98%] [32mBuilding C object CMakeFiles/swarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_interfaces/msg/_swarm_metrics_s.c.o[0m
+[62.294s] [ 98%] [32m[1mLinking C shared library libswarm_interfaces__rosidl_generator_py.so[0m
+[62.329s] [ 98%] Built target swarm_interfaces__rosidl_generator_py
+[62.343s] [ 99%] [32mBuilding C object CMakeFiles/swarm_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[62.343s] [ 99%] [32mBuilding C object CMakeFiles/swarm_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[62.343s] [ 99%] [32mBuilding C object CMakeFiles/swarm_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[62.652s] [100%] [32m[1mLinking C shared module rosidl_generator_py/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[62.653s] [100%] [32m[1mLinking C shared module rosidl_generator_py/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_c.so[0m
+[62.665s] [100%] [32m[1mLinking C shared module rosidl_generator_py/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[62.680s] [100%] Built target swarm_interfaces_s__rosidl_typesupport_introspection_c
+[62.681s] [100%] Built target swarm_interfaces_s__rosidl_typesupport_c
+[62.691s] [100%] Built target swarm_interfaces_s__rosidl_typesupport_fastrtps_c
+[62.699s] Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+[62.700s] Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces
+[62.706s] -- Install configuration: "Release"
+[62.706s] -- Execute custom install script
+[62.706s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/ament_index/resource_index/rosidl_interfaces/swarm_interfaces
+[62.712s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneActiveSet.json
+[62.719s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReference.json
+[62.724s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReferenceArray.json
+[62.729s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommand.json
+[62.737s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommandArray.json
+[62.742s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneState.json
+[62.750s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStateArray.json
+[62.757s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStatus.json
+[62.763s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/PlannerStatus.json
+[62.769s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavMetric.json
+[62.777s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/SwarmMetrics.json
+[62.781s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCount.json
+[62.789s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCountArray.json
+[62.797s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DetectionSummary.json
+[62.803s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/OptimizerFeedback.json
+[62.810s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatency.json
+[62.817s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatencyArray.json
+[62.823s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommand.json
+[62.830s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommandArray.json
+[62.837s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvState.json
+[62.841s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvStateArray.json
+[62.846s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntry.json
+[62.851s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntryArray.json
+[62.858s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsGt.json
+[62.863s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsNoGt.json
+[62.869s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__functions.h
+[62.874s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__struct.h
+[62.881s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__type_support.h
+[62.888s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__functions.h
+[62.893s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__struct.h
+[62.898s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__type_support.h
+[62.903s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__functions.h
+[62.910s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__struct.h
+[62.917s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__type_support.h
+[62.923s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__functions.h
+[62.928s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__struct.h
+[62.932s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__type_support.h
+[62.939s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__functions.h
+[62.945s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__struct.h
+[62.952s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__type_support.h
+[62.959s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__functions.h
+[62.966s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__struct.h
+[62.972s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__type_support.h
+[62.979s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__functions.h
+[62.985s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__struct.h
+[62.991s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__type_support.h
+[62.998s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__functions.h
+[63.004s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__struct.h
+[63.011s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__type_support.h
+[63.016s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__functions.h
+[63.023s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__struct.h
+[63.027s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__type_support.h
+[63.033s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__functions.h
+[63.039s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__struct.h
+[63.044s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__type_support.h
+[63.051s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__functions.h
+[63.057s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__struct.h
+[63.063s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support.h
+[63.070s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__functions.h
+[63.075s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__struct.h
+[63.081s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__type_support.h
+[63.086s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__functions.h
+[63.093s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__struct.h
+[63.100s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__type_support.h
+[63.105s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__functions.h
+[63.111s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__struct.h
+[63.115s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__type_support.h
+[63.123s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__functions.h
+[63.129s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__struct.h
+[63.135s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__type_support.h
+[63.141s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__functions.h
+[63.146s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__struct.h
+[63.152s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__type_support.h
+[63.156s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__functions.h
+[63.161s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__struct.h
+[63.168s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__type_support.h
+[63.173s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__functions.h
+[63.180s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__struct.h
+[63.187s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__type_support.h
+[63.193s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__functions.h
+[63.200s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__struct.h
+[63.206s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__type_support.h
+[63.212s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__functions.h
+[63.217s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__struct.h
+[63.224s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__type_support.h
+[63.230s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__functions.h
+[63.235s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__struct.h
+[63.242s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__type_support.h
+[63.247s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__functions.h
+[63.253s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__struct.h
+[63.257s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__type_support.h
+[63.264s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__functions.h
+[63.268s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__struct.h
+[63.273s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__type_support.h
+[63.277s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__functions.h
+[63.282s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__struct.h
+[63.288s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__type_support.h
+[63.294s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__functions.h
+[63.298s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__struct.h
+[63.305s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__type_support.h
+[63.309s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detection_summary.h
+[63.315s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_active_set.h
+[63.319s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_command.h
+[63.326s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_command_array.h
+[63.332s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_reference.h
+[63.337s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_reference_array.h
+[63.344s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_state.h
+[63.348s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_state_array.h
+[63.360s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_status.h
+[63.369s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/expected_metrics_gt.h
+[63.375s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/expected_metrics_no_gt.h
+[63.381s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/metric_entry.h
+[63.388s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/metric_entry_array.h
+[63.394s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/optimizer_feedback.h
+[63.402s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/planner_status.h
+[63.408s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/rosidl_generator_c__visibility_control.h
+[63.416s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/swarm_metrics.h
+[63.423s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_detection_count.h
+[63.429s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_detection_count_array.h
+[63.435s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_link_latency.h
+[63.441s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_link_latency_array.h
+[63.446s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_metric.h
+[63.452s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_command.h
+[63.458s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_command_array.h
+[63.463s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_state.h
+[63.468s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_state_array.h
+[63.475s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/library_path.sh
+[63.480s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/library_path.dsv
+[63.489s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__rosidl_typesupport_fastrtps_c.h
+[63.496s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__rosidl_typesupport_fastrtps_c.h
+[63.500s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__rosidl_typesupport_fastrtps_c.h
+[63.507s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__rosidl_typesupport_fastrtps_c.h
+[63.512s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__rosidl_typesupport_fastrtps_c.h
+[63.517s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__rosidl_typesupport_fastrtps_c.h
+[63.523s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h
+[63.528s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__rosidl_typesupport_fastrtps_c.h
+[63.534s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__rosidl_typesupport_fastrtps_c.h
+[63.540s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__rosidl_typesupport_fastrtps_c.h
+[63.546s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__rosidl_typesupport_fastrtps_c.h
+[63.553s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__rosidl_typesupport_fastrtps_c.h
+[63.557s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__rosidl_typesupport_fastrtps_c.h
+[63.564s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__rosidl_typesupport_fastrtps_c.h
+[63.570s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__rosidl_typesupport_fastrtps_c.h
+[63.575s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__rosidl_typesupport_fastrtps_c.h
+[63.581s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__rosidl_typesupport_fastrtps_c.h
+[63.587s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__rosidl_typesupport_fastrtps_c.h
+[63.595s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__rosidl_typesupport_fastrtps_c.h
+[63.599s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__rosidl_typesupport_fastrtps_c.h
+[63.604s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__rosidl_typesupport_fastrtps_c.h
+[63.610s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__rosidl_typesupport_fastrtps_c.h
+[63.617s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__rosidl_typesupport_fastrtps_c.h
+[63.622s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__rosidl_typesupport_fastrtps_c.h
+[63.627s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__rosidl_typesupport_fastrtps_c.h
+[63.634s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[63.638s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__rosidl_typesupport_introspection_c.h
+[63.644s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__rosidl_typesupport_introspection_c.h
+[63.649s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__rosidl_typesupport_introspection_c.h
+[63.655s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__rosidl_typesupport_introspection_c.h
+[63.659s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__rosidl_typesupport_introspection_c.h
+[63.664s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__rosidl_typesupport_introspection_c.h
+[63.670s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__rosidl_typesupport_introspection_c.h
+[63.676s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__rosidl_typesupport_introspection_c.h
+[63.682s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__rosidl_typesupport_introspection_c.h
+[63.688s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__rosidl_typesupport_introspection_c.h
+[63.694s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__rosidl_typesupport_introspection_c.h
+[63.700s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__rosidl_typesupport_introspection_c.h
+[63.704s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__rosidl_typesupport_introspection_c.h
+[63.710s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__rosidl_typesupport_introspection_c.h
+[63.715s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__rosidl_typesupport_introspection_c.h
+[63.722s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__rosidl_typesupport_introspection_c.h
+[63.729s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__rosidl_typesupport_introspection_c.h
+[63.734s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__rosidl_typesupport_introspection_c.h
+[63.739s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__rosidl_typesupport_introspection_c.h
+[63.744s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__rosidl_typesupport_introspection_c.h
+[63.749s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__rosidl_typesupport_introspection_c.h
+[63.754s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__rosidl_typesupport_introspection_c.h
+[63.759s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__rosidl_typesupport_introspection_c.h
+[63.764s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__rosidl_typesupport_introspection_c.h
+[63.770s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__rosidl_typesupport_introspection_c.h
+[63.774s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[63.779s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__builder.hpp
+[63.784s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__struct.hpp
+[63.789s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__traits.hpp
+[63.796s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__type_support.hpp
+[63.801s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__builder.hpp
+[63.809s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__struct.hpp
+[63.814s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__traits.hpp
+[63.819s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__type_support.hpp
+[63.825s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__builder.hpp
+[63.829s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__struct.hpp
+[63.833s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__traits.hpp
+[63.838s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__type_support.hpp
+[63.844s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__builder.hpp
+[63.850s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__struct.hpp
+[63.858s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__traits.hpp
+[63.864s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__type_support.hpp
+[63.868s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__builder.hpp
+[63.875s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__struct.hpp
+[63.879s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__traits.hpp
+[63.885s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__type_support.hpp
+[63.891s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__builder.hpp
+[63.896s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__struct.hpp
+[63.902s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__traits.hpp
+[63.906s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__type_support.hpp
+[63.912s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__builder.hpp
+[63.918s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__struct.hpp
+[63.923s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__traits.hpp
+[63.928s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__type_support.hpp
+[63.932s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__builder.hpp
+[63.938s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__struct.hpp
+[63.944s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__traits.hpp
+[63.948s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__type_support.hpp
+[63.955s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__builder.hpp
+[63.961s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__struct.hpp
+[63.967s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__traits.hpp
+[63.973s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__type_support.hpp
+[63.978s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__builder.hpp
+[63.984s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__struct.hpp
+[63.988s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__traits.hpp
+[63.993s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__type_support.hpp
+[63.999s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__builder.hpp
+[64.005s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__struct.hpp
+[64.010s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__traits.hpp
+[64.015s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__type_support.hpp
+[64.021s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__builder.hpp
+[64.026s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__struct.hpp
+[64.031s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__traits.hpp
+[64.037s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__type_support.hpp
+[64.044s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__builder.hpp
+[64.050s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__struct.hpp
+[64.057s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__traits.hpp
+[64.062s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__type_support.hpp
+[64.067s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__builder.hpp
+[64.074s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__struct.hpp
+[64.079s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__traits.hpp
+[64.085s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__type_support.hpp
+[64.090s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__builder.hpp
+[64.098s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__struct.hpp
+[64.104s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__traits.hpp
+[64.109s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__type_support.hpp
+[64.116s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__builder.hpp
+[64.121s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__struct.hpp
+[64.127s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__traits.hpp
+[64.132s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__type_support.hpp
+[64.139s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__builder.hpp
+[64.144s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__struct.hpp
+[64.149s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__traits.hpp
+[64.154s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__type_support.hpp
+[64.160s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__builder.hpp
+[64.165s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__struct.hpp
+[64.171s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__traits.hpp
+[64.177s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__type_support.hpp
+[64.182s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__builder.hpp
+[64.186s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__struct.hpp
+[64.192s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__traits.hpp
+[64.199s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__type_support.hpp
+[64.203s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__builder.hpp
+[64.207s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__struct.hpp
+[64.211s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__traits.hpp
+[64.217s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__type_support.hpp
+[64.222s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__builder.hpp
+[64.226s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__struct.hpp
+[64.233s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__traits.hpp
+[64.239s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__type_support.hpp
+[64.246s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__builder.hpp
+[64.251s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__struct.hpp
+[64.255s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__traits.hpp
+[64.262s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__type_support.hpp
+[64.267s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__builder.hpp
+[64.271s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__struct.hpp
+[64.276s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__traits.hpp
+[64.280s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__type_support.hpp
+[64.286s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__builder.hpp
+[64.292s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__struct.hpp
+[64.297s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__traits.hpp
+[64.302s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__type_support.hpp
+[64.308s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__builder.hpp
+[64.313s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__struct.hpp
+[64.317s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__traits.hpp
+[64.323s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__type_support.hpp
+[64.329s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detection_summary.hpp
+[64.335s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_active_set.hpp
+[64.341s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_command.hpp
+[64.347s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_command_array.hpp
+[64.354s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_reference.hpp
+[64.359s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_reference_array.hpp
+[64.365s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_state.hpp
+[64.370s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_state_array.hpp
+[64.376s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/drone_status.hpp
+[64.381s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/expected_metrics_gt.hpp
+[64.388s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/expected_metrics_no_gt.hpp
+[64.392s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/metric_entry.hpp
+[64.402s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/metric_entry_array.hpp
+[64.414s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/optimizer_feedback.hpp
+[64.419s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/planner_status.hpp
+[64.424s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[64.429s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/swarm_metrics.hpp
+[64.436s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_detection_count.hpp
+[64.443s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_detection_count_array.hpp
+[64.449s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_link_latency.hpp
+[64.455s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_link_latency_array.hpp
+[64.460s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/uav_metric.hpp
+[64.465s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_command.hpp
+[64.470s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_command_array.hpp
+[64.477s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_state.hpp
+[64.483s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/ugv_state_array.hpp
+[64.490s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__rosidl_typesupport_fastrtps_cpp.hpp
+[64.497s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__rosidl_typesupport_fastrtps_cpp.hpp
+[64.502s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__rosidl_typesupport_fastrtps_cpp.hpp
+[64.508s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.513s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__rosidl_typesupport_fastrtps_cpp.hpp
+[64.519s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.525s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__rosidl_typesupport_fastrtps_cpp.hpp
+[64.529s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.536s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__rosidl_typesupport_fastrtps_cpp.hpp
+[64.543s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__rosidl_typesupport_fastrtps_cpp.hpp
+[64.547s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__rosidl_typesupport_fastrtps_cpp.hpp
+[64.554s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__rosidl_typesupport_fastrtps_cpp.hpp
+[64.560s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.565s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[64.571s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__rosidl_typesupport_fastrtps_cpp.hpp
+[64.577s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__rosidl_typesupport_fastrtps_cpp.hpp
+[64.584s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__rosidl_typesupport_fastrtps_cpp.hpp
+[64.589s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.593s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__rosidl_typesupport_fastrtps_cpp.hpp
+[64.598s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.602s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__rosidl_typesupport_fastrtps_cpp.hpp
+[64.606s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__rosidl_typesupport_fastrtps_cpp.hpp
+[64.613s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.619s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__rosidl_typesupport_fastrtps_cpp.hpp
+[64.625s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__rosidl_typesupport_fastrtps_cpp.hpp
+[64.629s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[64.636s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/detection_summary__rosidl_typesupport_introspection_cpp.hpp
+[64.642s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_active_set__rosidl_typesupport_introspection_cpp.hpp
+[64.648s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command__rosidl_typesupport_introspection_cpp.hpp
+[64.655s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_command_array__rosidl_typesupport_introspection_cpp.hpp
+[64.660s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference__rosidl_typesupport_introspection_cpp.hpp
+[64.665s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_reference_array__rosidl_typesupport_introspection_cpp.hpp
+[64.669s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state__rosidl_typesupport_introspection_cpp.hpp
+[64.675s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_state_array__rosidl_typesupport_introspection_cpp.hpp
+[64.680s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/drone_status__rosidl_typesupport_introspection_cpp.hpp
+[64.684s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_gt__rosidl_typesupport_introspection_cpp.hpp
+[64.688s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/expected_metrics_no_gt__rosidl_typesupport_introspection_cpp.hpp
+[64.695s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry__rosidl_typesupport_introspection_cpp.hpp
+[64.700s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/metric_entry_array__rosidl_typesupport_introspection_cpp.hpp
+[64.704s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/optimizer_feedback__rosidl_typesupport_introspection_cpp.hpp
+[64.709s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/planner_status__rosidl_typesupport_introspection_cpp.hpp
+[64.716s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/swarm_metrics__rosidl_typesupport_introspection_cpp.hpp
+[64.722s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count__rosidl_typesupport_introspection_cpp.hpp
+[64.726s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_detection_count_array__rosidl_typesupport_introspection_cpp.hpp
+[64.733s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency__rosidl_typesupport_introspection_cpp.hpp
+[64.738s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_link_latency_array__rosidl_typesupport_introspection_cpp.hpp
+[64.743s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/uav_metric__rosidl_typesupport_introspection_cpp.hpp
+[64.747s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command__rosidl_typesupport_introspection_cpp.hpp
+[64.753s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_command_array__rosidl_typesupport_introspection_cpp.hpp
+[64.759s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state__rosidl_typesupport_introspection_cpp.hpp
+[64.763s] -- Symlinking: /workspace/ws/install/swarm_interfaces/include/swarm_interfaces/swarm_interfaces/msg/detail/ugv_state_array__rosidl_typesupport_introspection_cpp.hpp
+[64.770s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/pythonpath.sh
+[64.775s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/pythonpath.dsv
+[64.781s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces-3.1.0-py3.12.egg-info/PKG-INFO
+[64.786s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces-3.1.0-py3.12.egg-info/SOURCES.txt
+[64.791s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces-3.1.0-py3.12.egg-info/dependency_links.txt
+[64.797s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces-3.1.0-py3.12.egg-info/top_level.txt
+[64.804s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/__init__.py
+[64.811s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_c.c
+[64.818s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[64.823s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/_swarm_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[64.828s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/__init__.py
+[64.834s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_detection_summary.py
+[64.840s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_detection_summary_s.c
+[64.846s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_active_set.py
+[64.851s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_active_set_s.c
+[64.858s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command.py
+[64.863s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command_array.py
+[64.869s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command_array_s.c
+[64.875s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command_s.c
+[64.881s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference.py
+[64.888s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference_array.py
+[64.895s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference_array_s.c
+[64.901s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference_s.c
+[64.907s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state.py
+[64.914s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state_array.py
+[64.921s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state_array_s.c
+[64.926s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state_s.c
+[64.932s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_status.py
+[64.937s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_status_s.c
+[64.945s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_gt.py
+[64.951s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_gt_s.c
+[64.956s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_no_gt.py
+[64.962s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_no_gt_s.c
+[64.967s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry.py
+[64.972s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry_array.py
+[64.976s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry_array_s.c
+[64.982s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry_s.c
+[64.988s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_optimizer_feedback.py
+[64.995s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_optimizer_feedback_s.c
+[65.000s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_planner_status.py
+[65.004s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_planner_status_s.c
+[65.011s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_swarm_metrics.py
+[65.018s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_swarm_metrics_s.c
+[65.023s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count.py
+[65.028s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count_array.py
+[65.033s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count_array_s.c
+[65.039s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count_s.c
+[65.044s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency.py
+[65.048s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency_array.py
+[65.054s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency_array_s.c
+[65.059s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency_s.c
+[65.064s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_metric.py
+[65.069s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_metric_s.c
+[65.074s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command.py
+[65.078s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command_array.py
+[65.084s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command_array_s.c
+[65.090s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command_s.c
+[65.097s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state.py
+[65.101s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state_array.py
+[65.106s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state_array_s.c
+[65.110s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state_s.c
+[65.117s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_c.so
+[65.121s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[65.125s] -- Symlinking: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_introspection_c.so
+[65.132s] -- Up-to-date symlink: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[65.132s] -- Up-to-date symlink: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_introspection_c.so
+[65.132s] -- Up-to-date symlink: /workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/swarm_interfaces_s__rosidl_typesupport_c.so
+[65.132s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/rust/Cargo.toml
+[65.136s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/rust/build.rs
+[65.140s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/rust/src/lib.rs
+[65.145s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/rust/src/msg.rs
+[65.150s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/rust/src/msg/rmw.rs
+[65.155s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneActiveSet.idl
+[65.160s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReference.idl
+[65.165s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReferenceArray.idl
+[65.170s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommand.idl
+[65.175s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommandArray.idl
+[65.180s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneState.idl
+[65.185s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStateArray.idl
+[65.190s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStatus.idl
+[65.195s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/PlannerStatus.idl
+[65.200s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavMetric.idl
+[65.203s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/SwarmMetrics.idl
+[65.209s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCount.idl
+[65.216s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCountArray.idl
+[65.222s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DetectionSummary.idl
+[65.228s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/OptimizerFeedback.idl
+[65.233s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatency.idl
+[65.239s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatencyArray.idl
+[65.246s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommand.idl
+[65.251s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommandArray.idl
+[65.258s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvState.idl
+[65.264s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvStateArray.idl
+[65.268s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntry.idl
+[65.273s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntryArray.idl
+[65.279s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsGt.idl
+[65.284s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsNoGt.idl
+[65.289s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneActiveSet.msg
+[65.293s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReference.msg
+[65.299s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneReferenceArray.msg
+[65.305s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommand.msg
+[65.311s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneCommandArray.msg
+[65.316s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneState.msg
+[65.320s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStateArray.msg
+[65.326s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DroneStatus.msg
+[65.330s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/PlannerStatus.msg
+[65.336s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavMetric.msg
+[65.341s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/SwarmMetrics.msg
+[65.346s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCount.msg
+[65.352s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavDetectionCountArray.msg
+[65.363s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/DetectionSummary.msg
+[65.373s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/OptimizerFeedback.msg
+[65.378s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatency.msg
+[65.384s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UavLinkLatencyArray.msg
+[65.391s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommand.msg
+[65.396s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvCommandArray.msg
+[65.401s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvState.msg
+[65.407s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/UgvStateArray.msg
+[65.411s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntry.msg
+[65.418s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/MetricEntryArray.msg
+[65.426s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsGt.msg
+[65.431s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/msg/ExpectedMetricsNoGt.msg
+[65.438s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/ament_index/resource_index/package_run_dependencies/swarm_interfaces
+[65.442s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/ament_index/resource_index/parent_prefix_path/swarm_interfaces
+[65.449s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/ament_prefix_path.sh
+[65.456s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/ament_prefix_path.dsv
+[65.463s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/path.sh
+[65.471s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/environment/path.dsv
+[65.479s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/local_setup.bash
+[65.486s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/local_setup.sh
+[65.492s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/local_setup.zsh
+[65.496s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/local_setup.dsv
+[65.502s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.dsv
+[65.510s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/ament_index/resource_index/packages/swarm_interfaces
+[65.516s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/rosidl_cmake-extras.cmake
+[65.522s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[65.529s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[65.536s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[65.543s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[65.550s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[65.557s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[65.563s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[65.569s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfacesConfig.cmake
+[65.575s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfacesConfig-version.cmake
+[65.582s] -- Symlinking: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.xml
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_generator_c.so
+[65.589s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_generator_c.so" to ""
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_fastrtps_c.so
+[65.589s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_introspection_c.so
+[65.589s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_c.so
+[65.589s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_c.so" to ""
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[65.589s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[65.589s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_introspection_cpp.so
+[65.590s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[65.590s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_cpp.so
+[65.590s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_typesupport_cpp.so" to ""
+[65.650s] Listing '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/__init__.py'...
+[65.650s] Listing '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/__init__.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_detection_summary.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_active_set.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_command_array.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_reference_array.py'...
+[65.650s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_state_array.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_drone_status.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_gt.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_expected_metrics_no_gt.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_metric_entry_array.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_optimizer_feedback.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_planner_status.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_swarm_metrics.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_detection_count_array.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_link_latency_array.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_uav_metric.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_command_array.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state.py'...
+[65.651s] Compiling '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages/swarm_interfaces/msg/_ugv_state_array.py'...
+[65.654s] -- Installing: /workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_generator_py.so
+[65.654s] -- Set non-toolchain portion of runtime path of "/workspace/ws/install/swarm_interfaces/lib/libswarm_interfaces__rosidl_generator_py.so" to ""
+[65.654s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_generator_cExport.cmake
+[65.654s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_generator_cExport-release.cmake
+[65.654s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[65.654s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_cExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_cExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_generator_cppExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_cppExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/swarm_interfaces__rosidl_typesupport_cppExport-release.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_generator_pyExport.cmake
+[65.655s] -- Installing: /workspace/ws/install/swarm_interfaces/share/swarm_interfaces/cmake/export_swarm_interfaces__rosidl_generator_pyExport-release.cmake
+[65.657s] Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces

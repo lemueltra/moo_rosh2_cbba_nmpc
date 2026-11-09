@@ -1,0 +1,11 @@
+# Telemetria e Auditoria em Malha Fechada v2.0.0 (Town10 - Drake 60s @ 5Hz)
+monitoring_duration_sec: 60.0 s
+total_references_evaluated: 600 count
+fov_violations_count: 0 count
+fov_compliance_percent: 100.0 percent
+active_set_msgs: 301 count
+references_msgs: 300 count
+ugv_state_msgs: 3001 count
+latency_msgs: 300 count
+feedback_msgs: 300 count
+mean_solve_time_ms: 1.8 ms

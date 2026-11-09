@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="atas_optimizer.xmllint"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.320"
+>
+  <testcase
+    name="package.xml"
+    classname="atas_optimizer.xmllint"/>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

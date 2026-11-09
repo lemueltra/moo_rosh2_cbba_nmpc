@@ -1,0 +1,9 @@
+# Service to configure or reconfigure a UAV's sensor rig dynamically at runtime
+int32 uav_id
+string rig_override
+bool reset_to_default
+bool detach_current_sensors
+---
+bool success
+string error_message
+uint32[] attached_sensor_ids

@@ -1,0 +1,26 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer
+
+[INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-27-17-17-10-654007-dell-arch-2894
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [atas_optimizer_node-1]: process started with pid [2898]
+test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)
+Verify that feeding UGVs and latency produces valid references. ... [atas_optimizer_node-1] [INFO] [1793121430.702031055] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.421s
+
+OK
+[INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]
+[atas_optimizer_node-1] [INFO] [1793121431.102419339] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 2898]
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'

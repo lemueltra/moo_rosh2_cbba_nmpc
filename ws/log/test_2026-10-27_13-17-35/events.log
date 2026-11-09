@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.000063] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.000726] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.022288] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-R', 'test_node_integration'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.026801] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.026892] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.026929] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.026963] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.026995] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.027054] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261027-1317 - Experimental\n'}
+[0.027088] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.027127] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.027158] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.027189] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.027489] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.027540] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.027577] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.027610] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.027650] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.028026] (atas_optimizer) StdoutLine: {'line': b'test 8\n'}
+[0.028063] (atas_optimizer) StdoutLine: {'line': b'    Start 8: test_test_node_integration.py\n'}
+[0.028093] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.028144] (atas_optimizer) StdoutLine: {'line': b'8: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"\n'}
+[0.028183] (atas_optimizer) StdoutLine: {'line': b'8: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.028215] (atas_optimizer) StdoutLine: {'line': b'8: Test timeout computed to be: 60\n'}
+[0.064752] (atas_optimizer) StdoutLine: {'line': b"8: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.064862] (atas_optimizer) StdoutLine: {'line': b'8:  - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer\n'}
+[0.099826] (-) TimerEvent: {}
+[0.200090] (-) TimerEvent: {}
+[0.300251] (-) TimerEvent: {}
+[0.361890] (atas_optimizer) StdoutLine: {'line': b'8: [INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-27-13-17-36-051324-dell-arch-4201\n'}
+[0.362027] (atas_optimizer) StdoutLine: {'line': b'8: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[0.364176] (atas_optimizer) StdoutLine: {'line': b'8: [INFO] [atas_optimizer_node-1]: process started with pid [4205]\n'}
+[0.364596] (atas_optimizer) StdoutLine: {'line': b'8: test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)\n'}
+[0.377605] (atas_optimizer) StdoutLine: {'line': b'8: Verify that feeding UGVs and latency produces valid references. ... [atas_optimizer_node-1] [INFO] [1793107056.082857346] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).\n'}
+[0.400511] (-) TimerEvent: {}
+[0.500704] (-) TimerEvent: {}
+[0.601274] (-) TimerEvent: {}
+[0.701427] (-) TimerEvent: {}
+[0.779978] (atas_optimizer) StdoutLine: {'line': b'8: ok\n'}
+[0.780362] (atas_optimizer) StdoutLine: {'line': b'8: \n'}
+[0.780480] (atas_optimizer) StdoutLine: {'line': b'8: ----------------------------------------------------------------------\n'}
+[0.780558] (atas_optimizer) StdoutLine: {'line': b'8: Ran 1 test in 0.416s\n'}
+[0.780635] (atas_optimizer) StdoutLine: {'line': b'8: \n'}
+[0.780714] (atas_optimizer) StdoutLine: {'line': b'8: OK\n'}
+[0.781717] (atas_optimizer) StdoutLine: {'line': b"8: [INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]\n"}
+[0.782043] (atas_optimizer) StdoutLine: {'line': b'8: [atas_optimizer_node-1] [INFO] [1793107056.487439137] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[0.790847] (atas_optimizer) StdoutLine: {'line': b'8: [INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 4205]\n'}
+[0.791053] (atas_optimizer) StdoutLine: {'line': b'8: \n'}
+[0.791194] (atas_optimizer) StdoutLine: {'line': b'8: ----------------------------------------------------------------------\n'}
+[0.791289] (atas_optimizer) StdoutLine: {'line': b'8: Ran 0 tests in 0.000s\n'}
+[0.791381] (atas_optimizer) StdoutLine: {'line': b'8: \n'}
+[0.791473] (atas_optimizer) StdoutLine: {'line': b'8: NO TESTS RAN\n'}
+[0.801547] (-) TimerEvent: {}
+[0.837018] (atas_optimizer) StdoutLine: {'line': b'8: -- run_test.py: return code 0\n'}
+[0.837149] (atas_optimizer) StdoutLine: {'line': b"8: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'\n"}
+[0.843664] (atas_optimizer) StdoutLine: {'line': b'1/1 Test #8: test_test_node_integration.py ....   Passed    0.82 sec\n'}
+[0.843867] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.843922] (atas_optimizer) StdoutLine: {'line': b'The following tests passed:\n'}
+[0.843967] (atas_optimizer) StdoutLine: {'line': b'\ttest_test_node_integration.py\n'}
+[0.844006] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.844036] (atas_optimizer) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[0.844065] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.844100] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.844143] (atas_optimizer) StdoutLine: {'line': b'launch_test    =   0.82 sec*proc (1 test)\n'}
+[0.844174] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.844204] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   0.82 sec\n'}
+[0.847882] (atas_optimizer) CommandEnded: {'returncode': 0}
+[0.848069] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[0.848441] (-) EventReactorShutdown: {}

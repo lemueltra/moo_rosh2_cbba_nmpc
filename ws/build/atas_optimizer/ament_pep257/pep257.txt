@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+ - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml
+
+checking ./launch/atas_optimizer.launch.py
+checking ./test/test_node_integration.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml'

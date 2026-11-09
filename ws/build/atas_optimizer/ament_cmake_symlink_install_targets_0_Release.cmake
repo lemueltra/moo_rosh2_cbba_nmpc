@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspace/ws/build/atas_optimizer/libatas_optimizer_core.so" "/workspace/ws/build/atas_optimizer/atas_optimizer_node" "TARGETS" "atas_optimizer_core" "atas_optimizer_node" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/atas_optimizer")

@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000218] (-) JobUnselected: {'identifier': 'swarm_interfaces'}
+[0.000249] (-) JobUnselected: {'identifier': 'swarm_world_interfaces'}
+[0.000265] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces'})}
+[0.000285] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.010145] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'cmake'}
+[0.011094] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'build'}
+[0.011556] (atas_optimizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ws/build/atas_optimizer', '--', '-j20', '-l20'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'AMENT_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.052623] (atas_optimizer) StdoutLine: {'line': b'[ 14%] Built target gtest_main\n'}
+[0.054550] (atas_optimizer) StdoutLine: {'line': b'[ 28%] Built target gtest\n'}
+[0.057029] (atas_optimizer) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/cbba_agent.cpp.o\x1b[0m\n'}
+[0.059292] (atas_optimizer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o\x1b[0m\n'}
+[0.059476] (atas_optimizer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o\x1b[0m\n'}
+[0.069930] (atas_optimizer) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o\x1b[0m\n'}
+[0.070133] (atas_optimizer) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o\x1b[0m\n'}
+[0.074744] (atas_optimizer) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o\x1b[0m\n'}
+[0.076199] (atas_optimizer) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o\x1b[0m\n'}
+[0.085172] (atas_optimizer) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_cbba\x1b[0m\n'}
+[0.088628] (atas_optimizer) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable test_viewpoint\x1b[0m\n'}
+[0.099424] (-) TimerEvent: {}
+[0.153649] (atas_optimizer) StdoutLine: {'line': b'[ 92%] Built target test_cbba\n'}
+[0.156719] (atas_optimizer) StdoutLine: {'line': b'[ 92%] Built target test_viewpoint\n'}
+[0.199528] (-) TimerEvent: {}
+[0.299794] (-) TimerEvent: {}
+[0.400051] (-) TimerEvent: {}
+[0.501487] (-) TimerEvent: {}
+[0.601847] (-) TimerEvent: {}
+[0.702103] (-) TimerEvent: {}
+[0.802372] (-) TimerEvent: {}
+[0.902661] (-) TimerEvent: {}
+[1.002934] (-) TimerEvent: {}
+[1.103449] (-) TimerEvent: {}
+[1.203709] (-) TimerEvent: {}
+[1.304073] (-) TimerEvent: {}
+[1.404297] (-) TimerEvent: {}
+[1.504574] (-) TimerEvent: {}
+[1.604811] (-) TimerEvent: {}
+[1.705060] (-) TimerEvent: {}
+[1.805275] (-) TimerEvent: {}
+[1.905606] (-) TimerEvent: {}
+[2.005832] (-) TimerEvent: {}
+[2.106170] (-) TimerEvent: {}
+[2.206405] (-) TimerEvent: {}
+[2.306644] (-) TimerEvent: {}
+[2.406909] (-) TimerEvent: {}
+[2.508297] (-) TimerEvent: {}
+[2.608574] (-) TimerEvent: {}
+[2.708814] (-) TimerEvent: {}
+[2.809129] (-) TimerEvent: {}
+[2.909377] (-) TimerEvent: {}
+[3.009600] (-) TimerEvent: {}
+[3.109844] (-) TimerEvent: {}
+[3.210098] (-) TimerEvent: {}
+[3.310347] (-) TimerEvent: {}
+[3.410567] (-) TimerEvent: {}
+[3.510784] (-) TimerEvent: {}
+[3.611133] (-) TimerEvent: {}
+[3.711461] (-) TimerEvent: {}
+[3.811713] (-) TimerEvent: {}
+[3.911949] (-) TimerEvent: {}
+[4.012183] (-) TimerEvent: {}
+[4.112452] (-) TimerEvent: {}
+[4.212792] (-) TimerEvent: {}
+[4.313052] (-) TimerEvent: {}
+[4.413281] (-) TimerEvent: {}
+[4.513551] (-) TimerEvent: {}
+[4.613817] (-) TimerEvent: {}
+[4.714118] (-) TimerEvent: {}
+[4.814369] (-) TimerEvent: {}
+[4.914624] (-) TimerEvent: {}
+[5.014946] (-) TimerEvent: {}
+[5.115216] (-) TimerEvent: {}
+[5.215462] (-) TimerEvent: {}
+[5.315775] (-) TimerEvent: {}
+[5.416006] (-) TimerEvent: {}
+[5.516255] (-) TimerEvent: {}
+[5.616593] (-) TimerEvent: {}
+[5.716908] (-) TimerEvent: {}
+[5.817163] (-) TimerEvent: {}
+[5.917489] (-) TimerEvent: {}
+[6.017710] (-) TimerEvent: {}
+[6.117956] (-) TimerEvent: {}
+[6.218193] (-) TimerEvent: {}
+[6.318545] (-) TimerEvent: {}
+[6.418881] (-) TimerEvent: {}
+[6.519190] (-) TimerEvent: {}
+[6.619437] (-) TimerEvent: {}
+[6.719672] (-) TimerEvent: {}
+[6.819934] (-) TimerEvent: {}
+[6.920139] (-) TimerEvent: {}
+[7.020358] (-) TimerEvent: {}
+[7.120734] (-) TimerEvent: {}
+[7.220947] (-) TimerEvent: {}
+[7.321206] (-) TimerEvent: {}
+[7.421521] (-) TimerEvent: {}
+[7.521824] (-) TimerEvent: {}
+[7.622118] (-) TimerEvent: {}
+[7.722433] (-) TimerEvent: {}
+[7.822745] (-) TimerEvent: {}
+[7.923048] (-) TimerEvent: {}
+[8.023364] (-) TimerEvent: {}
+[8.123577] (-) TimerEvent: {}
+[8.223912] (-) TimerEvent: {}
+[8.324144] (-) TimerEvent: {}
+[8.424367] (-) TimerEvent: {}
+[8.524619] (-) TimerEvent: {}
+[8.624873] (-) TimerEvent: {}
+[8.725115] (-) TimerEvent: {}
+[8.825340] (-) TimerEvent: {}
+[8.925567] (-) TimerEvent: {}
+[9.025829] (-) TimerEvent: {}
+[9.126053] (-) TimerEvent: {}
+[9.226273] (-) TimerEvent: {}
+[9.326530] (-) TimerEvent: {}
+[9.426760] (-) TimerEvent: {}
+[9.526996] (-) TimerEvent: {}
+[9.627233] (-) TimerEvent: {}
+[9.727468] (-) TimerEvent: {}
+[9.827696] (-) TimerEvent: {}
+[9.927930] (-) TimerEvent: {}
+[10.028178] (-) TimerEvent: {}
+[10.128427] (-) TimerEvent: {}
+[10.228673] (-) TimerEvent: {}
+[10.328930] (-) TimerEvent: {}
+[10.429360] (-) TimerEvent: {}
+[10.529654] (-) TimerEvent: {}
+[10.629886] (-) TimerEvent: {}
+[10.730129] (-) TimerEvent: {}
+[10.830396] (-) TimerEvent: {}
+[10.930642] (-) TimerEvent: {}
+[11.030880] (-) TimerEvent: {}
+[11.131123] (-) TimerEvent: {}
+[11.231354] (-) TimerEvent: {}
+[11.331710] (-) TimerEvent: {}
+[11.431976] (-) TimerEvent: {}
+[11.532209] (-) TimerEvent: {}
+[11.632455] (-) TimerEvent: {}
+[11.732690] (-) TimerEvent: {}
+[11.832933] (-) TimerEvent: {}
+[11.933229] (-) TimerEvent: {}
+[12.033454] (-) TimerEvent: {}
+[12.133724] (-) TimerEvent: {}
+[12.234002] (-) TimerEvent: {}
+[12.334239] (-) TimerEvent: {}
+[12.434482] (-) TimerEvent: {}
+[12.534747] (-) TimerEvent: {}
+[12.635019] (-) TimerEvent: {}
+[12.735247] (-) TimerEvent: {}
+[12.835521] (-) TimerEvent: {}
+[12.935898] (-) TimerEvent: {}
+[13.036129] (-) TimerEvent: {}
+[13.136366] (-) TimerEvent: {}
+[13.236593] (-) TimerEvent: {}
+[13.336821] (-) TimerEvent: {}
+[13.437009] (-) TimerEvent: {}
+[13.444097] (atas_optimizer) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable atas_optimizer_node\x1b[0m\n'}
+[13.537133] (-) TimerEvent: {}
+[13.570509] (atas_optimizer) StdoutLine: {'line': b'[100%] Built target atas_optimizer_node\n'}
+[13.577362] (atas_optimizer) CommandEnded: {'returncode': 0}
+[13.577797] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'install'}
+[13.584308] (atas_optimizer) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ws/build/atas_optimizer'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'AMENT_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[13.588477] (atas_optimizer) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[13.588712] (atas_optimizer) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.588867] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_optimizer_node\n'}
+[13.589071] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/cbba_agent.hpp\n'}
+[13.589167] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp\n'}
+[13.589257] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/launch/atas_optimizer.launch.py\n'}
+[13.589385] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/package_run_dependencies/atas_optimizer\n'}
+[13.589480] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/parent_prefix_path/atas_optimizer\n'}
+[13.589581] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.sh\n'}
+[13.589676] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.dsv\n'}
+[13.589759] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.sh\n'}
+[13.589861] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.dsv\n'}
+[13.589952] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.bash\n'}
+[13.590050] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.sh\n'}
+[13.590126] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.zsh\n'}
+[13.590202] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.dsv\n'}
+[13.590276] (atas_optimizer) StdoutLine: {'line': b'-- Symlinking: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv\n'}
+[13.595419] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/packages/atas_optimizer\n'}
+[13.595524] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig.cmake\n'}
+[13.595597] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig-version.cmake\n'}
+[13.595668] (atas_optimizer) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.xml\n'}
+[13.596375] (atas_optimizer) CommandEnded: {'returncode': 0}
+[13.605807] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[13.606311] (-) EventReactorShutdown: {}

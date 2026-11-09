@@ -1,0 +1,42 @@
+%% code2paper figure: architecture-layer-application-part1
+%% title: Camada aplicação
+%% criterion: por camada (pure_method × application) | group: application
+%% nodes: 15 | edges: 4 | part 1 of 2
+%% source: inventory.json sha256=9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075
+%% node ids are the source ids with '-' replaced by '_'
+flowchart LR
+  CMP_001["atas_monitor<br/>ros2_node · 1431 LOC"]
+  CMP_002["extract_data<br/>python_module · 315 LOC"]
+  CMP_003["generate_coverage_report<br/>python_module · 99 LOC"]
+  CMP_004["verify_closed_loop<br/>ros2_node · 258 LOC"]
+  CMP_005["atas_optimizer_params<br/>config · 64 LOC"]
+  CMP_006["atas_optimizer_node<br/>cpp_source · 184 LOC"]
+  CMP_009["atas_optimizer.launch<br/>launch_file · 61 LOC"]
+  CMP_010["atas_optimizer_node<br/>cpp_source · 753 LOC"]
+  CMP_012["main<br/>cpp_source · 26 LOC"]
+  CMP_014["test_adaptive_feedback<br/>cpp_source · 187 LOC"]
+  CMP_015["test_cbba<br/>cpp_source · 138 LOC"]
+  CMP_016["test_cbba_v2<br/>cpp_source · 322 LOC"]
+  CMP_017["test_dual_sensor_fov<br/>cpp_source · 288 LOC"]
+  CMP_018["test_node_integration<br/>ros2_node · 158 LOC"]
+  CMP_019["test_occlusion_and_targets<br/>cpp_source · 199 LOC"]
+  CMP_010 -->|includes| CMP_006
+  CMP_012 -->|includes| CMP_006
+  CMP_014 -->|includes| CMP_006
+  CMP_017 -->|includes| CMP_006
+  classDef app fill:#eef2f7,stroke:#3a4a5c,stroke-width:1px,color:#1b2430
+  class CMP_001 app
+  class CMP_002 app
+  class CMP_003 app
+  class CMP_004 app
+  class CMP_005 app
+  class CMP_006 app
+  class CMP_009 app
+  class CMP_010 app
+  class CMP_012 app
+  class CMP_014 app
+  class CMP_015 app
+  class CMP_016 app
+  class CMP_017 app
+  class CMP_018 app
+  class CMP_019 app

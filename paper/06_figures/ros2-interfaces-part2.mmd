@@ -1,0 +1,28 @@
+%% code2paper figure: ros2-interfaces-part2
+%% title: Grafo de interfaces ROS2
+%% criterion: fluxo de dados: nós e interfaces | group: interfaces
+%% nodes: 6 | edges: 6 | part 2 of 2
+%% source: ros2_graph.json sha256=9ae3c7880c70e090b31be77c0f9ecaf6dab45675af89624983a5a466463a5696
+%% node ids are the source ids with '-' replaced by '_'
+flowchart LR
+  N_001["atas_optimization_monitor"]
+  N_002["closed_loop_monitor"]
+  T_007(["/metrics/optimizer_feedback"])
+  T_008(["/ugv_fleet/state"])
+  EXT_T_007[/"fora da árvore"/]
+  EXT_T_008[/"fora da árvore"/]
+  T_007 -->|sub| N_001
+  T_007 -->|sub| N_002
+  EXT_T_007 -->|ext| T_007
+  T_008 -->|sub| N_001
+  T_008 -->|sub| N_002
+  EXT_T_008 -->|ext| T_008
+  classDef app fill:#eef2f7,stroke:#3a4a5c,stroke-width:1px,color:#1b2430
+  classDef iface fill:#fff6e0,stroke:#8a6a1f,stroke-width:1px,color:#2b2108
+  classDef ext fill:#f7f7f7,stroke:#8a8a8a,stroke-width:1px,color:#4a4a4a,stroke-dasharray:4 3
+  class N_001 app
+  class N_002 app
+  class T_007 iface
+  class T_008 iface
+  class EXT_T_007 ext
+  class EXT_T_008 ext

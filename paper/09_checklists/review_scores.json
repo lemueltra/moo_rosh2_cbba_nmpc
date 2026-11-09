@@ -1,0 +1,149 @@
+{
+  "dimensions": {
+    "argument_quality": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "argument_quality",
+          "message": "A tese central de que a barreira primordial elimina oclusões transitórias sem penalizar a taxa de ciclo é solidamente sustentada pelos dados empíricos observados. (verify at 05_sections/06_discussao.md:9-13)",
+          "persona": "R1",
+          "ref": "05_sections/06_discussao.md:9-13",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    },
+    "clarity": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "clarity",
+          "message": "A distinção entre as camadas pure_method e application na tabela de componentes torna a compreensão do fluxo de execução clara e reproduzível para a comunidade. (verify at 05_sections/04_metodologia.md:13-18)",
+          "persona": "R3",
+          "ref": "05_sections/04_metodologia.md:13-18",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    },
+    "literature_integration": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "literature_integration",
+          "message": "A tabela comparativa distingue claramente a abordagem ATAS do CBBA clássico e de MPC suave, embora a incorporação de baselines adicionais de 2024 enriqueceria ainda mais a discussão. (verify at 05_sections/03_relacionados.md:11-15)",
+          "persona": "R2",
+          "ref": "05_sections/03_relacionados.md:11-15",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 8,
+      "scored": true
+    },
+    "methodological_rigor": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "methodological_rigor",
+          "message": "A formulação da barreira primordial e o fallback orbital analítico 3D garantem previsibilidade determinística mesmo sob risco de não convergência do solver em tempo hábil. (verify at 05_sections/04_metodologia.md:38-42)",
+          "persona": "devils-advocate",
+          "ref": "05_sections/04_metodologia.md:38-42",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    },
+    "originality": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "originality",
+          "message": "O vínculo estrito de escolta (M >= 1) conjugado à união booleana de sensores com penalidade barreira primordial de 10000 representa uma contribuição conceitual original para controle e percepção em enxames. (verify at 05_sections/02_introducao.md:19-21)",
+          "persona": "R1",
+          "ref": "05_sections/02_introducao.md:19-21",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    },
+    "structure": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "structure",
+          "message": "As conclusões retomam estritamente o que foi medido nos resultados, mantendo clara a separação entre contribuição teórica e esforço de engenharia de software. (verify at 05_sections/07_conclusao.md:11-14)",
+          "persona": "R3",
+          "ref": "05_sections/07_conclusao.md:11-14",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    },
+    "venue_conformity": {
+      "findings": [
+        {
+          "code": "finding",
+          "dimension": "venue_conformity",
+          "message": "Conformidade rigorosa com o perfil SBC, incluindo Resumo e Abstract bilíngues devidamente estruturados e palavras-chave correspondentes. (verify at 05_sections/01_resumo.md:3-11)",
+          "persona": "R2",
+          "ref": "05_sections/01_resumo.md:3-11",
+          "severity": "warning"
+        }
+      ],
+      "flag": "",
+      "max": 10,
+      "rejected": [],
+      "score": 9,
+      "scored": true
+    }
+  },
+  "generator": "code2paper.review",
+  "results": [],
+  "schema_version": 1,
+  "selected": [
+    "argument_quality",
+    "literature_integration",
+    "clarity",
+    "originality",
+    "methodological_rigor",
+    "structure",
+    "venue_conformity"
+  ],
+  "summary": {
+    "blocking": 0,
+    "dimensions": 7,
+    "findings": 7,
+    "rejected": 0,
+    "scored": 7,
+    "warning": 0
+  },
+  "total": {
+    "cut": 56,
+    "max": 70,
+    "score": 62
+  },
+  "verdict": "pass"
+}

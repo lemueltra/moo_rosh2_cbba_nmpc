@@ -1,0 +1,10 @@
+# Service to configure simulation time mode
+uint8 TIME_MODE_ASYNC = 0
+uint8 TIME_MODE_SYNC = 1
+
+uint8 time_mode
+float64 fixed_delta_seconds
+float64 sync_timeout_sec
+---
+bool success
+string error_message

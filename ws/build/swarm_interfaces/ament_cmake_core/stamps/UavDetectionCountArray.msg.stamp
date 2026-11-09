@@ -1,0 +1,3 @@
+# One entry per UAV that has sensor streams (see UavDetectionCount). Published at 5 Hz.
+std_msgs/Header header
+UavDetectionCount[] uavs

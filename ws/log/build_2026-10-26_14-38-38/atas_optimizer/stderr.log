@@ -1,0 +1,4 @@
+[01m[K/workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:[m[K In member function ‘[01m[Kvirtual void PolyMpNlpTest_SolverDeadlineWatchdogTriggersDeterministicFallback_Test::[01;32m[KTestBody[m[K()[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:123:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kref_normal[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  123 |   auto [01;35m[Kref_normal[m[K = opt.solve_viewpoint(drone_id, ugv_id, ugv_pos, 0.0, targets, other_drones, 0.2);
+      |        [01;35m[K^~~~~~~~~~[m[K

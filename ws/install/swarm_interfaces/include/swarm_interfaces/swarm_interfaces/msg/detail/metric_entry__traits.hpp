@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_generator_cpp/swarm_interfaces/msg/detail/metric_entry__traits.hpp

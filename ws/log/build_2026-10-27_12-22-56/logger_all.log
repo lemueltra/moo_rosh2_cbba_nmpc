@@ -1,0 +1,306 @@
+[0.085s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']
+[0.085s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fe07529e450>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fe07529e120>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fe07529e120>>, mixin_verb=('build',))
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.114s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/ws'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'src/atas_optimizer' with type 'ros.ament_cmake' and name 'atas_optimizer'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_interfaces' with type 'ros.ament_cmake' and name 'swarm_interfaces'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_world_interfaces' with type 'ros.ament_cmake' and name 'swarm_world_interfaces'
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/ws/build/swarm_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/ws/install/swarm_interfaces', 'merge_install': False, 'path': '/workspace/ws/src/swarm_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'swarm_world_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_world_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/ws/build/swarm_world_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/ws/install/swarm_world_interfaces', 'merge_install': False, 'path': '/workspace/ws/src/swarm_world_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_target' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_clean_first' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'cmake_force_configure' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'ament_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.158s] DEBUG:colcon.colcon_core.verb:Building package 'atas_optimizer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/ws/build/atas_optimizer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/ws/install/atas_optimizer', 'merge_install': False, 'path': '/workspace/ws/src/atas_optimizer', 'symlink_install': True, 'test_result_base': None}
+[0.158s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.159s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.159s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/ws/src/swarm_interfaces' with build type 'ament_cmake'
+[0.159s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/ws/src/swarm_interfaces'
+[0.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.160s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.160s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.163s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/ws/src/swarm_world_interfaces' with build type 'ament_cmake'
+[0.163s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/ws/src/swarm_world_interfaces'
+[0.163s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.163s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+[0.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/swarm_world_interfaces': /usr/bin/cmake --build /workspace/ws/build/swarm_world_interfaces -- -j20 -l20
+[0.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '0': /usr/bin/cmake --build /workspace/ws/build/swarm_world_interfaces -- -j20 -l20
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/swarm_world_interfaces': /usr/bin/cmake --install /workspace/ws/build/swarm_world_interfaces
+[0.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+[0.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces
+[0.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(swarm_world_interfaces)
+[0.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '0': /usr/bin/cmake --install /workspace/ws/build/swarm_world_interfaces
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces' for CMake module files
+[0.575s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces' for CMake config files
+[0.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'cmake_prefix_path')
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.ps1'
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.dsv'
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.sh'
+[0.578s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib'
+[0.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'ld_library_path_lib')
+[0.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.ps1'
+[0.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.dsv'
+[0.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.sh'
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/bin'
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib/pkgconfig/swarm_world_interfaces.pc'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages'
+[0.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'pythonpath')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.ps1'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.sh'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/bin'
+[0.582s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.ps1'
+[0.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.sh'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.bash'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.zsh'
+[0.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/swarm_world_interfaces/share/colcon-core/packages/swarm_world_interfaces)
+[0.585s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(swarm_world_interfaces)
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces' for CMake module files
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces' for CMake config files
+[0.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'cmake_prefix_path')
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/cmake_prefix_path.sh'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib'
+[0.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'ld_library_path_lib')
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.ps1'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/ld_library_path_lib.sh'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/bin'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib/pkgconfig/swarm_world_interfaces.pc'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages'
+[0.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_world_interfaces', 'pythonpath')
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.ps1'
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.dsv'
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/hook/pythonpath.sh'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_world_interfaces/bin'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.ps1'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.dsv'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.sh'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.bash'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.zsh'
+[0.591s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/swarm_world_interfaces/share/colcon-core/packages/swarm_world_interfaces)
+[0.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(swarm_interfaces)
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces' for CMake module files
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces
+[0.594s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces' for CMake config files
+[0.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'cmake_prefix_path')
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.ps1'
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.sh'
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib'
+[0.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'ld_library_path_lib')
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/bin'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib/pkgconfig/swarm_interfaces.pc'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages'
+[0.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'pythonpath')
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.ps1'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.dsv'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.sh'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/bin'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.ps1'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.dsv'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.sh'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.bash'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.zsh'
+[0.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/swarm_interfaces/share/colcon-core/packages/swarm_interfaces)
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(swarm_interfaces)
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces' for CMake module files
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces' for CMake config files
+[0.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'cmake_prefix_path')
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.dsv'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/cmake_prefix_path.sh'
+[0.604s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib'
+[0.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'ld_library_path_lib')
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.ps1'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/ld_library_path_lib.sh'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/bin'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib/pkgconfig/swarm_interfaces.pc'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages'
+[0.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('swarm_interfaces', 'pythonpath')
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.ps1'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/hook/pythonpath.sh'
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/swarm_interfaces/bin'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.ps1'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.sh'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.bash'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/swarm_interfaces/share/swarm_interfaces/package.zsh'
+[0.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/swarm_interfaces/share/colcon-core/packages/swarm_interfaces)
+[0.608s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/ws/src/atas_optimizer' with build type 'ament_cmake'
+[0.608s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/ws/src/atas_optimizer'
+[0.608s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.608s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/atas_optimizer': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[28.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[28.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/atas_optimizer': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/ws/build/atas_optimizer
+[28.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(atas_optimizer)
+[28.673s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer' for CMake module files
+[28.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': AMENT_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/ws/build/atas_optimizer
+[28.674s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer' for CMake config files
+[28.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('atas_optimizer', 'cmake_prefix_path')
+[28.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.ps1'
+[28.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.dsv'
+[28.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.sh'
+[28.676s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib'
+[28.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('atas_optimizer', 'ld_library_path_lib')
+[28.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.ps1'
+[28.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.dsv'
+[28.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.sh'
+[28.678s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/bin'
+[28.678s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib/pkgconfig/atas_optimizer.pc'
+[28.678s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib/python3.12/site-packages'
+[28.678s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/bin'
+[28.679s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.ps1'
+[28.680s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv'
+[28.681s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.sh'
+[28.681s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.bash'
+[28.681s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.zsh'
+[28.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/atas_optimizer/share/colcon-core/packages/atas_optimizer)
+[28.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(atas_optimizer)
+[28.682s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer' for CMake module files
+[28.682s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer' for CMake config files
+[28.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('atas_optimizer', 'cmake_prefix_path')
+[28.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.ps1'
+[28.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.dsv'
+[28.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/cmake_prefix_path.sh'
+[28.683s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib'
+[28.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('atas_optimizer', 'ld_library_path_lib')
+[28.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.ps1'
+[28.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.dsv'
+[28.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/ws/install/atas_optimizer/share/atas_optimizer/hook/ld_library_path_lib.sh'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/bin'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib/pkgconfig/atas_optimizer.pc'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/lib/python3.12/site-packages'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/workspace/ws/install/atas_optimizer/bin'
+[28.685s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.ps1'
+[28.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv'
+[28.686s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.sh'
+[28.686s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.bash'
+[28.686s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/ws/install/atas_optimizer/share/atas_optimizer/package.zsh'
+[28.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/ws/install/atas_optimizer/share/colcon-core/packages/atas_optimizer)
+[28.686s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.686s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.686s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.686s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.691s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[28.691s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.691s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.691s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.691s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.InvalidFileContent: D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (Failed to open "/var/lib/dbus/machine-id": No such file or directory; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 0, with no other text)
+[28.691s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/ws/install/local_setup.ps1'
+[28.692s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/ws/install/_local_setup_util_ps1.py'
+[28.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/ws/install/setup.ps1'
+[28.693s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/ws/install/local_setup.sh'
+[28.693s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/ws/install/_local_setup_util_sh.py'
+[28.694s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/ws/install/setup.sh'
+[28.694s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/ws/install/local_setup.bash'
+[28.694s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/ws/install/setup.bash'
+[28.695s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/ws/install/local_setup.zsh'
+[28.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/ws/install/setup.zsh'

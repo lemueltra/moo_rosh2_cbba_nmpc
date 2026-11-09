@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_generator_c/swarm_world_interfaces/srv/detail/configure_uav_rig__struct.h

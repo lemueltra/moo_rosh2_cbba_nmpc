@@ -1,0 +1,37 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_adaptive_feedback --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml
+
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from AdaptiveFeedbackTest
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionMinSamplesGuard
+[INFO] [1793121428.602917583] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionMinSamplesGuard (209 ms)
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionDisabledFlag
+[INFO] [1793121428.805826543] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionDisabledFlag (207 ms)
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionHighLatencyPullDown
+[INFO] [1793121429.010836324] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[INFO] [1793121429.010873517] [atas_optimizer_node]: Supervisao Adaptativa (Alta Latencia 35.0 ms > 25.0 ms): w_lat=0.600, z_nominal=12.8 m
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionHighLatencyPullDown (208 ms)
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionLowDetectionsElevateFrustum
+[INFO] [1793121429.219223923] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[INFO] [1793121429.219247875] [atas_optimizer_node]: Supervisao Adaptativa (Baixa Deteccao 2.00 < 4.00): w_det=1.200, z_nominal=16.5 m
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionLowDetectionsElevateFrustum (208 ms)
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionParetoSaturationLimits
+[INFO] [1793121429.428337886] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionParetoSaturationLimits (208 ms)
+[ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionRelaxationTowardsEquilibrium
+[INFO] [1793121429.638442432] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionRelaxationTowardsEquilibrium (209 ms)
+[----------] 6 tests from AdaptiveFeedbackTest (1252 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (1252 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml'

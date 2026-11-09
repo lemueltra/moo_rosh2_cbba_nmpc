@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:50 (file):
+  file INSTALL cannot find
+  "/workspace/ws/src/atas_optimizer/../../scripts/atas_monitor.py": No such
+  file or directory.
+
+

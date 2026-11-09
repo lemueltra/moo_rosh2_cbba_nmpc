@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000641] (-) JobUnselected: {'identifier': 'swarm_interfaces'}
+[0.000699] (-) JobUnselected: {'identifier': 'swarm_world_interfaces'}
+[0.000737] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces'})}
+[0.000779] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.011343] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'cmake'}
+[0.012050] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'build'}
+[0.012770] (atas_optimizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ws/build/atas_optimizer', '--', '-j20', '-l20'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'AMENT_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.035917] (atas_optimizer) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099708] (-) TimerEvent: {}
+[0.200006] (-) TimerEvent: {}
+[0.226373] (atas_optimizer) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.231687] (atas_optimizer) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.250803] (atas_optimizer) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.257718] (atas_optimizer) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.266518] (atas_optimizer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.276714] (atas_optimizer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300198] (-) TimerEvent: {}
+[0.324644] (atas_optimizer) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.325783] (atas_optimizer) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 2.2.4 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.341595] (atas_optimizer) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.391639] (atas_optimizer) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.400315] (-) TimerEvent: {}
+[0.401977] (atas_optimizer) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.413835] (atas_optimizer) StdoutLine: {'line': b'-- Found vision_msgs: 4.1.1 (/opt/ros/jazzy/share/vision_msgs/cmake)\n'}
+[0.469300] (atas_optimizer) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.500380] (-) TimerEvent: {}
+[0.542583] (atas_optimizer) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.549023] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.549693] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.549975] (atas_optimizer) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspace/ws/src/atas_optimizer/include;$<BUILD_INTERFACE:/workspace/ws/src/atas_optimizer/include>\n'}
+[0.550018] (atas_optimizer) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.550527] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.550596] (atas_optimizer) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.550799] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.550835] (atas_optimizer) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.551086] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.551326] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.551827] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.551869] (atas_optimizer) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.552042] (atas_optimizer) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.552715] (atas_optimizer) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.566267] (atas_optimizer) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.569755] (atas_optimizer) StdoutLine: {'line': b'-- Build files have been written to: /workspace/ws/build/atas_optimizer\n'}
+[0.598520] (atas_optimizer) StdoutLine: {'line': b'[ 14%] Built target gtest\n'}
+[0.598762] (atas_optimizer) StdoutLine: {'line': b'[ 28%] Built target gtest_main\n'}
+[0.600452] (-) TimerEvent: {}
+[0.604174] (atas_optimizer) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o\x1b[0m\n'}
+[0.604373] (atas_optimizer) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o\x1b[0m\n'}
+[0.606504] (atas_optimizer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/cbba_agent.cpp.o\x1b[0m\n'}
+[0.611277] (atas_optimizer) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o\x1b[0m\n'}
+[0.614445] (atas_optimizer) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o\x1b[0m\n'}
+[0.618500] (atas_optimizer) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o\x1b[0m\n'}
+[0.621569] (atas_optimizer) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o\x1b[0m\n'}
+[0.624256] (atas_optimizer) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable atas_optimizer_node\x1b[0m\n'}
+[0.636162] (atas_optimizer) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable test_cbba\x1b[0m\n'}
+[0.700551] (-) TimerEvent: {}
+[0.712769] (atas_optimizer) StdoutLine: {'line': b'[ 92%] Built target test_cbba\n'}
+[0.780546] (atas_optimizer) StdoutLine: {'line': b'[ 92%] Built target atas_optimizer_node\n'}
+[0.800700] (-) TimerEvent: {}
+[0.900972] (-) TimerEvent: {}
+[1.001255] (-) TimerEvent: {}
+[1.101476] (-) TimerEvent: {}
+[1.201704] (-) TimerEvent: {}
+[1.301944] (-) TimerEvent: {}
+[1.402185] (-) TimerEvent: {}
+[1.502435] (-) TimerEvent: {}
+[1.602697] (-) TimerEvent: {}
+[1.662209] (atas_optimizer) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void ViewpointOptimizerTest_MultiDroneRepulsiveSafetyBarrier_Test::\x1b[01;32m\x1b[KTestBody\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.662364] (atas_optimizer) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:50:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass atas_optimizer::ViewpointOptimizer\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kset_safety_distance\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.662414] (atas_optimizer) StderrLine: {'line': b'   50 |   opt.\x1b[01;31m\x1b[Kset_safety_distance\x1b[m\x1b[K(6.0);\n'}
+[1.662452] (atas_optimizer) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.663114] (atas_optimizer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_viewpoint.dir/build.make:76: CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o] Error 1\n'}
+[1.663258] (atas_optimizer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/test_viewpoint.dir/all] Error 2\n'}
+[1.663641] (atas_optimizer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.665206] (atas_optimizer) CommandEnded: {'returncode': 2}
+[1.673253] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 2}
+[1.683602] (-) EventReactorShutdown: {}

@@ -1,0 +1,8 @@
+# Service to step simulation by N discrete ticks in synchronous mode
+uint32 step_count
+float64 timeout_sec
+---
+bool success
+uint64 frame_id
+float64 sim_time_seconds
+string error_message

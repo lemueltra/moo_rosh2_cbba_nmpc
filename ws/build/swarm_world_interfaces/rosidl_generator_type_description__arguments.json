@@ -1,0 +1,29 @@
+{
+  "package_name": "swarm_world_interfaces",
+  "output_dir": "/workspace/ws/build/swarm_world_interfaces/rosidl_generator_type_description/swarm_world_interfaces",
+  "idl_tuples": [
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/ActorDefinition.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/ActorState.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/ActorStateArray.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/SensorDefinition.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/SensorDetection.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/SensorDetectionArray.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/WeatherPreset.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/SimulationStatus.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:msg/NpcSpawnSummary.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/SpawnActor.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/DestroyActor.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/AttachSensor.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/DetachSensor.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/SetWeather.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/SetTimeMode.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/StepWorld.idl",
+    "/workspace/ws/build/swarm_world_interfaces/rosidl_adapter/swarm_world_interfaces:srv/ConfigureUavRig.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

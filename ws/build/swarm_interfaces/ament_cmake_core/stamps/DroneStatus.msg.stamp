@@ -1,0 +1,18 @@
+# Status and diagnostics of a single drone in the planner
+uint32 drone_id
+uint8 mode
+float64 position_error
+float64 yaw_error
+float64 eta
+uint32 replan_count
+float64 compute_time_us
+
+# Operational Modes
+uint8 MODE_INACTIVE=0
+uint8 MODE_HOLD=1
+uint8 MODE_PLANNING=2
+uint8 MODE_TRACKING=3
+uint8 MODE_REACHED=4
+uint8 MODE_REFERENCE_STALE=5
+uint8 MODE_REFERENCE_INVALID=6
+uint8 MODE_PLAN_FAILED=7

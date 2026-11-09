@@ -1,0 +1,19 @@
+# How many distinct objects the active UAVs are detecting right now (release 3.2.0).
+#
+# Published by swarm_visualizer's marker publisher, which is where the per-sensor
+# streams are already reduced. It exists so the metrics panel can print the same
+# summary that the 3D overlay shows ("SEEN NOW: 7 (buildings 2, vehicles 3, ...)")
+# and the operator can compare it with `/metrics/optimizer_feedback`, which reports a
+# 60 s mean and not an instantaneous count.
+std_msgs/Header header
+uint32 total
+uint32 buildings
+uint32 vehicles
+uint32 pedestrians
+uint32 fleet
+# Objects that are inside some sensor's field of view but blocked by an occluder: the
+# overlay draws them in red, so "inside the FoV and not seen" is visible instead of
+# silently missing. `partially_blocked` counts the ones detected with a partial
+# silhouette.
+uint32 blocked
+uint32 partially_blocked

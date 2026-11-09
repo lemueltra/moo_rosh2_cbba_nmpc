@@ -1,0 +1,67 @@
+Start testing: Oct 27 13:38 UTC
+----------------------------------------------------------
+1/1 Testing: test_interfaces_roundtrip
+1/1 Test: test_interfaces_roundtrip
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_interfaces" "--output-file" "/workspace/ws/build/swarm_interfaces/ament_cmake_gtest/test_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"
+Directory: /workspace/ws/build/swarm_interfaces
+"test_interfaces_roundtrip" start time: Oct 27 13:38 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/workspace/ws/build/swarm_interfaces':
+ - /workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 16 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 16 tests from SwarmInterfacesTest
+[ RUN      ] SwarmInterfacesTest.DroneActiveSetMessage
+[       OK ] SwarmInterfacesTest.DroneActiveSetMessage (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneReferenceAndArray
+[       OK ] SwarmInterfacesTest.DroneReferenceAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneCommandAndArray
+[       OK ] SwarmInterfacesTest.DroneCommandAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStateAndArray
+[       OK ] SwarmInterfacesTest.DroneStateAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStatusAndModes
+[       OK ] SwarmInterfacesTest.DroneStatusAndModes (0 ms)
+[ RUN      ] SwarmInterfacesTest.PlannerStatus
+[       OK ] SwarmInterfacesTest.PlannerStatus (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame
+[       OK ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed
+[       OK ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed
+[       OK ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed (0 ms)
+[ RUN      ] SwarmInterfacesTest.UgvFleetMessages
+[       OK ] SwarmInterfacesTest.UgvFleetMessages (0 ms)
+[ RUN      ] SwarmInterfacesTest.LatencyIsPerActiveUav
+[       OK ] SwarmInterfacesTest.LatencyIsPerActiveUav (0 ms)
+[ RUN      ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact
+[       OK ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact (0 ms)
+[ RUN      ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences
+[       OK ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences (0 ms)
+[ RUN      ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip
+[       OK ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip (0 ms)
+[ RUN      ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip
+[       OK ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip (0 ms)
+[ RUN      ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip
+[       OK ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip (0 ms)
+[----------] 16 tests from SwarmInterfacesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 16 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_interfaces_roundtrip" end time: Oct 27 13:38 UTC
+"test_interfaces_roundtrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 27 13:38 UTC
+
+gtest =   0.06 sec*proc
+

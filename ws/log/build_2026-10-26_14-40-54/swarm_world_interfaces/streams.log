@@ -1,0 +1,423 @@
+[0.006s] Invoking command in '/workspace/ws/build/swarm_world_interfaces': /usr/bin/cmake --build /workspace/ws/build/swarm_world_interfaces -- -j20 -l20
+[0.045s] [  0%] Built target swarm_world_interfaces__rosidl_generator_type_description
+[0.047s] [  1%] Built target gtest_main
+[0.047s] [  1%] Built target gtest
+[0.048s] [  2%] Built target swarm_world_interfaces__rs
+[0.055s] [  2%] Built target ament_cmake_python_symlink_swarm_world_interfaces
+[0.063s] [  3%] Built target swarm_world_interfaces__cpp
+[0.072s] [ 30%] Built target swarm_world_interfaces__rosidl_generator_c
+[0.092s] [ 40%] Built target swarm_world_interfaces__rosidl_typesupport_introspection_c
+[0.095s] [ 50%] Built target swarm_world_interfaces__rosidl_typesupport_c
+[0.097s] [ 59%] Built target swarm_world_interfaces__rosidl_typesupport_cpp
+[0.098s] [ 68%] Built target swarm_world_interfaces__rosidl_typesupport_introspection_cpp
+[0.103s] [ 85%] Built target swarm_world_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.103s] [ 87%] Built target swarm_world_interfaces__rosidl_typesupport_fastrtps_c
+[0.117s] [ 87%] Built target swarm_world_interfaces
+[0.119s] [ 88%] Built target test_world_interfaces_roundtrip
+[0.131s] [ 88%] Built target swarm_world_interfaces__py
+[0.155s] [ 97%] Built target swarm_world_interfaces__rosidl_generator_py
+[0.176s] [ 98%] Built target swarm_world_interfaces_s__rosidl_typesupport_introspection_c
+[0.176s] [ 99%] Built target swarm_world_interfaces_s__rosidl_typesupport_c
+[0.176s] [100%] Built target swarm_world_interfaces_s__rosidl_typesupport_fastrtps_c
+[0.239s] running egg_info
+[0.253s] writing swarm_world_interfaces.egg-info/PKG-INFO
+[0.253s] writing dependency_links to swarm_world_interfaces.egg-info/dependency_links.txt
+[0.253s] writing top-level names to swarm_world_interfaces.egg-info/top_level.txt
+[0.289s] reading manifest file 'swarm_world_interfaces.egg-info/SOURCES.txt'
+[0.290s] writing manifest file 'swarm_world_interfaces.egg-info/SOURCES.txt'
+[0.311s] [100%] Built target ament_cmake_python_build_swarm_world_interfaces_egg
+[0.322s] Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '0': /usr/bin/cmake --build /workspace/ws/build/swarm_world_interfaces -- -j20 -l20
+[0.324s] Invoking command in '/workspace/ws/build/swarm_world_interfaces': /usr/bin/cmake --install /workspace/ws/build/swarm_world_interfaces
+[0.330s] -- Install configuration: "Release"
+[0.331s] -- Execute custom install script
+[0.331s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/ament_index/resource_index/rosidl_interfaces/swarm_world_interfaces
+[0.332s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorDefinition.json
+[0.332s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorState.json
+[0.332s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorStateArray.json
+[0.332s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDefinition.json
+[0.332s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetection.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetectionArray.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/WeatherPreset.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SimulationStatus.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/NpcSpawnSummary.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SpawnActor.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DestroyActor.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/AttachSensor.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DetachSensor.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetWeather.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetTimeMode.json
+[0.333s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/StepWorld.json
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/ConfigureUavRig.json
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_definition.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_state.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_state_array.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__functions.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__struct.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__type_support.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__functions.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__struct.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__type_support.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__functions.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__struct.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__type_support.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__functions.h
+[0.334s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__struct.h
+[0.335s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__type_support.h
+[0.335s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__functions.h
+[0.335s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__struct.h
+[0.335s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__type_support.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__functions.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__struct.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__type_support.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__functions.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__struct.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__type_support.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__functions.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__struct.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__type_support.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__functions.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__struct.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__type_support.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/npc_spawn_summary.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_definition.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_detection.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_detection_array.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/simulation_status.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/weather_preset.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/attach_sensor.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/configure_uav_rig.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/destroy_actor.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detach_sensor.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__functions.h
+[0.336s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__struct.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__type_support.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__functions.h
+[0.337s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__struct.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__type_support.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__functions.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__struct.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__type_support.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/set_time_mode.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/set_weather.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/spawn_actor.h
+[0.338s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/step_world.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/library_path.sh
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/library_path.dsv
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__rosidl_typesupport_fastrtps_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__rosidl_typesupport_introspection_c.h
+[0.339s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__rosidl_typesupport_introspection_c.h
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_definition.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_state.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/actor_state_array.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__builder.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__struct.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__traits.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__type_support.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__builder.hpp
+[0.340s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__traits.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__type_support.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__builder.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__traits.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__type_support.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__builder.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__traits.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__type_support.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__builder.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__traits.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__type_support.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__builder.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__traits.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__type_support.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__builder.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__struct.hpp
+[0.341s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__traits.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__type_support.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__builder.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__struct.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__traits.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__type_support.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__builder.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__struct.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__traits.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__type_support.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/npc_spawn_summary.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_definition.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_detection.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/sensor_detection_array.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/simulation_status.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/weather_preset.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/attach_sensor.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/configure_uav_rig.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/destroy_actor.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detach_sensor.hpp
+[0.342s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__builder.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__struct.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__traits.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__type_support.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__builder.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__struct.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__traits.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__type_support.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__builder.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__struct.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__traits.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__type_support.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__builder.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__struct.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__traits.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__type_support.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__builder.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__struct.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__traits.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__type_support.hpp
+[0.343s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__builder.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__struct.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__traits.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__type_support.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__builder.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__struct.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__traits.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__type_support.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__builder.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__struct.hpp
+[0.344s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__traits.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__type_support.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/set_time_mode.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/set_weather.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/spawn_actor.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/step_world.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__rosidl_typesupport_fastrtps_cpp.hpp
+[0.345s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__rosidl_typesupport_fastrtps_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_definition__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/actor_state_array__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/npc_spawn_summary__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_definition__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/sensor_detection_array__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/simulation_status__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/msg/detail/weather_preset__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/attach_sensor__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/configure_uav_rig__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/destroy_actor__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/detach_sensor__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_time_mode__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/set_weather__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/spawn_actor__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/include/swarm_world_interfaces/swarm_world_interfaces/srv/detail/step_world__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/pythonpath.sh
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/pythonpath.dsv
+[0.346s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces-3.1.0-py3.12.egg-info/PKG-INFO
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces-3.1.0-py3.12.egg-info/SOURCES.txt
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces-3.1.0-py3.12.egg-info/dependency_links.txt
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces-3.1.0-py3.12.egg-info/top_level.txt
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/__init__.py
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/_swarm_world_interfaces_s.ep.rosidl_typesupport_c.c
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/_swarm_world_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/_swarm_world_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/__init__.py
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_definition.py
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_definition_s.c
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_state.py
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_state_array.py
+[0.347s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_state_array_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_actor_state_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_npc_spawn_summary.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_npc_spawn_summary_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_definition.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_definition_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_detection.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_detection_array.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_detection_array_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_sensor_detection_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_simulation_status.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_simulation_status_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_weather_preset.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg/_weather_preset_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/__init__.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_attach_sensor.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_attach_sensor_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_configure_uav_rig.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_configure_uav_rig_s.c
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_destroy_actor.py
+[0.348s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_destroy_actor_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_detach_sensor.py
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_detach_sensor_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_set_time_mode.py
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_set_time_mode_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_set_weather.py
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_set_weather_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_spawn_actor.py
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_spawn_actor_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_step_world.py
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv/_step_world_s.c
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_c.so
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.349s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/swarm_world_interfaces_s__rosidl_typesupport_c.so
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/Cargo.toml
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/build.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/src/lib.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/src/msg.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/src/msg/rmw.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/src/srv.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/rust/src/srv/rmw.rs
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorDefinition.idl
+[0.350s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorState.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorStateArray.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDefinition.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetection.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetectionArray.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/WeatherPreset.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SimulationStatus.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/NpcSpawnSummary.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SpawnActor.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DestroyActor.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/AttachSensor.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DetachSensor.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetWeather.idl
+[0.351s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetTimeMode.idl
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/StepWorld.idl
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/ConfigureUavRig.idl
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorDefinition.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorState.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/ActorStateArray.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDefinition.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetection.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SensorDetectionArray.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/WeatherPreset.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/SimulationStatus.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/msg/NpcSpawnSummary.msg
+[0.352s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SpawnActor.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DestroyActor.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/AttachSensor.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/DetachSensor.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetWeather.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/SetTimeMode.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/StepWorld.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/srv/ConfigureUavRig.srv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/ament_index/resource_index/package_run_dependencies/swarm_world_interfaces
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/ament_index/resource_index/parent_prefix_path/swarm_world_interfaces
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/ament_prefix_path.sh
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/ament_prefix_path.dsv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/path.sh
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/environment/path.dsv
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/local_setup.bash
+[0.353s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/local_setup.sh
+[0.354s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/local_setup.zsh
+[0.354s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/local_setup.dsv
+[0.354s] -- Symlinking: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.dsv
+[0.360s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/ament_index/resource_index/packages/swarm_world_interfaces
+[0.360s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.360s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.360s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[0.361s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfacesConfig.cmake
+[0.362s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfacesConfig-version.cmake
+[0.362s] -- Up-to-date symlink: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/package.xml
+[0.362s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_generator_c.so
+[0.362s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.363s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_introspection_c.so
+[0.363s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_c.so
+[0.363s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.363s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.363s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_typesupport_cpp.so
+[0.390s] Listing '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces'...
+[0.390s] Listing '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/msg'...
+[0.390s] Listing '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages/swarm_world_interfaces/srv'...
+[0.393s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/lib/libswarm_world_interfaces__rosidl_generator_py.so
+[0.393s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_generator_cExport.cmake
+[0.393s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_generator_cExport-release.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_cExport.cmake
+[0.394s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_cExport-release.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_generator_cppExport.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_cppExport.cmake
+[0.395s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/swarm_world_interfaces__rosidl_typesupport_cppExport-release.cmake
+[0.396s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_generator_pyExport.cmake
+[0.396s] -- Up-to-date: /workspace/ws/install/swarm_world_interfaces/share/swarm_world_interfaces/cmake/export_swarm_world_interfaces__rosidl_generator_pyExport-release.cmake
+[0.403s] Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '0': /usr/bin/cmake --install /workspace/ws/build/swarm_world_interfaces

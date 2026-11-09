@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000172] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.000542] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.018034] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-R', 'uncrustify'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.022704] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022884] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022957] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.023028] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.023097] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.023157] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261027-1319 - Experimental\n'}
+[0.023215] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.023273] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.023348] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.023451] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.023543] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.023602] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.023660] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.023724] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.023782] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.023841] (atas_optimizer) StdoutLine: {'line': b'test 15\n'}
+[0.023901] (atas_optimizer) StdoutLine: {'line': b'    Start 15: uncrustify\n'}
+[0.023960] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.024018] (atas_optimizer) StdoutLine: {'line': b'15: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"\n'}
+[0.024081] (atas_optimizer) StdoutLine: {'line': b'15: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[0.024140] (atas_optimizer) StdoutLine: {'line': b'15: Test timeout computed to be: 60\n'}
+[0.060909] (atas_optimizer) StdoutLine: {'line': b"15: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[0.061042] (atas_optimizer) StdoutLine: {'line': b'15:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml\n'}
+[0.100074] (-) TimerEvent: {}
+[0.173170] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'include/atas_optimizer/atas_optimizer_node.hpp'\n"}
+[0.173311] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173381] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'\n"}
+[0.173442] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173499] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'\n"}
+[0.173557] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173615] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'src/atas_optimizer_node.cpp'\n"}
+[0.173672] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173729] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'src/cbba_agent.cpp'\n"}
+[0.173786] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173843] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'src/main.cpp'\n"}
+[0.173899] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.173956] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'src/viewpoint_optimizer.cpp'\n"}
+[0.174012] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174068] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_adaptive_feedback.cpp'\n"}
+[0.174124] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174180] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_cbba.cpp'\n"}
+[0.174237] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174301] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_cbba_v2.cpp'\n"}
+[0.174366] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174424] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_dual_sensor_fov.cpp'\n"}
+[0.174486] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174547] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_occlusion_and_targets.cpp'\n"}
+[0.174604] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174663] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_polympc_nlp.cpp'\n"}
+[0.174722] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174781] (atas_optimizer) StdoutLine: {'line': b"15: No code style divergence in file 'test/test_viewpoint.cpp'\n"}
+[0.174840] (atas_optimizer) StdoutLine: {'line': b'15: \n'}
+[0.174899] (atas_optimizer) StdoutLine: {'line': b'15: No problems found\n'}
+[0.180385] (atas_optimizer) StdoutLine: {'line': b'15: -- run_test.py: return code 0\n'}
+[0.180520] (atas_optimizer) StdoutLine: {'line': b"15: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'\n"}
+[0.186356] (atas_optimizer) StdoutLine: {'line': b'1/1 Test #15: uncrustify .......................   Passed    0.16 sec\n'}
+[0.186549] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.186619] (atas_optimizer) StdoutLine: {'line': b'The following tests passed:\n'}
+[0.186680] (atas_optimizer) StdoutLine: {'line': b'\tuncrustify\n'}
+[0.186740] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.186799] (atas_optimizer) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[0.186857] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.186914] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.186972] (atas_optimizer) StdoutLine: {'line': b'linter        =   0.16 sec*proc (1 test)\n'}
+[0.187029] (atas_optimizer) StdoutLine: {'line': b'uncrustify    =   0.16 sec*proc (1 test)\n'}
+[0.187086] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.187143] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   0.16 sec\n'}
+[0.189434] (atas_optimizer) CommandEnded: {'returncode': 0}
+[0.189619] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[0.189916] (-) EventReactorShutdown: {}

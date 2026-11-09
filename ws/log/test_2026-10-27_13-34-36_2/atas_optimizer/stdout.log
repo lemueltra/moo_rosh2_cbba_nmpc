@@ -1,0 +1,66 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261027-1334 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 15
+    Start 15: uncrustify
+
+15: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+15: Working Directory: /workspace/ws/src/atas_optimizer
+15: Test timeout computed to be: 60
+15: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+15:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml
+15: No code style divergence in file 'include/atas_optimizer/atas_optimizer_node.hpp'
+15: 
+15: No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'
+15: 
+15: No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'
+15: 
+15: No code style divergence in file 'src/atas_optimizer_node.cpp'
+15: 
+15: No code style divergence in file 'src/cbba_agent.cpp'
+15: 
+15: No code style divergence in file 'src/main.cpp'
+15: 
+15: No code style divergence in file 'src/viewpoint_optimizer.cpp'
+15: 
+15: No code style divergence in file 'test/test_adaptive_feedback.cpp'
+15: 
+15: No code style divergence in file 'test/test_cbba.cpp'
+15: 
+15: No code style divergence in file 'test/test_cbba_v2.cpp'
+15: 
+15: No code style divergence in file 'test/test_dual_sensor_fov.cpp'
+15: 
+15: No code style divergence in file 'test/test_occlusion_and_targets.cpp'
+15: 
+15: No code style divergence in file 'test/test_polympc_nlp.cpp'
+15: 
+15: No code style divergence in file 'test/test_viewpoint.cpp'
+15: 
+15: No problems found
+15: -- run_test.py: return code 0
+15: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'
+1/1 Test #15: uncrustify .......................   Passed    0.17 sec
+
+The following tests passed:
+	uncrustify
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+linter        =   0.17 sec*proc (1 test)
+uncrustify    =   0.17 sec*proc (1 test)
+
+Total Test time (real) =   0.17 sec

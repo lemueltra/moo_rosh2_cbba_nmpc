@@ -1,0 +1,5 @@
+# Service to destroy an actor dynamically
+uint32 actor_id
+---
+bool success
+string error_message

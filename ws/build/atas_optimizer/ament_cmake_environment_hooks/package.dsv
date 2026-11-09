@@ -1,0 +1,4 @@
+source;share/atas_optimizer/local_setup.bash
+source;share/atas_optimizer/local_setup.dsv
+source;share/atas_optimizer/local_setup.sh
+source;share/atas_optimizer/local_setup.zsh

@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_typesupport_introspection_c/swarm_world_interfaces/msg/detail/actor_state__rosidl_typesupport_introspection_c.h

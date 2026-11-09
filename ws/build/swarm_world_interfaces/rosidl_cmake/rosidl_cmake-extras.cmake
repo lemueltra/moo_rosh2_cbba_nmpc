@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(swarm_world_interfaces_IDL_FILES "msg/ActorDefinition.idl;msg/ActorState.idl;msg/ActorStateArray.idl;msg/SensorDefinition.idl;msg/SensorDetection.idl;msg/SensorDetectionArray.idl;msg/WeatherPreset.idl;msg/SimulationStatus.idl;msg/NpcSpawnSummary.idl;srv/SpawnActor.idl;srv/DestroyActor.idl;srv/AttachSensor.idl;srv/DetachSensor.idl;srv/SetWeather.idl;srv/SetTimeMode.idl;srv/StepWorld.idl;srv/ConfigureUavRig.idl")
+set(swarm_world_interfaces_INTERFACE_FILES "msg/ActorDefinition.msg;msg/ActorState.msg;msg/ActorStateArray.msg;msg/SensorDefinition.msg;msg/SensorDetection.msg;msg/SensorDetectionArray.msg;msg/WeatherPreset.msg;msg/SimulationStatus.msg;msg/NpcSpawnSummary.msg;srv/SpawnActor.srv;srv/DestroyActor.srv;srv/AttachSensor.srv;srv/DetachSensor.srv;srv/SetWeather.srv;srv/SetTimeMode.srv;srv/StepWorld.srv;srv/ConfigureUavRig.srv")

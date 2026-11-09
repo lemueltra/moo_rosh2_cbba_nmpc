@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_typesupport_fastrtps_c/swarm_interfaces/msg/detail/drone_state_array__rosidl_typesupport_fastrtps_c.h

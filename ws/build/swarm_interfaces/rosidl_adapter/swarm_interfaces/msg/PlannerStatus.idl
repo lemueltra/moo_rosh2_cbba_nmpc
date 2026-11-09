@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/PlannerStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "swarm_interfaces/msg/DroneStatus.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Global diagnostics of the drone planner and controller node")
+    struct PlannerStatus {
+      std_msgs::msg::Header header;
+
+      sequence<swarm_interfaces::msg::DroneStatus> drones;
+
+      double cycle_time_us;
+
+      double cycle_time_max_us;
+
+      uint32 deadline_misses;
+
+      @verbatim (language="comment", text=
+        "total references clamped to the altitude/speed limits")
+      uint32 clamped_references;
+    };
+  };
+};

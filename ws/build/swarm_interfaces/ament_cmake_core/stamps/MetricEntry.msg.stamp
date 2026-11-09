@@ -1,0 +1,5 @@
+# Single generic metric entry
+string name
+string unit
+float64 value
+bool valid

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/AttachSensor.srv
+// generated code does not contain a copyright notice
+
+#include "swarm_world_interfaces/msg/SensorDefinition.idl"
+
+module swarm_world_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to attach a sensor dynamically")
+    struct AttachSensor_Request {
+      swarm_world_interfaces::msg::SensorDefinition sensor;
+    };
+    struct AttachSensor_Response {
+      boolean success;
+
+      uint32 sensor_id;
+
+      string error_message;
+    };
+  };
+};

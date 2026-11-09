@@ -1,0 +1,53 @@
+Start testing: Oct 27 12:26 UTC
+----------------------------------------------------------
+1/1 Testing: test_world_interfaces_roundtrip
+1/1 Test: test_world_interfaces_roundtrip
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_world_interfaces" "--output-file" "/workspace/ws/build/swarm_world_interfaces/ament_cmake_gtest/test_world_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_world_interfaces/test_world_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+Directory: /workspace/ws/build/swarm_world_interfaces
+"test_world_interfaces_roundtrip" start time: Oct 27 12:26 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/workspace/ws/build/swarm_world_interfaces':
+ - /workspace/ws/build/swarm_world_interfaces/test_world_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from SwarmWorldInterfacesTest
+[ RUN      ] SwarmWorldInterfacesTest.ActorDefinitionMessage
+[       OK ] SwarmWorldInterfacesTest.ActorDefinitionMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.ActorStateAndArrayMessage
+[       OK ] SwarmWorldInterfacesTest.ActorStateAndArrayMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.SensorDefinitionMessage
+[       OK ] SwarmWorldInterfacesTest.SensorDefinitionMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.SensorDetectionAndArrayMessage
+[       OK ] SwarmWorldInterfacesTest.SensorDetectionAndArrayMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.WeatherPresetMessage
+[       OK ] SwarmWorldInterfacesTest.WeatherPresetMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.SimulationStatusMessage
+[       OK ] SwarmWorldInterfacesTest.SimulationStatusMessage (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.SpawnAndDestroyActorServices
+[       OK ] SwarmWorldInterfacesTest.SpawnAndDestroyActorServices (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.SensorLifecycleServices
+[       OK ] SwarmWorldInterfacesTest.SensorLifecycleServices (0 ms)
+[ RUN      ] SwarmWorldInterfacesTest.TimeAndStepServices
+[       OK ] SwarmWorldInterfacesTest.TimeAndStepServices (0 ms)
+[----------] 9 tests from SwarmWorldInterfacesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml'
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_world_interfaces_roundtrip" end time: Oct 27 12:26 UTC
+"test_world_interfaces_roundtrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 27 12:26 UTC
+
+gtest =   0.06 sec*proc
+

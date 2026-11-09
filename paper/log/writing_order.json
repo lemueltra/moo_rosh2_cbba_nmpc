@@ -1,0 +1,30 @@
+{
+  "generator": "code2paper.writing",
+  "schema_version": 1,
+  "stages": [
+    {
+      "stage": "04_metodologia"
+    },
+    {
+      "stage": "05_resultados"
+    },
+    {
+      "stage": "07_conclusao"
+    },
+    {
+      "stage": "02_introducao:3"
+    },
+    {
+      "stage": "02_introducao:1-2"
+    },
+    {
+      "stage": "03_relacionados"
+    },
+    {
+      "stage": "06_discussao"
+    },
+    {
+      "stage": "01_resumo"
+    }
+  ]
+}

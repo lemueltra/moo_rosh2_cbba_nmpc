@@ -1,0 +1,13 @@
+[01m[K/workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:[m[K In member function ‘[01m[Katas_optimizer::ViewpointReference atas_optimizer::ViewpointOptimizer::[01;32m[Ksolve_viewpoint[m[K(uint32_t, uint32_t, const atas_optimizer::Vector3d&, double, const std::vector<atas_optimizer::OptimizationTarget>&, const std::vector<atas_optimizer::ViewpointReference>&)[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:54:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kugv_yaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   54 |     [01;35m[Kdouble ugv_yaw[m[K,
+      |     [01;35m[K~~~~~~~^~~~~~~[m[K
+[01m[K/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:[m[K In member function ‘[01m[Kvoid atas_optimizer::AtasOptimizerNode::[01;32m[Klatency_callback[m[K(swarm_interfaces::msg::UavLinkLatencyArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:97:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct swarm_interfaces::msg::UavLinkLatency_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kuav_id[m[K’; did you mean ‘[01m[Kugv_id[m[K’?
+   97 |       latest_latencies_[entry.[01;31m[Kuav_id[m[K] = entry.latency_ms;
+      |                               [01;31m[K^~~~~~[m[K
+      |                               [32m[Kugv_id[m[K
+gmake[2]: *** [CMakeFiles/atas_optimizer_node.dir/build.make:76: CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/atas_optimizer_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

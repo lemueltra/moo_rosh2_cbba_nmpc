@@ -1,0 +1,77 @@
+# Structured expected perception metrics WITHOUT Ground Truth (N01-N20)
+std_msgs/Header header
+bool model_based
+string params_hash
+float64 window_sec
+bool warming_up
+uint32 n_frames_in_window
+
+# N01 - Lateral Deviation (moving average)
+string[] classes
+float64[] lateral_deviation_mean
+float64[] lateral_deviation_min
+float64[] lateral_deviation_max
+
+# N02 - Yaw Deviation
+float64[] yaw_deviation_mean
+
+# N03 - Yaw Rate (stationary)
+float64[] yaw_rate_mean
+
+# N04 - Predicted Path Deviation
+float64[] predicted_path_deviation_mean
+
+# N05, N06, N07, N08 - Object Counts
+float64[] total_objects_count
+float64[] average_objects_count
+float64[] interval_average_objects_count
+float64 all_object_count
+float64[] object_count_per_class
+
+# N09 - Expected Maximum Detection Range
+float64[] max_distance_per_class
+
+# N10 - Latencies
+float64 meas_to_tracked_latency_ms
+float64 prediction_latency_ms
+float64 total_latency_ms
+
+# N11 - Cross-Sensor Confirmation
+float64 cross_confirm_rate
+float64 unconfirmed_rate
+float64 missed_by_other_rate
+
+# N12 - Class Disagreement
+float64 class_disagree_rate
+
+# N13 - Range Discrepancy
+float64 range_discrepancy_mean
+float64 range_discrepancy_p95
+
+# N14 - Stationary Jitter & Size CV
+float64[] size_cv_per_class
+float64[] position_jitter_per_class
+
+# N15 - Heading Inversion Rate
+float64[] heading_inversion_rate_per_class
+
+# N16 - Track Quality
+float64[] track_fragments_per_class
+float64[] track_purity_per_class
+float64[] track_length_per_class
+
+# N17 - ECE Proxy
+float64 ece_proxy
+float64 unconfirmed_high_conf_rate
+
+# N18 - Critical Inconsistency
+float64 critical_inconsistency_per_s
+
+# N19 - Sensor Health & Sync
+float64 sync_offset_ms
+bool[] sensor_health
+
+# N20 - Flight Regime Covariates
+float64 flight_regime_altitude_m
+float64 flight_regime_speed_mps
+float64 flight_regime_climb_rate_mps

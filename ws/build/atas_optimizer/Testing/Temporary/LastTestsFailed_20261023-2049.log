@@ -1,0 +1,4 @@
+2:copyright
+4:cpplint
+5:flake8
+8:uncrustify

@@ -1,0 +1,22 @@
+{
+  "package_name": "swarm_world_interfaces",
+  "non_idl_tuples": [
+    "/workspace/ws/src/swarm_world_interfaces:msg/ActorDefinition.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/ActorState.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/ActorStateArray.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/SensorDefinition.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/SensorDetection.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/SensorDetectionArray.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/WeatherPreset.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/SimulationStatus.msg",
+    "/workspace/ws/src/swarm_world_interfaces:msg/NpcSpawnSummary.msg",
+    "/workspace/ws/src/swarm_world_interfaces:srv/SpawnActor.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/DestroyActor.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/AttachSensor.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/DetachSensor.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/SetWeather.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/SetTimeMode.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/StepWorld.srv",
+    "/workspace/ws/src/swarm_world_interfaces:srv/ConfigureUavRig.srv"
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="0" disabled="0" errors="0" time="1.252" timestamp="2026-10-27T17:17:08.589" name="AllTests">
+  <testsuite name="AdaptiveFeedbackTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="1.252" timestamp="2026-10-27T17:17:08.589">
+    <testcase name="AdaptiveSupervisionMinSamplesGuard" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="51" status="run" result="completed" time="0.209" timestamp="2026-10-27T17:17:08.589" classname="atas_optimizer.AdaptiveFeedbackTest" />
+    <testcase name="AdaptiveSupervisionDisabledFlag" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="69" status="run" result="completed" time="0.207" timestamp="2026-10-27T17:17:08.799" classname="atas_optimizer.AdaptiveFeedbackTest" />
+    <testcase name="AdaptiveSupervisionHighLatencyPullDown" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="89" status="run" result="completed" time="0.208" timestamp="2026-10-27T17:17:09.007" classname="atas_optimizer.AdaptiveFeedbackTest" />
+    <testcase name="AdaptiveSupervisionLowDetectionsElevateFrustum" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="107" status="run" result="completed" time="0.208" timestamp="2026-10-27T17:17:09.215" classname="atas_optimizer.AdaptiveFeedbackTest" />
+    <testcase name="AdaptiveSupervisionParetoSaturationLimits" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="125" status="run" result="completed" time="0.208" timestamp="2026-10-27T17:17:09.424" classname="atas_optimizer.AdaptiveFeedbackTest" />
+    <testcase name="AdaptiveSupervisionRelaxationTowardsEquilibrium" file="/workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp" line="160" status="run" result="completed" time="0.209" timestamp="2026-10-27T17:17:09.632" classname="atas_optimizer.AdaptiveFeedbackTest" />
+  </testsuite>
+</testsuites>

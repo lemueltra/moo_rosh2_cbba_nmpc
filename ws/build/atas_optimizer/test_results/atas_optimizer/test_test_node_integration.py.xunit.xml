@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="atas_optimizer.test_node_integration" tests="1" failures="0" errors="0" time="0.42"><testsuite name="atas_optimizer.test_node_integration.launch_tests" tests="1" failures="0" errors="0" skipped="0" time="0.42"><testcase classname="atas_optimizer.TestOptimizerNodeIntegration" name="test_active_set_and_references_pipeline" time="0.42" /></testsuite></testsuites>

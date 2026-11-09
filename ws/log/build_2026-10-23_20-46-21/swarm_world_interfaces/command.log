@@ -1,0 +1,2 @@
+Invoking command in '/workspace/ws/build/swarm_world_interfaces': /usr/bin/cmake /workspace/ws/src/swarm_world_interfaces -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_world_interfaces
+Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '1': /usr/bin/cmake /workspace/ws/src/swarm_world_interfaces -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ws/install/swarm_world_interfaces

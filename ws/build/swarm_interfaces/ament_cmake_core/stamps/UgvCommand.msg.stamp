@@ -1,0 +1,8 @@
+# Carla-style vehicle control for one UGV
+uint32 ugv_id
+float64 throttle    # [0.0, 1.0]
+float64 steer       # [-1.0, 1.0]
+float64 brake       # [0.0, 1.0]
+bool hand_brake
+bool reverse
+bool active_cmd

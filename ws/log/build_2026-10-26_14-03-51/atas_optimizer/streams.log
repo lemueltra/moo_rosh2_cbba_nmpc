@@ -1,0 +1,74 @@
+[0.011s] Invoking command in '/workspace/ws/build/atas_optimizer': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[0.034s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.220s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.228s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.249s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.255s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.274s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.322s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.323s] -- Found rmw_cyclonedds_cpp: 2.2.4 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.340s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.393s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.404s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.416s] -- Found vision_msgs: 4.1.1 (/opt/ros/jazzy/share/vision_msgs/cmake)
+[0.480s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.562s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.691s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.702s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.703s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.704s] -- Configured cppcheck include dirs: /workspace/ws/src/atas_optimizer/include;$<BUILD_INTERFACE:/workspace/ws/src/atas_optimizer/include>
+[0.704s] -- Configured cppcheck exclude dirs and/or files: 
+[0.704s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.704s] -- Configured cpplint exclude dirs and/or files: 
+[0.704s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.705s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.705s] -- Added test 'lint_cmake' to check CMake code style
+[0.705s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.706s] -- Added test 'uncrustify' to check C / C++ code style
+[0.706s] -- Configured uncrustify additional arguments: 
+[0.706s] -- Added test 'xmllint' to check XML markup files
+[0.707s] -- Configuring done (0.7s)
+[0.724s] -- Generating done (0.0s)
+[0.728s] -- Build files have been written to: /workspace/ws/build/atas_optimizer
+[0.761s] [ 10%] Built target gtest
+[0.762s] [ 20%] Built target gtest_main
+[0.769s] [ 30%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o[0m
+[0.769s] [ 30%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.780s] [ 35%] [32mBuilding CXX object CMakeFiles/test_occlusion_and_targets.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.780s] [ 50%] Built target test_cbba_v2
+[0.783s] [ 65%] Built target test_cbba
+[0.783s] [ 70%] [32mBuilding CXX object CMakeFiles/test_occlusion_and_targets.dir/test/test_occlusion_and_targets.cpp.o[0m
+[0.783s] [ 75%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.783s] [ 80%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o[0m
+[2.541s] [ 85%] [32m[1mLinking CXX executable test_occlusion_and_targets[0m
+[2.647s] [ 85%] Built target test_occlusion_and_targets
+[3.207s] [ 90%] [32m[1mLinking CXX executable test_viewpoint[0m
+[3.290s] [ 90%] Built target test_viewpoint
+[24.211s] [ 95%] [32m[1mLinking CXX executable atas_optimizer_node[0m
+[24.391s] [100%] Built target atas_optimizer_node
+[24.400s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[24.401s] Invoking command in '/workspace/ws/build/atas_optimizer': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ws/build/atas_optimizer
+[24.408s] -- Install configuration: "Release"
+[24.408s] -- Execute custom install script
+[24.408s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_optimizer_node
+[24.408s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+[24.408s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/launch/atas_optimizer.launch.py
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/config/atas_optimizer_params.yaml
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/package_run_dependencies/atas_optimizer
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/parent_prefix_path/atas_optimizer
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.sh
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.dsv
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.sh
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.dsv
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.bash
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.sh
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.zsh
+[24.409s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.dsv
+[24.409s] -- Symlinking: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv
+[24.416s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/packages/atas_optimizer
+[24.416s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig.cmake
+[24.416s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig-version.cmake
+[24.416s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.xml
+[24.417s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ws/build/atas_optimizer

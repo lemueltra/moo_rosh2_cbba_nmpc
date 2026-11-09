@@ -1,0 +1,56 @@
+Start testing: Oct 27 13:27 UTC
+----------------------------------------------------------
+15/16 Testing: uncrustify
+15/16 Test: uncrustify
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+Directory: /workspace/ws/src/atas_optimizer
+"uncrustify" start time: Oct 27 13:27 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+ - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml
+No code style divergence in file 'include/atas_optimizer/atas_optimizer_node.hpp'
+
+No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'
+
+No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'
+
+No code style divergence in file 'src/atas_optimizer_node.cpp'
+
+No code style divergence in file 'src/cbba_agent.cpp'
+
+No code style divergence in file 'src/main.cpp'
+
+No code style divergence in file 'src/viewpoint_optimizer.cpp'
+
+No code style divergence in file 'test/test_adaptive_feedback.cpp'
+
+No code style divergence in file 'test/test_cbba.cpp'
+
+No code style divergence in file 'test/test_cbba_v2.cpp'
+
+No code style divergence in file 'test/test_dual_sensor_fov.cpp'
+
+No code style divergence in file 'test/test_occlusion_and_targets.cpp'
+
+No code style divergence in file 'test/test_polympc_nlp.cpp'
+
+No code style divergence in file 'test/test_viewpoint.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify" end time: Oct 27 13:27 UTC
+"uncrustify" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 27 13:27 UTC
+
+linter =   0.21 sec*proc
+
+uncrustify =   0.21 sec*proc
+

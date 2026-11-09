@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/SwarmMetrics.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "swarm_interfaces/msg/UavMetric.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Snapshot of every metric the optimizer uses: aggregate block + one row per UAV slot." "\n"
+      "Published by swarm_visualizer's metrics panel (5 Hz) and rendered by RViz2." "\n"
+      "Sources are listed in docs/PLANO_PAINEL_METRICAS_RVIZ.md §1.2.")
+    struct SwarmMetrics {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "--- objective 3 -----------------------------------------------------------------" "\n"
+        "len(active_ids): exact, never averaged")
+      uint32 active_count;
+
+      sequence<uint32> active_ids;
+
+      @verbatim (language="comment", text=
+        "--- objectives 1 and 2, 60 s sliding window (/metrics/optimizer_feedback) --------")
+      double detections_mean_60s;
+
+      double latency_mean_60s;
+
+      double latency_max_60s;
+
+      uint32 samples_in_window;
+
+      @verbatim (language="comment", text=
+        "300 = 60 s x 5 Hz")
+      uint32 window_capacity;
+
+      @verbatim (language="comment", text=
+        "--- ROI coverage (/coverage/metrics) --------------------------------------")
+      @unit (value="0..2")
+      double coverage_ratio;
+
+      double ugv_weighted_coverage;
+
+      double redundancy_score;
+
+      @verbatim (language="comment", text=
+        "--- health ----------------------------------------------------------------------")
+      double planner_cycle_us;
+
+      uint32 planner_deadline_misses;
+
+      uint32 clamped_references;
+
+      @verbatim (language="comment", text=
+        "measured /clock rate")
+      double clock_hz;
+
+      double sim_time_s;
+
+      @verbatim (language="comment", text=
+        "--- per UAV (one entry per slot, active or not) ---------------------------------")
+      sequence<swarm_interfaces::msg::UavMetric> uavs;
+    };
+  };
+};

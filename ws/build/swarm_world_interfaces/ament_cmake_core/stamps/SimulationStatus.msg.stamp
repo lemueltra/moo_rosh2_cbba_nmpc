@@ -1,0 +1,13 @@
+# Live simulation status and clock mode telemetry
+uint8 TIME_MODE_ASYNC = 0
+uint8 TIME_MODE_SYNC = 1
+
+std_msgs/Header header
+uint8 time_mode
+uint64 step_count
+float64 elapsed_sim_time
+float64 fixed_delta_seconds
+uint32 num_active_ugvs
+uint32 num_active_uavs
+uint32 num_active_sensors
+bool sync_waiting

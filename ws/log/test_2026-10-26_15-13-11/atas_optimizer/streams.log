@@ -1,0 +1,68 @@
+[0.021s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_adaptive_feedback
+[0.025s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.025s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.025s]    Site: dell-arch
+[0.025s]    Build name: (empty)
+[0.026s]  Add coverage exclude regular expressions.
+[0.026s] Create new tag: 20261026-1513 - Experimental
+[0.026s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.026s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.026s] Test project /workspace/ws/build/atas_optimizer
+[0.026s] Constructing a list of tests
+[0.026s] Done constructing a list of tests
+[0.026s] Updating test list for fixtures
+[0.026s] Added 0 tests to meet fixture requirements
+[0.026s] Checking test dependency graph...
+[0.027s] Checking test dependency graph end
+[0.027s] test 6
+[0.027s]     Start 6: test_adaptive_feedback
+[0.027s] 
+[0.027s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_adaptive_feedback.txt" "--command" "/workspace/ws/build/atas_optimizer/test_adaptive_feedback" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml"
+[0.027s] 6: Working Directory: /workspace/ws/build/atas_optimizer
+[0.027s] 6: Test timeout computed to be: 60
+[0.071s] 6: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+[0.072s] 6:  - /workspace/ws/build/atas_optimizer/test_adaptive_feedback --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml
+[0.087s] 6: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[0.087s] 6: [==========] Running 6 tests from 1 test suite.
+[0.087s] 6: [----------] Global test environment set-up.
+[0.088s] 6: [----------] 6 tests from AdaptiveFeedbackTest
+[0.088s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionMinSamplesGuard
+[0.096s] 6: [INFO] [1793027591.688692674] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.104s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionMinSamplesGuard (16 ms)
+[0.104s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionDisabledFlag
+[0.107s] 6: [INFO] [1793027591.699408284] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.109s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionDisabledFlag (5 ms)
+[0.109s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionHighLatencyPullDown
+[0.114s] 6: [INFO] [1793027591.706390889] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.114s] 6: [INFO] [1793027591.706436562] [atas_optimizer_node]: Supervisao Adaptativa (Alta Latencia 35.0 ms > 25.0 ms): w_lat=0.600, z_nominal=12.8 m
+[0.117s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionHighLatencyPullDown (8 ms)
+[0.117s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionLowDetectionsElevateFrustum
+[0.120s] 6: [INFO] [1793027591.713143064] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.120s] 6: [INFO] [1793027591.713164354] [atas_optimizer_node]: Supervisao Adaptativa (Baixa Deteccao 2.00 < 4.00): w_det=1.200, z_nominal=16.5 m
+[0.125s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionLowDetectionsElevateFrustum (7 ms)
+[0.125s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionParetoSaturationLimits
+[0.128s] 6: [INFO] [1793027591.720714195] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.138s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionParetoSaturationLimits (13 ms)
+[0.138s] 6: [ RUN      ] AdaptiveFeedbackTest.AdaptiveSupervisionRelaxationTowardsEquilibrium
+[0.141s] 6: [INFO] [1793027591.733994379] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.145s] 6: [       OK ] AdaptiveFeedbackTest.AdaptiveSupervisionRelaxationTowardsEquilibrium (6 ms)
+[0.145s] 6: [----------] 6 tests from AdaptiveFeedbackTest (57 ms total)
+[0.145s] 6: 
+[0.145s] 6: [----------] Global test environment tear-down
+[0.145s] 6: [==========] 6 tests from 1 test suite ran. (57 ms total)
+[0.145s] 6: [  PASSED  ] 6 tests.
+[0.146s] 6: -- run_test.py: return code 0
+[0.146s] 6: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml'
+[0.146s] 6: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_adaptive_feedback.gtest.xml'
+[0.153s] 1/1 Test #6: test_adaptive_feedback ...........   Passed    0.13 sec
+[0.153s] 
+[0.153s] The following tests passed:
+[0.153s] 	test_adaptive_feedback
+[0.153s] 
+[0.153s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+[0.153s] 
+[0.153s] Label Time Summary:
+[0.154s] gtest    =   0.13 sec*proc (1 test)
+[0.154s] 
+[0.154s] Total Test time (real) =   0.13 sec
+[0.159s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_adaptive_feedback

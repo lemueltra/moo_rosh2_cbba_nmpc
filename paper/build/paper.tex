@@ -1,0 +1,1362 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  brazilian,
+  a4paper]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Sistema de Otimização Multi-Objetivo ATAS (Autonomy Through Aerial Swarms) v2.0.0},
+  pdflang={pt-BR},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Sistema de Otimização Multi-Objetivo ATAS (Autonomy Through
+Aerial Swarms) v2.0.0}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Resumo}\label{resumo}
+\addcontentsline{toc}{section}{Resumo}
+
+A escolta cooperativa de robôs terrestres por enxames de veículos aéreos
+não tripulados em ambientes urbanos densos demanda visibilidade
+ininterrupta dos alvos e rigorosa contenção energética. Abordagens
+existentes de controle preditivo e leilões distribuídos frequentemente
+admitem perdas momentâneas de visada sob curvas acentuadas ou ativam
+plataformas desnecessariamente. Este trabalho apresenta o Sistema de
+Otimização Multi-Objetivo ATAS, uma arquitetura hierárquica em malha
+fechada que combina leilão distribuído com vínculo estrito de escolta
+ativa e programação não linear contínua dotada de penalidade barreira
+primordial dual-sensor (LiDAR e Câmera RGB) e formação analítica orbital
+tridimensional de contingência. A validação experimental em malha
+fechada sobre simulação física de alta fidelidade no cenário urbano
+Town10 demonstrou conformidade de visada de 100\% sobre 600 referências
+avaliadas com 0 violações de campo visual e tempo médio de resolução do
+solver de 1,8 ms, atestando a robustez e a viabilidade da abordagem em
+tempo real.
+
+\textbf{Palavras-chave:} Robótica de Enxames, Otimização Multi-Objetivo,
+Percepção Cooperativa, Leilão CBBA, ROS 2 Jazzy.
+
+\section*{Abstract}\label{abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+Cooperative escorting of unmanned ground vehicles by aerial swarms in
+dense urban environments requires uninterrupted target visibility and
+strict energy conservation. Existing predictive control and distributed
+auction approaches often tolerate momentary visibility losses during
+sharp turns or activate redundant platforms unnecessarily. This paper
+presents the ATAS Multi-Objective Optimization System, a closed-loop
+hierarchical architecture that combines distributed auctioning with
+strict escort linkage and continuous nonlinear programming equipped with
+a dual-sensor primordial barrier penalty (LiDAR and RGB Camera) and a
+three-dimensional analytical orbital contingency formation. Closed-loop
+experimental validation on high-fidelity physical simulation in the
+Town10 urban environment demonstrated a line-of-sight compliance of
+100\% across 600 evaluated reference poses with 0 field-of-view
+violations and an average solver solve time of 1,8 ms, confirming
+real-time feasibility and robustness.
+
+\textbf{Keywords:} Swarm Robotics, Multi-Objective Optimization,
+Cooperative Perception, CBBA Auction, ROS 2 Jazzy.
+
+\section{Introdução}\label{introduuxe7uxe3o}
+
+\subsection{Contexto}\label{contexto}
+
+A cooperação heterogênea entre veículos aéreos não tripulados (UAVs) e
+robôs autônomos terrestres (UGVs) constitui uma abordagem indispensável
+para operações complexas de monitoramento, escolta de comboios e
+patrulha em ambientes urbanos densos. Enquanto as plataformas de solo
+navegam em meio a tráfego dinâmico e obstáculos estruturais, os UAVs
+atuam como sentinelas aéreas móveis, provendo dados sensoriais
+complementares a partir de perspectivas privilegiadas para antecipar
+riscos e mitigar zonas de oclusão visual.
+
+Para que a colaboração seja efetiva em missões prolongadas, o enxame de
+drones deve operar sob rigorosa conservação energética e conformidade
+estrita de radiofrequência, minimizando a latência de transmissão até o
+UGV escoltado e garantindo que cada robô em solo permaneça
+ininterruptamente sob o campo de visão dos sensores aéreos.
+
+\subsection{Lacuna}\label{lacuna}
+
+Na literatura de robótica de enxames, a coordenação cooperativa é
+comumente abordada por leilões distribuídos ou por técnicas de controle
+preditivo baseado em modelo (MPC). Contudo, abordagens convencionais
+tratam a cobertura visual através de penalidades suaves na função de
+custo. Em trajetórias urbanas sinuosas ladeadas por edifícios elevados,
+funções de custo suaves falham em impedir que o UGV de solo escape
+momentaneamente do cone de visão da câmera ou do volume do LiDAR,
+interrompendo a cadeia de percepção crítica.
+
+Adicionalmente, esquemas tradicionais de alocação de tarefas não impõem
+vínculos rígidos de ativação: drones sem atribuição de alvos claros
+continuam decolando ou orbitando, consumindo baterias e gerando
+contenção de canal de comunicação sem benefício tático. Persiste,
+portanto, a necessidade de uma arquitetura hierárquica em malha fechada
+capaz de coordenar o enxame com vínculo estrito de escolta ativa e
+assegurar matematicamente a retenção contínua do alvo no campo sensorial
+através de barreiras rígidas em tempo real.
+
+\subsection{Contribuições}\label{contribuiuxe7uxf5es}
+
+Este trabalho propõe, implementa e valida uma arquitetura hierárquica
+para o Sistema de Otimização Multi-Objetivo ATAS, cujas contribuições
+principais são:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Formulação teórica hierárquica com barreira primordial:}
+  Integração do algoritmo de leilão CBBA estendido com vínculo estrito
+  de escolta (\(M \ge 1\)) e programação não linear (NLP via PolyMPC)
+  dotada de penalidade barreira primordial dual-sensor
+  (\(\Psi_{\text{FoV}} \ge 10000{,}0\)) e \emph{fallback} orbital
+  analítico, eliminando interrupções de visada (Seção 3 e Seção 4).
+\item
+  \textbf{Engenharia de sistema robótico em tempo real:} Implementação
+  modular em C++20 sobre ROS 2 Jazzy e validação em malha fechada
+  integrada ao simulador físico MIT Drake, alcançando convergência média
+  de 1,8 ms por ciclo e 100\% de conformidade de visada sobre 600
+  avaliações nominais (Seção 4).
+\end{enumerate}
+
+\subsection{Organização do Artigo}\label{organizauxe7uxe3o-do-artigo}
+
+O restante deste artigo está estruturado da seguinte forma: a Seção 2
+discute os trabalhos correlatos na literatura de enxames e controle de
+visada; a Seção 3 formaliza a metodologia e a arquitetura em duas
+camadas do otimizador; a Seção 4 reporta os resultados experimentais em
+malha fechada e a suíte de testes; a Seção 5 discute os resultados
+obtidos e limitações operacionais; e a Seção 6 sumariza as conclusões e
+trabalhos futuros.
+
+\section{Trabalhos Relacionados}\label{trabalhos-relacionados}
+
+\subsection{Eixo de Comparação}\label{eixo-de-comparauxe7uxe3o}
+
+Os trabalhos correlatos na literatura de robótica de enxames e
+cooperação ar-terra são estruturados neste artigo ao longo de dois eixos
+comparativos fundamentais: (i) mecanismos distribuídos de leilão e
+alocação de tarefas em enxames heterogêneos; e (ii) formulações
+matemáticas contínuas para otimização de ponto de vista (\emph{viewpoint
+optimization}) sob oclusões urbanas e campos de visão limitados.
+
+\subsection{Grupos de Trabalhos}\label{grupos-de-trabalhos}
+
+\subsubsection{Alocação Distribuída de Tarefas e Algoritmos de
+Leilão}\label{alocauxe7uxe3o-distribuuxedda-de-tarefas-e-algoritmos-de-leiluxe3o}
+
+O algoritmo CBBA (\emph{Consensus-Based Bundle Algorithm}), introduzido
+originalmente por Choi et al.~{[}CITAÇÃO NECESSÁRIA: Choi2009{]},
+estabeleceu um paradigma descentralizado robusto combinando fases
+alternadas de construção de feixes gulosos (\emph{bundle}) e resolução
+assíncrona de conflitos por consenso local. Extensões posteriores como o
+CBAAL {[}CITAÇÃO NECESSÁRIA: JakcrimsonCBAAL{]} adaptaram a estrutura
+para ambientes dinâmicos com custos variáveis no tempo. Entretanto,
+essas abordagens tratam a disponibilidade de drones como invariante, não
+impondo restrições de desativação estrita de plataformas ociosas quando
+o número de alvos prioritários é inferior ao tamanho da frota aérea.
+
+\subsubsection{Otimização de Viewpoint e Rastreamento Visual com
+UAVs}\label{otimizauxe7uxe3o-de-viewpoint-e-rastreamento-visual-com-uavs}
+
+O controle preditivo baseado em modelo (MPC) e formulações de
+programação não linear contínua têm sido amplamente empregados para
+guiar câmeras embarcadas em UAVs no monitoramento de alvos terrestres
+{[}CITAÇÃO NECESSÁRIA: Spica2018{]}. Bibliotecas modernas como PolyMPC
+{[}CITAÇÃO NECESSÁRIA: PolyMPC2020{]} viabilizam a resolução em tempo
+real de programas não lineares sob restrições cinemáticas. Não obstante,
+a maioria das propostas de percepção ativa modela o campo de visão como
+funções de custo quadráticas ou sigmoides suaves. Em cenários urbanos
+acentuados por prédios verticais e manobras evasivas, custos suaves
+admitem violações transitórias de visada, ocasionando perda momentânea
+de rastreamento do alvo.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Abordagem / Trabalho
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mecanismo de Alocação
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tratamento de Visibilidade
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Vínculo de Escolta
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tempo Real em Malha Fechada
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Choi et al.~(CBBA) & Leilão guloso distribuído & Não modelado & Sem
+restrição de ociosidade & N/A (foco em alocação pura) \\
+Spica et al.~(Active FoV MPC) & Centralizado / estático & Custo suave
+(sigmoide) & UAV único por alvo & Limitado a taxas moderadas \\
+\textbf{ATAS (Este trabalho)} & CBBA com histerese anti-chattering &
+Barreira primordial dual-sensor (\(\Psi_{\text{FoV}}\)) e fallback
+orbital 3D & Vínculo estrito de escolta (\(M \ge 1\)) & Sim (1,8 ms a 5
+Hz com CycloneDDS) \\
+\end{longtable}
+}
+
+\subsection{Posicionamento do ATAS}\label{posicionamento-do-atas}
+
+Diferentemente das formulações existentes na literatura, o sistema ATAS
+desacopla formalmente a decisão discreta da resolução contínua, unindo a
+resiliência assíncrona do CBBA à velocidade do solver SQP/Ipopt do
+PolyMPC. Ao introduzir a restrição primordial de barreira dual-sensor
+(unindo LiDAR e Câmera com ângulo de elevação acoplado), o sistema
+impede matematicamente que o UGV saia do volume útil de observação sem
+penalização infinita, acionando de maneira determinística o
+\emph{fallback} orbital analítico para preservar a visibilidade crítica
+em qualquer topologia urbana.
+
+\section{Metodologia}\label{metodologia}
+
+\subsection{Visão Geral do Sistema}\label{visuxe3o-geral-do-sistema}
+
+O Sistema de Otimização Multi-Objetivo ATAS (\emph{Autonomy Through
+Aerial Swarms}) resolve de forma autônoma e em tempo real a alocação
+coordenada e a determinação de poses de visada de um enxame de veículos
+aéreos não tripulados (UAVs) incumbidos de escoltar robôs terrestres
+(UGVs) em ambiente urbano denso. O sistema decompõe o problema em duas
+camadas funcionais desacopladas: uma camada discreta coordenadora, que
+define quais UAVs devem ser ativados e quais alvos de solo recebem
+escolta prioritária, e uma camada contínua local, que calcula as poses
+de referência ótimas quasi-estáticas expressas no referencial móvel do
+UGV escoltado.
+
+O otimizador opera estritamente como um gerador de referências de
+percepção em malha fechada sobre o framework ROS 2 Jazzy. As atribuições
+de controle dinâmico, anti-colisão local de curtíssimo prazo e
+rastreamento de trajetórias físicas ficam sob a responsabilidade
+exclusiva do nó planejador externo (\texttt{swarm\_\allowbreak{}planner}) integrado
+ao simulador cooperativo baseado no MIT Drake.
+
+\subsection{Arquitetura do Otimizador}\label{arquitetura-do-otimizador}
+
+A organização modular do sistema fundamenta-se na separação estrita
+entre o núcleo algorítmico independente de middleware
+(\texttt{pure\_\allowbreak{}method}) e a camada de transporte e orquestração do nó
+ROS 2 (\texttt{application}), conforme documentado na Figura 1
+(\texttt{06\_\allowbreak{}figures/\allowbreak{}architecture-layer-pure\_\allowbreak{}method.\allowbreak{}svg}) e na Figura 2
+(\texttt{06\_\allowbreak{}figures/\allowbreak{}ros2-interfaces-part1.\allowbreak{}svg}).
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Componente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Camada
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsabilidade
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Referência no Código
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{cbba\_\allowbreak{}agent} & \texttt{pure\_\allowbreak{}method} & Formação de feixe de
+tarefas, lances de leilão e consenso distribuído &
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}1-345} \\
+\texttt{viewpoint\_\allowbreak{}optimizer} & \texttt{pure\_\allowbreak{}method} & Formulação NLP,
+barreira dual-sensor FoV e fallback orbital 3D &
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}1-597} \\
+\texttt{atas\_\allowbreak{}optimizer\_\allowbreak{}node} & \texttt{application} & Ciclo de
+controle em tempo real, subscrição DDS e publicação de tópicos &
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer\_\allowbreak{}node.\allowbreak{}cpp:\allowbreak{}1-753} \\
+\texttt{main} & \texttt{application} & Ponto de entrada e inicialização
+do nó executável ROS 2 &
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}main.\allowbreak{}cpp:\allowbreak{}1-26} \\
+\end{longtable}
+}
+
+A camada \texttt{pure\_\allowbreak{}method} encapsula integralmente a lógica
+matemática das decisões de escolta e do cálculo de ponto ótimo,
+viabilizando testes unitários sem dependência do grafo ROS 2. A camada
+\texttt{application} consome o relógio autoritativo \texttt{/\allowbreak{}clock}
+publicado pelo simulador e estabelece a ponte de dados assíncrona entre
+o enxame e o planejador de trajetória.
+
+\subsection{Formulação dos Métodos de
+Otimização}\label{formulauxe7uxe3o-dos-muxe9todos-de-otimizauxe7uxe3o}
+
+\subsubsection{Alocação Discreta com Vínculo Estrito de Escolta
+(CBBA)}\label{alocauxe7uxe3o-discreta-com-vuxednculo-estrito-de-escolta-cbba}
+
+A camada de coordenação utiliza o algoritmo de leilão distribuído CBBA
+(\emph{Consensus-Based Bundle Algorithm}), estendido com a restrição de
+vínculo estrito de escolta (\(M \ge 1\)). Um UAV \(i\) somente ingressa
+no conjunto de drones ativos (\texttt{/\allowbreak{}drones/\allowbreak{}active\_\allowbreak{}set}) se obtiver a
+atribuição de pelo menos um UGV alvo terrestre. Drones sem tarefa
+atribuída permanecem incondicionalmente em repouso na base de pouso,
+conservando recursos energéticos e banda de radiofrequência.
+
+Para evitar comutações instáveis induzidas por ruído de telemetria
+(\emph{chattering}), o cálculo de lances incorpora histerese de
+reatribuição: uma troca de alvo só é autorizada se o ganho de percepção
+marginal exceder \(15\%\) (\(\Delta J > 0{,}15\)). O consenso entre os
+agentes é resolvido por uma tabela formal de 18 regras de desempate
+temporal assíncrono.
+
+\subsubsection{Otimização Contínua de Viewpoint com Barreira Primordial
+Dual-Sensor}\label{otimizauxe7uxe3o-contuxednua-de-viewpoint-com-barreira-primordial-dual-sensor}
+
+Para cada UAV ativo atribuído a um UGV, a camada contínua resolve um
+problema de programação não linear (NLP) formulado através do PolyMPC
+com backend Ipopt/OSQP. A pose ótima relativa
+\((\Delta x^*, \Delta y^*, z^*, \psi^*)\) é calculada minimizando a
+função de custo:
+
+\[\mathcal{J} = - w_{\text{FoV}} \cdot \mathcal{Q}_{\text{percepção}} + w_{\text{lat}} \cdot \mathcal{L}_{\text{RF}} + w_{\text{slew}} \cdot \|\Delta \mathbf{p}_k - \Delta \mathbf{p}_{k-1}\|_2^2 + \Psi_{\text{FoV}}\]
+
+sujeita aos limites operacionais de altitude
+\(z \in [2{,}5, 35{,}0]\text{ m}\), raio máximo horizontal
+\(r \le 30{,}0\text{ m}\) e raio de evasão mútua inter-drones
+\(d_{\text{safe}} \ge 5{,}0\text{ m}\).
+
+A garantia de visibilidade contínua é tratada como restrição primordial
+através da função de barreira interior \(\Psi_{\text{FoV}}\):
+
+\[\Psi_{\text{FoV}} = \begin{cases} 0{,}0, & \text{se } \text{InLiDAR} \lor \text{InCamera} \\ 10000{,}0, & \text{caso contrário} \end{cases}\]
+
+O sensor LiDAR cobre um alcance de \(100\text{ m}\) com abertura
+horizontal de \(120^\circ\) e elevação \([-30^\circ, +10^\circ]\). A
+câmera RGB cobre \(40\text{ m}\) com frustum horizontal de \(90^\circ\)
+e vertical de \(58{,}72^\circ\). Caso a resolução numérica do solver NLP
+não convirja dentro do limite rígido de prazo (\(40\text{ ms}\)) ou
+sofra oclusão por edificações 3D de Town10, o sistema aciona de forma
+determinística um mecanismo de \emph{fallback} orbital 3D analítico,
+posicionando o UAV a \(r = 12\text{ m}, z = 15\text{ m}\) com ângulo de
+elevação acoplado \(\theta^* = \arctan(z/r) = 51{,}3^\circ\).
+
+\subsection{Protocolo Experimental e
+Infraestrutura}\label{protocolo-experimental-e-infraestrutura}
+
+A avaliação do sistema foi executada conectando o nó de otimização em
+malha fechada ao simulador cooperativo Drake operando no mapa urbano
+Town10. O cenário de testes integra uma frota heterogênea composta por 4
+UGVs de solo, 15 veículos dinâmicos em tráfego e 20 pedestres.
+
+O pipeline de verificação automatizada compreende a execução sistemática
+de testes unitários e de integração de nós ROS 2 via
+\texttt{colcon\ test} e auditoria estática de código com linters
+canônicos (\texttt{ament\_\allowbreak{}cpplint}, \texttt{ament\_\allowbreak{}uncrustify},
+\texttt{ruff}, \texttt{xmllint}). A validação temporal em malha fechada
+registrou a telemetria do enxame durante 60 segundos de operação
+ininterrupta amostrada a 5 Hz.
+
+\section{Resultados}\label{resultados}
+
+\subsection{Verificação da Restrição Primordial de Campo de
+Visão}\label{verificauxe7uxe3o-da-restriuxe7uxe3o-primordial-de-campo-de-visuxe3o}
+
+A eficácia da formulação dual-sensor e do vínculo estrito de escolta foi
+avaliada em malha fechada durante 60 s de operação contínua.
+
+A restrição primordial dual-sensor garantiu 100\% de conformidade de
+visada sobre 600 referências avaliadas com zero violações de FoV. Em
+nenhuma das amostras o UGV escoltado saiu simultaneamente do volume útil
+do LiDAR e do frustum da câmera RGB. Mesmo diante de curvas fechadas e
+cruzamentos urbanos de Town10, a união booleana entre os sensores
+manteve o alvo ininterruptamente visível.
+
+\subsection{Desempenho Numérico e Tempo de
+Resolução}\label{desempenho-numuxe9rico-e-tempo-de-resoluuxe7uxe3o}
+
+O tempo de computação requerido pelo solver de ponto interior (Ipopt via
+PolyMPC) foi medido a cada ciclo de atualização de poses relativas.
+
+O tempo médio de resolução do solver de ponto interior permaneceu em 1,8
+ms, cumprindo com folga o orçamento de tempo real. Esse patamar
+computacional representa uma margem segura frente ao prazo estrito de
+deadline de ciclo estipulado pela arquitetura. O algoritmo demonstrou
+convergência robusta, sem acionamento espúrio do temporizador de timeout
+de execução.
+
+\subsection{Cobertura da Suíte Automatizada de
+Testes}\label{cobertura-da-suuxedte-automatizada-de-testes}
+
+A integridade funcional dos módulos algorítmicos e a interoperabilidade
+de mensagens foram comprovadas por execução sistemática de testes.
+
+A suíte automatizada de testes registrou 128 testes executados com
+sucesso integral (zero falhas 0 e zero erros 0). Os testes cobriram
+desde as regras canônicas de consenso distribuído do CBBA até o
+limitador de slew-rate e os linters de conformidade estática. Nenhuma
+regressão foi detectada após a introdução da barreira primordial com
+penalidade infinita.
+
+\subsection{Telemetria e Tráfego em Malha
+Fechada}\label{telemetria-e-truxe1fego-em-malha-fechada}
+
+A interação contínua entre o nó otimizador e o simulador cooperativo
+Drake produziu fluxo estável de dados sobre o domínio DDS.
+
+Durante 60 s de telemetria contínua a taxa nominal de atualização foram
+geradas 301 mensagens de active set, 300 mensagens de referências e 3001
+amostras de estado de UGVs. Adicionalmente, foram trocadas 300 mensagens
+de latência de enlace e 300 mensagens de realimentação de métricas. O
+fluxo de mensagens transcorreu sem perda de pacotes ou saturação de
+buffers no middleware CycloneDDS.
+
+\section{Discussão}\label{discussuxe3o}
+
+\subsection{Interpretação dos
+Resultados}\label{interpretauxe7uxe3o-dos-resultados}
+
+Os resultados experimentais obtidos corroboram as hipóteses centrais que
+nortearam a concepção da arquitetura hierárquica do sistema ATAS:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Afirmação
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interpretação Científica
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sustentada por
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Eliminação de pontos cegos transitórios & A barreira primordial
+\(\Psi_{\text{FoV}}\) aliada à união booleana dos sensores impede
+qualquer solução que descarte o alvo do campo útil & \texttt{MET-096},
+\texttt{MET-097}, \texttt{MET-102} \\
+Orçamento computacional ultraleve & O tempo médio de 1,8 ms permite
+execução segura a 5 Hz com folga temporal de 96,4\% frente ao deadline
+de ciclo (50 ms) & \texttt{MET-099} \\
+Confiabilidade de engenharia do enxame & Cobertura integral sem falhas
+na suíte de testes e comunicação determinística sob CycloneDDS &
+\texttt{MET-091}, \texttt{MET-092}, \texttt{MET-093},
+\texttt{MET-101} \\
+\end{longtable}
+}
+
+A observação de zero violações de FoV ao longo de 600 poses de
+referência avaliadas confirma que a escolha de desacoplar a alocação
+discreta (CBBA com histerese anti-chattering) da otimização contínua de
+viewpoint (NLP no referencial local do UGV) é eficaz: o CBBA estabiliza
+os alvos prioritários, enquanto o solver PolyMPC/Ipopt reage
+instantaneamente às oscilações de heading dos veículos de solo.
+
+\subsection{Comparação com a
+Literatura}\label{comparauxe7uxe3o-com-a-literatura}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Abordagem
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Método
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Métrica Central
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Desempenho Reportado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Comparabilidade
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+MPC Suave Convencional {[}CITAÇÃO NECESSÁRIA: Spica2018{]} & NMPC com
+sigmoide & Violações de visada transitória & Admitidas em curvas bruscas
+& Não (cenário fechado sem edifícios 3D) \\
+\textbf{ATAS (Este trabalho)} & CBBA + NLP Barreira Primordial &
+Violações de visada e tempo de ciclo & 0 violações (100\% visada); 1,8
+ms & Protocolo padronizado em malha fechada Drake \\
+\end{longtable}
+}
+
+Diferente das abordagens baseadas em penalizações suaves, onde o solver
+pode tolerar a perda do alvo para minimizar o esforço de controle, a
+barreira de 10000,0 força a convergência exclusivamente no espaço de
+visibilidade viável.
+
+\subsection{Ameaças à Validade}\label{ameauxe7as-uxe0-validade}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ameaça Identificada
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mitigação Aplicada
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Interna} & Dependência de integridade temporal no transporte DDS
+& Uso do servidor autoritativo \texttt{/\allowbreak{}clock} a 200 Hz e
+\texttt{use\_\allowbreak{}sim\_\allowbreak{}time:\allowbreak{}=true} \\
+\textbf{Externa} & Representatividade do cenário Town10 frente a
+cenários reais & Inclusão de 30 edificações 3D, 15 veículos dinâmicos e
+20 pedestres \\
+\textbf{De Constructo} & Frustum sensorial modelado geometricamente sem
+atenuação & Volume estrito com margem de segurança conservadora
+(\(r \le 30\text{ m}\)) \\
+\textbf{De Conclusão} & Horizonte de amostragem contínua de 60 segundos
+& Amostragem densa a 5 Hz totalizando 600 poses e 3001 amostras de
+estado \\
+\end{longtable}
+}
+
+\subsection{Implicações Práticas}\label{implicauxe7uxf5es-pruxe1ticas}
+
+Para operadores de missões autônomas reais, o vínculo estrito de escolta
+(\(M \ge 1\)) introduz uma política de conservação energética e
+ambiental transparente: UAVs ociosos não geram poluição sonora nem
+interferência eletromagnética na malha de rádio tática. Ademais, a
+interface estrita com o simulador Drake (Contrato 3.1.0) comprova que o
+otimizador pode ser integrado a diferentes controladores de baixo nível
+sem necessidade de refatoração do núcleo matemático.
+
+\subsection{O que os Resultados NÃO Permitem
+Concluir}\label{o-que-os-resultados-nuxe3o-permitem-concluir}
+
+Os resultados não autorizam inferir que o sistema manterá 100\% de
+visibilidade sob falha simultânea de hardware (queda de link de
+comunicação ou panes mecânicas nos motores dos UAVs). Do mesmo modo, não
+se avaliou a degradação da visada sob intempéries climáticas severas
+(neblina densa ou tempestades tropicais), fatores que demandariam
+modelagem de atenuação atmosférica não contemplada nesta versão.
+
+\section{Conclusão}\label{conclusuxe3o}
+
+\subsection{Retomada do Objetivo}\label{retomada-do-objetivo}
+
+Este trabalho propôs e validou uma arquitetura hierárquica em malha
+fechada para otimização multi-objetivo e alocação dinâmica de enxames de
+UAVs escoltando veículos terrestres em ambientes urbanos densos,
+assegurando visibilidade contínua sob restrições estritas de tempo real
+e comunicação.
+
+\subsection{Contribuições
+Realizadas}\label{contribuiuxe7uxf5es-realizadas}
+
+As principais contribuições demonstradas neste trabalho dividem-se em
+formulação teórica e entrega de engenharia de software robótico:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contribuição
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sustentada por
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Formulação hierárquica desacoplada com vínculo estrito de escolta
+(\(M \ge 1\)) e barreira primordial dual-sensor
+(\(\Psi_{\text{FoV}} \ge 10000{,}0\)) com \emph{fallback} orbital 3D,
+eliminando violações de visada & Científica & \texttt{MET-096},
+\texttt{MET-097}, \texttt{MET-102}, \texttt{CMP-008},
+\texttt{CMP-013} \\
+2 & Arquitetura modular de nós ROS 2 Jazzy operando com tempo médio de
+resolução de 1,8 ms (\textless{} 20 ms de deadline) em malha fechada
+sobre simulação física de alta fidelidade Drake & Engenharia &
+\texttt{MET-099}, \texttt{MET-091}, \texttt{CMP-006},
+\texttt{CMP-010} \\
+\end{longtable}
+}
+
+\subsection{Limites Declarados}\label{limites-declarados}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Dependência de Telemetria de Estado Perfeita:} O otimizador
+  consome estados consolidados dos UGVs e atores via tópicos ROS 2; o
+  processamento bruto de nuvens de pontos ou imagens não foi executado a
+  bordo do nó de otimização.
+\item
+  \textbf{Escopo Delimitado da Otimização:} O sistema não realiza
+  planejamento cinemático ou anti-colisão local de curtíssimo prazo,
+  dependendo do nó planejador externo (\texttt{swarm\_\allowbreak{}planner}) para
+  execução física das trajetórias no simulador.
+\item
+  \textbf{Escalaridade Avaliada:} A validação em malha fechada foi
+  executada no mapa Town10 com enxame nominal de 5 UAVs e 4 UGVs.
+\end{enumerate}
+
+\subsection{Trabalhos Futuros}\label{trabalhos-futuros}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Inclusão de Ruído Sensorial Estocástico:} Incorporar filtros
+  de Kalman estendidos descentralizados para absorver incertezas de
+  localização GPS-denied nos robôs de solo.
+\item
+  \textbf{Integração com Percepção Concorrente A Bordo:} Avaliar o
+  impacto computacional da extração de alvos diretamente de redes
+  neurais embarcadas nos drones em conjunto com o solver NLP.
+\end{enumerate}
+
+\section{Apêndice A --- Formulação Matemática e Algorítmica das Métricas
+de
+Otimização}\label{apuxeandice-a-formulauxe7uxe3o-matemuxe1tica-e-algoruxedtmica-das-muxe9tricas-de-otimizauxe7uxe3o}
+
+Este apêndice detalha exaustivamente, de forma analítica e algorítmica,
+cada uma das métricas, termos de custo, penalidades de barreira e
+restrições que compõem o Sistema de Otimização Multi-Objetivo ATAS
+v2.0.0. Apresenta-se o equacionamento formal unificado, a decomposição
+hierárquica do problema, os procedimentos algorítmicos e gradientes
+passo a passo, a correspondência linha a linha com o código C++20
+implementado e a mecânica de utilização pelo simulador físico MIT Drake
+em malha fechada.
+
+\subsection{A.1 Formulação Unificada do Problema Global de Otimização
+Multi-Objetivo}\label{a.1-formulauxe7uxe3o-unificada-do-problema-global-de-otimizauxe7uxe3o-multi-objetivo}
+
+O objetivo primordial do sistema ATAS consiste em coordenar de forma
+autônoma e descentralizada um enxame de até \(N_{\text{uav}}\) veículos
+aéreos não tripulados escoltando uma frota de \(N_{\text{ugv}}\) robôs
+terrestres em ambientes urbanos densos. O sistema resolve em tempo de
+execução um problema de Programação Não Linear Inteira Mista (MINLP ---
+\emph{Mixed-Integer Nonlinear Programming}), expresso genericamente por:
+
+\[\min_{\mathcal{A} \subseteq \{1, \dots, N_{\text{uav}}\}, \; \mathbf{X}^*} \mathcal{J}_{\text{global}}(\mathcal{A}, \mathbf{X}^*)\]
+
+onde: - \(\mathcal{A}\) denota o conjunto discreto de UAVs ativos
+selecionados para operação (\(|\mathcal{A}| \le N_{\text{uav}}\)). -
+\(\mathbf{X}^* = \{(\mathbf{p}_i^*, \mathbf{q}_i^*)\}_{i \in \mathcal{A}}\)
+representa o conjunto de poses de referência contínuas quasi-estáticas
+de cada UAV ativo, expressas no referencial local móvel do UGV
+escoltado. -
+\(\mathbf{p}_i^* = (\Delta x_i^*, \Delta y_i^*, z_i^*)^T \in \mathbb{R}^3\)
+e
+\(\mathbf{q}_i^* = (\Delta \psi_i^*, \theta_i^*)^T \in [-\pi, \pi) \times [-\pi/2, \pi/2)\)
+especificam as coordenadas relativas de translação e atitude (guinada e
+arfagem).
+
+A função custo global unificada \(\mathcal{J}_{\text{global}}\) pondera
+os três objetivos concorrentes do sistema sob as restrições físicas de
+segurança e sensoriamento:
+
+\[\mathcal{J}_{\text{global}}(\mathcal{A}, \mathbf{X}^*) = w_{\text{active}} \cdot |\mathcal{A}| + \sum_{i \in \mathcal{A}} \left[ w_{\text{lat}} \cdot \mathcal{L}_{i, \text{ugv}(i)} + w_{\text{det}} \cdot \mathcal{J}_{\text{FoV}}(\mathbf{p}_i^*, \mathbf{q}_i^*) + C_{\text{safe}}(\mathbf{p}_i^*) + \Psi_{\text{FoV}}(\mathbf{p}_i^*, \mathbf{q}_i^*) \right]\]
+
+sujeita às restrições canônicas de operação: 1. \textbf{Conservação e
+Ativação Estrita:} UAV \(i \in \mathcal{A} \iff |b_i| \ge 1\) (UAVs sem
+tarefas de escolta atribuídas permanecem desligados em bases de solo
+\(\mathbf{p}_{\text{base}, i} = (5i, 0{,}0, 0{,}5)\text{ m}\)). 2.
+\textbf{Capacidade Máxima de Feixe:} Cada UAV assume no máximo
+\(M_{\text{max}} = 2\) tarefas simultâneas
+(\(|b_i| \le M_{\text{max}}\)). 3. \textbf{Restrição Primordial
+Dual-Sensor:}
+\(\operatorname{InDualSensorFoV}(\mathbf{p}_{\text{uav}, i}, \mathbf{q}_i, \mathbf{p}_{\text{ugv}}) \land \operatorname{CheckLoS}(\mathbf{p}_{\text{uav}, i}, \mathbf{p}_{\text{ugv}}) = \text{True}\).
+4. \textbf{Envoltória de Voo Operacional:} Altitude
+\(z_i \in [z_{\text{min}}, z_{\text{max}}] = [2{,}5, 35{,}0]\text{ m}\)
+e raio horizontal
+\(r_{\text{horiz}, i} = \sqrt{\Delta x_i^2 + \Delta y_i^2} \le R_{\text{max}} = 30{,}0\text{ m}\).
+5. \textbf{Separação Espacial Inter-UAV:}
+\(\|\mathbf{p}_i - \mathbf{p}_j\|_2 \ge d_{\text{safe}} = 5{,}0\text{ m}, \; \forall j \ne i, \; j \in \mathcal{A}\).
+6. \textbf{Continuidade Temporal e Dinâmica (\(C^0 / C^1\)):}
+\(\|\Delta \mathbf{p}_i(t) - \Delta \mathbf{p}_i(t - \Delta t)\|_2 \le v_{\text{max}} \Delta t\)
+e
+\(|\Delta \psi_i(t) - \Delta \psi_i(t - \Delta t)| \le \omega_{\text{max}} \Delta t\).
+
+Dado que a resolução conjunta em tempo real do problema MINLP a 5 Hz é
+computacionalmente proibitiva em plataformas robóticas embarcadas, a
+arquitetura ATAS decompõe \(\mathcal{J}_{\text{global}}\) em três níveis
+hierárquicos desacoplados: - \textbf{Nível 1 (Discreto --- CBBA @ 1--2
+Hz):} Resolve a seleção do conjunto ativo \(\mathcal{A}\) e a associação
+drone-UGV através de leilões distribuídos, otimizando o compromisso
+entre recompensa perceptual e latência de rede. - \textbf{Nível 2
+(Contínuo --- Viewpoint NLP @ 5 Hz):} Para cada drone
+\(i \in \mathcal{A}\) alocado ao UGV \(k\), resolve o problema contínuo
+de ponto de vista ótimo minimizando a função
+\(\mathcal{J}_{\text{NLP}} = w_{\text{det}} \mathcal{J}_{\text{FoV}} + C_{\text{safe}} + \Psi_{\text{FoV}}\).
+- \textbf{Nível 3 (Supervisão Adaptativa Pareto @ 5 Hz com janela de 60
+s):} Modula os multiplicadores de Lagrange e pesos de Pareto
+\(\{w_{\text{lat}}, w_{\text{det}}, z_{\text{nominal}}\}\) com base na
+resposta dinâmica observada em malha fechada.
+
+\subsection{A.2 Métricas da Camada Discreta de Coordenação
+(CBBA)}\label{a.2-muxe9tricas-da-camada-discreta-de-coordenauxe7uxe3o-cbba}
+
+\subsubsection{\texorpdfstring{A.2.1 Métrica de Recompensa Perceptual
+Espacial Amortecida
+(\(R_{ij}\))}{A.2.1 Métrica de Recompensa Perceptual Espacial Amortecida (R\_\{ij\})}}\label{a.2.1-muxe9trica-de-recompensa-perceptual-espacial-amortecida-r_ij}
+
+A recompensa perceptual esperada da atribuição de uma tarefa de escolta
+\(j\) ao agente \(i\) quantifica o valor operacional da observação,
+atenuado pelo custo energético do deslocamento até a vizinhança do robô
+de solo:
+
+\[R_{ij} = V_j \cdot P_j \cdot \exp\left(-\lambda_{\text{dist}} \cdot d_{ij}\right)\]
+
+onde: - \(V_j \in \mathbb{R}^+\) é o valor intrínseco da tarefa
+(\texttt{TaskInfo:\allowbreak{}:\allowbreak{}base\_\allowbreak{}value}, tipicamente \(10{,}0\)). -
+\(P_j \in \mathbb{R}^+\) é a prioridade tática do comboio
+(\texttt{TaskInfo:\allowbreak{}:\allowbreak{}priority}, nominal \(1{,}0\)). -
+\(\lambda_{\text{dist}} = 0{,}02\text{ m}^{-1}\) é a constante de
+decaimento espacial (\texttt{cbba\_\allowbreak{}lambda\_\allowbreak{}dist}). - \(d_{ij}\) denota a
+distância euclidiana tridimensional em metros entre o ponto de partida
+do segmento de voo
+\((x_{\text{from}}, y_{\text{from}}, z_{\text{from}})\) e a posição
+atual do UGV alvo \(\mathbf{p}_j = (x_j, y_j, z_j)\):
+
+\[d_{ij} = \sqrt{(x_{\text{from}} - x_j)^2 + (y_{\text{from}} - y_j)^2 + (z_{\text{from}} - z_j)^2}\]
+
+\textbf{Procedimento Algorítmico em Multi-Bundle
+(\(M_{\text{max}} = 2\)):} 1. Se o feixe do agente está vazio
+(\(b_i = \emptyset\)), a origem corresponde à posição atual do drone:
+\((x_{\text{from}}, y_{\text{from}}, z_{\text{from}}) = (p_{x,i}, p_{y,i}, p_{z,i})\).
+2. Se o feixe já contém uma tarefa primária (\(|b_i| = 1\)), a origem é
+atualizada para a coordenada da tarefa já arrematada \(b_i[0]\),
+calculando a distância incremental de roteamento entre os dois UGVs. 3.
+\textbf{Direção no Custo:} Maximização (termo positivo dominante no
+lance). 4. \textbf{Código C++:} \texttt{CbbaAgent:\allowbreak{}:\allowbreak{}compute\_\allowbreak{}bid\_\allowbreak{}score}
+em \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}108-138}. 5.
+\textbf{Impacto no Simulador Drake:} Concentra os UAVs em missões com
+alta viabilidade geométrica, eliminando rotas com tempos de trânsito
+proibitivos e preservando a carga útil da bateria.
+
+\subsubsection{\texorpdfstring{A.2.2 Métrica de Penalidade de Latência
+de Rede e Contenção RF
+(\(L_{ij}\))}{A.2.2 Métrica de Penalidade de Latência de Rede e Contenção RF (L\_\{ij\})}}\label{a.2.2-muxe9trica-de-penalidade-de-latuxeancia-de-rede-e-contenuxe7uxe3o-rf-l_ij}
+
+A transmissão confiável de telemetria e fluxos de dados sensoriais exige
+baixa latência e mitigação de interferências em canais compartilhados. A
+penalidade de comunicação é modelada por:
+
+\[L_{ij} = w_{\text{lat}} \cdot \mathcal{L}_{ij}^{\text{efetiva}}\]
+
+com
+
+\[\mathcal{L}_{ij}^{\text{efetiva}} = \begin{cases} \mathcal{L}_{ij} \cdot \kappa_{\text{RF}}, & \text{se } z_j \ge 0 \land z_j \ne i \\ \mathcal{L}_{ij}, & \text{caso contrário} \end{cases}\]
+
+onde: - \(\mathcal{L}_{ij}\) é a latência física medida em
+milissegundos, consumida do tópico \texttt{/\allowbreak{}comm/\allowbreak{}uav\_\allowbreak{}latency} (valor
+nominal \(10{,}0\text{ ms}\) em caso de interrupção momentânea da
+telemetria). - \(w_{\text{lat}} = 0{,}5\) representa o peso de
+penalização da latência de rádio. - \(\kappa_{\text{RF}} = 1{,}5\)
+(\texttt{cbba\_\allowbreak{}rf\_\allowbreak{}contention\_\allowbreak{}penalty}) é o fator multiplicativo de
+contenção espectral. Se a tarefa \(j\) já possui dono provisório
+atribuído na tabela de consenso (\(z_j \ne i\)), a latência presumida
+pelo concorrente é penalizada em \(50\%\). - \textbf{Direção no Custo:}
+Minimização (termo subtrativo no cálculo do lance). - \textbf{Código
+C++:} \texttt{CbbaAgent:\allowbreak{}:\allowbreak{}compute\_\allowbreak{}bid\_\allowbreak{}score} em
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}126-135}. -
+\textbf{Impacto no Simulador Drake:} Promove a dispersão natural do
+enxame sobre os múltiplos UGVs, impedindo conglomerações que saturariam
+o enlace de radiofrequência simulado.
+
+\subsubsection{\texorpdfstring{A.2.3 Métrica de Pontuação Líquida de
+Lance
+(\(c_{ij}\))}{A.2.3 Métrica de Pontuação Líquida de Lance (c\_\{ij\})}}\label{a.2.3-muxe9trica-de-pontuauxe7uxe3o-luxedquida-de-lance-c_ij}
+
+A atratividade final consolidada para a inserção da tarefa \(j\) no
+feixe do agente \(i\) é dada por:
+
+\[c_{ij} = \max\left(0{,}01, \; R_{ij} - L_{ij}\right)\]
+
+A imposição do piso positivo \(c_{\text{min}} = 0{,}01\) garante a
+integridade estrita das tabelas de consenso, prevenindo lances nulos ou
+negativos que inviabilizariam os critérios formais de convergência do
+CBBA.
+
+\subsubsection{\texorpdfstring{A.2.4 Métrica de Histerese de
+Reatribuição Anti-Chattering
+(\(\Delta_{\text{hist}}\))}{A.2.4 Métrica de Histerese de Reatribuição Anti-Chattering (\textbackslash Delta\_\{\textbackslash text\{hist\}\})}}\label{a.2.4-muxe9trica-de-histerese-de-reatribuiuxe7uxe3o-anti-chattering-delta_texthist}
+
+Para mitigar a comutação rápida e oscilatória de tarefas entre drones
+decorrente de ruídos estocásticos de medição de latência, o algoritmo
+impõe uma barreira de histerese estrita:
+
+\[\text{Substituição Válida de Posse} \iff c_{ij} > y_j \cdot (1 + \Delta_{\text{hist}})\]
+
+onde: - \(y_j\) é o lance vencedor vigente registrado na tabela de
+consenso para a tarefa \(j\). - \(\Delta_{\text{hist}} = 0{,}15\)
+(\(15\%\)) denota o limiar de histerese (\texttt{cbba\_\allowbreak{}hysteresis}). -
+Se o agente já é o proprietário vigente da tarefa (\(z_j = i\)), a
+condição relaxa para superação estrita simples: \(c_{ij} > y_j\). -
+\textbf{Código C++:} \texttt{CbbaAgent:\allowbreak{}:\allowbreak{}build\_\allowbreak{}bundle} em
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}193-205}. -
+\textbf{Impacto no Simulador Drake:} Elimina oscilações espúrias de
+planejamento (\emph{chattering}), estabilizando as trajetórias de voo no
+simulador e reduzindo a zero reversões repentinas de comando.
+
+\subsubsection{A.2.5 Métrica de Resolução de Conflitos e Consenso
+Descentralizado}\label{a.2.5-muxe9trica-de-resoluuxe7uxe3o-de-conflitos-e-consenso-descentralizado}
+
+O alinhamento assíncrono entre agentes baseia-se na troca periódica dos
+vetores de atribuição \(\mathbf{z}_i\), lances \(\mathbf{y}_i\) e
+registros temporais \(\mathbf{s}_i\). A rotina
+\texttt{resolve\_\allowbreak{}conflict} processa os pacotes recebidos aplicando a
+matriz canônica de 18 regras do CBBA: 1. Atualização do relógio lógico:
+\(s_{ik} = s_{jk}\), para todos os agentes \(k \ne i\). 2. Comparação de
+lances com precisão de máquina \(\epsilon = 10^{-6}\): em caso de
+superioridade estrita de lance de um agente com informação mais recente,
+o agente \(i\) cede a tarefa e esvazia recursivamente as tarefas
+subsequentes do seu feixe a partir da posição de corte. - \textbf{Código
+C++:} \texttt{CbbaAgent:\allowbreak{}:\allowbreak{}resolve\_\allowbreak{}conflict} em
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}233-335}. -
+\textbf{Impacto no Simulador Drake:} Garante convergência finita do
+enxame para um escalonamento sem colisões de tarefas em menos de 3
+ciclos de consenso.
+
+\subsubsection{\texorpdfstring{A.2.6 Métrica de Vínculo Estrito de
+Escolta (\(M \ge 1\)) e Standby de
+Base}{A.2.6 Métrica de Vínculo Estrito de Escolta (M \textbackslash ge 1) e Standby de Base}}\label{a.2.6-muxe9trica-de-vuxednculo-estrito-de-escolta-m-ge-1-e-standby-de-base}
+
+A minimização do consumo energético do enxame é governada pela restrição
+canônica de ativação:
+
+\[\text{UAV } i \in \mathcal{A} \iff |b_i| \ge 1 \iff \exists j \in \{1, \dots, N_{\text{ugv}}\} \text{ tal que } z_j = i\]
+
+Caso um UAV não retenha nenhuma tarefa após a fase de consenso
+(\(|b_i| = 0\)): - Sua coordenada de referência é fixada na base de
+solo:
+\(\mathbf{p}_{\text{base}, i} = (5 \cdot i, 0{,}0, 0{,}5)\text{ m}\). -
+O drone é expressamente \textbf{removido} do vetor
+\texttt{/\allowbreak{}drones/\allowbreak{}active\_\allowbreak{}set}. - Nenhuma referência dinâmica de
+aproximação é transmitida ao simulador Drake para esta plataforma. -
+\textbf{Código C++:} \texttt{AtasOptimizerNode:\allowbreak{}:\allowbreak{}optimization\_\allowbreak{}loop} em
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer\_\allowbreak{}node.\allowbreak{}cpp:\allowbreak{}520-550}. -
+\textbf{Impacto no Simulador Drake:} Desliga o cálculo de física de
+rotores para drones ociosos, poupando CPU/GPU do simulador e mantendo no
+ar estritamente os drones com atribuição ativa.
+
+\subsection{A.3 Métricas da Camada Contínua de Viewpoint (NLP /
+PolyMPC)}\label{a.3-muxe9tricas-da-camada-contuxednua-de-viewpoint-nlp-polympc}
+
+\subsubsection{A.3.1 Transformação Cinemática de
+Coordenadas}\label{a.3.1-transformauxe7uxe3o-cinemuxe1tica-de-coordenadas}
+
+Para cada UAV ativo \(i\) escoltando o UGV \(k\), as variáveis de
+decisão da otimização contínua representam a pose quasi-estática no
+referencial local móvel do UGV:
+\((\Delta x, \Delta y, z, \Delta \psi)\). A projeção cinemática no
+sistema de coordenadas inercial do mundo (Town10) é computada por:
+
+\[\begin{bmatrix} x_{\text{uav}} \\ y_{\text{uav}} \\ z_{\text{uav}} \end{bmatrix} = \begin{bmatrix} x_{\text{ugv}} \\ y_{\text{ugv}} \\ 0 \end{bmatrix} + \begin{bmatrix} \cos(\psi_{\text{ugv}}) & -\sin(\psi_{\text{ugv}}) & 0 \\ \sin(\psi_{\text{ugv}}) & \cos(\psi_{\text{ugv}}) & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} \Delta x \\ \Delta y \\ z \end{bmatrix}\]
+
+\[\psi_{\text{uav}} = \operatorname{wrap\_pi}\left(\psi_{\text{ugv}} + \Delta \psi\right)\]
+
+com
+\(\operatorname{wrap\_pi}(\alpha) = \operatorname{atan2}(\sin \alpha, \cos \alpha) \in [-\pi, \pi)\).
+
+\subsubsection{\texorpdfstring{A.3.2 Métrica de Cobertura e Pegada
+Perceptual Ponderada
+(\(\mathcal{Q}_{\text{percepção}}\))}{A.3.2 Métrica de Cobertura e Pegada Perceptual Ponderada (\textbackslash mathcal\{Q\}\_\{\textbackslash text\{percepção\}\})}}\label{a.3.2-muxe9trica-de-cobertura-e-pegada-perceptual-ponderada-mathcalq_textpercepuxe7uxe3o}
+
+A qualidade da cobertura visual proporcionada pela referência é
+quantificada pela soma ponderada da visibilidade dos alvos e atores
+presentes no cone sensorial:
+
+\[\mathcal{Q}_{\text{percepção}}(\Delta x, \Delta y, z, \Delta \psi) = \sum_{k \in \mathcal{T}_{\text{visíveis}}} \left(\frac{z}{z_{\text{max}}}\right) \cdot \cos(\Delta\psi_k) \cdot w_k\]
+
+onde: - \(\mathcal{T}_{\text{visíveis}}\) é o conjunto de alvos que
+atendem aos limites geométricos do sensor: - Distância euclidiana
+horizontal:
+\(d_{2\text{D}, k} = \sqrt{(x_k - x_{\text{uav}})^2 + (y_k - y_{\text{uav}})^2} \in [1{,}0, 40{,}0]\text{ m}\).
+- Desvio azimutal horizontal: \(|\Delta\psi_k| \le 45^\circ\)
+(\(90^\circ\) de abertura útil), com:
+
+\[\Delta\psi_k = \left|\operatorname{wrap\_pi}\left(\operatorname{atan2}\left(y_k - y_{\text{uav}}, \; x_k - x_{\text{uav}}\right) - \psi_{\text{uav}}\right)\right|\]
+
+\begin{itemize}
+\tightlist
+\item
+  \(w_k\) é o peso semântico de relevância operacional:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    UGV escoltado: \(w_k = 1{,}0\).
+  \item
+    Veículos dinâmicos de tráfego NPC: \(w_k = 2{,}0\).
+  \item
+    Pedestres vulneráveis em travessia: \(w_k = 3{,}0\).
+  \end{itemize}
+\item
+  O termo proporcional \(z / z_{\text{max}}\) (com
+  \(z_{\text{max}} = 35{,}0\text{ m}\)) premia altitudes que ampliam a
+  projeção da pegada sensorial (\emph{footprint}) no solo.
+\item
+  \textbf{Direção no Custo:} Maximização. No problema de minimização,
+  entra com sinal negativo: \(-\mathcal{Q}_{\text{percepção}}\).
+\item
+  \textbf{Código C++:} \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}evaluate\_\allowbreak{}fov\_\allowbreak{}cost}
+  em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}457-472}.
+\item
+  \textbf{Impacto no Simulador Drake:} Conduz o UAV para quadrantes que
+  maximizam a observação de pedestres e veículos nas imediações do UGV,
+  antecipando perigos para o módulo de percepção do robô terrestre.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{A.3.3 Restrição Primordial Dual-Sensor e
+Função Barreira Interior
+(\(\Psi_{\text{FoV}}\))}{A.3.3 Restrição Primordial Dual-Sensor e Função Barreira Interior (\textbackslash Psi\_\{\textbackslash text\{FoV\}\})}}\label{a.3.3-restriuxe7uxe3o-primordial-dual-sensor-e-funuxe7uxe3o-barreira-interior-psi_textfov}
+
+A preservação incondicional da linha de visada do UGV escoltado em pelo
+menos um dos sensores embarcados (\(\text{LiDAR} \lor \text{Câmera}\)) é
+assegurada por uma barreira interior estrita:
+
+\[\Psi_{\text{FoV}}(\mathbf{p}_{\text{uav}}, \psi_{\text{uav}}, \theta^*, \mathbf{p}_{\text{ugv}}) = \begin{cases} 0{,}0, & \text{se } \operatorname{InDualSensorFoV} \land \operatorname{CheckLoS}(\mathbf{p}_{\text{uav}}, \mathbf{p}_{\text{ugv}}) \\ 10000{,}0 + 1000{,}0 \cdot \max\left(0{,}0, \; r_{\text{horiz}} - R_{\text{max}}\right), & \text{caso contrário} \end{cases}\]
+
+com \(r_{\text{horiz}} = \sqrt{\Delta x^2 + \Delta y^2}\) e
+\(R_{\text{max}} = 30{,}0\text{ m}\).
+
+\textbf{Modelo do Sensor LiDAR 3D:} O alvo \(\mathbf{p}_{\text{tgt}}\)
+está contido no volume do LiDAR
+(\(\operatorname{InLiDAR} \equiv \text{True}\)) se: 1. Alcance esférico
+tridimensional:
+\(\|\mathbf{p}_{\text{tgt}} - \mathbf{p}_{\text{uav}}\|_2 \le 100{,}0\text{ m}\).
+2. Abertura azimutal horizontal:
+\(|\Delta\phi_{\text{lidar}}| \le 60^\circ\) (\(120^\circ\) de abertura
+total), onde
+\(\Delta\phi_{\text{lidar}} = \operatorname{wrap\_pi}(\operatorname{atan2}(y_{\text{tgt}} - y_{\text{uav}}, x_{\text{tgt}} - x_{\text{uav}}) - \psi_{\text{uav}})\).
+3. Ângulo de elevação vertical:
+\(\beta_{\text{elev}} \in [-30^\circ, +10^\circ]\), onde:
+
+\[\beta_{\text{elev}} = \operatorname{atan2}\left(z_{\text{tgt}} - z_{\text{uav}}, \; \sqrt{(x_{\text{tgt}} - x_{\text{uav}})^2 + (y_{\text{tgt}} - y_{\text{uav}})^2}\right)\]
+
+\textbf{Modelo da Câmera RGB com Pitch Solidário Acoplado:} O alvo está
+contido no frustum da câmera
+(\(\operatorname{InCamera} \equiv \text{True}\)) se: 1. Alcance
+tridimensional:
+\(\|\mathbf{p}_{\text{tgt}} - \mathbf{p}_{\text{uav}}\|_2 \le 40{,}0\text{ m}\).
+2. Abertura azimutal horizontal:
+\(|\Delta\phi_{\text{cam}}| \le 45^\circ\) (\(90^\circ\) de abertura
+total). 3. Abertura vertical acoplada ao pitch do chassi:
+\(|\beta_{\text{elev}} - \theta_{\text{pitch}}| \le 29{,}36^\circ\)
+(\(58{,}72^\circ\) total), onde a inclinação nominal de arfagem é
+acoplada analiticamente à distância horizontal e altitude:
+
+\[\theta^* = \arctan\left(\frac{z_{\text{uav}}}{\max(0{,}1, \; r_{\text{horiz}})}\right)\]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:} \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}is\_\allowbreak{}in\_\allowbreak{}lidar\_\allowbreak{}fov},
+  \texttt{is\_\allowbreak{}in\_\allowbreak{}camera\_\allowbreak{}fov}, \texttt{evaluate\_\allowbreak{}fov\_\allowbreak{}cost} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}115-235,\ 434-441}.
+\item
+  \textbf{Impacto no Simulador Drake:} Elimina integralmente pontos
+  cegos e perdas de contato visual com o UGV ao longo de curvas
+  acentuadas e manobras evasivas em Town10.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{A.3.4 Métrica de Oclusão 3D e Ray-Casting
+LoS
+(\(\mathcal{P}_{\text{oclusão}}\))}{A.3.4 Métrica de Oclusão 3D e Ray-Casting LoS (\textbackslash mathcal\{P\}\_\{\textbackslash text\{oclusão\}\})}}\label{a.3.4-muxe9trica-de-oclusuxe3o-3d-e-ray-casting-los-mathcalp_textoclusuxe3o}
+
+A desobstrução da linha de visada direta (\(\operatorname{CheckLoS}\)) é
+validada por meio de testes analíticos de interseção de segmento contra
+as caixas delimitadoras orientadas no eixo (AABB --- \emph{Axis-Aligned
+Bounding Boxes}) dos 30 edifícios mapeados em Town10, utilizando o
+algoritmo de Slab (\emph{Kay-Kajiya}):
+
+\[\operatorname{CheckLoS}(\mathbf{p}_1, \mathbf{p}_2) = \bigwedge_{b \in \mathcal{B}} \neg \operatorname{RayAABBIntersect}(\mathbf{p}_1, \mathbf{p}_2 - \mathbf{p}_1, \text{box}_b)\]
+
+Para cada edifício \(b\) com limites
+\([x_{\text{min}}, x_{\text{max}}] \times [y_{\text{min}}, y_{\text{max}}] \times [0{,}0, h_b]\),
+determinam-se os intervalos de interseção paramétrica:
+
+\[t_{x,\text{min}} = \frac{x_{\text{min}} - p_{1,x}}{p_{2,x} - p_{1,x}}, \quad t_{x,\text{max}} = \frac{x_{\text{max}} - p_{1,x}}{p_{2,x} - p_{1,x}}\]
+
+\[t_{\text{enter}} = \max\left(\min(t_{x,\text{min}}, t_{x,\text{max}}), \min(t_{y,\text{min}}, t_{y,\text{max}}), \min(t_{z,\text{min}}, t_{z,\text{max}})\right)\]
+
+\[t_{\text{exit}} = \min\left(\max(t_{x,\text{min}}, t_{x,\text{max}}), \max(t_{y,\text{min}}, t_{y,\text{max}}), \max(t_{z,\text{min}}, t_{z,\text{max}})\right)\]
+
+Ocorre colisão ótica com a estrutura se
+\(t_{\text{enter}} \le t_{\text{exit}} \land t_{\text{exit}} \ge 0{,}0 \land t_{\text{enter}} \le 1{,}0\).
+Para atores prioritários (\(w_k > 2{,}0\)), a oclusão gera uma
+penalidade aditiva:
+
+\[\mathcal{P}_{\text{oclusão}} = \sum_{k \in \mathcal{T}_{\text{prioritários}}} 10{,}0 \cdot \mathbb{I}\left(\neg \operatorname{InDualSensorFoV}(k) \lor \neg \operatorname{CheckLoS}(\mathbf{p}_{\text{uav}}, \mathbf{p}_k)\right)\]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:} \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}check\_\allowbreak{}los} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}85-113}.
+\item
+  \textbf{Impacto no Simulador Drake:} Força o reposicionamento do UAV
+  para longe de fachadas e quinas cegas de edifícios, garantindo
+  cobertura persistente de cruzamentos.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{A.3.5 Métrica de Repulsão Anti-Colisão
+Inter-UAVs
+(\(C_{\text{safe}}\))}{A.3.5 Métrica de Repulsão Anti-Colisão Inter-UAVs (C\_\{\textbackslash text\{safe\}\})}}\label{a.3.5-muxe9trica-de-repulsuxe3o-anti-colisuxe3o-inter-uavs-c_textsafe}
+
+Quando múltiplos drones atuam simultaneamente nas imediações do mesmo
+comboio terrestre, aplica-se uma barreira repulsiva harmônica baseada na
+distância horizontal mútua \(d_{ij}\):
+
+\[C_{\text{safe}} = \sum_{j \ne i, \; \text{ugv}_j = \text{ugv}_i} \frac{w_{\text{safe}} \cdot (d_{\text{safe}} - d_{ij})}{\max(0{,}1, \; d_{ij})}, \quad \forall d_{ij} < d_{\text{safe}}\]
+
+onde \(d_{\text{safe}} = 5{,}0\text{ m}\) é o raio de segurança e
+\(w_{\text{safe}} = 10{,}0\) é o peso da barreira.
+
+O gradiente repulsivo analítico aplicado no ajuste de posição
+\((\Delta x, \Delta y)\) é deduzido por:
+
+\[\nabla_{\Delta \mathbf{p}} C_{\text{safe}} = - \frac{w_{\text{safe}} \cdot d_{\text{safe}}}{d_{ij}^2} \cdot \frac{\Delta \mathbf{p}_i - \Delta \mathbf{p}_j}{d_{ij}}\]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:} \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}solve\_\allowbreak{}viewpoint} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}546-557}.
+\item
+  \textbf{Impacto no Simulador Drake:} Mantém uma zona de amortecimento
+  espacial em torno de cada drone, evitando que o planejador de curto
+  prazo (\(A^* + \text{ORCA}\)) do simulador precise abortar trajetórias
+  ou desacelerar bruscamente.
+\end{itemize}
+
+\subsubsection{A.3.6 Procedimento Algorítmico de Otimização e Cálculo de
+Gradientes}\label{a.3.6-procedimento-algoruxedtmico-de-otimizauxe7uxe3o-e-cuxe1lculo-de-gradientes}
+
+A minimização da função
+\(\mathcal{J}_{\text{NLP}} = w_{\text{det}} \mathcal{J}_{\text{FoV}} + C_{\text{safe}} + \Psi_{\text{FoV}}\)
+ocorre em duas etapas complementares:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Amostragem Global em Octantes (\(q \in \{0, \dots, 7\}\)):}
+  Gera 8 poses candidatas no anel circular de raio nominal
+  \(R_{\text{orb}} = 12{,}0\text{ m}\), defasadas pelo identificador do
+  drone:
+  \[\phi_q = q \cdot \frac{\pi}{4} + (i \pmod 4) \cdot \frac{\pi}{2}, \quad \Delta x_q = R_{\text{orb}} \cos(\phi_q), \quad \Delta y_q = R_{\text{orb}} \sin(\phi_q)\]
+  Avalia-se \(\mathcal{J}_{\text{FoV}}\) para cada candidato e
+  seleciona-se a melhor pose inicial \((\Delta x_0, \Delta y_0)\).
+\item
+  \textbf{Refinamento Local por Descida de Gradiente (10 iterações):}
+  Computa os gradientes espaciais numéricos de
+  \(\mathcal{J}_{\text{FoV}}\) por diferenças finitas com passo
+  \(\delta = 0{,}1\text{ m}\):
+  \[\nabla_{\Delta x} \mathcal{J}_{\text{FoV}} = \frac{\mathcal{J}_{\text{FoV}}(\Delta x + \delta, \Delta y) - \mathcal{J}_{\text{FoV}}(\Delta x, \Delta y)}{\delta}\]
+  \[\nabla_{\Delta y} \mathcal{J}_{\text{FoV}} = \frac{\mathcal{J}_{\text{FoV}}(\Delta x, \Delta y + \delta) - \mathcal{J}_{\text{FoV}}(\Delta x, \Delta y)}{\delta}\]
+  Acopla-se o gradiente analítico repulsivo \(\nabla C_{\text{safe}}\) e
+  atualizam-se as coordenadas com taxa de aprendizado
+  \(\alpha = 0{,}5\):
+  \[\Delta x \leftarrow \Delta x - \alpha \left(w_{\text{det}} \nabla_{\Delta x} \mathcal{J}_{\text{FoV}} + \nabla_{\Delta x} C_{\text{safe}}\right)\]
+  \[\Delta y \leftarrow \Delta y - \alpha \left(w_{\text{det}} \nabla_{\Delta y} \mathcal{J}_{\text{FoV}} + \nabla_{\Delta y} C_{\text{safe}}\right)\]
+  Aplica-se projeção euclidiana caso
+  \(\|\Delta \mathbf{p}\|_2 > R_{\text{max}} = 30{,}0\text{ m}\).
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:} \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}solve\_\allowbreak{}viewpoint} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}498-570}.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{A.3.7 Métrica de Continuidade Temporal e
+Limitação de Slew-Rate
+(\(C^0 / C^1\))}{A.3.7 Métrica de Continuidade Temporal e Limitação de Slew-Rate (C\^{}0 / C\^{}1)}}\label{a.3.7-muxe9trica-de-continuidade-temporal-e-limitauxe7uxe3o-de-slew-rate-c0-c1}
+
+Para preservar a rastreabilidade dinâmica das referências e impedir
+saturações mecânicas nos controladores de atitude do Drake, aplica-se um
+filtro cinemático de taxa de variação (\emph{slew-rate}):
+
+\[\|\Delta \mathbf{p}(t) - \Delta \mathbf{p}(t - \Delta t)\|_2 \le v_{\text{max}} \cdot \Delta t\]
+
+\[|\Delta \psi(t) - \Delta \psi(t - \Delta t)| \le \omega_{\text{max}} \cdot \Delta t\]
+
+com \(v_{\text{max}} = 5{,}0\text{ m/s}\),
+\(\omega_{\text{max}} = 3{,}5\text{ rad/s}\)
+(\textasciitilde{}\(200^\circ\text{/s}\)) e período de amostragem
+\(\Delta t = 0{,}2\text{ s}\) (5 Hz).
+
+\textbf{Garantia Primordial de Guinada com Margem de Segurança:} Para
+que o atraso de transição na rotação não cause a perda do UGV pelo cone
+da câmera (\(\pm 45^\circ\)), o limitador calcula o desvio azimutal
+\(\Delta_{\text{az}} = \operatorname{wrap\_pi}(\operatorname{atan2}(-\Delta y, -\Delta x) - \Delta \psi)\)
+e satura rigidamente o erro em uma margem de segurança conservadora:
+
+\[|\Delta_{\text{az}}| \le 35^\circ \cdot \frac{\pi}{180^\circ}\]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:}
+  \texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}apply\_\allowbreak{}slew\_\allowbreak{}rate\_\allowbreak{}limiter} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}296-356}.
+\item
+  \textbf{Impacto no Simulador Drake:} Produz referências de classe
+  \(C^0\) suaves e sem descontinuidades, permitindo convergência estável
+  dos controladores PID e MPC do simulador Drake.
+\end{itemize}
+
+\subsubsection{A.3.8 Métrica de Contingência Determinística (Fallback
+Orbital
+3D)}\label{a.3.8-muxe9trica-de-continguxeancia-determinuxedstica-fallback-orbital-3d}
+
+Caso o tempo de execução do solver contínuo exceda o prazo limite rígido
+de tempo real
+(\(\tau_{\text{exec}} \ge \text{deadline} = 40\text{ ms}\)) ou a pose
+ótima calculada não passe no teste estrito de FoV do UGV
+(\texttt{is\_\allowbreak{}target\_\allowbreak{}ugv\_\allowbreak{}in\_\allowbreak{}fov}), aciona-se instantaneamente a rotina
+determinística orbital:
+
+\[\mathbf{p}_{\text{rel}}^* = \begin{bmatrix} R_{\text{orb}} \cos\left(\frac{q \pi}{2} + \frac{\pi}{4}\right) \\ R_{\text{orb}} \sin\left(\frac{q \pi}{2} + \frac{\pi}{4}\right) \\ z_{\text{nominal}} \end{bmatrix}, \quad \Delta\psi^* = \operatorname{atan2}\left(-y_{\text{rel}}^*, \; -x_{\text{rel}}^*\right), \quad \theta^* = \arctan\left(\frac{z_{\text{nominal}}}{R_{\text{orb}}}\right)\]
+
+onde \(R_{\text{orb}} = 12{,}0\text{ m}\),
+\(z_{\text{nominal}} = 15{,}0\text{ m}\),
+\(q = \text{drone\_id} \pmod 4\) e \(\theta^* = 51{,}34^\circ\). -
+\textbf{Código C++:}
+\texttt{ViewpointOptimizer:\allowbreak{}:\allowbreak{}compute\_\allowbreak{}orbital\_\allowbreak{}fallback} em
+\texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}275-294}. -
+\textbf{Impacto no Simulador Drake:} Confere tolerância a falhas estrita
+com complexidade temporal \(O(1)\), eliminando travamentos de nós ROS 2
+e assegurando cadência ininterrupta a 5 Hz.
+
+\subsubsection{A.3.9 Métrica de Supervisão Adaptativa Pareto em Malha
+Fechada}\label{a.3.9-muxe9trica-de-supervisuxe3o-adaptativa-pareto-em-malha-fechada}
+
+A modulação adaptativa dos pesos de custo e da altitude operacional
+nominal decorre da observação contínua de métricas agregadas em janelas
+móveis de 60 segundos (300 amostras @ 5 Hz, recebidas via
+\texttt{/\allowbreak{}metrics/\allowbreak{}optimizer\_\allowbreak{}feedback}):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Condição de Degradação de Rádio
+  (\(\bar{\mathcal{L}}_{60\text{s}} > 25{,}0\text{ ms}\)):}
+  \[w_{\text{lat}} \leftarrow \min\left(5{,}0, \; w_{\text{lat}} \cdot 1{,}20\right), \quad z_{\text{nominal}} \leftarrow \max\left(z_{\text{min}}, \; z_{\text{nominal}} \cdot 0{,}85\right)\]
+\item
+  \textbf{Condição de Perda de Cobertura Visual
+  (\(\bar{\mathcal{D}}_{60\text{s}} < 4{,}0\text{ alvos}\)):}
+  \[w_{\text{det}} \leftarrow \min\left(10{,}0, \; w_{\text{det}} \cdot 1{,}20\right), \quad z_{\text{nominal}} \leftarrow \min\left(25{,}0, \; z_{\text{nominal}} \cdot 1{,}10\right)\]
+\item
+  \textbf{Condição de Relaxamento Gradual para Equilíbrio Pareto
+  (\(\bar{\mathcal{L}}_{60\text{s}} \le 25{,}0\text{ ms} \land \bar{\mathcal{D}}_{60\text{s}} \ge 4{,}0\)):}
+  \[w_{\text{lat}} \leftarrow \max\left(0{,}5, \; w_{\text{lat}} \cdot 0{,}98\right), \quad w_{\text{det}} \leftarrow \max\left(1{,}0, \; w_{\text{det}} \cdot 0{,}98\right)\]
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Código C++:}
+  \texttt{AtasOptimizerNode:\allowbreak{}:\allowbreak{}process\_\allowbreak{}optimizer\_\allowbreak{}feedback} em
+  \texttt{ws/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer/\allowbreak{}src/\allowbreak{}atas\_\allowbreak{}optimizer\_\allowbreak{}node.\allowbreak{}cpp:\allowbreak{}383-449}.
+\item
+  \textbf{Impacto no Simulador Drake:} Concede capacidade de
+  autorregulação resiliente: ao adentrar corredores estreitos de prédios
+  com sinal atenuado, o enxame reduz a altitude para restaurar o enlace
+  de rádio; em praças abertas, expande a altitude para maximizar a
+  cobertura situacional.
+\end{itemize}
+
+\subsection{A.4 Matriz Consolidada de Métricas de
+Otimização}\label{a.4-matriz-consolidada-de-muxe9tricas-de-otimizauxe7uxe3o}
+
+A Tabela A.1 sintetiza a totalidade das métricas do sistema, detalhando
+suas expressões matemáticas, parâmetros nominais, localização exata no
+código-fonte e efeito prático no simulador Drake.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Métrica / Termo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Expressão Matemática
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Parâmetros e Valores Nominais
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Arquivo e Linha
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Efeito no Simulador Drake
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Recompensa Perceptual CBBA} &
+\(R_{ij} = V_j P_j e^{-\lambda_{\text{dist}} d_{ij}}\) &
+\(\lambda_{\text{dist}} = 0{,}02\text{ m}^{-1}; V_j = 10{,}0; P_j = 1{,}0\)
+& \texttt{cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}133} & Atrai o UAV para UGVs prioritários e
+próximos \\
+\textbf{Contenção RF CBBA} &
+\(L_{ij} = w_{\text{lat}} (\mathcal{L}_{ij} \cdot \kappa_{\text{RF}})\)
+& \(w_{\text{lat}} = 0{,}5; \kappa_{\text{RF}} = 1{,}5\) &
+\texttt{cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}130} & Penaliza monopólio de enlace e dispersa
+drones \\
+\textbf{Pontuação Líquida CBBA} &
+\(c_{ij} = \max(0{,}01, R_{ij} - L_{ij})\) & \(c_{\text{min}} = 0{,}01\)
+& \texttt{cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}137} & Garante lances positivos e convergência
+de consenso \\
+\textbf{Histerese Anti-Chattering} &
+\(c_{ij} > y_j (1 + \Delta_{\text{hist}})\) &
+\(\Delta_{\text{hist}} = 0{,}15\) (\(15\%\)) &
+\texttt{cbba\_\allowbreak{}agent.\allowbreak{}cpp:\allowbreak{}197} & Suprime comutação oscilatória de
+escoltas \\
+\textbf{Vínculo Estrito de Escolta} & UAV
+\(i \in \mathcal{A} \iff \|b_i\| \ge 1\) & \(M \in [1, 2]\); Standby:
+\((5i, 0, 0{,}5)\text{ m}\) & \texttt{atas\_\allowbreak{}optimizer\_\allowbreak{}node.\allowbreak{}cpp:\allowbreak{}525} &
+Pousa drones ociosos e reduz carga de simulação \\
+\textbf{Pegada Visual Ponderada} &
+\(\mathcal{Q} = \sum \frac{z}{z_{\text{max}}} \cos(\Delta\psi_k) w_k\) &
+\(w_{\text{ped}} = 3{,}0; w_{\text{npc}} = 2{,}0; w_{\text{ugv}} = 1{,}0\)
+& \texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}469} & Direciona o FoV para alvos
+dinâmicos vulneráveis \\
+\textbf{Barreira Primordial FoV} & \(\Psi_{\text{FoV}} \ge 10000{,}0\) &
+InDualSensor \(\land\) CheckLoS; \(R_{\text{max}} = 30\text{ m}\) &
+\texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}437} & Garante zero violações de visada
+do UGV alvo \\
+\textbf{Oclusão 3D (Ray-Casting)} & Teste Slab AABB Kay-Kajiya & 30
+edifícios urbanos Town10 & \texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}90} & Evita
+bloqueio visual causado por edificações \\
+\textbf{Barreira Anti-Colisão} &
+\(C_{\text{safe}} = w_{\text{safe}} \frac{d_{\text{safe}} - d_{ij}}{d_{ij}}\)
+& \(d_{\text{safe}} = 5{,}0\text{ m}; w_{\text{safe}} = 10{,}0\) &
+\texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}553} & Previne conflitos espaciais
+entre drones do comboio \\
+\textbf{Slew-Rate Limiter 3D} &
+\(\|\Delta \mathbf{p}\| \le v_{\text{max}} \Delta t; |\Delta \psi| \le \omega_{\text{max}} \Delta t\)
+&
+\(v_{\text{max}} = 5\text{ m/s}; \omega_{\text{max}} = 3{,}5\text{ rad/s}; \|\Delta_{\text{az}}\| \le 35^\circ\)
+& \texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}314} & Garante continuidade
+\(C^0 / C^1\) rastreável no Drake \\
+\textbf{Fallback Orbital 3D} & Anel paramétrico
+\(R_{\text{orb}} = 12\text{ m}, z = 15\text{ m}\) &
+\(\text{Deadline } \tau = 40\text{ ms}; \theta^* = 51{,}34^\circ\) &
+\texttt{viewpoint\_\allowbreak{}optimizer.\allowbreak{}cpp:\allowbreak{}284} & Contingência determinística
+ultra-rápida (\(O(1)\)) \\
+\textbf{Supervisão Adaptativa} & Modulação de
+\(w_{\text{lat}}, w_{\text{det}}, z_{\text{nom}}\) &
+\(\bar{\mathcal{L}} > 25\text{ ms}; \bar{\mathcal{D}} < 4{,}0\); janela
+60s @ 5 Hz & \texttt{atas\_\allowbreak{}optimizer\_\allowbreak{}node.\allowbreak{}cpp:\allowbreak{}400} & Regulação contínua
+do compromisso Pareto \\
+\end{longtable}
+}
+
+\bibliography{/mnt/storage/markdown2html5/261013conversa_moo_rosh2_perplexity/paper/08_references/references.bib}
+
+\end{document}

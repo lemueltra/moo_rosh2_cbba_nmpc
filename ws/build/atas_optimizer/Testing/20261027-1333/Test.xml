@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261027-1333-Experimental"
+	Name="dell-arch"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/lib/ccache/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="dell-arch"
+	OSRelease="7.2.11-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="52614"
+	TotalPhysicalMemory="31769"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2367.96"
+	>
+	<Testing>
+		<StartDateTime>Oct 27 13:33 UTC</StartDateTime>
+		<StartTestTime>1793108032</StartTestTime>
+		<TestList>
+			<Test>./test_polympc_nlp</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>test_polympc_nlp</Name>
+			<Path>.</Path>
+			<FullName>./test_polympc_nlp</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_polympc_nlp.txt" "--command" "/workspace/ws/build/atas_optimizer/test_polympc_nlp" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0453344</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_polympc_nlp.txt" "--command" "/workspace/ws/build/atas_optimizer/test_polympc_nlp" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_polympc_nlp --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from PolyMpNlpTest
+[ RUN      ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle
+[       OK ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle (0 ms)
+[ RUN      ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+/workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:93: Failure
+Expected: (yaw_diff) &lt;= ((3.5 * dt) + 1e-4), actual: 1.7453292519943295 vs 0.70010000000000006
+
+[  FAILED  ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep (0 ms)
+[ RUN      ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback
+[       OK ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback (0 ms)
+[ RUN      ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation
+[       OK ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation (0 ms)
+[ RUN      ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark
+[       OK ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark (1 ms)
+[----------] 5 tests from PolyMpNlpTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+
+ 1 FAILED TEST
+-- run_test.py: return code 1
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Oct 27 13:33 UTC</EndDateTime>
+		<EndTestTime>1793108032</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

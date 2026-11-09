@@ -1,0 +1,7 @@
+# Service to set simulation weather conditions
+string preset_name
+WeatherPreset custom_parameters
+bool use_custom
+---
+bool success
+string error_message

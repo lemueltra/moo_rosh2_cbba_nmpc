@@ -1,0 +1,27 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_polympc_nlp --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml
+
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from PolyMpNlpTest
+[ RUN      ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle
+[       OK ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle (0 ms)
+[ RUN      ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+[       OK ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep (0 ms)
+[ RUN      ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback
+[       OK ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback (0 ms)
+[ RUN      ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation
+[       OK ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation (0 ms)
+[ RUN      ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark
+[       OK ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark (2 ms)
+[----------] 5 tests from PolyMpNlpTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 5 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'

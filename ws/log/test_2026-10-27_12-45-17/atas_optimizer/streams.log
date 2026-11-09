@@ -1,0 +1,74 @@
+[0.017s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R cpplint
+[0.022s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s]    Site: dell-arch
+[0.022s]    Build name: (empty)
+[0.022s]  Add coverage exclude regular expressions.
+[0.022s] Create new tag: 20261027-1245 - Experimental
+[0.022s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Test project /workspace/ws/build/atas_optimizer
+[0.022s] Constructing a list of tests
+[0.022s] Done constructing a list of tests
+[0.022s] Updating test list for fixtures
+[0.022s] Added 0 tests to meet fixture requirements
+[0.022s] Checking test dependency graph...
+[0.022s] Checking test dependency graph end
+[0.023s] test 11
+[0.023s]     Start 11: cpplint
+[0.023s] 
+[0.023s] 11: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cpplint/cpplint.txt" "--command" "/opt/ros/jazzy/bin/ament_cpplint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+[0.023s] 11: Working Directory: /workspace/ws/src/atas_optimizer
+[0.023s] 11: Test timeout computed to be: 120
+[0.065s] 11: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+[0.065s] 11:  - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml
+[0.435s] 11: Using '--root=/workspace/ws/src/atas_optimizer/include' argument
+[0.435s] 11: 
+[0.435s] 11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+[0.435s] 11: 
+[0.435s] 11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+[0.435s] 11: 
+[0.435s] 11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+[0.435s] 11: 
+[0.435s] 11: Using '--root=/workspace/ws/src/atas_optimizer/src' argument
+[0.435s] 11: 
+[0.435s] 11: Done processing /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp
+[0.435s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/src/main.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp
+[0.436s] 11: 
+[0.436s] 11: Using '--root=/workspace/ws/src/atas_optimizer/test' argument
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp
+[0.436s] 11: 
+[0.436s] 11: Done processing /workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp
+[0.436s] 11: 
+[0.436s] 11: No problems found
+[0.444s] 11: -- run_test.py: return code 0
+[0.444s] 11: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml'
+[0.450s] 1/1 Test #11: cpplint ..........................   Passed    0.43 sec
+[0.450s] 
+[0.450s] The following tests passed:
+[0.450s] 	cpplint
+[0.450s] 
+[0.450s] 100% tests passed, 0 tests failed out of 1
+[0.450s] 
+[0.450s] Label Time Summary:
+[0.450s] cpplint    =   0.43 sec*proc (1 test)
+[0.450s] linter     =   0.43 sec*proc (1 test)
+[0.450s] 
+[0.450s] Total Test time (real) =   0.43 sec
+[0.453s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R cpplint

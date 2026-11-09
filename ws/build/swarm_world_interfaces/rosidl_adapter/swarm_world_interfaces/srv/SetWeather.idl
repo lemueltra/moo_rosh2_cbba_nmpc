@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/SetWeather.srv
+// generated code does not contain a copyright notice
+
+#include "swarm_world_interfaces/msg/WeatherPreset.idl"
+
+module swarm_world_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to set simulation weather conditions")
+    struct SetWeather_Request {
+      string preset_name;
+
+      swarm_world_interfaces::msg::WeatherPreset custom_parameters;
+
+      boolean use_custom;
+    };
+    struct SetWeather_Response {
+      boolean success;
+
+      string error_message;
+    };
+  };
+};

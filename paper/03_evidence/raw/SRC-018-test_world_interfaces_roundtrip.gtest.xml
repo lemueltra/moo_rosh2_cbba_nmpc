@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9" failures="0" disabled="0" errors="0" time="0." timestamp="2026-10-27T13:38:28.337" name="AllTests">
+  <testsuite name="SwarmWorldInterfacesTest" tests="9" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-10-27T13:38:28.338">
+    <testcase name="ActorDefinitionMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="20" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="ActorStateAndArrayMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="41" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="SensorDefinitionMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="80" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="SensorDetectionAndArrayMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="96" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="WeatherPresetMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="121" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="SimulationStatusMessage" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="136" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="SpawnAndDestroyActorServices" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="158" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="SensorLifecycleServices" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="183" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+    <testcase name="TimeAndStepServices" file="/workspace/ws/src/swarm_world_interfaces/test/test_world_interfaces_roundtrip.cpp" line="205" status="run" result="completed" time="0." timestamp="2026-10-27T13:38:28.338" classname="swarm_world_interfaces.SwarmWorldInterfacesTest" />
+  </testsuite>
+</testsuites>

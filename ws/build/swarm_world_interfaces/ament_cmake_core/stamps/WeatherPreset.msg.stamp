@@ -1,0 +1,12 @@
+# Atmospheric and environmental condition parameters
+string preset_name
+float32 cloudiness
+float32 precipitation
+float32 precipitation_deposits
+float32 wind_intensity
+float32 sun_azimuth_angle
+float32 sun_altitude_angle
+float32 fog_density
+float32 fog_distance
+float32 fog_falloff
+float32 wetness

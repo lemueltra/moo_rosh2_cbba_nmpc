@@ -1,0 +1,9 @@
+# Reference pose and maximum speed for a single active drone
+uint32 drone_id
+float64 x
+float64 y
+float64 yaw
+float64 max_speed  # 0 = use default speed limit
+float64 z                # absolute altitude [m], valid range [2.5, 35.0]
+uint32 ugv_id            # reference UGV for the relative pose
+bool frame_relative      # true = (x, y, yaw) are relative to the UGV body frame

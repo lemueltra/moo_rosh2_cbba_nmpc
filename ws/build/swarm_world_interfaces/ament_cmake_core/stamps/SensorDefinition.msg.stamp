@@ -1,0 +1,7 @@
+# Definition for attaching a sensor (LiDAR, Radar, Camera) to an actor
+uint32 sensor_id
+string type_id
+uint32 parent_actor_id
+geometry_msgs/Transform transform
+string[] attribute_keys
+string[] attribute_values

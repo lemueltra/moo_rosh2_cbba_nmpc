@@ -1,0 +1,19 @@
+# Single target detection from a sensor FoV evaluation
+uint32 actor_id
+string class_name
+geometry_msgs/Pose bbox_pose_world
+geometry_msgs/Vector3 bbox_extent
+float64 range
+float64 azimuth
+float64 elevation
+bool occluded
+# True when part of the outline is visible and part is blocked (detected, but not in
+# full). occluded == true means nothing of it is visible, yet it is inside the FoV.
+bool partially_occluded
+# Continuous fraction of target outline samples in FoV that are occluded [0.0, 1.0].
+# 0.0 = completely free, 1.0 = completely occluded.
+float64 occlusion_ratio
+# Point of the target that range/azimuth/elevation refer to: the nearest visible point
+# of its outline. Draw the detection ray to this point, not to the bbox centre (the
+# centre of a building is inside the building).
+geometry_msgs/Point aim_point

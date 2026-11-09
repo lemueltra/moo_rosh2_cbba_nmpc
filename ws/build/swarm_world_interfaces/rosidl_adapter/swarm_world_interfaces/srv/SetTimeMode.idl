@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/SetTimeMode.srv
+// generated code does not contain a copyright notice
+
+
+module swarm_world_interfaces {
+  module srv {
+    module SetTimeMode_Request_Constants {
+      const uint8 TIME_MODE_ASYNC = 0;
+      const uint8 TIME_MODE_SYNC = 1;
+    };
+    @verbatim (language="comment", text=
+      "Service to configure simulation time mode")
+    struct SetTimeMode_Request {
+      uint8 time_mode;
+
+      double fixed_delta_seconds;
+
+      double sync_timeout_sec;
+    };
+    struct SetTimeMode_Response {
+      boolean success;
+
+      string error_message;
+    };
+  };
+};

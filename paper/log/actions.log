@@ -1,0 +1,51 @@
+[2026-11-08T18:27:00-03:00] Fase 1 (Intake) iniciada.
+- Criada árvore do projeto em paper/
+- Preenchido paper/00_intake/scope.md com escopo do ATAS MOO v2.0.0
+- Alinhamento de venue: SBC / pt-BR (ou conforme deliberação do operador)
+- Evidências mapeadas: JUnit XML (146 testes), CLOSED_LOOP_EVALUATION_V2.json (600 referências / 0 violações)
+[2026-11-08T18:31:00-03:00] Fase 2 (Inventário via c2p-scan) concluída.
+- Executado scan_inventory.py: 21 componentes identificados, 15 dependências mapeadas.
+- Executado scan_ros2.py: 2 nós auxiliares Python mapeados, 8 tópicos contratuais, 2 itens unresolved declarados.
+- Revisadas camadas: 4 componentes classificados como pure_method (CbbaAgent e ViewpointOptimizer hpp/cpp).
+- Gerados stack.md e scan_notes.md com detalhamento da stack técnica e limites da análise estática.
+[2026-11-08T18:43:00-03:00] Fases 3 (Arquitetura) e 4 (Evidências) concluídas.
+- Fase 3 (c2p-diagram):
+  - Gerados 3 diagramas de componentes por camada: architecture-layer-application-part1.mmd, architecture-layer-application-part2.mmd, architecture-layer-pure_method.mmd.
+  - Gerados 2 diagramas de interfaces ROS 2: ros2-interfaces-part1.mmd, ros2-interfaces-part2.mmd.
+  - Renderizados 5 SVGs vetoriais via render_figures.py (motor fallback em Python puro).
+  - Atualizado figures_manifest.json com metadados e rastreabilidade total de IDs.
+- Fase 4 (c2p-evidence):
+  - Ingeridas 19 fontes factuais (18 relatórios JUnit/xUnit XML e 1 log de auditoria em malha fechada).
+  - Extraídas 103 métricas com procedência e sha256 (results_manifest.json).
+  - Calculadas 3 métricas agregadas canônicas (AGG-001/MET-091: 128 testes, AGG-002/MET-092: 0 falhas, AGG-003/MET-093: 0 erros).
+  - Adicionadas 4 claims ao evidence_ledger.json com status verificado.
+  - Validado ledger via ledger.py validate --strict (0 pendências, 0 parciais, 100% consistente).
+[2026-11-08T18:44:00-03:00] Fase 5 (Outline) concluída.
+- Elaborado outline.md com mapa formal de claims (CLM-001 a CLM-004) vinculados a métricas do manifesto.
+- Dimensionado orçamento de páginas para o perfil SBC (6,0 páginas totais).
+- Definida a ordem canônica estrita de redação em 8 etapas (WRITING_ORDER).
+- Mapeadas as pendências conhecidas sob estado decisao-do-autor.
+[2026-11-08T18:51:00-03:00] Fase 6 (Redação via c2p-write) concluída.
+- Redigidas as 7 seções IMRaD na ordem canônica estrita (04_metodologia -> 05_resultados -> 07_conclusao -> 02_introducao:3 -> 02_introducao:1-2 -> 03_relacionados -> 06_discussao -> 01_resumo).
+- Ordem de escrita registrada e validada em paper/log/writing_order.json.
+- Resolvidos 21 marcadores de volta com backfill_numbers.py --write --decimal-comma (0 órfãos).
+- Montado paper/main.md via build_manuscript.py --resolved --venue-from-scope.
+- Validadas as 9 verificações determinísticas via check_paper.py --all (0 erros bloqueantes, 1 aviso consultivo de contagem de palavras).
+[2026-11-08T19:34:00-03:00] Fase 7 (Revisão via c2p-review) concluída.
+- Camada 1 (Verificação Determinística): check_paper.py --all executado com 0 achados bloqueantes. Relatório gravado em 09_checklists/check_paper.json.
+- Camada 2 (Revisor Simulado): review_findings.json avaliado por 4 personas (R1, R2, R3, devils-advocate) cobrindo as 7 dimensões acadêmicas.
+- score_review.py executado: 7 dimensões verificadas com referências a arquivos e linhas exatas.
+- Pontuação final: 62/70 pontos (nota de corte: 56/70). Veredito: PASS.
+- Relatório gravado em 09_checklists/review_scores.json.
+[2026-11-08T19:39:00-03:00] Fase 8 (Exportação via export_pandoc.py) concluída com sucesso.
+- Criado arquivo de bibliografia 08_references/references.bib com entradas BibTeX (Choi2009, Spica2018, PolyMPC2020, JakcrimsonCBAAL).
+- Ajustada hierarquia peer-heading do abstract em 01_resumo.md (## Abstract) para compatibilidade com o conversor Pandoc.
+- Executado export_pandoc.py --profile-from-scope --number-sections --pdf.
+- Gerado arquivo LaTeX em build/paper.tex (33 KB).
+- Compilado com sucesso via pdfTeX-1.40.29 gerando build/paper.pdf (253 KB, 11 páginas).
+- Pipeline code2paper finalizado de ponta a ponta com rastreabilidade integral.
+[2026-11-08T19:48:00-03:00] Apêndice A adicionado ao artigo.
+- Escrita detalhada e exaustiva da formulação matemática e algorítmica de todas as 11 métricas e termos de otimização em 07_conclusao.md.
+- Re-resolvidos marcadores e remontado paper/main.md (9 seções).
+- Compilado com sucesso via export_pandoc.py gerando paper/build/paper.pdf (18 páginas, 369 KB).
+- Verificado via check_paper.py --all (0 bloqueios) e score_review.py (62/70 PASS).

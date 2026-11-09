@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/UgvState.msg
+// generated code does not contain a copyright notice
+
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "State of one UGV of the pooled fleet (frame 'map', SI units)")
+    struct UgvState {
+      uint32 ugv_id;
+
+      boolean active;
+
+      double x;
+
+      double y;
+
+      double yaw;
+
+      @verbatim (language="comment", text=
+        "longitudinal speed")
+      @unit (value="m/s")
+      double v;
+
+      double route_length_m;
+    };
+  };
+};

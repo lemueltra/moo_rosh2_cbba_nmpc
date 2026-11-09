@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="0" disabled="0" errors="0" time="0." timestamp="2026-10-27T17:17:08.316" name="AllTests">
+  <testsuite name="CbbaV2Test" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-10-27T17:17:08.316">
+    <testcase name="AntiChatteringHysteresisSuppression" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="24" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+    <testcase name="MultiBundleConvoyAllocation" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="96" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+    <testcase name="RfContentionPenaltyAvoidsConglomeration" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="125" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+    <testcase name="CascadeReleaseRule" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="169" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+    <testcase name="StrictEscortLinkConstraint" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="203" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+    <testcase name="MultiBundleMidpointPrimordialFovFallback" file="/workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp" line="259" status="run" result="completed" time="0." timestamp="2026-10-27T17:17:08.316" classname="atas_optimizer.CbbaV2Test" />
+  </testsuite>
+</testsuites>

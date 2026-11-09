@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/UgvCommand.msg
+// generated code does not contain a copyright notice
+
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Carla-style vehicle control for one UGV")
+    struct UgvCommand {
+      uint32 ugv_id;
+
+      @verbatim (language="comment", text=
+        "[0.0, 1.0]")
+      double throttle;
+
+      @verbatim (language="comment", text=
+        "[-1.0, 1.0]")
+      double steer;
+
+      @verbatim (language="comment", text=
+        "[0.0, 1.0]")
+      double brake;
+
+      boolean hand_brake;
+
+      boolean reverse;
+
+      boolean active_cmd;
+    };
+  };
+};

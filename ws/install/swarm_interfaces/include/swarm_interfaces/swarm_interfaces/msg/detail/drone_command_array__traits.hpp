@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_generator_cpp/swarm_interfaces/msg/detail/drone_command_array__traits.hpp

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/DestroyActor.srv
+// generated code does not contain a copyright notice
+
+
+module swarm_world_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to destroy an actor dynamically")
+    struct DestroyActor_Request {
+      uint32 actor_id;
+    };
+    struct DestroyActor_Response {
+      boolean success;
+
+      string error_message;
+    };
+  };
+};

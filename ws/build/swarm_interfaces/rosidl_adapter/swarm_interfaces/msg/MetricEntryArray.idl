@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/MetricEntryArray.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "swarm_interfaces/msg/MetricEntry.idl"
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Array of generic metric entries with metadata")
+    struct MetricEntryArray {
+      std_msgs::msg::Header header;
+
+      boolean model_based;
+
+      string params_hash;
+
+      double window_sec;
+
+      boolean warming_up;
+
+      uint32 n_frames_in_window;
+
+      sequence<swarm_interfaces::msg::MetricEntry> entries;
+    };
+  };
+};

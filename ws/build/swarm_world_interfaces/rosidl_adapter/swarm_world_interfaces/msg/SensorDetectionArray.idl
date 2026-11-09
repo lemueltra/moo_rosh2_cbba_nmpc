@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_world_interfaces/msg/SensorDetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "swarm_world_interfaces/msg/SensorDetection.idl"
+
+module swarm_world_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Array of detections from a sensor FoV evaluation")
+    struct SensorDetectionArray {
+      std_msgs::msg::Header header;
+
+      uint32 sensor_id;
+
+      uint32 parent_actor_id;
+
+      @verbatim (language="comment", text=
+        "The sensor volume these detections were computed with, so an operator (or a checker)" "\n"
+        "never has to guess it: 'lidar', 'camera' or 'radar' plus the real numbers.")
+      string sensor_type;
+
+      double range;
+
+      double horizontal_fov_deg;
+
+      double upper_fov_deg;
+
+      double lower_fov_deg;
+
+      sequence<swarm_world_interfaces::msg::SensorDetection> detections;
+    };
+  };
+};

@@ -1,0 +1,24 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_cbba --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml
+
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from CbbaAgentTest
+[ RUN      ] CbbaAgentTest.SingleAgentSingleTask
+[       OK ] CbbaAgentTest.SingleAgentSingleTask (0 ms)
+[ RUN      ] CbbaAgentTest.TwoAgentsConflictResolution
+[       OK ] CbbaAgentTest.TwoAgentsConflictResolution (0 ms)
+[ RUN      ] CbbaAgentTest.TwoDimensionalLatencyMapLookup
+[       OK ] CbbaAgentTest.TwoDimensionalLatencyMapLookup (0 ms)
+[ RUN      ] CbbaAgentTest.PurgeInactiveTasksOnUpdate
+[       OK ] CbbaAgentTest.PurgeInactiveTasksOnUpdate (0 ms)
+[----------] 4 tests from CbbaAgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'

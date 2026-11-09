@@ -1,0 +1,75 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261026-1438 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 5
+    Start 5: test_polympc_nlp
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_polympc_nlp.txt" "--command" "/workspace/ws/build/atas_optimizer/test_polympc_nlp" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+5: Working Directory: /workspace/ws/build/atas_optimizer
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+5:  - /workspace/ws/build/atas_optimizer/test_polympc_nlp --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml
+5: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+5: [==========] Running 5 tests from 1 test suite.
+5: [----------] Global test environment set-up.
+5: [----------] 5 tests from PolyMpNlpTest
+5: [ RUN      ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle
+5: [       OK ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle (0 ms)
+5: [ RUN      ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+5: /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:86: Failure
+5: Expected: (dist_step) <= (max_step + 1e-5), actual: 1.7320508075688772 vs 1.00001
+5: 
+5: /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:91: Failure
+5: Expected: (yaw_diff) <= ((1.57079632679489661923 * dt) + 1e-4), actual: 0.4 vs 0.3142592653589793
+5: 
+5: [  FAILED  ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep (0 ms)
+5: [ RUN      ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback
+5: /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp:115: Failure
+5: Value of: opt.was_fallback_triggered()
+5:   Actual: false
+5: Expected: true
+5: 
+5: [  FAILED  ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback (0 ms)
+5: [ RUN      ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation
+5: [       OK ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation (0 ms)
+5: [ RUN      ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark
+5: [       OK ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark (1 ms)
+5: [----------] 5 tests from PolyMpNlpTest (1 ms total)
+5: 
+5: [----------] Global test environment tear-down
+5: [==========] 5 tests from 1 test suite ran. (1 ms total)
+5: [  PASSED  ] 3 tests.
+5: [  FAILED  ] 2 tests, listed below:
+5: [  FAILED  ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+5: [  FAILED  ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback
+5: 
+5:  2 FAILED TESTS
+5: -- run_test.py: return code 1
+5: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+5: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+1/1 Test #5: test_polympc_nlp .................***Failed    0.06 sec
+
+0% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 1
+
+Label Time Summary:
+gtest    =   0.06 sec*proc (1 test)
+
+Total Test time (real) =   0.06 sec
+
+The following tests FAILED:
+	[0;31m  5 - test_polympc_nlp (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /workspace/ws/build/atas_optimizer/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

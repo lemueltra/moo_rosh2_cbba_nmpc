@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/drone_command__rosidl_typesupport_introspection_c.h

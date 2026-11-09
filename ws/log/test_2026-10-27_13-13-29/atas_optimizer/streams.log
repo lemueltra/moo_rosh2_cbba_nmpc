@@ -1,0 +1,57 @@
+[0.018s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_occlusion_and_targets
+[0.022s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s]    Site: dell-arch
+[0.022s]    Build name: (empty)
+[0.022s]  Add coverage exclude regular expressions.
+[0.022s] Create new tag: 20261027-1313 - Experimental
+[0.022s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.022s] Test project /workspace/ws/build/atas_optimizer
+[0.022s] Constructing a list of tests
+[0.022s] Done constructing a list of tests
+[0.022s] Updating test list for fixtures
+[0.022s] Added 0 tests to meet fixture requirements
+[0.022s] Checking test dependency graph...
+[0.022s] Checking test dependency graph end
+[0.022s] test 4
+[0.023s]     Start 4: test_occlusion_and_targets
+[0.023s] 
+[0.023s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_occlusion_and_targets.txt" "--command" "/workspace/ws/build/atas_optimizer/test_occlusion_and_targets" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml"
+[0.023s] 4: Working Directory: /workspace/ws/build/atas_optimizer
+[0.023s] 4: Test timeout computed to be: 60
+[0.058s] 4: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+[0.058s] 4:  - /workspace/ws/build/atas_optimizer/test_occlusion_and_targets --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml
+[0.059s] 4: [==========] Running 5 tests from 1 test suite.
+[0.059s] 4: [----------] Global test environment set-up.
+[0.059s] 4: [----------] 5 tests from OcclusionAndTargetsTest
+[0.059s] 4: [ RUN      ] OcclusionAndTargetsTest.Town10BuildingsLoadedCorrectly
+[0.059s] 4: [       OK ] OcclusionAndTargetsTest.Town10BuildingsLoadedCorrectly (0 ms)
+[0.059s] 4: [ RUN      ] OcclusionAndTargetsTest.LoSRayCastingDetectsObstacles
+[0.060s] 4: [       OK ] OcclusionAndTargetsTest.LoSRayCastingDetectsObstacles (0 ms)
+[0.060s] 4: [ RUN      ] OcclusionAndTargetsTest.ViewpointAvoidsBuildingOcclusion
+[0.060s] 4: [       OK ] OcclusionAndTargetsTest.ViewpointAvoidsBuildingOcclusion (0 ms)
+[0.060s] 4: [ RUN      ] OcclusionAndTargetsTest.ActivePerceptionAttractionToPedestrianTarget
+[0.060s] 4: [       OK ] OcclusionAndTargetsTest.ActivePerceptionAttractionToPedestrianTarget (0 ms)
+[0.060s] 4: [ RUN      ] OcclusionAndTargetsTest.CoOptimizationMultiMetricNoRegression
+[0.060s] 4: [       OK ] OcclusionAndTargetsTest.CoOptimizationMultiMetricNoRegression (0 ms)
+[0.060s] 4: [----------] 5 tests from OcclusionAndTargetsTest (0 ms total)
+[0.060s] 4: 
+[0.060s] 4: [----------] Global test environment tear-down
+[0.060s] 4: [==========] 5 tests from 1 test suite ran. (0 ms total)
+[0.060s] 4: [  PASSED  ] 5 tests.
+[0.060s] 4: -- run_test.py: return code 0
+[0.060s] 4: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml'
+[0.060s] 4: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml'
+[0.065s] 1/1 Test #4: test_occlusion_and_targets .......   Passed    0.04 sec
+[0.065s] 
+[0.065s] The following tests passed:
+[0.065s] 	test_occlusion_and_targets
+[0.065s] 
+[0.065s] 100% tests passed, 0 tests failed out of 1
+[0.065s] 
+[0.065s] Label Time Summary:
+[0.065s] gtest    =   0.04 sec*proc (1 test)
+[0.065s] 
+[0.065s] Total Test time (real) =   0.04 sec
+[0.069s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_occlusion_and_targets

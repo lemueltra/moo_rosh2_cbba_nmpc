@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_generator_rs/swarm_world_interfaces/rust/src/srv.rs

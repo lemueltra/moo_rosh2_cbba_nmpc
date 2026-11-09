@@ -1,0 +1,16 @@
+# Live state of an actor
+uint8 CONTROL_DISABLED = 0
+uint8 CONTROL_AUTOPILOT = 1
+uint8 CONTROL_NATIVE_TOPIC = 2
+uint8 CONTROL_CARLA_AIR_CMD = 3
+uint8 CONTROL_DIRECT_API = 4
+
+uint32 actor_id
+string type_id
+string role_name
+geometry_msgs/Pose pose
+geometry_msgs/Twist twist
+geometry_msgs/Vector3 acceleration
+geometry_msgs/Vector3 bounding_box_extent
+bool active
+uint8 control_source

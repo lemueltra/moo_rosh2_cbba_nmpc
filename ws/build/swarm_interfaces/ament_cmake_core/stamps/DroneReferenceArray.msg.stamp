@@ -1,0 +1,3 @@
+# Array of references for active drones
+std_msgs/Header header
+DroneReference[] references

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "swarm_world_interfaces/srv/DestroyActor_Request",
+      "fields": [
+        {
+          "name": "actor_id",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "swarm_world_interfaces/srv/DestroyActor_Request",
+      "hash_string": "RIHS01_2ae481d76f1357f4163614e5426ed4b88f33f4cfa5d3b2a21d175c17f737ff99"
+    }
+  ]
+}

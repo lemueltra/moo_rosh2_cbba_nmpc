@@ -1,0 +1,36 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_dual_sensor_fov --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml
+
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from DualSensorFovTest
+[ RUN      ] DualSensorFovTest.LidarFovAzimuthElevationAndRange
+[       OK ] DualSensorFovTest.LidarFovAzimuthElevationAndRange (0 ms)
+[ RUN      ] DualSensorFovTest.CameraFovAzimuthElevationAndRange
+[       OK ] DualSensorFovTest.CameraFovAzimuthElevationAndRange (0 ms)
+[ RUN      ] DualSensorFovTest.AnySensorFovBooleanUnion
+[       OK ] DualSensorFovTest.AnySensorFovBooleanUnion (0 ms)
+[ RUN      ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors
+[       OK ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors (0 ms)
+[ RUN      ] DualSensorFovTest.NodeParametersConfiguration
+[INFO] [1793121429.928142193] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v2.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[       OK ] DualSensorFovTest.NodeParametersConfiguration (208 ms)
+[ RUN      ] DualSensorFovTest.TargetUgvInFovEvaluation
+[       OK ] DualSensorFovTest.TargetUgvInFovEvaluation (0 ms)
+[ RUN      ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost
+[       OK ] DualSensorFovTest.PrimordialBarrierPenaltyInEvaluateFovCost (0 ms)
+[ RUN      ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov
+[       OK ] DualSensorFovTest.OrbitalFallbackGuaranteesTargetUgvInFov (0 ms)
+[ RUN      ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint
+[       OK ] DualSensorFovTest.ViewpointOptimizationSatisfiesPrimordialConstraint (0 ms)
+[----------] 9 tests from DualSensorFovTest (209 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (209 ms total)
+[  PASSED  ] 9 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'

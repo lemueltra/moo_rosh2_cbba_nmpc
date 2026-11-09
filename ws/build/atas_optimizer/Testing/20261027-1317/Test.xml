@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261027-1317-Experimental"
+	Name="dell-arch"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/lib/ccache/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="dell-arch"
+	OSRelease="7.2.11-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="52614"
+	TotalPhysicalMemory="31769"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1123.35"
+	>
+	<Testing>
+		<StartDateTime>Oct 27 13:17 UTC</StartDateTime>
+		<StartTestTime>1793107055</StartTestTime>
+		<TestList>
+			<Test>./test_test_node_integration.py</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_test_node_integration.py</Name>
+			<Path>.</Path>
+			<FullName>./test_test_node_integration.py</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.815294</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer
+[INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-27-13-17-36-051324-dell-arch-4201
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [atas_optimizer_node-1]: process started with pid [4205]
+test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)
+Verify that feeding UGVs and latency produces valid references. ... [atas_optimizer_node-1] [INFO] [1793107056.082857346] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.416s
+
+OK
+[INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]
+[atas_optimizer_node-1] [INFO] [1793107056.487439137] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 4205]
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>launch_test</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Oct 27 13:17 UTC</EndDateTime>
+		<EndTestTime>1793107056</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

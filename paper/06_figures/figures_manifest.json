@@ -1,0 +1,575 @@
+{
+  "figure_ceilings": {
+    "architecture": {
+      "applied": 15,
+      "requested": 15
+    },
+    "ros2": {
+      "applied": 15,
+      "requested": 15
+    }
+  },
+  "figure_count": 5,
+  "figures": [
+    {
+      "criterion": "por camada (pure_method × application)",
+      "edge_count": 4,
+      "edges": [
+        {
+          "from": "CMP-010",
+          "to": "CMP-006",
+          "type": "includes"
+        },
+        {
+          "from": "CMP-012",
+          "to": "CMP-006",
+          "type": "includes"
+        },
+        {
+          "from": "CMP-014",
+          "to": "CMP-006",
+          "type": "includes"
+        },
+        {
+          "from": "CMP-017",
+          "to": "CMP-006",
+          "type": "includes"
+        }
+      ],
+      "group": "application",
+      "kind": "architecture",
+      "mmd": "architecture-layer-application-part1.mmd",
+      "name": "architecture-layer-application-part1",
+      "node_count": 15,
+      "nodes": [
+        {
+          "group": "application",
+          "id": "CMP_001",
+          "label": "atas_monitor",
+          "path": "scripts/atas_monitor.py",
+          "source_id": "CMP-001",
+          "subtitle": "ros2_node · 1431 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_002",
+          "label": "extract_data",
+          "path": "scripts/extract_data.py",
+          "source_id": "CMP-002",
+          "subtitle": "python_module · 315 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_003",
+          "label": "generate_coverage_report",
+          "path": "scripts/generate_coverage_report.py",
+          "source_id": "CMP-003",
+          "subtitle": "python_module · 99 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_004",
+          "label": "verify_closed_loop",
+          "path": "scripts/verify_closed_loop.py",
+          "source_id": "CMP-004",
+          "subtitle": "ros2_node · 258 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_005",
+          "label": "atas_optimizer_params",
+          "path": "ws/src/atas_optimizer/config/atas_optimizer_params.yaml",
+          "source_id": "CMP-005",
+          "subtitle": "config · 64 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_006",
+          "label": "atas_optimizer_node",
+          "path": "ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp",
+          "source_id": "CMP-006",
+          "subtitle": "cpp_source · 184 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_009",
+          "label": "atas_optimizer.launch",
+          "path": "ws/src/atas_optimizer/launch/atas_optimizer.launch.py",
+          "source_id": "CMP-009",
+          "subtitle": "launch_file · 61 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_010",
+          "label": "atas_optimizer_node",
+          "path": "ws/src/atas_optimizer/src/atas_optimizer_node.cpp",
+          "source_id": "CMP-010",
+          "subtitle": "cpp_source · 753 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_012",
+          "label": "main",
+          "path": "ws/src/atas_optimizer/src/main.cpp",
+          "source_id": "CMP-012",
+          "subtitle": "cpp_source · 26 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_014",
+          "label": "test_adaptive_feedback",
+          "path": "ws/src/atas_optimizer/test/test_adaptive_feedback.cpp",
+          "source_id": "CMP-014",
+          "subtitle": "cpp_source · 187 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_015",
+          "label": "test_cbba",
+          "path": "ws/src/atas_optimizer/test/test_cbba.cpp",
+          "source_id": "CMP-015",
+          "subtitle": "cpp_source · 138 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_016",
+          "label": "test_cbba_v2",
+          "path": "ws/src/atas_optimizer/test/test_cbba_v2.cpp",
+          "source_id": "CMP-016",
+          "subtitle": "cpp_source · 322 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_017",
+          "label": "test_dual_sensor_fov",
+          "path": "ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp",
+          "source_id": "CMP-017",
+          "subtitle": "cpp_source · 288 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_018",
+          "label": "test_node_integration",
+          "path": "ws/src/atas_optimizer/test/test_node_integration.py",
+          "source_id": "CMP-018",
+          "subtitle": "ros2_node · 158 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_019",
+          "label": "test_occlusion_and_targets",
+          "path": "ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp",
+          "source_id": "CMP-019",
+          "subtitle": "cpp_source · 199 LOC"
+        }
+      ],
+      "partition": {
+        "of": 2,
+        "part": 1
+      },
+      "source": {
+        "name": "inventory.json",
+        "sha256": "9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075"
+      },
+      "svg": "architecture-layer-application-part1.svg",
+      "title": "Camada aplicação"
+    },
+    {
+      "criterion": "por camada (pure_method × application)",
+      "edge_count": 0,
+      "edges": [],
+      "group": "application",
+      "kind": "architecture",
+      "mmd": "architecture-layer-application-part2.mmd",
+      "name": "architecture-layer-application-part2",
+      "node_count": 2,
+      "nodes": [
+        {
+          "group": "application",
+          "id": "CMP_020",
+          "label": "test_polympc_nlp",
+          "path": "ws/src/atas_optimizer/test/test_polympc_nlp.cpp",
+          "source_id": "CMP-020",
+          "subtitle": "cpp_source · 184 LOC"
+        },
+        {
+          "group": "application",
+          "id": "CMP_021",
+          "label": "test_viewpoint",
+          "path": "ws/src/atas_optimizer/test/test_viewpoint.cpp",
+          "source_id": "CMP-021",
+          "subtitle": "cpp_source · 137 LOC"
+        }
+      ],
+      "partition": {
+        "of": 2,
+        "part": 2
+      },
+      "source": {
+        "name": "inventory.json",
+        "sha256": "9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075"
+      },
+      "svg": "architecture-layer-application-part2.svg",
+      "title": "Camada aplicação"
+    },
+    {
+      "criterion": "por camada (pure_method × application)",
+      "edge_count": 2,
+      "edges": [
+        {
+          "from": "CMP-011",
+          "to": "CMP-007",
+          "type": "includes"
+        },
+        {
+          "from": "CMP-013",
+          "to": "CMP-008",
+          "type": "includes"
+        }
+      ],
+      "group": "pure_method",
+      "kind": "architecture",
+      "mmd": "architecture-layer-pure_method.mmd",
+      "name": "architecture-layer-pure_method",
+      "node_count": 4,
+      "nodes": [
+        {
+          "group": "pure_method",
+          "id": "CMP_007",
+          "label": "cbba_agent",
+          "path": "ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp",
+          "source_id": "CMP-007",
+          "subtitle": "cpp_source · 132 LOC"
+        },
+        {
+          "group": "pure_method",
+          "id": "CMP_008",
+          "label": "viewpoint_optimizer",
+          "path": "ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp",
+          "source_id": "CMP-008",
+          "subtitle": "cpp_source · 223 LOC"
+        },
+        {
+          "group": "pure_method",
+          "id": "CMP_011",
+          "label": "cbba_agent",
+          "path": "ws/src/atas_optimizer/src/cbba_agent.cpp",
+          "source_id": "CMP-011",
+          "subtitle": "cpp_source · 345 LOC"
+        },
+        {
+          "group": "pure_method",
+          "id": "CMP_013",
+          "label": "viewpoint_optimizer",
+          "path": "ws/src/atas_optimizer/src/viewpoint_optimizer.cpp",
+          "source_id": "CMP-013",
+          "subtitle": "cpp_source · 597 LOC"
+        }
+      ],
+      "partition": {
+        "of": 1,
+        "part": 1
+      },
+      "source": {
+        "name": "inventory.json",
+        "sha256": "9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075"
+      },
+      "svg": "architecture-layer-pure_method.svg",
+      "title": "Camada método puro"
+    },
+    {
+      "criterion": "fluxo de dados: nós e interfaces",
+      "edge_count": 15,
+      "edges": [
+        {
+          "from": "T-001",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-001",
+          "to": "T-001",
+          "type": "ext"
+        },
+        {
+          "from": "T-002",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-002",
+          "to": "T-002",
+          "type": "ext"
+        },
+        {
+          "from": "T-003",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "T-003",
+          "to": "N-002",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-003",
+          "to": "T-003",
+          "type": "ext"
+        },
+        {
+          "from": "T-004",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "T-004",
+          "to": "N-002",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-004",
+          "to": "T-004",
+          "type": "ext"
+        },
+        {
+          "from": "T-005",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "T-005",
+          "to": "N-002",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-005",
+          "to": "T-005",
+          "type": "ext"
+        },
+        {
+          "from": "T-006",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-006",
+          "to": "T-006",
+          "type": "ext"
+        }
+      ],
+      "group": "interfaces",
+      "kind": "ros2",
+      "mmd": "ros2-interfaces-part1.mmd",
+      "name": "ros2-interfaces-part1",
+      "node_count": 14,
+      "nodes": [
+        {
+          "group": "node",
+          "id": "N_001",
+          "label": "atas_optimization_monitor",
+          "source_id": "N-001"
+        },
+        {
+          "group": "node",
+          "id": "N_002",
+          "label": "closed_loop_monitor",
+          "source_id": "N-002"
+        },
+        {
+          "group": "topic",
+          "id": "T_001",
+          "label": "/atas/diagnostics",
+          "source_id": "T-001"
+        },
+        {
+          "group": "topic",
+          "id": "T_002",
+          "label": "/clock",
+          "source_id": "T-002"
+        },
+        {
+          "group": "topic",
+          "id": "T_003",
+          "label": "/comm/uav_latency",
+          "source_id": "T-003"
+        },
+        {
+          "group": "topic",
+          "id": "T_004",
+          "label": "/drones/active_set",
+          "source_id": "T-004"
+        },
+        {
+          "group": "topic",
+          "id": "T_005",
+          "label": "/drones/references",
+          "source_id": "T-005"
+        },
+        {
+          "group": "topic",
+          "id": "T_006",
+          "label": "/drones/state",
+          "source_id": "T-006"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_001",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-001"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_002",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-002"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_003",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-003"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_004",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-004"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_005",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-005"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_006",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-006"
+        }
+      ],
+      "partition": {
+        "of": 2,
+        "part": 1
+      },
+      "source": {
+        "name": "ros2_graph.json",
+        "sha256": "9ae3c7880c70e090b31be77c0f9ecaf6dab45675af89624983a5a466463a5696"
+      },
+      "svg": "ros2-interfaces-part1.svg",
+      "title": "Grafo de interfaces ROS2"
+    },
+    {
+      "criterion": "fluxo de dados: nós e interfaces",
+      "edge_count": 6,
+      "edges": [
+        {
+          "from": "T-007",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "T-007",
+          "to": "N-002",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-007",
+          "to": "T-007",
+          "type": "ext"
+        },
+        {
+          "from": "T-008",
+          "to": "N-001",
+          "type": "sub"
+        },
+        {
+          "from": "T-008",
+          "to": "N-002",
+          "type": "sub"
+        },
+        {
+          "from": "EXT:T-008",
+          "to": "T-008",
+          "type": "ext"
+        }
+      ],
+      "group": "interfaces",
+      "kind": "ros2",
+      "mmd": "ros2-interfaces-part2.mmd",
+      "name": "ros2-interfaces-part2",
+      "node_count": 6,
+      "nodes": [
+        {
+          "group": "node",
+          "id": "N_001",
+          "label": "atas_optimization_monitor",
+          "source_id": "N-001"
+        },
+        {
+          "group": "node",
+          "id": "N_002",
+          "label": "closed_loop_monitor",
+          "source_id": "N-002"
+        },
+        {
+          "group": "topic",
+          "id": "T_007",
+          "label": "/metrics/optimizer_feedback",
+          "source_id": "T-007"
+        },
+        {
+          "group": "topic",
+          "id": "T_008",
+          "label": "/ugv_fleet/state",
+          "source_id": "T-008"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_007",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-007"
+        },
+        {
+          "group": "external",
+          "id": "EXT_T_008",
+          "label": "fora da árvore",
+          "source_id": "EXT:T-008"
+        }
+      ],
+      "partition": {
+        "of": 2,
+        "part": 2
+      },
+      "source": {
+        "name": "ros2_graph.json",
+        "sha256": "9ae3c7880c70e090b31be77c0f9ecaf6dab45675af89624983a5a466463a5696"
+      },
+      "svg": "ros2-interfaces-part2.svg",
+      "title": "Grafo de interfaces ROS2"
+    }
+  ],
+  "graph_counts": {
+    "actions": 0,
+    "nodes": 2,
+    "services": 0,
+    "tf_frames": 0,
+    "topics": 8
+  },
+  "render": {
+    "engine": "fallback"
+  },
+  "schema_version": 1,
+  "sources": {
+    "architecture": {
+      "name": "inventory.json",
+      "sha256": "9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075"
+    },
+    "ros2": {
+      "name": "ros2_graph.json",
+      "sha256": "9ae3c7880c70e090b31be77c0f9ecaf6dab45675af89624983a5a466463a5696"
+    }
+  },
+  "tool": "code2paper 0.1.0",
+  "unresolved_count": 2
+}

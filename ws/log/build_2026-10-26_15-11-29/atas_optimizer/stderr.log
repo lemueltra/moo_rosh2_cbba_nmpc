@@ -1,0 +1,10 @@
+[01m[K/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:[m[K In member function ‘[01m[Kvoid atas_optimizer::AtasOptimizerNode::[01;32m[Kugv_callback[m[K(swarm_interfaces::msg::UgvStateArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:320:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct swarm_interfaces::msg::UgvState_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kz[m[K’
+  320 |     task.z = ugv.[01;31m[Kz[m[K;
+      |                  [01;31m[K^[m[K
+[01m[K/workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:322:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct atas_optimizer::TaskInfo[m[K’ has no member named ‘[01m[Kbase_reward[m[K’
+  322 |     task.[01;31m[Kbase_reward[m[K = 100.0;
+      |          [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/atas_optimizer_core.dir/build.make:104: CMakeFiles/atas_optimizer_core.dir/src/atas_optimizer_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/atas_optimizer_core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

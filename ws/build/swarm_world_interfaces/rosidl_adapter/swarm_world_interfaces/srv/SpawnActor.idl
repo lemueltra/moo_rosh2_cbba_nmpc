@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/SpawnActor.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module swarm_world_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to spawn an actor dynamically")
+    struct SpawnActor_Request {
+      string type_id;
+
+      string role_name;
+
+      geometry_msgs::msg::Pose transform;
+
+      uint32 parent_id;
+
+      sequence<string> attribute_keys;
+
+      sequence<string> attribute_values;
+    };
+    struct SpawnActor_Response {
+      boolean success;
+
+      uint32 actor_id;
+
+      string error_message;
+    };
+  };
+};

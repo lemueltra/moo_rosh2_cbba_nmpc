@@ -1,0 +1,12 @@
+# Result of one NPC spawning run (swarm_npc_spawner, milestone M3)
+std_msgs/Header header
+uint32 seed                     # seed used for the sampling (reproducibility)
+uint32 requested_vehicles
+uint32 requested_pedestrians
+uint32 spawned_vehicles
+uint32 spawned_pedestrians
+uint32[] vehicle_actor_ids
+uint32[] pedestrian_actor_ids
+string[] vehicle_types          # cyclic blueprint list actually used
+string[] pedestrian_types
+float64 elapsed_s               # wall time spent spawning

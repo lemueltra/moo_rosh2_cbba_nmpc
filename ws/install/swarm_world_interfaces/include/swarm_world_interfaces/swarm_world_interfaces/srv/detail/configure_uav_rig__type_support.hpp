@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_generator_cpp/swarm_world_interfaces/srv/detail/configure_uav_rig__type_support.hpp

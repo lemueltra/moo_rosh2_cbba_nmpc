@@ -1,0 +1,3 @@
+# State of every UGV in the fleet
+std_msgs/Header header
+UgvState[] states

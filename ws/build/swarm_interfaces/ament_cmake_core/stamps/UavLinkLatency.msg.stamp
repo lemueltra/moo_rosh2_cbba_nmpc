@@ -1,0 +1,6 @@
+# Communication latency between one active UAV and its nearest UGV
+uint32 drone_id
+uint32 ugv_id       # nearest UGV (from /comm/nearest_ugv)
+float64 latency_ms
+float64 distance_m
+bool los            # true = line of sight (no building in between)

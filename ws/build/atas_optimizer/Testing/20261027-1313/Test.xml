@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261027-1313-Experimental"
+	Name="dell-arch"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/lib/ccache/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="dell-arch"
+	OSRelease="7.2.11-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="52614"
+	TotalPhysicalMemory="31769"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1405.4"
+	>
+	<Testing>
+		<StartDateTime>Oct 27 13:13 UTC</StartDateTime>
+		<StartTestTime>1793106828</StartTestTime>
+		<TestList>
+			<Test>./uncrustify</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.158555</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+ - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml
+No code style divergence in file 'include/atas_optimizer/atas_optimizer_node.hpp'
+
+No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'
+
+No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'
+
+No code style divergence in file 'src/atas_optimizer_node.cpp'
+
+No code style divergence in file 'src/cbba_agent.cpp'
+
+No code style divergence in file 'src/main.cpp'
+
+No code style divergence in file 'src/viewpoint_optimizer.cpp'
+
+No code style divergence in file 'test/test_adaptive_feedback.cpp'
+
+No code style divergence in file 'test/test_cbba.cpp'
+
+No code style divergence in file 'test/test_cbba_v2.cpp'
+
+No code style divergence in file 'test/test_dual_sensor_fov.cpp'
+
+No code style divergence in file 'test/test_occlusion_and_targets.cpp'
+
+No code style divergence in file 'test/test_polympc_nlp.cpp'
+
+No code style divergence in file 'test/test_viewpoint.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Oct 27 13:13 UTC</EndDateTime>
+		<EndTestTime>1793106828</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

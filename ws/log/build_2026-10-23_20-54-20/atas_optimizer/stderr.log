@@ -1,0 +1,7 @@
+[01m[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:[m[K In member function ‘[01m[Kvirtual void ViewpointOptimizerTest_MultiDroneRepulsiveSafetyBarrier_Test::[01;32m[KTestBody[m[K()[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp:50:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass atas_optimizer::ViewpointOptimizer[m[K’ has no member named ‘[01m[Kset_safety_distance[m[K’
+   50 |   opt.[01;31m[Kset_safety_distance[m[K(6.0);
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_viewpoint.dir/build.make:76: CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/test_viewpoint.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

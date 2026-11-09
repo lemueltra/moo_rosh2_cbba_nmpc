@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="atas_optimizer.pep257"
+  tests="2"
+  errors="0"
+  failures="0"
+  time="0.011"
+>
+  <testcase
+    name="./launch/atas_optimizer.launch.py"
+    classname="atas_optimizer.pep257"/>
+  <testcase
+    name="./test/test_node_integration.py"
+    classname="atas_optimizer.pep257"/>
+  <system-out>Checked files:
+* ./launch/atas_optimizer.launch.py
+* ./test/test_node_integration.py</system-out>
+</testsuite>

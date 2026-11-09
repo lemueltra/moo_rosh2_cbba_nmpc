@@ -1,0 +1,3 @@
+# Level-triggered active set of drone IDs
+std_msgs/Header header
+uint32[] active_ids

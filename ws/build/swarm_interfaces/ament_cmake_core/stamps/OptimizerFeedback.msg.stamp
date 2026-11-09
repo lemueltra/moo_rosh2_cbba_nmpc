@@ -1,0 +1,7 @@
+# Sliding-window metrics for the multi-objective optimizer (5 Hz publication)
+std_msgs/Header header
+uint32[] active_ids             # exact active UAV list (never averaged)
+float64 detections_mean_60s     # mean distinct detected targets in the 60 s window
+float64 latency_mean_60s        # mean latency over the window [ms]
+float64 latency_max_60s         # worst latency in the window [ms]
+uint32 samples_in_window        # samples currently in the window

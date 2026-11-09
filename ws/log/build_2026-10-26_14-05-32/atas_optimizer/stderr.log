@@ -1,0 +1,4 @@
+[01m[K/workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp:[m[K In member function ‘[01m[Kvirtual void OcclusionAndTargetsTest_ActivePerceptionAttractionToPedestrianTarget_Test::[01;32m[KTestBody[m[K()[m[K’:
+[01m[K/workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp:107:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kref_base[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  107 |   auto [01;35m[Kref_base[m[K = opt.solve_viewpoint(
+      |        [01;35m[K^~~~~~~~[m[K

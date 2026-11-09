@@ -1,0 +1,64 @@
+# Copyright 2026 ATAS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+atas_optimizer_node:
+  ros__parameters:
+    use_sim_time: true
+    max_drones: 5
+    optimization_rate_hz: 5.0
+
+    # Limites Geometricos de Voo e Seguranca
+    z_min: 2.5
+    z_max: 35.0
+    z_nominal: 15.0
+    max_radius: 30.0
+    inter_drone_safety_dist: 5.0
+    slew_rate_v_max: 5.0
+
+    # Parametros Geometricos do Rig de Sensores (LiDAR + Camera) (v2.0.0)
+    uav_lidar_range_m: 100.0
+    uav_lidar_horizontal_fov_deg: 120.0
+    uav_lidar_lower_fov_deg: -30.0
+    uav_lidar_upper_fov_deg: 10.0
+
+    uav_camera_range_m: 40.0
+    uav_camera_horizontal_fov_deg: 90.0
+    uav_camera_vertical_fov_deg: 58.7155
+
+    # Pesos Multi-Objetivo de Pareto (Iniciais)
+    weight_detection: 1.0
+    weight_latency: 0.5
+    weight_active_drones: 2.0
+    weight_safety: 10.0
+
+    # Parametros de Alocacao Discreta CBBA v2
+    cbba_hysteresis: 0.15           # Histerese minima de 15% para reatribuicao
+    cbba_max_bundle_size: 2         # Suporte a multi-bundle (M=2)
+    cbba_lambda_dist: 0.02          # Fator de decaimento por distancia
+    cbba_rf_contention_penalty: 1.5 # Penalidade por drones no mesmo enlace RF
+
+    # Parametros de Solver PolyMPC e Prazos Rigidos
+    solver_deadline_sec: 0.040      # Deadline estrito de 40 ms para solver SQP
+    watchdog_timeout_sec: 0.500     # Watchdog de 500 ms para telemetria
+
+    # Supervisao Adaptativa Pareto em Malha Fechada (F3)
+    adaptive_supervision_enabled: true
+    feedback_latency_threshold_ms: 25.0
+    feedback_target_detections: 4.0
+    feedback_min_samples: 10
+
+    # Posicoes de Repouso/Base para Drones Inativos (Standby)
+    base_standby_x: [0.0, 5.0, 10.0, 15.0, 20.0]
+    base_standby_y: [0.0, 0.0, 0.0, 0.0, 0.0]
+    base_standby_z: [0.5, 0.5, 0.5, 0.5, 0.5]

@@ -1,0 +1,14 @@
+[ 18%] Built target gtest_main
+[ 36%] Built target gtest
+[ 54%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o[0m
+[ 81%] [32m[1mLinking CXX executable test_cbba[0m
+[ 81%] Built target test_cbba
+[ 90%] [32m[1mLinking CXX executable atas_optimizer_node[0m
+/usr/bin/ld: cannot find -llapack: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/atas_optimizer_node.dir/build.make:235: atas_optimizer_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/atas_optimizer_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

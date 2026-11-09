@@ -1,0 +1,47 @@
+[ 14%] Built target gtest_main
+[ 14%] Built target gtest
+[ 17%] Building CXX object CMakeFiles/atas_optimizer_core.dir/src/viewpoint_optimizer.cpp.o
+[ 21%] Building CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o
+[ 25%] Building CXX object CMakeFiles/test_polympc_nlp.dir/src/viewpoint_optimizer.cpp.o
+[ 35%] Built target test_cbba
+[ 39%] Building CXX object CMakeFiles/test_occlusion_and_targets.dir/src/viewpoint_optimizer.cpp.o
+[ 42%] Linking CXX executable test_viewpoint
+[ 50%] Linking CXX shared library libatas_optimizer_core.so
+[ 50%] Linking CXX executable test_polympc_nlp
+[ 53%] Linking CXX executable test_occlusion_and_targets
+[ 60%] Built target test_polympc_nlp
+[ 60%] Built target test_viewpoint
+[ 64%] Built target test_occlusion_and_targets
+[ 71%] Built target atas_optimizer_core
+[ 75%] Linking CXX executable test_cbba_v2
+[ 78%] Linking CXX executable atas_optimizer_node
+[ 82%] Linking CXX executable test_adaptive_feedback
+[ 85%] Linking CXX executable test_dual_sensor_fov
+[ 89%] Built target atas_optimizer_node
+[ 92%] Built target test_cbba_v2
+[ 96%] Built target test_adaptive_feedback
+[100%] Built target test_dual_sensor_fov
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/libatas_optimizer_core.so
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_optimizer_node
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/launch/atas_optimizer.launch.py
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/config/atas_optimizer_params.yaml
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/package_run_dependencies/atas_optimizer
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/parent_prefix_path/atas_optimizer
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.sh
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.dsv
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.bash
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.sh
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.zsh
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.dsv
+-- Symlinking: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/packages/atas_optimizer
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig.cmake
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig-version.cmake
+-- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.xml

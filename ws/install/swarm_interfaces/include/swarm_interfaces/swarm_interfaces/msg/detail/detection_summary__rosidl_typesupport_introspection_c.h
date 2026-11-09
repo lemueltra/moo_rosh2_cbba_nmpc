@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_typesupport_introspection_c/swarm_interfaces/msg/detail/detection_summary__rosidl_typesupport_introspection_c.h

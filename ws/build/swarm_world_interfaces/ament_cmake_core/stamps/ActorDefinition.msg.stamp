@@ -1,0 +1,8 @@
+# Definition for spawning an actor (UGV, UAV, Walker)
+uint32 actor_id
+string type_id
+string role_name
+geometry_msgs/Pose initial_pose
+uint32 parent_id
+string[] attribute_keys
+string[] attribute_values

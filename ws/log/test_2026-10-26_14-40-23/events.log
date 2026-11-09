@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000094] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.000124] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.019325] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-R', 'test_polympc_nlp'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.026594] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.026751] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.026883] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.027031] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.027128] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.027217] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261026-1440 - Experimental\n'}
+[0.027324] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.027414] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.027556] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.027708] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.027836] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.027931] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.028019] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.028117] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.028202] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.028300] (atas_optimizer) StdoutLine: {'line': b'test 5\n'}
+[0.028386] (atas_optimizer) StdoutLine: {'line': b'    Start 5: test_polympc_nlp\n'}
+[0.028466] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.028551] (atas_optimizer) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_polympc_nlp.txt" "--command" "/workspace/ws/build/atas_optimizer/test_polympc_nlp" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"\n'}
+[0.028643] (atas_optimizer) StdoutLine: {'line': b'5: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.028727] (atas_optimizer) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[0.070958] (atas_optimizer) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.071121] (atas_optimizer) StdoutLine: {'line': b'5:  - /workspace/ws/build/atas_optimizer/test_polympc_nlp --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml\n'}
+[0.072286] (atas_optimizer) StdoutLine: {'line': b'5: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.072413] (atas_optimizer) StdoutLine: {'line': b'5: [==========] Running 5 tests from 1 test suite.\n'}
+[0.072497] (atas_optimizer) StdoutLine: {'line': b'5: [----------] Global test environment set-up.\n'}
+[0.072580] (atas_optimizer) StdoutLine: {'line': b'5: [----------] 5 tests from PolyMpNlpTest\n'}
+[0.072662] (atas_optimizer) StdoutLine: {'line': b'5: [ RUN      ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle\n'}
+[0.072747] (atas_optimizer) StdoutLine: {'line': b'5: [       OK ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle (0 ms)\n'}
+[0.072828] (atas_optimizer) StdoutLine: {'line': b'5: [ RUN      ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep\n'}
+[0.072915] (atas_optimizer) StdoutLine: {'line': b'5: [       OK ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep (0 ms)\n'}
+[0.072996] (atas_optimizer) StdoutLine: {'line': b'5: [ RUN      ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback\n'}
+[0.073082] (atas_optimizer) StdoutLine: {'line': b'5: [       OK ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback (0 ms)\n'}
+[0.073183] (atas_optimizer) StdoutLine: {'line': b'5: [ RUN      ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation\n'}
+[0.073367] (atas_optimizer) StdoutLine: {'line': b'5: [       OK ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation (0 ms)\n'}
+[0.073515] (atas_optimizer) StdoutLine: {'line': b'5: [ RUN      ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark\n'}
+[0.073609] (atas_optimizer) StdoutLine: {'line': b'5: [       OK ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark (1 ms)\n'}
+[0.073704] (atas_optimizer) StdoutLine: {'line': b'5: [----------] 5 tests from PolyMpNlpTest (1 ms total)\n'}
+[0.073798] (atas_optimizer) StdoutLine: {'line': b'5: \n'}
+[0.073884] (atas_optimizer) StdoutLine: {'line': b'5: [----------] Global test environment tear-down\n'}
+[0.073977] (atas_optimizer) StdoutLine: {'line': b'5: [==========] 5 tests from 1 test suite ran. (1 ms total)\n'}
+[0.074091] (atas_optimizer) StdoutLine: {'line': b'5: [  PASSED  ] 5 tests.\n'}
+[0.074175] (atas_optimizer) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[0.074284] (atas_optimizer) StdoutLine: {'line': b"5: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'\n"}
+[0.074369] (atas_optimizer) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'\n"}
+[0.079360] (atas_optimizer) StdoutLine: {'line': b'1/1 Test #5: test_polympc_nlp .................   Passed    0.05 sec\n'}
+[0.079649] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.079696] (atas_optimizer) StdoutLine: {'line': b'The following tests passed:\n'}
+[0.079733] (atas_optimizer) StdoutLine: {'line': b'\ttest_polympc_nlp\n'}
+[0.079768] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.079801] (atas_optimizer) StdoutLine: {'line': b'\x1b[0;32m100% tests passed\x1b[0;0m, 0 tests failed\x1b[0;0m out of 1\n'}
+[0.079844] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.079879] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.079921] (atas_optimizer) StdoutLine: {'line': b'gtest    =   0.05 sec*proc (1 test)\n'}
+[0.079958] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.079998] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   0.05 sec\n'}
+[0.083644] (atas_optimizer) CommandEnded: {'returncode': 0}
+[0.083844] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[0.084243] (-) EventReactorShutdown: {}

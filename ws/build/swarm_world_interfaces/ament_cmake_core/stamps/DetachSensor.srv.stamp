@@ -1,0 +1,5 @@
+# Service to detach and destroy a sensor dynamically
+uint32 sensor_id
+---
+bool success
+string error_message

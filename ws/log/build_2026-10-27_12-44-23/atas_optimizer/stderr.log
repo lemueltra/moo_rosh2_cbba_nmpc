@@ -1,0 +1,11 @@
+/usr/bin/ld: CMakeFiles/test_cbba_v2.dir/test/test_cbba_v2.cpp.o: in function `CbbaV2Test_MultiBundleMidpointPrimordialFovFallback_Test::TestBody()':
+test_cbba_v2.cpp:(.text+0x8f0): undefined reference to `atas_optimizer::ViewpointOptimizer::ViewpointOptimizer()'
+/usr/bin/ld: test_cbba_v2.cpp:(.text+0x911): undefined reference to `atas_optimizer::ViewpointOptimizer::set_buildings(std::vector<atas_optimizer::BuildingOccluder, std::allocator<atas_optimizer::BuildingOccluder> > const&)'
+/usr/bin/ld: test_cbba_v2.cpp:(.text+0x9a5): undefined reference to `atas_optimizer::ViewpointOptimizer::is_target_ugv_in_fov(atas_optimizer::ViewpointReference const&, atas_optimizer::Vector3d const&, double) const'
+/usr/bin/ld: test_cbba_v2.cpp:(.text+0xb65): undefined reference to `atas_optimizer::ViewpointOptimizer::is_target_ugv_in_fov(atas_optimizer::ViewpointReference const&, atas_optimizer::Vector3d const&, double) const'
+/usr/bin/ld: test_cbba_v2.cpp:(.text+0xd04): undefined reference to `atas_optimizer::ViewpointOptimizer::solve_viewpoint(unsigned int, unsigned int, atas_optimizer::Vector3d const&, double, std::vector<atas_optimizer::OptimizationTarget, std::allocator<atas_optimizer::OptimizationTarget> > const&, std::vector<atas_optimizer::ViewpointReference, std::allocator<atas_optimizer::ViewpointReference> > const&, double)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_cbba_v2.dir/build.make:115: test_cbba_v2] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/test_cbba_v2.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

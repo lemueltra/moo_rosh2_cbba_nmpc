@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_definition_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_definition_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_state_array_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_state_array_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_state_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_actor_state_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_npc_spawn_summary_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_npc_spawn_summary_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_definition_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_definition_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_detection_array_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_detection_array_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_detection_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_sensor_detection_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_simulation_status_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_simulation_status_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_weather_preset_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/msg/_weather_preset_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_attach_sensor_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_attach_sensor_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_configure_uav_rig_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_configure_uav_rig_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_destroy_actor_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_destroy_actor_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_detach_sensor_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_detach_sensor_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_set_time_mode_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_set_time_mode_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_set_weather_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_set_weather_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_spawn_actor_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_spawn_actor_s.c.o.d"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_step_world_s.c.o"
+  "CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/rosidl_generator_py/swarm_world_interfaces/srv/_step_world_s.c.o.d"
+  "libswarm_world_interfaces__rosidl_generator_py.pdb"
+  "libswarm_world_interfaces__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/swarm_world_interfaces__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

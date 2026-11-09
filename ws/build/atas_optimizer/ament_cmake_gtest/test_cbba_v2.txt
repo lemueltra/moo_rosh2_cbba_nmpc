@@ -1,0 +1,28 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_cbba_v2 --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml
+
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from CbbaV2Test
+[ RUN      ] CbbaV2Test.AntiChatteringHysteresisSuppression
+[       OK ] CbbaV2Test.AntiChatteringHysteresisSuppression (0 ms)
+[ RUN      ] CbbaV2Test.MultiBundleConvoyAllocation
+[       OK ] CbbaV2Test.MultiBundleConvoyAllocation (0 ms)
+[ RUN      ] CbbaV2Test.RfContentionPenaltyAvoidsConglomeration
+[       OK ] CbbaV2Test.RfContentionPenaltyAvoidsConglomeration (0 ms)
+[ RUN      ] CbbaV2Test.CascadeReleaseRule
+[       OK ] CbbaV2Test.CascadeReleaseRule (0 ms)
+[ RUN      ] CbbaV2Test.StrictEscortLinkConstraint
+[       OK ] CbbaV2Test.StrictEscortLinkConstraint (0 ms)
+[ RUN      ] CbbaV2Test.MultiBundleMidpointPrimordialFovFallback
+[       OK ] CbbaV2Test.MultiBundleMidpointPrimordialFovFallback (0 ms)
+[----------] 6 tests from CbbaV2Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba_v2.gtest.xml'

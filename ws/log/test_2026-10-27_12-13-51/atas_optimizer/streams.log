@@ -1,0 +1,71 @@
+[0.042s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_dual_sensor_fov
+[0.049s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.049s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.050s]    Site: dell-arch
+[0.050s]    Build name: (empty)
+[0.050s]  Add coverage exclude regular expressions.
+[0.050s] Create new tag: 20261027-1213 - Experimental
+[0.050s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.050s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.050s] Test project /workspace/ws/build/atas_optimizer
+[0.050s] Constructing a list of tests
+[0.050s] Done constructing a list of tests
+[0.050s] Updating test list for fixtures
+[0.050s] Added 0 tests to meet fixture requirements
+[0.050s] Checking test dependency graph...
+[0.050s] Checking test dependency graph end
+[0.050s] test 7
+[0.051s]     Start 7: test_dual_sensor_fov
+[0.051s] 
+[0.051s] 7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_dual_sensor_fov.txt" "--command" "/workspace/ws/build/atas_optimizer/test_dual_sensor_fov" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml"
+[0.051s] 7: Working Directory: /workspace/ws/build/atas_optimizer
+[0.051s] 7: Test timeout computed to be: 60
+[0.098s] 7: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+[0.098s] 7:  - /workspace/ws/build/atas_optimizer/test_dual_sensor_fov --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml
+[0.117s] 7: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[0.117s] 7: [==========] Running 5 tests from 1 test suite.
+[0.117s] 7: [----------] Global test environment set-up.
+[0.117s] 7: [----------] 5 tests from DualSensorFovTest
+[0.117s] 7: [ RUN      ] DualSensorFovTest.LidarFovAzimuthElevationAndRange
+[0.117s] 7: [       OK ] DualSensorFovTest.LidarFovAzimuthElevationAndRange (0 ms)
+[0.117s] 7: [ RUN      ] DualSensorFovTest.CameraFovAzimuthElevationAndRange
+[0.117s] 7: [       OK ] DualSensorFovTest.CameraFovAzimuthElevationAndRange (0 ms)
+[0.117s] 7: [ RUN      ] DualSensorFovTest.AnySensorFovBooleanUnion
+[0.117s] 7: /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp:117: Failure
+[0.117s] 7: Value of: opt.is_in_lidar_fov(uav_pos, uav_yaw, tgt_close)
+[0.118s] 7:   Actual: false
+[0.118s] 7: Expected: true
+[0.118s] 7: 
+[0.118s] 7: [  FAILED  ] DualSensorFovTest.AnySensorFovBooleanUnion (0 ms)
+[0.118s] 7: [ RUN      ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors
+[0.118s] 7: [       OK ] DualSensorFovTest.BuildingOcclusionBlocksBothSensors (0 ms)
+[0.118s] 7: [ RUN      ] DualSensorFovTest.NodeParametersConfiguration
+[0.130s] 7: [INFO] [1793103231.707173467] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 5, Rate: 5.0 Hz, Hyst: 15.0%).
+[0.136s] 7: [       OK ] DualSensorFovTest.NodeParametersConfiguration (18 ms)
+[0.136s] 7: [----------] 5 tests from DualSensorFovTest (18 ms total)
+[0.136s] 7: 
+[0.136s] 7: [----------] Global test environment tear-down
+[0.136s] 7: [==========] 5 tests from 1 test suite ran. (18 ms total)
+[0.136s] 7: [  PASSED  ] 4 tests.
+[0.136s] 7: [  FAILED  ] 1 test, listed below:
+[0.136s] 7: [  FAILED  ] DualSensorFovTest.AnySensorFovBooleanUnion
+[0.136s] 7: 
+[0.136s] 7:  1 FAILED TEST
+[0.137s] 7: -- run_test.py: return code 1
+[0.138s] 7: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+[0.138s] 7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_dual_sensor_fov.gtest.xml'
+[0.144s] 1/1 Test #7: test_dual_sensor_fov .............***Failed    0.09 sec
+[0.145s] 
+[0.145s] 0% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 1
+[0.145s] 
+[0.145s] Label Time Summary:
+[0.145s] gtest    =   0.09 sec*proc (1 test)
+[0.145s] 
+[0.145s] Total Test time (real) =   0.10 sec
+[0.145s] 
+[0.145s] The following tests FAILED:
+[0.145s] 	[0;31m  7 - test_dual_sensor_fov (Failed)[0;0m
+[0.147s] Errors while running CTest
+[0.147s] Output from these tests are in: /workspace/ws/build/atas_optimizer/Testing/Temporary/LastTest.log
+[0.147s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[0.148s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_dual_sensor_fov

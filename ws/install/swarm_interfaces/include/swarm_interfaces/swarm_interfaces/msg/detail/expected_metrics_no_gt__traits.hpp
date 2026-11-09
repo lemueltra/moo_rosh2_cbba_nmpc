@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_interfaces/rosidl_generator_cpp/swarm_interfaces/msg/detail/expected_metrics_no_gt__traits.hpp

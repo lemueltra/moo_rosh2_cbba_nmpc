@@ -1,0 +1,315 @@
+[0.000000] (-) TimerEvent: {}
+[0.000103] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces', 'atas_optimizer': '/workspace/ws/install/atas_optimizer'})}
+[0.000129] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.016070] (atas_optimizer) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspace/ws/install', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.021599] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.021724] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.021774] (atas_optimizer) StdoutLine: {'line': b'   Site: dell-arch\n'}
+[0.021815] (atas_optimizer) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.021854] (atas_optimizer) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.021893] (atas_optimizer) StdoutLine: {'line': b'Create new tag: 20261026-1338 - Experimental\n'}
+[0.021937] (atas_optimizer) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.021977] (atas_optimizer) StdoutLine: {'line': b'Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini\n'}
+[0.022042] (atas_optimizer) StdoutLine: {'line': b'Test project /workspace/ws/build/atas_optimizer\n'}
+[0.022082] (atas_optimizer) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.022144] (atas_optimizer) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.022182] (atas_optimizer) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.022220] (atas_optimizer) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.022261] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.022299] (atas_optimizer) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.022344] (atas_optimizer) StdoutLine: {'line': b'test 1\n'}
+[0.022396] (atas_optimizer) StdoutLine: {'line': b'      Start  1: test_cbba\n'}
+[0.022436] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.022474] (atas_optimizer) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_cbba.txt" "--command" "/workspace/ws/build/atas_optimizer/test_cbba" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"\n'}
+[0.022515] (atas_optimizer) StdoutLine: {'line': b'1: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.022551] (atas_optimizer) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.060471] (atas_optimizer) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.060584] (atas_optimizer) StdoutLine: {'line': b'1:  - /workspace/ws/build/atas_optimizer/test_cbba --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml\n'}
+[0.061671] (atas_optimizer) StdoutLine: {'line': b'1: [==========] Running 2 tests from 1 test suite.\n'}
+[0.061726] (atas_optimizer) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.061788] (atas_optimizer) StdoutLine: {'line': b'1: [----------] 2 tests from CbbaAgentTest\n'}
+[0.061824] (atas_optimizer) StdoutLine: {'line': b'1: [ RUN      ] CbbaAgentTest.SingleAgentSingleTask\n'}
+[0.061859] (atas_optimizer) StdoutLine: {'line': b'1: [       OK ] CbbaAgentTest.SingleAgentSingleTask (0 ms)\n'}
+[0.061893] (atas_optimizer) StdoutLine: {'line': b'1: [ RUN      ] CbbaAgentTest.TwoAgentsConflictResolution\n'}
+[0.061928] (atas_optimizer) StdoutLine: {'line': b'1: [       OK ] CbbaAgentTest.TwoAgentsConflictResolution (0 ms)\n'}
+[0.061981] (atas_optimizer) StdoutLine: {'line': b'1: [----------] 2 tests from CbbaAgentTest (0 ms total)\n'}
+[0.062016] (atas_optimizer) StdoutLine: {'line': b'1: \n'}
+[0.062052] (atas_optimizer) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.062174] (atas_optimizer) StdoutLine: {'line': b'1: [==========] 2 tests from 1 test suite ran. (0 ms total)\n'}
+[0.062289] (atas_optimizer) StdoutLine: {'line': b'1: [  PASSED  ] 2 tests.\n'}
+[0.062385] (atas_optimizer) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.062469] (atas_optimizer) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'\n"}
+[0.062570] (atas_optimizer) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'\n"}
+[0.067773] (atas_optimizer) StdoutLine: {'line': b' 1/11 Test  #1: test_cbba ........................   Passed    0.05 sec\n'}
+[0.067938] (atas_optimizer) StdoutLine: {'line': b'test 2\n'}
+[0.068017] (atas_optimizer) StdoutLine: {'line': b'      Start  2: test_viewpoint\n'}
+[0.068094] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.068170] (atas_optimizer) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_viewpoint.txt" "--command" "/workspace/ws/build/atas_optimizer/test_viewpoint" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml"\n'}
+[0.068259] (atas_optimizer) StdoutLine: {'line': b'2: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.068351] (atas_optimizer) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.099587] (-) TimerEvent: {}
+[0.105023] (atas_optimizer) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.105181] (atas_optimizer) StdoutLine: {'line': b'2:  - /workspace/ws/build/atas_optimizer/test_viewpoint --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml\n'}
+[0.106158] (atas_optimizer) StdoutLine: {'line': b'2: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.106288] (atas_optimizer) StdoutLine: {'line': b'2: [==========] Running 3 tests from 1 test suite.\n'}
+[0.106382] (atas_optimizer) StdoutLine: {'line': b'2: [----------] Global test environment set-up.\n'}
+[0.106472] (atas_optimizer) StdoutLine: {'line': b'2: [----------] 3 tests from ViewpointOptimizerTest\n'}
+[0.106606] (atas_optimizer) StdoutLine: {'line': b'2: [ RUN      ] ViewpointOptimizerTest.AltitudeAndRadiusConstraints\n'}
+[0.106688] (atas_optimizer) StdoutLine: {'line': b'2: [       OK ] ViewpointOptimizerTest.AltitudeAndRadiusConstraints (0 ms)\n'}
+[0.106750] (atas_optimizer) StdoutLine: {'line': b'2: [ RUN      ] ViewpointOptimizerTest.MultiDroneRepulsiveSafetyBarrier\n'}
+[0.106878] (atas_optimizer) StdoutLine: {'line': b'2: [       OK ] ViewpointOptimizerTest.MultiDroneRepulsiveSafetyBarrier (0 ms)\n'}
+[0.107018] (atas_optimizer) StdoutLine: {'line': b'2: [ RUN      ] ViewpointOptimizerTest.ExecutionTimeBenchmarkUnder50ms\n'}
+[0.107115] (atas_optimizer) StdoutLine: {'line': b'2: [       OK ] ViewpointOptimizerTest.ExecutionTimeBenchmarkUnder50ms (0 ms)\n'}
+[0.107203] (atas_optimizer) StdoutLine: {'line': b'2: [----------] 3 tests from ViewpointOptimizerTest (0 ms total)\n'}
+[0.107286] (atas_optimizer) StdoutLine: {'line': b'2: \n'}
+[0.107406] (atas_optimizer) StdoutLine: {'line': b'2: [----------] Global test environment tear-down\n'}
+[0.107500] (atas_optimizer) StdoutLine: {'line': b'2: [==========] 3 tests from 1 test suite ran. (0 ms total)\n'}
+[0.107588] (atas_optimizer) StdoutLine: {'line': b'2: [  PASSED  ] 3 tests.\n'}
+[0.107675] (atas_optimizer) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.107766] (atas_optimizer) StdoutLine: {'line': b"2: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml'\n"}
+[0.107851] (atas_optimizer) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml'\n"}
+[0.112541] (atas_optimizer) StdoutLine: {'line': b' 2/11 Test  #2: test_viewpoint ...................   Passed    0.04 sec\n'}
+[0.112692] (atas_optimizer) StdoutLine: {'line': b'test 3\n'}
+[0.112782] (atas_optimizer) StdoutLine: {'line': b'      Start  3: test_test_node_integration.py\n'}
+[0.112872] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.112966] (atas_optimizer) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"\n'}
+[0.113068] (atas_optimizer) StdoutLine: {'line': b'3: Working Directory: /workspace/ws/build/atas_optimizer\n'}
+[0.113158] (atas_optimizer) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.149793] (atas_optimizer) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':\n"}
+[0.149944] (atas_optimizer) StdoutLine: {'line': b'3:  - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer\n'}
+[0.199820] (-) TimerEvent: {}
+[0.300085] (-) TimerEvent: {}
+[0.400284] (-) TimerEvent: {}
+[0.442282] (atas_optimizer) StdoutLine: {'line': b'3: [INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-26-13-38-49-770365-dell-arch-1253\n'}
+[0.442455] (atas_optimizer) StdoutLine: {'line': b'3: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[0.443729] (atas_optimizer) StdoutLine: {'line': b'3: test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)\n'}
+[0.450134] (atas_optimizer) StdoutLine: {'line': b'3: Verify that feeding UGVs and latency produces valid references. ... [INFO] [atas_optimizer_node-1]: process started with pid [1266]\n'}
+[0.460245] (atas_optimizer) StdoutLine: {'line': b'3: [atas_optimizer_node-1] [INFO] [1793021929.802818134] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).\n'}
+[0.500422] (-) TimerEvent: {}
+[0.600756] (-) TimerEvent: {}
+[0.700971] (-) TimerEvent: {}
+[0.801328] (-) TimerEvent: {}
+[0.862171] (atas_optimizer) StdoutLine: {'line': b'3: ok\n'}
+[0.862425] (atas_optimizer) StdoutLine: {'line': b'3: \n'}
+[0.862523] (atas_optimizer) StdoutLine: {'line': b'3: ----------------------------------------------------------------------\n'}
+[0.862602] (atas_optimizer) StdoutLine: {'line': b'3: Ran 1 test in 0.419s\n'}
+[0.862685] (atas_optimizer) StdoutLine: {'line': b'3: \n'}
+[0.862768] (atas_optimizer) StdoutLine: {'line': b'3: OK\n'}
+[0.863665] (atas_optimizer) StdoutLine: {'line': b"3: [INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]\n"}
+[0.864002] (atas_optimizer) StdoutLine: {'line': b'3: [atas_optimizer_node-1] [INFO] [1793021930.207257361] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[0.870919] (atas_optimizer) StdoutLine: {'line': b'3: [INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 1266]\n'}
+[0.871155] (atas_optimizer) StdoutLine: {'line': b'3: \n'}
+[0.871253] (atas_optimizer) StdoutLine: {'line': b'3: ----------------------------------------------------------------------\n'}
+[0.871354] (atas_optimizer) StdoutLine: {'line': b'3: Ran 0 tests in 0.000s\n'}
+[0.871457] (atas_optimizer) StdoutLine: {'line': b'3: \n'}
+[0.871543] (atas_optimizer) StdoutLine: {'line': b'3: NO TESTS RAN\n'}
+[0.901616] (-) TimerEvent: {}
+[0.932678] (atas_optimizer) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.932839] (atas_optimizer) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'\n"}
+[0.938657] (atas_optimizer) StdoutLine: {'line': b' 3/11 Test  #3: test_test_node_integration.py ....   Passed    0.83 sec\n'}
+[0.938810] (atas_optimizer) StdoutLine: {'line': b'test 4\n'}
+[0.938891] (atas_optimizer) StdoutLine: {'line': b'      Start  4: copyright\n'}
+[0.938968] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[0.939079] (atas_optimizer) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_copyright/copyright.txt" "--command" "/opt/ros/jazzy/bin/ament_copyright" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"\n'}
+[0.939137] (atas_optimizer) StdoutLine: {'line': b'4: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[0.939176] (atas_optimizer) StdoutLine: {'line': b'4: Test timeout computed to be: 200\n'}
+[0.974808] (atas_optimizer) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[0.974971] (atas_optimizer) StdoutLine: {'line': b'4:  - /opt/ros/jazzy/bin/ament_copyright --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml\n'}
+[1.001722] (-) TimerEvent: {}
+[1.101895] (-) TimerEvent: {}
+[1.202176] (-) TimerEvent: {}
+[1.234136] (atas_optimizer) StdoutLine: {'line': b'4: No problems found, checked 9 files\n'}
+[1.241898] (atas_optimizer) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.242013] (atas_optimizer) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml'\n"}
+[1.247497] (atas_optimizer) StdoutLine: {'line': b' 4/11 Test  #4: copyright ........................   Passed    0.31 sec\n'}
+[1.247590] (atas_optimizer) StdoutLine: {'line': b'test 5\n'}
+[1.247630] (atas_optimizer) StdoutLine: {'line': b'      Start  5: cppcheck\n'}
+[1.247664] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[1.247699] (atas_optimizer) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml" "--include_dirs" "/workspace/ws/src/atas_optimizer/include" "/workspace/ws/src/atas_optimizer/include"\n'}
+[1.247750] (atas_optimizer) StdoutLine: {'line': b'5: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[1.247783] (atas_optimizer) StdoutLine: {'line': b'5: Test timeout computed to be: 300\n'}
+[1.283330] (atas_optimizer) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[1.283455] (atas_optimizer) StdoutLine: {'line': b'5:  - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml --include_dirs /workspace/ws/src/atas_optimizer/include /workspace/ws/src/atas_optimizer/include\n'}
+[1.302279] (-) TimerEvent: {}
+[1.332854] (atas_optimizer) StdoutLine: {'line': b'5: cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[1.340333] (atas_optimizer) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.340394] (atas_optimizer) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml'\n"}
+[1.346448] (atas_optimizer) StdoutLine: {'line': b' 5/11 Test  #5: cppcheck .........................   Passed    0.10 sec\n'}
+[1.346514] (atas_optimizer) StdoutLine: {'line': b'test 6\n'}
+[1.346547] (atas_optimizer) StdoutLine: {'line': b'      Start  6: cpplint\n'}
+[1.346579] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[1.346615] (atas_optimizer) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cpplint/cpplint.txt" "--command" "/opt/ros/jazzy/bin/ament_cpplint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"\n'}
+[1.346653] (atas_optimizer) StdoutLine: {'line': b'6: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[1.346685] (atas_optimizer) StdoutLine: {'line': b'6: Test timeout computed to be: 120\n'}
+[1.384771] (atas_optimizer) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[1.384902] (atas_optimizer) StdoutLine: {'line': b'6:  - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml\n'}
+[1.402367] (-) TimerEvent: {}
+[1.472721] (atas_optimizer) StdoutLine: {'line': b'6: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:78:  Add #include <utility> for pair<>  [build/include_what_you_use] [4]\n'}
+[1.502645] (-) TimerEvent: {}
+[1.593120] (atas_optimizer) StdoutLine: {'line': b"6: Category 'build/include_what_you_use' errors found: 1\n"}
+[1.593245] (atas_optimizer) StdoutLine: {'line': b'6: Total errors found: 1\n'}
+[1.593284] (atas_optimizer) StdoutLine: {'line': b"6: Using '--root=/workspace/ws/src/atas_optimizer/include' argument\n"}
+[1.593317] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593350] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp\n'}
+[1.593387] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593418] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp\n'}
+[1.593447] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593476] (atas_optimizer) StdoutLine: {'line': b"6: Using '--root=/workspace/ws/src/atas_optimizer/src' argument\n"}
+[1.593507] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593545] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp\n'}
+[1.593577] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593605] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp\n'}
+[1.593636] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593667] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp\n'}
+[1.593700] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593731] (atas_optimizer) StdoutLine: {'line': b"6: Using '--root=/workspace/ws/src/atas_optimizer/test' argument\n"}
+[1.593762] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593793] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba.cpp\n'}
+[1.593824] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.593855] (atas_optimizer) StdoutLine: {'line': b'6: Done processing /workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp\n'}
+[1.593885] (atas_optimizer) StdoutLine: {'line': b'6: \n'}
+[1.602291] (atas_optimizer) StdoutLine: {'line': b'6: -- run_test.py: return code 1\n'}
+[1.602384] (atas_optimizer) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml'\n"}
+[1.602690] (-) TimerEvent: {}
+[1.608152] (atas_optimizer) StdoutLine: {'line': b' 6/11 Test  #6: cpplint ..........................***Failed    0.26 sec\n'}
+[1.608244] (atas_optimizer) StdoutLine: {'line': b'test 7\n'}
+[1.608277] (atas_optimizer) StdoutLine: {'line': b'      Start  7: flake8\n'}
+[1.608310] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[1.608345] (atas_optimizer) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"\n'}
+[1.608389] (atas_optimizer) StdoutLine: {'line': b'7: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[1.608420] (atas_optimizer) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[1.644709] (atas_optimizer) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[1.644859] (atas_optimizer) StdoutLine: {'line': b'7:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml\n'}
+[1.702780] (-) TimerEvent: {}
+[1.800655] (atas_optimizer) StdoutLine: {'line': b'7: \n'}
+[1.800768] (atas_optimizer) StdoutLine: {'line': b'7: 2 files checked\n'}
+[1.800815] (atas_optimizer) StdoutLine: {'line': b'7: No problems found\n'}
+[1.800849] (atas_optimizer) StdoutLine: {'line': b'7: \n'}
+[1.800881] (atas_optimizer) StdoutLine: {'line': b'7: Checked files:\n'}
+[1.800912] (atas_optimizer) StdoutLine: {'line': b'7: \n'}
+[1.800943] (atas_optimizer) StdoutLine: {'line': b'7: * ./launch/atas_optimizer.launch.py\n'}
+[1.800973] (atas_optimizer) StdoutLine: {'line': b'7: * ./test/test_node_integration.py\n'}
+[1.802836] (-) TimerEvent: {}
+[1.819325] (atas_optimizer) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[1.819464] (atas_optimizer) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml'\n"}
+[1.825472] (atas_optimizer) StdoutLine: {'line': b' 7/11 Test  #7: flake8 ...........................   Passed    0.22 sec\n'}
+[1.825640] (atas_optimizer) StdoutLine: {'line': b'test 8\n'}
+[1.825680] (atas_optimizer) StdoutLine: {'line': b'      Start  8: lint_cmake\n'}
+[1.825715] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[1.825751] (atas_optimizer) StdoutLine: {'line': b'8: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"\n'}
+[1.825790] (atas_optimizer) StdoutLine: {'line': b'8: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[1.825823] (atas_optimizer) StdoutLine: {'line': b'8: Test timeout computed to be: 60\n'}
+[1.862572] (atas_optimizer) StdoutLine: {'line': b"8: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[1.862675] (atas_optimizer) StdoutLine: {'line': b'8:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml\n'}
+[1.902918] (-) TimerEvent: {}
+[1.921238] (atas_optimizer) StdoutLine: {'line': b'8: \n'}
+[1.921360] (atas_optimizer) StdoutLine: {'line': b'8: No problems found\n'}
+[1.928122] (atas_optimizer) StdoutLine: {'line': b'8: -- run_test.py: return code 0\n'}
+[1.928260] (atas_optimizer) StdoutLine: {'line': b"8: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml'\n"}
+[1.933990] (atas_optimizer) StdoutLine: {'line': b' 8/11 Test  #8: lint_cmake .......................   Passed    0.11 sec\n'}
+[1.934102] (atas_optimizer) StdoutLine: {'line': b'test 9\n'}
+[1.934143] (atas_optimizer) StdoutLine: {'line': b'      Start  9: pep257\n'}
+[1.934178] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[1.934213] (atas_optimizer) StdoutLine: {'line': b'9: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"\n'}
+[1.934259] (atas_optimizer) StdoutLine: {'line': b'9: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[1.934293] (atas_optimizer) StdoutLine: {'line': b'9: Test timeout computed to be: 60\n'}
+[1.978835] (atas_optimizer) StdoutLine: {'line': b"9: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[1.978994] (atas_optimizer) StdoutLine: {'line': b'9:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml\n'}
+[2.003034] (-) TimerEvent: {}
+[2.057478] (atas_optimizer) StdoutLine: {'line': b'9: checking ./launch/atas_optimizer.launch.py\n'}
+[2.057639] (atas_optimizer) StdoutLine: {'line': b'9: checking ./test/test_node_integration.py\n'}
+[2.057699] (atas_optimizer) StdoutLine: {'line': b'9: No problems found\n'}
+[2.068783] (atas_optimizer) StdoutLine: {'line': b'9: -- run_test.py: return code 0\n'}
+[2.068896] (atas_optimizer) StdoutLine: {'line': b"9: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml'\n"}
+[2.075319] (atas_optimizer) StdoutLine: {'line': b' 9/11 Test  #9: pep257 ...........................   Passed    0.14 sec\n'}
+[2.075416] (atas_optimizer) StdoutLine: {'line': b'test 10\n'}
+[2.075451] (atas_optimizer) StdoutLine: {'line': b'      Start 10: uncrustify\n'}
+[2.075484] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.075522] (atas_optimizer) StdoutLine: {'line': b'10: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"\n'}
+[2.075560] (atas_optimizer) StdoutLine: {'line': b'10: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[2.075594] (atas_optimizer) StdoutLine: {'line': b'10: Test timeout computed to be: 60\n'}
+[2.103144] (-) TimerEvent: {}
+[2.116153] (atas_optimizer) StdoutLine: {'line': b"10: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[2.116270] (atas_optimizer) StdoutLine: {'line': b'10:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml\n'}
+[2.200695] (atas_optimizer) StdoutLine: {'line': b"10: Code style divergence in file 'src/cbba_agent.cpp':\n"}
+[2.200808] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.200849] (atas_optimizer) StdoutLine: {'line': b'10: --- src/cbba_agent.cpp\n'}
+[2.200881] (atas_optimizer) StdoutLine: {'line': b'10: +++ src/cbba_agent.cpp.uncrustify\n'}
+[2.200914] (atas_optimizer) StdoutLine: {'line': b'10: @@ -76,6 +76,6 @@\n'}
+[2.200947] (atas_optimizer) StdoutLine: {'line': b'10: -    for (const auto & t : tasks_) {\n'}
+[2.200980] (atas_optimizer) StdoutLine: {'line': b'10: -      if (t.id == task_id) {\n'}
+[2.201012] (atas_optimizer) StdoutLine: {'line': b'10: -        return false;\n'}
+[2.201044] (atas_optimizer) StdoutLine: {'line': b'10: -      }\n'}
+[2.201075] (atas_optimizer) StdoutLine: {'line': b'10: -    }\n'}
+[2.201106] (atas_optimizer) StdoutLine: {'line': b'10: -    return true;\n'}
+[2.201138] (atas_optimizer) StdoutLine: {'line': b'10: +        for (const auto & t : tasks_) {\n'}
+[2.201169] (atas_optimizer) StdoutLine: {'line': b'10: +          if (t.id == task_id) {\n'}
+[2.201201] (atas_optimizer) StdoutLine: {'line': b'10: +            return false;\n'}
+[2.201231] (atas_optimizer) StdoutLine: {'line': b'10: +          }\n'}
+[2.201262] (atas_optimizer) StdoutLine: {'line': b'10: +        }\n'}
+[2.201292] (atas_optimizer) StdoutLine: {'line': b'10: +        return true;\n'}
+[2.201322] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201353] (atas_optimizer) StdoutLine: {'line': b'10: 1 files with code style divergence\n'}
+[2.201389] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'\n"}
+[2.201448] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201480] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'\n"}
+[2.201528] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201569] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'src/atas_optimizer_node.cpp'\n"}
+[2.201662] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201725] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'src/viewpoint_optimizer.cpp'\n"}
+[2.201762] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201801] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'test/test_cbba.cpp'\n"}
+[2.201835] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.201867] (atas_optimizer) StdoutLine: {'line': b"10: No code style divergence in file 'test/test_viewpoint.cpp'\n"}
+[2.201899] (atas_optimizer) StdoutLine: {'line': b'10: \n'}
+[2.203255] (-) TimerEvent: {}
+[2.208394] (atas_optimizer) StdoutLine: {'line': b'10: -- run_test.py: return code 1\n'}
+[2.208582] (atas_optimizer) StdoutLine: {'line': b"10: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'\n"}
+[2.215285] (atas_optimizer) StdoutLine: {'line': b'10/11 Test #10: uncrustify .......................***Failed    0.14 sec\n'}
+[2.215459] (atas_optimizer) StdoutLine: {'line': b'test 11\n'}
+[2.215555] (atas_optimizer) StdoutLine: {'line': b'      Start 11: xmllint\n'}
+[2.215635] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.215720] (atas_optimizer) StdoutLine: {'line': b'11: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"\n'}
+[2.215811] (atas_optimizer) StdoutLine: {'line': b'11: Working Directory: /workspace/ws/src/atas_optimizer\n'}
+[2.215895] (atas_optimizer) StdoutLine: {'line': b'11: Test timeout computed to be: 60\n'}
+[2.255689] (atas_optimizer) StdoutLine: {'line': b"11: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':\n"}
+[2.255846] (atas_optimizer) StdoutLine: {'line': b'11:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml\n'}
+[2.303410] (-) TimerEvent: {}
+[2.403670] (-) TimerEvent: {}
+[2.503923] (-) TimerEvent: {}
+[2.604177] (-) TimerEvent: {}
+[2.704411] (-) TimerEvent: {}
+[2.749449] (atas_optimizer) StdoutLine: {'line': b"11: File 'package.xml' is valid\n"}
+[2.749612] (atas_optimizer) StdoutLine: {'line': b'11: \n'}
+[2.749660] (atas_optimizer) StdoutLine: {'line': b'11: No problems found\n'}
+[2.757161] (atas_optimizer) StdoutLine: {'line': b'11: -- run_test.py: return code 0\n'}
+[2.757263] (atas_optimizer) StdoutLine: {'line': b"11: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml'\n"}
+[2.763224] (atas_optimizer) StdoutLine: {'line': b'11/11 Test #11: xmllint ..........................   Passed    0.55 sec\n'}
+[2.763377] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.763427] (atas_optimizer) StdoutLine: {'line': b'82% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 11\n'}
+[2.763468] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.763502] (atas_optimizer) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.763537] (atas_optimizer) StdoutLine: {'line': b'copyright      =   0.31 sec*proc (1 test)\n'}
+[2.763570] (atas_optimizer) StdoutLine: {'line': b'cppcheck       =   0.10 sec*proc (1 test)\n'}
+[2.763604] (atas_optimizer) StdoutLine: {'line': b'cpplint        =   0.26 sec*proc (1 test)\n'}
+[2.763638] (atas_optimizer) StdoutLine: {'line': b'flake8         =   0.22 sec*proc (1 test)\n'}
+[2.763672] (atas_optimizer) StdoutLine: {'line': b'gtest          =   0.09 sec*proc (2 tests)\n'}
+[2.763705] (atas_optimizer) StdoutLine: {'line': b'launch_test    =   0.83 sec*proc (1 test)\n'}
+[2.763738] (atas_optimizer) StdoutLine: {'line': b'lint_cmake     =   0.11 sec*proc (1 test)\n'}
+[2.763770] (atas_optimizer) StdoutLine: {'line': b'linter         =   1.82 sec*proc (8 tests)\n'}
+[2.763801] (atas_optimizer) StdoutLine: {'line': b'pep257         =   0.14 sec*proc (1 test)\n'}
+[2.763832] (atas_optimizer) StdoutLine: {'line': b'uncrustify     =   0.14 sec*proc (1 test)\n'}
+[2.763871] (atas_optimizer) StdoutLine: {'line': b'xmllint        =   0.55 sec*proc (1 test)\n'}
+[2.763901] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.763934] (atas_optimizer) StdoutLine: {'line': b'Total Test time (real) =   2.74 sec\n'}
+[2.763966] (atas_optimizer) StdoutLine: {'line': b'\n'}
+[2.763999] (atas_optimizer) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[2.764032] (atas_optimizer) StdoutLine: {'line': b'\t\x1b[0;31m  6 - cpplint (Failed)\x1b[0;0m\n'}
+[2.764069] (atas_optimizer) StdoutLine: {'line': b'\t\x1b[0;31m 10 - uncrustify (Failed)\x1b[0;0m\n'}
+[2.765814] (atas_optimizer) StderrLine: {'line': b'Errors while running CTest\n'}
+[2.765865] (atas_optimizer) StderrLine: {'line': b'Output from these tests are in: /workspace/ws/build/atas_optimizer/Testing/Temporary/LastTest.log\n'}
+[2.765900] (atas_optimizer) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[2.766956] (atas_optimizer) CommandEnded: {'returncode': 8}
+[2.767089] (atas_optimizer) TestFailure: {'identifier': 'atas_optimizer'}
+[2.767102] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 0}
+[2.767872] (-) EventReactorShutdown: {}

@@ -1,0 +1,173 @@
+{
+  "claims": [
+    {
+      "anchor": "L7-L9",
+      "claim": "A restrição primordial dual-sensor garantiu 100% de conformidade de visada sobre 600 referências avaliadas com zero violações de FoV.",
+      "code_refs": [],
+      "evidence_refs": [
+        "EV-001",
+        "EV-002",
+        "EV-003"
+      ],
+      "id": "CLM-001",
+      "inferred": false,
+      "metric_refs": [
+        "MET-096",
+        "MET-097",
+        "MET-102"
+      ],
+      "section": "05_sections/05_resultados.md",
+      "status": "verificado",
+      "type": "metric"
+    },
+    {
+      "anchor": "L15-L17",
+      "claim": "O tempo médio de resolução do solver de ponto interior permaneceu em 1.8 ms, cumprindo com folga o orçamento de tempo real.",
+      "code_refs": [],
+      "evidence_refs": [
+        "EV-004"
+      ],
+      "id": "CLM-002",
+      "inferred": false,
+      "metric_refs": [
+        "MET-099"
+      ],
+      "section": "05_sections/05_resultados.md",
+      "status": "verificado",
+      "type": "metric"
+    },
+    {
+      "anchor": "L23-L25",
+      "claim": "A suíte automatizada de testes registrou 128 testes executados com 100% de sucesso (zero falhas e zero erros).",
+      "code_refs": [],
+      "evidence_refs": [
+        "EV-005",
+        "EV-006",
+        "EV-007"
+      ],
+      "id": "CLM-003",
+      "inferred": false,
+      "metric_refs": [
+        "MET-091",
+        "MET-092",
+        "MET-093"
+      ],
+      "section": "05_sections/05_resultados.md",
+      "status": "verificado",
+      "type": "metric"
+    },
+    {
+      "anchor": "L31-L33",
+      "claim": "Durante 60 segundos de telemetria contínua a 5 Hz foram geradas 301 mensagens de active set, 300 mensagens de referências e 3001 amostras de estado dos UGVs.",
+      "code_refs": [],
+      "evidence_refs": [
+        "EV-008",
+        "EV-009",
+        "EV-010",
+        "EV-011"
+      ],
+      "id": "CLM-004",
+      "inferred": false,
+      "metric_refs": [
+        "MET-100",
+        "MET-094",
+        "MET-101",
+        "MET-103"
+      ],
+      "section": "05_sections/05_resultados.md",
+      "status": "verificado",
+      "type": "metric"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-001",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=fov_compliance_percent",
+      "metric_ref": "MET-096",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-002",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=fov_violations_count",
+      "metric_ref": "MET-097",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-003",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=total_references_evaluated",
+      "metric_ref": "MET-102",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-004",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=mean_solve_time_ms",
+      "metric_ref": "MET-099",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-005",
+      "kind": "metric",
+      "locator": "results_manifest.json#derived=AGG-001",
+      "metric_ref": "MET-091",
+      "sha256": "",
+      "source_id": "AGG-001"
+    },
+    {
+      "id": "EV-006",
+      "kind": "metric",
+      "locator": "results_manifest.json#derived=AGG-002",
+      "metric_ref": "MET-092",
+      "sha256": "",
+      "source_id": "AGG-002"
+    },
+    {
+      "id": "EV-007",
+      "kind": "metric",
+      "locator": "results_manifest.json#derived=AGG-003",
+      "metric_ref": "MET-093",
+      "sha256": "",
+      "source_id": "AGG-003"
+    },
+    {
+      "id": "EV-008",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=monitoring_duration_sec",
+      "metric_ref": "MET-100",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-009",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=active_set_msgs",
+      "metric_ref": "MET-094",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-010",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=references_msgs",
+      "metric_ref": "MET-101",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    },
+    {
+      "id": "EV-011",
+      "kind": "metric",
+      "locator": "closed_loop_evaluation_v2.log#key=ugv_state_msgs",
+      "metric_ref": "MET-103",
+      "sha256": "4e76c9a4be9552d22e26af9998452f688f815b897a8ffccc0c6238afd908e149",
+      "source_id": "SRC-019"
+    }
+  ],
+  "schema_version": 1
+}

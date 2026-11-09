@@ -1,0 +1,36 @@
+-- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+ - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml
+
+No code style divergence in file 'include/atas_optimizer/atas_optimizer_node.hpp'
+
+No code style divergence in file 'include/atas_optimizer/cbba_agent.hpp'
+
+No code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp'
+
+No code style divergence in file 'src/atas_optimizer_node.cpp'
+
+No code style divergence in file 'src/cbba_agent.cpp'
+
+No code style divergence in file 'src/main.cpp'
+
+No code style divergence in file 'src/viewpoint_optimizer.cpp'
+
+No code style divergence in file 'test/test_adaptive_feedback.cpp'
+
+No code style divergence in file 'test/test_cbba.cpp'
+
+No code style divergence in file 'test/test_cbba_v2.cpp'
+
+No code style divergence in file 'test/test_dual_sensor_fov.cpp'
+
+No code style divergence in file 'test/test_occlusion_and_targets.cpp'
+
+No code style divergence in file 'test/test_polympc_nlp.cpp'
+
+No code style divergence in file 'test/test_viewpoint.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'

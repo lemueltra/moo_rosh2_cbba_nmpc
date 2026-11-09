@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_typesupport_fastrtps_c/swarm_world_interfaces/msg/detail/npc_spawn_summary__rosidl_typesupport_fastrtps_c.h

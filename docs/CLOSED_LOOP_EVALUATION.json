@@ -1,0 +1,59 @@
+{
+  "timestamp": 1793108217.8036265,
+  "version": "v2.0.0",
+  "monitoring_duration_sec": 60.0,
+  "counts": {
+    "active_set_msgs": 301,
+    "references_msgs": 300,
+    "ugv_state_msgs": 3001,
+    "latency_msgs": 300,
+    "feedback_msgs": 300
+  },
+  "v2_primordial_metrics": {
+    "total_references_evaluated": 600,
+    "fov_violations_count": 0,
+    "fov_compliance_percent": 100.0,
+    "primordial_constraint_status": "PASSED"
+  },
+  "latest_state": {
+    "active_ids": [
+      0,
+      1
+    ],
+    "references": [
+      {
+        "drone_id": 0,
+        "ugv_id": 0,
+        "x": 12.000002378126347,
+        "y": -0.0055100997270907115,
+        "z": 15.0,
+        "yaw": 3.1411334787358047,
+        "frame_relative": true,
+        "in_dual_sensor_fov": true
+      },
+      {
+        "drone_id": 1,
+        "ugv_id": 1,
+        "x": -7.2938180173928275,
+        "y": -8.13231201430522,
+        "z": 15.0,
+        "yaw": 0.7894367697428578,
+        "frame_relative": true,
+        "in_dual_sensor_fov": true
+      }
+    ],
+    "ugvs_count": 4,
+    "latencies": [
+      {
+        "drone_id": 0,
+        "ugv_id": 3,
+        "latency_ms": 2.000029287862654
+      },
+      {
+        "drone_id": 1,
+        "ugv_id": 1,
+        "latency_ms": 2.00004212866357
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_interfaces/msg/DroneCommand.msg
+// generated code does not contain a copyright notice
+
+
+module swarm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Actuation velocity command for a single drone in world frame 'map' (SI units)")
+    struct DroneCommand {
+      uint32 drone_id;
+
+      boolean active;
+
+      double vx;
+
+      double vy;
+
+      double yaw_rate;
+
+      double vz;
+    };
+  };
+};

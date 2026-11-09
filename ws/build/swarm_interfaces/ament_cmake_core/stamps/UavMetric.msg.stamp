@@ -1,0 +1,48 @@
+# Every metric the multi-objective optimizer uses, for ONE UAV slot (release 3.2.0).
+#
+# One row of the RViz2 metrics dashboard. Field for field this is what the optimizer
+# reads or produces; see docs/PLANO_PAINEL_METRICAS_RVIZ.md §1.1 for the source of
+# each field and docs/CONTRATO_OTIMIZADOR.md for the contract it belongs to.
+std_msgs/Header header
+
+uint32 drone_id
+bool active                  # exactly /drones/state.active (objective 3: minimize)
+uint8 mode                   # DroneStatus mode: 0 inactive .. 7 plan failed
+
+# Pose in the map frame (the frame every reference is resolved into).
+float64 x
+float64 y
+float64 yaw
+float64 z                    # altitude: optimization variable, [2.5, 35.0] m
+
+# Kinematics. speed_3d = |(vx, vy, vz)|, limited to 5.0 m/s.
+float64 vx
+float64 vy
+float64 vz
+float64 speed_3d
+float64 yaw_rate
+
+# Link to the nearest UGV (objective 2). Valid only while the UAV is active AND the
+# communication layer has a link for it; `has_link` is the validity flag.
+bool has_link
+uint32 nearest_ugv_id
+float64 ugv_distance_m
+float64 latency_ms
+bool los                     # false = non-line-of-sight (NLOS penalty)
+
+# Objective 1: how many distinct targets this UAV's own sensors are detecting now
+# (union over its LiDAR and camera streams), plus how many sensor streams feed it.
+uint32 detections_now
+uint32 sensor_streams
+
+# Execution quality reported by the planner.
+float64 position_error
+float64 yaw_error
+
+# Reference currently applied to this UAV.
+bool has_reference
+bool reference_relative      # true = expressed in the nearest UGV's body frame
+float64 reference_z_requested # as received from the optimizer [m]
+float64 reference_z_clamped   # after the [2.5, 35.0] saturation [m]
+bool reference_z_clamped_flag # true when the requested z left the operating range
+float64 reference_age_s       # time since the last reference arrived [s]

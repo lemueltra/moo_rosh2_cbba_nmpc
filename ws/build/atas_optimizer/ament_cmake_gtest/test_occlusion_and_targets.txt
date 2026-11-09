@@ -1,0 +1,26 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_occlusion_and_targets --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml
+
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from OcclusionAndTargetsTest
+[ RUN      ] OcclusionAndTargetsTest.Town10BuildingsLoadedCorrectly
+[       OK ] OcclusionAndTargetsTest.Town10BuildingsLoadedCorrectly (0 ms)
+[ RUN      ] OcclusionAndTargetsTest.LoSRayCastingDetectsObstacles
+[       OK ] OcclusionAndTargetsTest.LoSRayCastingDetectsObstacles (0 ms)
+[ RUN      ] OcclusionAndTargetsTest.ViewpointAvoidsBuildingOcclusion
+[       OK ] OcclusionAndTargetsTest.ViewpointAvoidsBuildingOcclusion (0 ms)
+[ RUN      ] OcclusionAndTargetsTest.ActivePerceptionAttractionToPedestrianTarget
+[       OK ] OcclusionAndTargetsTest.ActivePerceptionAttractionToPedestrianTarget (0 ms)
+[ RUN      ] OcclusionAndTargetsTest.CoOptimizationMultiMetricNoRegression
+[       OK ] OcclusionAndTargetsTest.CoOptimizationMultiMetricNoRegression (0 ms)
+[----------] 5 tests from OcclusionAndTargetsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_occlusion_and_targets.gtest.xml'

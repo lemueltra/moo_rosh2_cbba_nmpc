@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+c005a0ffdddc2e900b7ec0cb2fb3bcf8 CMakeFiles/atas_optimizer_uninstall

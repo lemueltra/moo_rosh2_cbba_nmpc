@@ -1,0 +1,109 @@
+[0.122s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test', '--packages-select', 'atas_optimizer', '--event-handlers', 'console_direct+']
+[0.122s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=20, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['atas_optimizer'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, ctest_args=None, python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f77a8c873b0>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7f77a8c862a0>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7f77a8c862a0>>, mixin_verb=('test',))
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.147s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/ws'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/atas_optimizer) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/atas_optimizer' with type 'ros.ament_cmake' and name 'atas_optimizer'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_interfaces) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_interfaces' with type 'ros.ament_cmake' and name 'swarm_interfaces'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_world_interfaces) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_world_interfaces' with type 'ros.ament_cmake' and name 'swarm_world_interfaces'
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.170s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'swarm_interfaces' in 'src/swarm_interfaces'
+[0.170s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'swarm_world_interfaces' in 'src/swarm_world_interfaces'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'ctest_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'python_testing' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'pytest_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'pytest_with_coverage' from command line to 'False'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'unittest_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'retest_until_pass' from command line to '0'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'atas_optimizer' test argument 'retest_until_fail' from command line to '0'
+[0.170s] DEBUG:colcon.colcon_core.verb.test:Testing package 'atas_optimizer' with the following arguments: {'build_base': '/workspace/ws/build/atas_optimizer', 'ctest_args': None, 'install_base': '/workspace/ws/install/atas_optimizer', 'path': '/workspace/ws/src/atas_optimizer', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.170s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.171s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.171s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/workspace/ws/src/atas_optimizer' with build type 'ament_cmake'
+[0.171s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/workspace/ws/src/atas_optimizer'
+[0.172s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.172s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.172s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.069s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.069s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/ws/build/atas_optimizer' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.069s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.069s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.073s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.079s] DEBUG:colcon.colcon_core.event_reactor:joined thread

@@ -1,0 +1,53 @@
+%% code2paper figure: ros2-interfaces-part1
+%% title: Grafo de interfaces ROS2
+%% criterion: fluxo de dados: nós e interfaces | group: interfaces
+%% nodes: 14 | edges: 15 | part 1 of 2
+%% source: ros2_graph.json sha256=9ae3c7880c70e090b31be77c0f9ecaf6dab45675af89624983a5a466463a5696
+%% node ids are the source ids with '-' replaced by '_'
+flowchart LR
+  N_001["atas_optimization_monitor"]
+  N_002["closed_loop_monitor"]
+  T_001(["/atas/diagnostics"])
+  T_002(["/clock"])
+  T_003(["/comm/uav_latency"])
+  T_004(["/drones/active_set"])
+  T_005(["/drones/references"])
+  T_006(["/drones/state"])
+  EXT_T_001[/"fora da árvore"/]
+  EXT_T_002[/"fora da árvore"/]
+  EXT_T_003[/"fora da árvore"/]
+  EXT_T_004[/"fora da árvore"/]
+  EXT_T_005[/"fora da árvore"/]
+  EXT_T_006[/"fora da árvore"/]
+  T_001 -->|sub| N_001
+  EXT_T_001 -->|ext| T_001
+  T_002 -->|sub| N_001
+  EXT_T_002 -->|ext| T_002
+  T_003 -->|sub| N_001
+  T_003 -->|sub| N_002
+  EXT_T_003 -->|ext| T_003
+  T_004 -->|sub| N_001
+  T_004 -->|sub| N_002
+  EXT_T_004 -->|ext| T_004
+  T_005 -->|sub| N_001
+  T_005 -->|sub| N_002
+  EXT_T_005 -->|ext| T_005
+  T_006 -->|sub| N_001
+  EXT_T_006 -->|ext| T_006
+  classDef app fill:#eef2f7,stroke:#3a4a5c,stroke-width:1px,color:#1b2430
+  classDef iface fill:#fff6e0,stroke:#8a6a1f,stroke-width:1px,color:#2b2108
+  classDef ext fill:#f7f7f7,stroke:#8a8a8a,stroke-width:1px,color:#4a4a4a,stroke-dasharray:4 3
+  class N_001 app
+  class N_002 app
+  class T_001 iface
+  class T_002 iface
+  class T_003 iface
+  class T_004 iface
+  class T_005 iface
+  class T_006 iface
+  class EXT_T_001 ext
+  class EXT_T_002 ext
+  class EXT_T_003 ext
+  class EXT_T_004 ext
+  class EXT_T_005 ext
+  class EXT_T_006 ext

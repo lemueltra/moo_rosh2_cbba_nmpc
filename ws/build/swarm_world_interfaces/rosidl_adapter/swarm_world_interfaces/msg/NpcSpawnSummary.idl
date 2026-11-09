@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from swarm_world_interfaces/msg/NpcSpawnSummary.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module swarm_world_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Result of one NPC spawning run (swarm_npc_spawner, milestone M3)")
+    struct NpcSpawnSummary {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "seed used for the sampling (reproducibility)")
+      uint32 seed;
+
+      uint32 requested_vehicles;
+
+      uint32 requested_pedestrians;
+
+      uint32 spawned_vehicles;
+
+      uint32 spawned_pedestrians;
+
+      sequence<uint32> vehicle_actor_ids;
+
+      sequence<uint32> pedestrian_actor_ids;
+
+      @verbatim (language="comment", text=
+        "cyclic blueprint list actually used")
+      sequence<string> vehicle_types;
+
+      sequence<string> pedestrian_types;
+
+      @verbatim (language="comment", text=
+        "wall time spent spawning")
+      double elapsed_s;
+    };
+  };
+};

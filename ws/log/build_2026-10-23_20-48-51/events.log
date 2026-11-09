@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000442] (-) JobUnselected: {'identifier': 'swarm_interfaces'}
+[0.000463] (-) JobUnselected: {'identifier': 'swarm_world_interfaces'}
+[0.000474] (atas_optimizer) JobQueued: {'identifier': 'atas_optimizer', 'dependencies': OrderedDict({'swarm_interfaces': '/workspace/ws/install/swarm_interfaces', 'swarm_world_interfaces': '/workspace/ws/install/swarm_world_interfaces'})}
+[0.000492] (atas_optimizer) JobStarted: {'identifier': 'atas_optimizer'}
+[0.009290] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'cmake'}
+[0.010291] (atas_optimizer) JobProgress: {'identifier': 'atas_optimizer', 'progress': 'build'}
+[0.010318] (atas_optimizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ws/build/atas_optimizer', '--', '-j20', '-l20'], 'cwd': '/workspace/ws/build/atas_optimizer', 'env': OrderedDict({'HOSTNAME': 'dell-arch', 'CMAKE_BUILD_TYPE': 'Release', 'PARALLEL_JOBS': '16', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib', 'HOME': '/home/jonatas', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', '__VK_LAYER_NV_optimus': 'NVIDIA_only', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,display,video', 'USERNAME': 'jonatas', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/lib/ccache:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SWARM_ROS_DOMAIN_ID': '42', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'AMENT_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ws/build/atas_optimizer', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/workspace/ws/install/swarm_world_interfaces/lib/python3.12/site-packages:/workspace/ws/install/swarm_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/drake/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy'}), 'shell': False}
+[0.051929] (atas_optimizer) StdoutLine: {'line': b'[ 18%] Built target gtest_main\n'}
+[0.052124] (atas_optimizer) StdoutLine: {'line': b'[ 36%] Built target gtest\n'}
+[0.057537] (atas_optimizer) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o\x1b[0m\n'}
+[0.057680] (atas_optimizer) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o\x1b[0m\n'}
+[0.067834] (atas_optimizer) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o\x1b[0m\n'}
+[0.067960] (atas_optimizer) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o\x1b[0m\n'}
+[0.099876] (-) TimerEvent: {}
+[0.200128] (-) TimerEvent: {}
+[0.300379] (-) TimerEvent: {}
+[0.400664] (-) TimerEvent: {}
+[0.500916] (-) TimerEvent: {}
+[0.601211] (-) TimerEvent: {}
+[0.701462] (-) TimerEvent: {}
+[0.801856] (-) TimerEvent: {}
+[0.902050] (-) TimerEvent: {}
+[1.002404] (-) TimerEvent: {}
+[1.102688] (-) TimerEvent: {}
+[1.202972] (-) TimerEvent: {}
+[1.274602] (atas_optimizer) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable test_cbba\x1b[0m\n'}
+[1.303171] (-) TimerEvent: {}
+[1.338021] (atas_optimizer) StdoutLine: {'line': b'[ 81%] Built target test_cbba\n'}
+[1.404006] (-) TimerEvent: {}
+[1.504252] (-) TimerEvent: {}
+[1.604560] (-) TimerEvent: {}
+[1.704830] (-) TimerEvent: {}
+[1.805145] (-) TimerEvent: {}
+[1.905359] (-) TimerEvent: {}
+[2.005611] (-) TimerEvent: {}
+[2.105874] (-) TimerEvent: {}
+[2.206119] (-) TimerEvent: {}
+[2.306383] (-) TimerEvent: {}
+[2.406776] (-) TimerEvent: {}
+[2.506971] (-) TimerEvent: {}
+[2.607246] (-) TimerEvent: {}
+[2.707536] (-) TimerEvent: {}
+[2.807761] (-) TimerEvent: {}
+[2.908099] (-) TimerEvent: {}
+[3.008333] (-) TimerEvent: {}
+[3.108587] (-) TimerEvent: {}
+[3.208795] (-) TimerEvent: {}
+[3.309002] (-) TimerEvent: {}
+[3.409507] (-) TimerEvent: {}
+[3.509712] (-) TimerEvent: {}
+[3.609930] (-) TimerEvent: {}
+[3.710194] (-) TimerEvent: {}
+[3.810579] (-) TimerEvent: {}
+[3.910846] (-) TimerEvent: {}
+[4.011179] (-) TimerEvent: {}
+[4.111504] (-) TimerEvent: {}
+[4.211704] (-) TimerEvent: {}
+[4.312013] (-) TimerEvent: {}
+[4.412215] (-) TimerEvent: {}
+[4.512425] (-) TimerEvent: {}
+[4.612661] (-) TimerEvent: {}
+[4.712863] (-) TimerEvent: {}
+[4.813188] (-) TimerEvent: {}
+[4.913447] (-) TimerEvent: {}
+[5.013659] (-) TimerEvent: {}
+[5.113855] (-) TimerEvent: {}
+[5.214086] (-) TimerEvent: {}
+[5.314320] (-) TimerEvent: {}
+[5.414607] (-) TimerEvent: {}
+[5.514968] (-) TimerEvent: {}
+[5.615310] (-) TimerEvent: {}
+[5.715627] (-) TimerEvent: {}
+[5.815980] (-) TimerEvent: {}
+[5.916290] (-) TimerEvent: {}
+[6.016502] (-) TimerEvent: {}
+[6.116716] (-) TimerEvent: {}
+[6.216914] (-) TimerEvent: {}
+[6.317121] (-) TimerEvent: {}
+[6.417420] (-) TimerEvent: {}
+[6.517730] (-) TimerEvent: {}
+[6.617967] (-) TimerEvent: {}
+[6.718204] (-) TimerEvent: {}
+[6.818535] (-) TimerEvent: {}
+[6.918746] (-) TimerEvent: {}
+[7.018998] (-) TimerEvent: {}
+[7.119304] (-) TimerEvent: {}
+[7.219523] (-) TimerEvent: {}
+[7.319714] (-) TimerEvent: {}
+[7.420548] (-) TimerEvent: {}
+[7.520828] (-) TimerEvent: {}
+[7.621141] (-) TimerEvent: {}
+[7.721514] (-) TimerEvent: {}
+[7.821746] (-) TimerEvent: {}
+[7.921986] (-) TimerEvent: {}
+[8.022205] (-) TimerEvent: {}
+[8.122474] (-) TimerEvent: {}
+[8.222714] (-) TimerEvent: {}
+[8.323061] (-) TimerEvent: {}
+[8.423386] (-) TimerEvent: {}
+[8.523639] (-) TimerEvent: {}
+[8.623875] (-) TimerEvent: {}
+[8.724114] (-) TimerEvent: {}
+[8.824397] (-) TimerEvent: {}
+[8.924636] (-) TimerEvent: {}
+[9.024865] (-) TimerEvent: {}
+[9.125122] (-) TimerEvent: {}
+[9.225358] (-) TimerEvent: {}
+[9.325602] (-) TimerEvent: {}
+[9.425839] (-) TimerEvent: {}
+[9.526078] (-) TimerEvent: {}
+[9.626345] (-) TimerEvent: {}
+[9.726566] (-) TimerEvent: {}
+[9.826805] (-) TimerEvent: {}
+[9.927113] (-) TimerEvent: {}
+[10.027352] (-) TimerEvent: {}
+[10.127533] (-) TimerEvent: {}
+[10.227774] (-) TimerEvent: {}
+[10.328015] (-) TimerEvent: {}
+[10.428244] (-) TimerEvent: {}
+[10.528447] (-) TimerEvent: {}
+[10.628668] (-) TimerEvent: {}
+[10.728914] (-) TimerEvent: {}
+[10.829223] (-) TimerEvent: {}
+[10.929427] (-) TimerEvent: {}
+[11.029628] (-) TimerEvent: {}
+[11.129816] (-) TimerEvent: {}
+[11.230141] (-) TimerEvent: {}
+[11.330348] (-) TimerEvent: {}
+[11.430590] (-) TimerEvent: {}
+[11.530882] (-) TimerEvent: {}
+[11.631195] (-) TimerEvent: {}
+[11.731435] (-) TimerEvent: {}
+[11.831660] (-) TimerEvent: {}
+[11.931898] (-) TimerEvent: {}
+[12.032117] (-) TimerEvent: {}
+[12.132460] (-) TimerEvent: {}
+[12.232691] (-) TimerEvent: {}
+[12.333032] (-) TimerEvent: {}
+[12.433351] (-) TimerEvent: {}
+[12.533559] (-) TimerEvent: {}
+[12.633786] (-) TimerEvent: {}
+[12.734116] (-) TimerEvent: {}
+[12.834427] (-) TimerEvent: {}
+[12.934638] (-) TimerEvent: {}
+[13.034843] (-) TimerEvent: {}
+[13.135048] (-) TimerEvent: {}
+[13.235360] (-) TimerEvent: {}
+[13.335661] (-) TimerEvent: {}
+[13.434732] (atas_optimizer) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable atas_optimizer_node\x1b[0m\n'}
+[13.435718] (-) TimerEvent: {}
+[13.469774] (atas_optimizer) StderrLine: {'line': b'/usr/bin/ld: cannot find -llapack: No such file or directory\n'}
+[13.520586] (atas_optimizer) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[13.522775] (atas_optimizer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/atas_optimizer_node.dir/build.make:235: atas_optimizer_node] Error 1\n'}
+[13.523045] (atas_optimizer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/atas_optimizer_node.dir/all] Error 2\n'}
+[13.523222] (atas_optimizer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.525387] (atas_optimizer) CommandEnded: {'returncode': 2}
+[13.535766] (atas_optimizer) JobEnded: {'identifier': 'atas_optimizer', 'rc': 2}
+[13.536045] (-) TimerEvent: {}
+[13.546116] (-) EventReactorShutdown: {}

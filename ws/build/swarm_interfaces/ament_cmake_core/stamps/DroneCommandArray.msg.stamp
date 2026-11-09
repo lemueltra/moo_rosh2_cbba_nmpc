@@ -1,0 +1,3 @@
+# Array of actuation commands for all N_max drones, ordered by drone_id
+std_msgs/Header header
+DroneCommand[] commands

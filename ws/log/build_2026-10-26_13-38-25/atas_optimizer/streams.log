@@ -1,0 +1,41 @@
+[0.008s] Invoking command in '/workspace/ws/build/atas_optimizer': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[0.048s] [ 14%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/cbba_agent.cpp.o[0m
+[0.048s] [ 14%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.048s] [ 28%] Built target gtest
+[0.048s] [ 42%] Built target gtest_main
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/atas_optimizer_node.dir/src/atas_optimizer_node.cpp.o[0m
+[0.066s] [ 57%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/test/test_cbba.cpp.o[0m
+[0.067s] [ 64%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/src/viewpoint_optimizer.cpp.o[0m
+[0.068s] [ 71%] [32mBuilding CXX object CMakeFiles/test_cbba.dir/src/cbba_agent.cpp.o[0m
+[0.068s] [ 78%] [32mBuilding CXX object CMakeFiles/test_viewpoint.dir/test/test_viewpoint.cpp.o[0m
+[1.193s] [ 85%] [32m[1mLinking CXX executable test_cbba[0m
+[1.255s] [ 85%] Built target test_cbba
+[1.500s] [ 92%] [32m[1mLinking CXX executable test_viewpoint[0m
+[1.559s] [ 92%] Built target test_viewpoint
+[14.199s] [100%] [32m[1mLinking CXX executable atas_optimizer_node[0m
+[14.317s] [100%] Built target atas_optimizer_node
+[14.325s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ws/build/atas_optimizer -- -j20 -l20
+[14.326s] Invoking command in '/workspace/ws/build/atas_optimizer': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ws/build/atas_optimizer
+[14.331s] -- Install configuration: "Release"
+[14.331s] -- Execute custom install script
+[14.331s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/lib/atas_optimizer/atas_optimizer_node
+[14.331s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+[14.331s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/launch/atas_optimizer.launch.py
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/config/atas_optimizer_params.yaml
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/package_run_dependencies/atas_optimizer
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/parent_prefix_path/atas_optimizer
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.sh
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/ament_prefix_path.dsv
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.sh
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/environment/path.dsv
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.bash
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.sh
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.zsh
+[14.332s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/local_setup.dsv
+[14.332s] -- Symlinking: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.dsv
+[14.338s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/ament_index/resource_index/packages/atas_optimizer
+[14.338s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig.cmake
+[14.338s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/cmake/atas_optimizerConfig-version.cmake
+[14.338s] -- Up-to-date symlink: /workspace/ws/install/atas_optimizer/share/atas_optimizer/package.xml
+[14.340s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/swarm_interfaces:/workspace/ws/install/atas_optimizer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ws/build/atas_optimizer

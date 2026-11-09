@@ -1,0 +1,1 @@
+/workspace/ws/build/swarm_world_interfaces/rosidl_generator_cpp/swarm_world_interfaces/msg/detail/actor_state__traits.hpp

@@ -1,0 +1,215 @@
+{
+  "actions": [],
+  "counts": {
+    "actions": 0,
+    "nodes": 2,
+    "services": 0,
+    "tf_frames": 0,
+    "topics": 8
+  },
+  "excluded": [
+    ".agents",
+    ".git",
+    ".ruff_cache",
+    "assets",
+    "build",
+    "data",
+    "docker",
+    "install",
+    "log",
+    "paper",
+    "repos",
+    "simulator",
+    "tests",
+    "ws/build",
+    "ws/install"
+  ],
+  "limitations": [
+    "static analysis of Python sources only; C++ files are counted, never parsed",
+    "names built at runtime (parameters, environment, joins) are reported as unresolved",
+    "entities created inside helper wrappers are not attributed to the calling node",
+    "launch-file remappings are not applied; graph names are as written in the source"
+  ],
+  "nodes": [
+    {
+      "actions_called": [],
+      "actions_served": [],
+      "class_name": "TelemetryCollector",
+      "component_path": "scripts/atas_monitor.py",
+      "id": "N-001",
+      "line": 235,
+      "name": "atas_optimization_monitor",
+      "parameters": [],
+      "publishes": [],
+      "services_called": [],
+      "services_served": [],
+      "subscribes": [
+        "T-001",
+        "T-002",
+        "T-003",
+        "T-004",
+        "T-005",
+        "T-006",
+        "T-007",
+        "T-008"
+      ],
+      "tf_frames": []
+    },
+    {
+      "actions_called": [],
+      "actions_served": [],
+      "class_name": "ClosedLoopMonitor",
+      "component_path": "scripts/verify_closed_loop.py",
+      "id": "N-002",
+      "line": 77,
+      "name": "closed_loop_monitor",
+      "parameters": [],
+      "publishes": [],
+      "services_called": [],
+      "services_served": [],
+      "subscribes": [
+        "T-003",
+        "T-004",
+        "T-005",
+        "T-007",
+        "T-008"
+      ],
+      "tf_frames": []
+    }
+  ],
+  "root": "261013conversa_moo_rosh2_perplexity",
+  "ros_files_scanned": 3,
+  "scanned_at": null,
+  "schema_version": 1,
+  "services": [],
+  "tf_frames": [],
+  "tool": "code2paper 0.1.0",
+  "topics": [
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:337"
+      ],
+      "id": "T-001",
+      "name": "/atas/diagnostics",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001"
+      ],
+      "type": "diagnostic_msgs/DiagnosticArray"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:285"
+      ],
+      "id": "T-002",
+      "name": "/clock",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001"
+      ],
+      "type": "rosgraph_msgs/Clock"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:322",
+        "scripts/verify_closed_loop.py:130"
+      ],
+      "id": "T-003",
+      "name": "/comm/uav_latency",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001",
+        "N-002"
+      ],
+      "type": "swarm_interfaces/UavLinkLatencyArray"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:294",
+        "scripts/verify_closed_loop.py:98"
+      ],
+      "id": "T-004",
+      "name": "/drones/active_set",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001",
+        "N-002"
+      ],
+      "type": "swarm_interfaces/DroneActiveSet"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:301",
+        "scripts/verify_closed_loop.py:109"
+      ],
+      "id": "T-005",
+      "name": "/drones/references",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001",
+        "N-002"
+      ],
+      "type": "swarm_interfaces/DroneReferenceArray"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:315"
+      ],
+      "id": "T-006",
+      "name": "/drones/state",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001"
+      ],
+      "type": "swarm_interfaces/DroneStateArray"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:329",
+        "scripts/verify_closed_loop.py:123"
+      ],
+      "id": "T-007",
+      "name": "/metrics/optimizer_feedback",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001",
+        "N-002"
+      ],
+      "type": "swarm_interfaces/OptimizerFeedback"
+    },
+    {
+      "evidence": [
+        "scripts/atas_monitor.py:308",
+        "scripts/verify_closed_loop.py:116"
+      ],
+      "id": "T-008",
+      "name": "/ugv_fleet/state",
+      "publishers": [],
+      "qos": null,
+      "resolution": "literal",
+      "subscribers": [
+        "N-001",
+        "N-002"
+      ],
+      "type": "swarm_interfaces/UgvStateArray"
+    }
+  ],
+  "unresolved": [
+    "5 C++ file(s) reference rclcpp and were NOT scanned (this scanner parses Python only)",
+    "8 topic(s) have no publisher or no subscriber in the scanned tree: the other end is an external node or the name was built at runtime"
+  ]
+}

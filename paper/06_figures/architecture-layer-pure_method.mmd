@@ -1,0 +1,18 @@
+%% code2paper figure: architecture-layer-pure_method
+%% title: Camada método puro
+%% criterion: por camada (pure_method × application) | group: pure_method
+%% nodes: 4 | edges: 2 | part 1 of 1
+%% source: inventory.json sha256=9ed5766b9ff42204052b6be58ab62d557ed9de0d8f286da120c9cc4d1eb50075
+%% node ids are the source ids with '-' replaced by '_'
+flowchart LR
+  CMP_007["cbba_agent<br/>cpp_source · 132 LOC"]
+  CMP_008["viewpoint_optimizer<br/>cpp_source · 223 LOC"]
+  CMP_011["cbba_agent<br/>cpp_source · 345 LOC"]
+  CMP_013["viewpoint_optimizer<br/>cpp_source · 597 LOC"]
+  CMP_011 -->|includes| CMP_007
+  CMP_013 -->|includes| CMP_008
+  classDef pure fill:#e8f4ea,stroke:#2f6b3a,stroke-width:1px,color:#14261a
+  class CMP_007 pure
+  class CMP_008 pure
+  class CMP_011 pure
+  class CMP_013 pure

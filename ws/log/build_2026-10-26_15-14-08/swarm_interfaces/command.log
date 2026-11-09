@@ -1,0 +1,4 @@
+Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --build /workspace/ws/build/swarm_interfaces -- -j20 -l20
+Invoking command in '/workspace/ws/build/swarm_interfaces': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces
+Invoked command in '/workspace/ws/build/swarm_interfaces' returned '0': /usr/bin/cmake --install /workspace/ws/build/swarm_interfaces

@@ -1,0 +1,72 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261027-1245 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 11
+    Start 11: cpplint
+
+11: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cpplint/cpplint.txt" "--command" "/opt/ros/jazzy/bin/ament_cpplint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+11: Working Directory: /workspace/ws/src/atas_optimizer
+11: Test timeout computed to be: 120
+11: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+11:  - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml
+11: Using '--root=/workspace/ws/src/atas_optimizer/include' argument
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/atas_optimizer_node.hpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+11: 
+11: Using '--root=/workspace/ws/src/atas_optimizer/src' argument
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/src/main.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp
+11: 
+11: Using '--root=/workspace/ws/src/atas_optimizer/test' argument
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_adaptive_feedback.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba_v2.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_dual_sensor_fov.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_occlusion_and_targets.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_polympc_nlp.cpp
+11: 
+11: Done processing /workspace/ws/src/atas_optimizer/test/test_viewpoint.cpp
+11: 
+11: No problems found
+11: -- run_test.py: return code 0
+11: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml'
+1/1 Test #11: cpplint ..........................   Passed    0.43 sec
+
+The following tests passed:
+	cpplint
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+cpplint    =   0.43 sec*proc (1 test)
+linter     =   0.43 sec*proc (1 test)
+
+Total Test time (real) =   0.43 sec

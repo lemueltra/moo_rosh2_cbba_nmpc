@@ -1,0 +1,7 @@
+# Global diagnostics of the drone planner and controller node
+std_msgs/Header header
+DroneStatus[] drones
+float64 cycle_time_us
+float64 cycle_time_max_us
+uint32 deadline_misses
+uint32 clamped_references   # total references clamped to the altitude/speed limits

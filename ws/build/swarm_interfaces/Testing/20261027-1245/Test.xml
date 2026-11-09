@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261027-1245-Experimental"
+	Name="dell-arch"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/lib/ccache/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="dell-arch"
+	OSRelease="7.2.11-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="52614"
+	TotalPhysicalMemory="31769"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3373.79"
+	>
+	<Testing>
+		<StartDateTime>Oct 27 12:45 UTC</StartDateTime>
+		<StartTestTime>1793105129</StartTestTime>
+		<TestList>
+			<Test>./test_interfaces_roundtrip</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_interfaces_roundtrip</Name>
+			<Path>.</Path>
+			<FullName>./test_interfaces_roundtrip</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_interfaces" "--output-file" "/workspace/ws/build/swarm_interfaces/ament_cmake_gtest/test_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0464095</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_interfaces" "--output-file" "/workspace/ws/build/swarm_interfaces/ament_cmake_gtest/test_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/workspace/ws/build/swarm_interfaces':
+ - /workspace/ws/build/swarm_interfaces/test_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 16 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 16 tests from SwarmInterfacesTest
+[ RUN      ] SwarmInterfacesTest.DroneActiveSetMessage
+[       OK ] SwarmInterfacesTest.DroneActiveSetMessage (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneReferenceAndArray
+[       OK ] SwarmInterfacesTest.DroneReferenceAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneCommandAndArray
+[       OK ] SwarmInterfacesTest.DroneCommandAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStateAndArray
+[       OK ] SwarmInterfacesTest.DroneStateAndArray (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStatusAndModes
+[       OK ] SwarmInterfacesTest.DroneStatusAndModes (0 ms)
+[ RUN      ] SwarmInterfacesTest.PlannerStatus
+[       OK ] SwarmInterfacesTest.PlannerStatus (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame
+[       OK ] SwarmInterfacesTest.DroneReferenceCarriesAltitudeAndRelativeFrame (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed
+[       OK ] SwarmInterfacesTest.DroneStateCarriesAltitudeAndVerticalSpeed (0 ms)
+[ RUN      ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed
+[       OK ] SwarmInterfacesTest.DroneCommandCarriesVerticalSpeed (0 ms)
+[ RUN      ] SwarmInterfacesTest.UgvFleetMessages
+[       OK ] SwarmInterfacesTest.UgvFleetMessages (0 ms)
+[ RUN      ] SwarmInterfacesTest.LatencyIsPerActiveUav
+[       OK ] SwarmInterfacesTest.LatencyIsPerActiveUav (0 ms)
+[ RUN      ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact
+[       OK ] SwarmInterfacesTest.OptimizerFeedbackKeepsTheActiveListExact (0 ms)
+[ RUN      ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences
+[       OK ] SwarmInterfacesTest.PlannerStatusReportsClampedReferences (0 ms)
+[ RUN      ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip
+[       OK ] SwarmInterfacesTest.MetricEntryAndArrayRoundtrip (0 ms)
+[ RUN      ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip
+[       OK ] SwarmInterfacesTest.ExpectedMetricsGtRoundtrip (0 ms)
+[ RUN      ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip
+[       OK ] SwarmInterfacesTest.ExpectedMetricsNoGtRoundtrip (0 ms)
+[----------] 16 tests from SwarmInterfacesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 16 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/swarm_interfaces/test_results/swarm_interfaces/test_interfaces_roundtrip.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Oct 27 12:45 UTC</EndDateTime>
+		<EndTestTime>1793105129</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

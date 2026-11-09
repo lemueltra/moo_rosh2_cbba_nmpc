@@ -1,0 +1,51 @@
+services:
+  atas_moo_dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        BASE_IMAGE: ${BASE_IMAGE:-swarm_sim:unified-dev}
+        USERNAME: ${USERNAME:-jonatas}
+        USER_UID: ${USER_UID:-1000}
+        USER_GID: ${USER_GID:-1000}
+        DRAKE_VERSION: ${DRAKE_VERSION:-1.57.0}
+    container_name: atas_moo_dev
+    image: atas_moo_dev:jazzy
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    network_mode: host
+    ipc: host
+    privileged: true
+
+    environment:
+      - USERNAME=${USERNAME:-jonatas}
+      - USER_UID=${USER_UID:-1000}
+      - USER_GID=${USER_GID:-1000}
+      - DISPLAY=${DISPLAY:-:0}
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY:-wayland-0}
+      - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/run/user/1000}
+      - ROS_DOMAIN_ID=${SWARM_ROS_DOMAIN_ID:-42}
+      - SWARM_ROS_DOMAIN_ID=${SWARM_ROS_DOMAIN_ID:-42}
+      - RMW_IMPLEMENTATION=${RMW_IMPLEMENTATION:-rmw_cyclonedds_cpp}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics,display,video
+      - CMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE:-Release}
+      - PARALLEL_JOBS=${PARALLEL_JOBS:-16}
+
+    volumes:
+      # Workspace do projeto ATAS MOO
+      - .:/workspace
+      # Acesso somente-leitura ao simulador para compartilhar definições de mensagens e modelos
+      - /mnt/storage/drake_ros2_cpp_simulator:/workspace/simulator:ro
+      # Encaminhamento gráfico (X11 e Wayland)
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - /run/user/${USER_UID:-1000}:/run/user/${USER_UID:-1000}:ro
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

@@ -1,0 +1,524 @@
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+   Site: dell-arch
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261023-2049 - Experimental
+UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+Test project /workspace/ws/build/atas_optimizer
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_cbba
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_cbba.txt" "--command" "/workspace/ws/build/atas_optimizer/test_cbba" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml"
+1: Working Directory: /workspace/ws/build/atas_optimizer
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+1:  - /workspace/ws/build/atas_optimizer/test_cbba --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml
+1: [==========] Running 2 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 2 tests from CbbaAgentTest
+1: [ RUN      ] CbbaAgentTest.SingleAgentSingleTask
+1: [       OK ] CbbaAgentTest.SingleAgentSingleTask (0 ms)
+1: [ RUN      ] CbbaAgentTest.TwoAgentsConflictResolution
+1: [       OK ] CbbaAgentTest.TwoAgentsConflictResolution (0 ms)
+1: [----------] 2 tests from CbbaAgentTest (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 2 tests from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 2 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'
+1: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_cbba.gtest.xml'
+1/9 Test #1: test_cbba ........................   Passed    0.55 sec
+test 2
+    Start 2: copyright
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_copyright/copyright.txt" "--command" "/opt/ros/jazzy/bin/ament_copyright" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml"
+2: Working Directory: /workspace/ws/src/atas_optimizer
+2: Test timeout computed to be: 200
+2: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+2:  - /opt/ros/jazzy/bin/ament_copyright --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml
+2: include/atas_optimizer/cbba_agent.hpp: could not find copyright notice
+2: include/atas_optimizer/viewpoint_optimizer.hpp: could not find copyright notice
+2: launch/atas_optimizer.launch.py: could not find copyright notice
+2: src/atas_optimizer_node.cpp: could not find copyright notice
+2: src/cbba_agent.cpp: could not find copyright notice
+2: src/viewpoint_optimizer.cpp: could not find copyright notice
+2: test/test_cbba.cpp: could not find copyright notice
+2: 7 errors, checked 7 files
+2: -- run_test.py: return code 1
+2: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/copyright.xunit.xml'
+2/9 Test #2: copyright ........................***Failed    1.56 sec
+test 3
+    Start 3: cppcheck
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml" "--include_dirs" "/workspace/ws/src/atas_optimizer/include" "/workspace/ws/src/atas_optimizer/include"
+3: Working Directory: /workspace/ws/src/atas_optimizer
+3: Test timeout computed to be: 300
+3: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+3:  - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml --include_dirs /workspace/ws/src/atas_optimizer/include /workspace/ws/src/atas_optimizer/include
+3: cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cppcheck.xunit.xml'
+3/9 Test #3: cppcheck .........................   Passed    1.20 sec
+test 4
+    Start 4: cpplint
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cpplint/cpplint.txt" "--command" "/opt/ros/jazzy/bin/ament_cpplint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml"
+4: Working Directory: /workspace/ws/src/atas_optimizer
+4: Test timeout computed to be: 120
+4: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+4:  - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:43:  Constructors callable with one argument should be marked explicit.  [runtime/explicit] [5]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:52:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:80:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp:82:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:81:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:84:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp:86:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp:200:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:54:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:76:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:81:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:90:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:127:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp:175:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:26:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:27:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:47:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:58:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:72:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:73:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:114:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp:119:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: /workspace/ws/src/atas_optimizer/test/test_cbba.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+4: /workspace/ws/src/atas_optimizer/test/test_cbba.cpp:21:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+4: Category 'legal/copyright' errors found: 6
+4: Category 'runtime/explicit' errors found: 1
+4: Category 'whitespace/comments' errors found: 18
+4: Category 'whitespace/line_length' errors found: 4
+4: Total errors found: 29
+4: Using '--root=/workspace/ws/src/atas_optimizer/include' argument
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/cbba_agent.hpp
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/include/atas_optimizer/viewpoint_optimizer.hpp
+4: 
+4: Using '--root=/workspace/ws/src/atas_optimizer/src' argument
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/src/atas_optimizer_node.cpp
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/src/cbba_agent.cpp
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/src/viewpoint_optimizer.cpp
+4: 
+4: Using '--root=/workspace/ws/src/atas_optimizer/test' argument
+4: 
+4: Done processing /workspace/ws/src/atas_optimizer/test/test_cbba.cpp
+4: 
+4: -- run_test.py: return code 1
+4: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/cpplint.xunit.xml'
+4/9 Test #4: cpplint ..........................***Failed    2.29 sec
+test 5
+    Start 5: flake8
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml"
+5: Working Directory: /workspace/ws/src/atas_optimizer
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+5:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml
+5: import os
+5: ^
+5: from ament_index_python.packages import get_package_share_directory
+5: ^
+5: from ament_index_python.packages import get_package_share_directory
+5: ^
+5: def generate_launch_description():
+5: ^
+5: 1     E302 expected 2 blank lines, found 1
+5: 2     F401 'os' imported but unused
+5: 1     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+5: 
+5: ./launch/atas_optimizer.launch.py:1:1: F401 'os' imported but unused
+5: 
+5: ./launch/atas_optimizer.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+5: 
+5: ./launch/atas_optimizer.launch.py:2:1: F401 'ament_index_python.packages.get_package_share_directory' imported but unused
+5: 
+5: ./launch/atas_optimizer.launch.py:8:1: E302 expected 2 blank lines, found 1
+5: 
+5: 
+5: 1 files checked
+5: 4 errors
+5: 
+5: 'E'-type errors: 1
+5: 'F'-type errors: 2
+5: 'I'-type errors: 1
+5: 
+5: Checked files:
+5: 
+5: * ./launch/atas_optimizer.launch.py
+5: -- run_test.py: return code 1
+5: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/flake8.xunit.xml'
+5/9 Test #5: flake8 ...........................***Failed    2.38 sec
+test 6
+    Start 6: lint_cmake
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml"
+6: Working Directory: /workspace/ws/src/atas_optimizer
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+6:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml
+6: 
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/lint_cmake.xunit.xml'
+6/9 Test #6: lint_cmake .......................   Passed    1.05 sec
+test 7
+    Start 7: pep257
+
+7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml"
+7: Working Directory: /workspace/ws/src/atas_optimizer
+7: Test timeout computed to be: 60
+7: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+7:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml
+7: checking ./launch/atas_optimizer.launch.py
+7: No problems found
+7: -- run_test.py: return code 0
+7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/pep257.xunit.xml'
+7/9 Test #7: pep257 ...........................   Passed    0.63 sec
+test 8
+    Start 8: uncrustify
+
+8: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml"
+8: Working Directory: /workspace/ws/src/atas_optimizer
+8: Test timeout computed to be: 60
+8: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+8:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml
+8: Code style divergence in file 'include/atas_optimizer/cbba_agent.hpp':
+8: 
+8: --- include/atas_optimizer/cbba_agent.hpp
+8: +++ include/atas_optimizer/cbba_agent.hpp.uncrustify
+8: @@ -11 +11,2 @@
+8: -namespace atas_optimizer {
+8: +namespace atas_optimizer
+8: +{
+8: @@ -17 +18,2 @@
+8: -struct TaskInfo {
+8: +struct TaskInfo
+8: +{
+8: @@ -30 +32,2 @@
+8: -struct ConsensusPayload {
+8: +struct ConsensusPayload
+8: +{
+8: @@ -46 +49 @@
+8: -  void update_tasks(const std::vector<TaskInfo>& tasks);
+8: +  void update_tasks(const std::vector<TaskInfo> & tasks);
+8: @@ -49 +52 @@
+8: -  void build_bundle(const std::map<uint32_t, double>& latency_estimates);
+8: +  void build_bundle(const std::map<uint32_t, double> & latency_estimates);
+8: @@ -52 +55,3 @@
+8: -  void process_consensus(const std::vector<ConsensusPayload>& incoming_messages, double current_time);
+8: +  void process_consensus(
+8: +    const std::vector<ConsensusPayload> & incoming_messages,
+8: +    double current_time);
+8: @@ -58,2 +63,2 @@
+8: -  const std::vector<uint32_t>& get_bundle() const { return bundle_; }
+8: -  bool is_active() const { return !bundle_.empty(); }
+8: +  const std::vector<uint32_t> & get_bundle() const {return bundle_;}
+8: +  bool is_active() const {return !bundle_.empty();}
+8: @@ -61 +66 @@
+8: -  uint32_t get_id() const { return agent_id_; }
+8: +  uint32_t get_id() const {return agent_id_;}
+8: @@ -76,2 +81,2 @@
+8: -  double compute_bid_score(const TaskInfo& task, double latency_ms) const;
+8: -  void resolve_conflict(uint32_t sender_id, const ConsensusPayload& msg, double current_time);
+8: +  double compute_bid_score(const TaskInfo & task, double latency_ms) const;
+8: +  void resolve_conflict(uint32_t sender_id, const ConsensusPayload & msg, double current_time);
+8: 
+8: Code style divergence in file 'include/atas_optimizer/viewpoint_optimizer.hpp':
+8: 
+8: --- include/atas_optimizer/viewpoint_optimizer.hpp
+8: +++ include/atas_optimizer/viewpoint_optimizer.hpp.uncrustify
+8: @@ -9 +9,2 @@
+8: -namespace atas_optimizer {
+8: +namespace atas_optimizer
+8: +{
+8: @@ -15 +16,2 @@
+8: -struct Vector3d {
+8: +struct Vector3d
+8: +{
+8: @@ -21 +23,2 @@
+8: -  Vector3d(double x_in, double y_in, double z_in) : x(x_in), y(y_in), z(z_in) {}
+8: +  Vector3d(double x_in, double y_in, double z_in)
+8: +  : x(x_in), y(y_in), z(z_in) {}
+8: @@ -28 +31,2 @@
+8: -struct ViewpointReference {
+8: +struct ViewpointReference
+8: +{
+8: @@ -43 +47,2 @@
+8: -struct OptimizationTarget {
+8: +struct OptimizationTarget
+8: +{
+8: @@ -67,6 +72,6 @@
+8: -      uint32_t drone_id,
+8: -      uint32_t ugv_id,
+8: -      const Vector3d& ugv_pos,
+8: -      double ugv_yaw,
+8: -      const std::vector<OptimizationTarget>& targets,
+8: -      const std::vector<ViewpointReference>& other_active_drones);
+8: +    uint32_t drone_id,
+8: +    uint32_t ugv_id,
+8: +    const Vector3d & ugv_pos,
+8: +    double ugv_yaw,
+8: +    const std::vector<OptimizationTarget> & targets,
+8: +    const std::vector<ViewpointReference> & other_active_drones);
+8: @@ -81 +86,3 @@
+8: -  double evaluate_fov_cost(double dx, double dy, double z, double yaw, const std::vector<OptimizationTarget>& targets) const;
+8: +  double evaluate_fov_cost(
+8: +    double dx, double dy, double z, double yaw,
+8: +    const std::vector<OptimizationTarget> & targets) const;
+8: 
+8: Code style divergence in file 'src/atas_optimizer_node.cpp':
+8: 
+8: --- src/atas_optimizer_node.cpp
+8: +++ src/atas_optimizer_node.cpp.uncrustify
+8: @@ -21 +21,2 @@
+8: -namespace atas_optimizer {
+8: +namespace atas_optimizer
+8: +{
+8: @@ -25 +26,3 @@
+8: -  AtasOptimizerNode() : Node("atas_optimizer_node") {
+8: +  AtasOptimizerNode()
+8: +  : Node("atas_optimizer_node")
+8: +  {
+8: @@ -81 +84,2 @@
+8: -  void ugv_callback(const swarm_interfaces::msg::UgvStateArray::SharedPtr msg) {
+8: +  void ugv_callback(const swarm_interfaces::msg::UgvStateArray::SharedPtr msg)
+8: +  {
+8: @@ -83 +87 @@
+8: -    for (const auto& u : msg->states) {
+8: +    for (const auto & u : msg->states) {
+8: @@ -95,2 +99,3 @@
+8: -  void latency_callback(const swarm_interfaces::msg::UavLinkLatencyArray::SharedPtr msg) {
+8: -    for (const auto& entry : msg->links) {
+8: +  void latency_callback(const swarm_interfaces::msg::UavLinkLatencyArray::SharedPtr msg)
+8: +  {
+8: +    for (const auto & entry : msg->links) {
+8: @@ -101 +106,2 @@
+8: -  void feedback_callback(const swarm_interfaces::msg::OptimizerFeedback::SharedPtr msg) {
+8: +  void feedback_callback(const swarm_interfaces::msg::OptimizerFeedback::SharedPtr msg)
+8: +  {
+8: @@ -107 +113,2 @@
+8: -  void optimization_loop() {
+8: +  void optimization_loop()
+8: +  {
+8: @@ -111 +118 @@
+8: -    for (auto& agent : cbba_agents_) {
+8: +    for (auto & agent : cbba_agents_) {
+8: @@ -118 +125 @@
+8: -    for (const auto& agent : cbba_agents_) {
+8: +    for (const auto & agent : cbba_agents_) {
+8: @@ -121 +128 @@
+8: -    for (auto& agent : cbba_agents_) {
+8: +    for (auto & agent : cbba_agents_) {
+8: @@ -138 +145 @@
+8: -    for (auto& agent : cbba_agents_) {
+8: +    for (auto & agent : cbba_agents_) {
+8: @@ -146 +153 @@
+8: -        for (const auto& u : latest_ugvs_) {
+8: +        for (const auto & u : latest_ugvs_) {
+8: @@ -202 +209,2 @@
+8: -int main(int argc, char** argv) {
+8: +int main(int argc, char ** argv)
+8: +{
+8: 
+8: Code style divergence in file 'src/cbba_agent.cpp':
+8: 
+8: --- src/cbba_agent.cpp
+8: +++ src/cbba_agent.cpp.uncrustify
+8: @@ -5 +5,2 @@
+8: -namespace atas_optimizer {
+8: +namespace atas_optimizer
+8: +{
+8: @@ -8 +9 @@
+8: -  : agent_id_(agent_id), max_bundle_size_(max_bundle_size) {}
+8: +: agent_id_(agent_id), max_bundle_size_(max_bundle_size) {}
+8: @@ -10 +11,2 @@
+8: -void CbbaAgent::set_position(double x, double y, double z) {
+8: +void CbbaAgent::set_position(double x, double y, double z)
+8: +{
+8: @@ -16 +18,2 @@
+8: -void CbbaAgent::update_tasks(const std::vector<TaskInfo>& tasks) {
+8: +void CbbaAgent::update_tasks(const std::vector<TaskInfo> & tasks)
+8: +{
+8: @@ -24 +27,2 @@
+8: -double CbbaAgent::compute_bid_score(const TaskInfo& task, double latency_ms) const {
+8: +double CbbaAgent::compute_bid_score(const TaskInfo & task, double latency_ms) const
+8: +{
+8: @@ -41,2 +45,3 @@
+8: -void CbbaAgent::build_bundle(const std::map<uint32_t, double>& latency_estimates) {
+8: -  if (tasks_.empty()) return;
+8: +void CbbaAgent::build_bundle(const std::map<uint32_t, double> & latency_estimates)
+8: +{
+8: +  if (tasks_.empty()) {return;}
+8: @@ -81 +86,4 @@
+8: -void CbbaAgent::process_consensus(const std::vector<ConsensusPayload>& incoming_messages, double current_time) {
+8: +void CbbaAgent::process_consensus(
+8: +  const std::vector<ConsensusPayload> & incoming_messages,
+8: +  double current_time)
+8: +{
+8: @@ -84,2 +92,2 @@
+8: -  for (const auto& msg : incoming_messages) {
+8: -    if (msg.sender_id == agent_id_) continue;
+8: +  for (const auto & msg : incoming_messages) {
+8: +    if (msg.sender_id == agent_id_) {continue;}
+8: @@ -90 +98,4 @@
+8: -void CbbaAgent::resolve_conflict(uint32_t sender_id, const ConsensusPayload& msg, double current_time) {
+8: +void CbbaAgent::resolve_conflict(
+8: +  uint32_t sender_id, const ConsensusPayload & msg,
+8: +  double current_time)
+8: +{
+8: @@ -117 +128 @@
+8: -        if (it != msg.s.end()) s_k_zi = it->second;
+8: +        if (it != msg.s.end()) {s_k_zi = it->second;}
+8: @@ -141 +152 @@
+8: -      if (it != msg.s.end()) s_k_zk = it->second;
+8: +      if (it != msg.s.end()) {s_k_zk = it->second;}
+8: @@ -153,6 +164,6 @@
+8: -    for (size_t j = 0; j < tasks_.size(); ++j) {
+8: -      if (tasks_[j].id == task_id) {
+8: -        return z_[j] != static_cast<int32_t>(agent_id_);
+8: -      }
+8: -    }
+8: -    return true;
+8: +        for (size_t j = 0; j < tasks_.size(); ++j) {
+8: +          if (tasks_[j].id == task_id) {
+8: +            return z_[j] != static_cast<int32_t>(agent_id_);
+8: +          }
+8: +        }
+8: +        return true;
+8: @@ -166 +177,2 @@
+8: -ConsensusPayload CbbaAgent::send_message() const {
+8: +ConsensusPayload CbbaAgent::send_message() const
+8: +{
+8: 
+8: Code style divergence in file 'src/viewpoint_optimizer.cpp':
+8: 
+8: --- src/viewpoint_optimizer.cpp
+8: +++ src/viewpoint_optimizer.cpp.uncrustify
+8: @@ -5 +5,2 @@
+8: -namespace atas_optimizer {
+8: +namespace atas_optimizer
+8: +{
+8: @@ -9 +10,2 @@
+8: -void ViewpointOptimizer::set_altitude_bounds(double z_min, double z_max) {
+8: +void ViewpointOptimizer::set_altitude_bounds(double z_min, double z_max)
+8: +{
+8: @@ -14 +16,2 @@
+8: -void ViewpointOptimizer::set_max_radius(double max_radius) {
+8: +void ViewpointOptimizer::set_max_radius(double max_radius)
+8: +{
+8: @@ -18 +21,2 @@
+8: -void ViewpointOptimizer::set_inter_drone_safety_distance(double d_safe) {
+8: +void ViewpointOptimizer::set_inter_drone_safety_distance(double d_safe)
+8: +{
+8: @@ -23,2 +27,3 @@
+8: -    double dx, double dy, double z, double yaw,
+8: -    const std::vector<OptimizationTarget>& targets) const {
+8: +  double dx, double dy, double z, double yaw,
+8: +  const std::vector<OptimizationTarget> & targets) const
+8: +{
+8: @@ -29 +34 @@
+8: -  for (const auto& tgt : targets) {
+8: +  for (const auto & tgt : targets) {
+8: @@ -34 +39 @@
+8: -    if (dist_2d > max_range || dist_2d < 1.0) continue;
+8: +    if (dist_2d > max_range || dist_2d < 1.0) {continue;}
+8: @@ -38 +43 @@
+8: -    while (angle_diff > M_PI) angle_diff -= 2.0 * M_PI;
+8: +    while (angle_diff > M_PI) {angle_diff -= 2.0 * M_PI;}
+8: @@ -51,6 +56,7 @@
+8: -    uint32_t drone_id,
+8: -    uint32_t ugv_id,
+8: -    const Vector3d& ugv_pos,
+8: -    double ugv_yaw,
+8: -    const std::vector<OptimizationTarget>& targets,
+8: -    const std::vector<ViewpointReference>& other_active_drones) {
+8: +  uint32_t drone_id,
+8: +  uint32_t ugv_id,
+8: +  const Vector3d & ugv_pos,
+8: +  double ugv_yaw,
+8: +  const std::vector<OptimizationTarget> & targets,
+8: +  const std::vector<ViewpointReference> & other_active_drones)
+8: +{
+8: @@ -86,2 +92,2 @@
+8: -    for (const auto& other : other_active_drones) {
+8: -      if (other.drone_id == drone_id || other.ugv_id != ugv_id) continue;
+8: +    for (const auto & other : other_active_drones) {
+8: +      if (other.drone_id == drone_id || other.ugv_id != ugv_id) {continue;}
+8: 
+8: Code style divergence in file 'test/test_cbba.cpp':
+8: 
+8: --- test/test_cbba.cpp
+8: +++ test/test_cbba.cpp.uncrustify
+8: @@ -69 +69,2 @@
+8: -int main(int argc, char** argv) {
+8: +int main(int argc, char ** argv)
+8: +{
+8: 
+8: 6 files with code style divergence
+8: -- run_test.py: return code 1
+8: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/uncrustify.xunit.xml'
+8/9 Test #8: uncrustify .......................***Failed    0.26 sec
+test 9
+    Start 9: xmllint
+
+9: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml"
+9: Working Directory: /workspace/ws/src/atas_optimizer
+9: Test timeout computed to be: 60
+9: -- run_test.py: invoking following command in '/workspace/ws/src/atas_optimizer':
+9:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml
+9: File 'package.xml' is valid
+9: 
+9: No problems found
+9: -- run_test.py: return code 0
+9: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/xmllint.xunit.xml'
+9/9 Test #9: xmllint ..........................   Passed    1.19 sec
+
+56% tests passed[0;0m, [0;31m4 tests failed[0;0m out of 9
+
+Label Time Summary:
+copyright     =   1.56 sec*proc (1 test)
+cppcheck      =   1.20 sec*proc (1 test)
+cpplint       =   2.29 sec*proc (1 test)
+flake8        =   2.38 sec*proc (1 test)
+gtest         =   0.55 sec*proc (1 test)
+lint_cmake    =   1.05 sec*proc (1 test)
+linter        =  10.56 sec*proc (8 tests)
+pep257        =   0.63 sec*proc (1 test)
+uncrustify    =   0.26 sec*proc (1 test)
+xmllint       =   1.19 sec*proc (1 test)
+
+Total Test time (real) =  11.13 sec
+
+The following tests FAILED:
+	[0;31m  2 - copyright (Failed)[0;0m
+	[0;31m  4 - cpplint (Failed)[0;0m
+	[0;31m  5 - flake8 (Failed)[0;0m
+	[0;31m  8 - uncrustify (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /workspace/ws/build/atas_optimizer/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

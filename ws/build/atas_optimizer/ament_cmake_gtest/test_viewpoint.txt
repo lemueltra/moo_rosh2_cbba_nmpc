@@ -1,0 +1,25 @@
+-- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+ - /workspace/ws/build/atas_optimizer/test_viewpoint --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml
+
+Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from ViewpointOptimizerTest
+[ RUN      ] ViewpointOptimizerTest.AltitudeAndRadiusConstraints
+[       OK ] ViewpointOptimizerTest.AltitudeAndRadiusConstraints (0 ms)
+[ RUN      ] ViewpointOptimizerTest.MultiDroneRepulsiveSafetyBarrier
+[       OK ] ViewpointOptimizerTest.MultiDroneRepulsiveSafetyBarrier (0 ms)
+[ RUN      ] ViewpointOptimizerTest.ExecutionTimeBenchmarkUnder50ms
+[       OK ] ViewpointOptimizerTest.ExecutionTimeBenchmarkUnder50ms (0 ms)
+[ RUN      ] ViewpointOptimizerTest.SanityFilterNanInfAndBounds
+[       OK ] ViewpointOptimizerTest.SanityFilterNanInfAndBounds (0 ms)
+[----------] 4 tests from ViewpointOptimizerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml'
+-- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_viewpoint.gtest.xml'

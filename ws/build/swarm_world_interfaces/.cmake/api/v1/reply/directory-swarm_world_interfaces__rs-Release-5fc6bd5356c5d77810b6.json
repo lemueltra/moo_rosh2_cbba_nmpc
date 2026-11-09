@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "swarm_world_interfaces__rs",
+		"source" : "/workspace/ws/build/swarm_world_interfaces/swarm_world_interfaces__rs"
+	}
+}

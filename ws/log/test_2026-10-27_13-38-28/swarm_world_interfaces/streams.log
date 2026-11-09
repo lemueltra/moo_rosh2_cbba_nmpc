@@ -1,0 +1,63 @@
+[0.012s] Invoking command in '/workspace/ws/build/swarm_world_interfaces': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.017s] UpdateCTestConfiguration  from :/workspace/ws/build/swarm_world_interfaces/CTestConfiguration.ini
+[0.017s] Parse Config file:/workspace/ws/build/swarm_world_interfaces/CTestConfiguration.ini
+[0.017s]    Site: dell-arch
+[0.017s]    Build name: (empty)
+[0.017s]  Add coverage exclude regular expressions.
+[0.017s] Create new tag: 20261027-1338 - Experimental
+[0.017s] UpdateCTestConfiguration  from :/workspace/ws/build/swarm_world_interfaces/CTestConfiguration.ini
+[0.017s] Parse Config file:/workspace/ws/build/swarm_world_interfaces/CTestConfiguration.ini
+[0.017s] Test project /workspace/ws/build/swarm_world_interfaces
+[0.017s] Constructing a list of tests
+[0.017s] Done constructing a list of tests
+[0.017s] Updating test list for fixtures
+[0.017s] Added 0 tests to meet fixture requirements
+[0.017s] Checking test dependency graph...
+[0.017s] Checking test dependency graph end
+[0.017s] test 1
+[0.018s]     Start 1: test_world_interfaces_roundtrip
+[0.018s] 
+[0.018s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml" "--package-name" "swarm_world_interfaces" "--output-file" "/workspace/ws/build/swarm_world_interfaces/ament_cmake_gtest/test_world_interfaces_roundtrip.txt" "--command" "/workspace/ws/build/swarm_world_interfaces/test_world_interfaces_roundtrip" "--gtest_output=xml:/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml"
+[0.018s] 1: Working Directory: /workspace/ws/build/swarm_world_interfaces
+[0.018s] 1: Test timeout computed to be: 60
+[0.076s] 1: -- run_test.py: invoking following command in '/workspace/ws/build/swarm_world_interfaces':
+[0.076s] 1:  - /workspace/ws/build/swarm_world_interfaces/test_world_interfaces_roundtrip --gtest_output=xml:/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml
+[0.077s] 1: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[0.077s] 1: [==========] Running 9 tests from 1 test suite.
+[0.077s] 1: [----------] Global test environment set-up.
+[0.077s] 1: [----------] 9 tests from SwarmWorldInterfacesTest
+[0.077s] 1: [ RUN      ] SwarmWorldInterfacesTest.ActorDefinitionMessage
+[0.077s] 1: [       OK ] SwarmWorldInterfacesTest.ActorDefinitionMessage (0 ms)
+[0.077s] 1: [ RUN      ] SwarmWorldInterfacesTest.ActorStateAndArrayMessage
+[0.077s] 1: [       OK ] SwarmWorldInterfacesTest.ActorStateAndArrayMessage (0 ms)
+[0.077s] 1: [ RUN      ] SwarmWorldInterfacesTest.SensorDefinitionMessage
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.SensorDefinitionMessage (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.SensorDetectionAndArrayMessage
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.SensorDetectionAndArrayMessage (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.WeatherPresetMessage
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.WeatherPresetMessage (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.SimulationStatusMessage
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.SimulationStatusMessage (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.SpawnAndDestroyActorServices
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.SpawnAndDestroyActorServices (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.SensorLifecycleServices
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.SensorLifecycleServices (0 ms)
+[0.078s] 1: [ RUN      ] SwarmWorldInterfacesTest.TimeAndStepServices
+[0.078s] 1: [       OK ] SwarmWorldInterfacesTest.TimeAndStepServices (0 ms)
+[0.078s] 1: [----------] 9 tests from SwarmWorldInterfacesTest (0 ms total)
+[0.078s] 1: 
+[0.078s] 1: [----------] Global test environment tear-down
+[0.078s] 1: [==========] 9 tests from 1 test suite ran. (0 ms total)
+[0.078s] 1: [  PASSED  ] 9 tests.
+[0.078s] 1: -- run_test.py: return code 0
+[0.078s] 1: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml'
+[0.078s] 1: -- run_test.py: verify result file '/workspace/ws/build/swarm_world_interfaces/test_results/swarm_world_interfaces/test_world_interfaces_roundtrip.gtest.xml'
+[0.084s] 1/1 Test #1: test_world_interfaces_roundtrip ...   Passed    0.07 sec
+[0.084s] 
+[0.084s] 100% tests passed, 0 tests failed out of 1
+[0.084s] 
+[0.084s] Label Time Summary:
+[0.084s] gtest    =   0.07 sec*proc (1 test)
+[0.084s] 
+[0.084s] Total Test time (real) =   0.07 sec
+[0.087s] Invoked command in '/workspace/ws/build/swarm_world_interfaces' returned '0': CMAKE_PREFIX_PATH=/workspace/ws/install/swarm_world_interfaces:/workspace/ws/install/atas_optimizer:/workspace/ws/install/swarm_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/drake:/opt/ros/jazzy LD_LIBRARY_PATH=/workspace/ws/install/swarm_world_interfaces/lib:/workspace/ws/install/atas_optimizer/lib:/workspace/ws/install/swarm_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/drake/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -1,0 +1,58 @@
+[0.016s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_polympc_nlp
+[0.020s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.020s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.020s]    Site: dell-arch
+[0.020s]    Build name: (empty)
+[0.020s]  Add coverage exclude regular expressions.
+[0.020s] Create new tag: 20261027-1313 - Experimental
+[0.020s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.020s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.020s] Test project /workspace/ws/build/atas_optimizer
+[0.020s] Constructing a list of tests
+[0.020s] Done constructing a list of tests
+[0.020s] Updating test list for fixtures
+[0.020s] Added 0 tests to meet fixture requirements
+[0.020s] Checking test dependency graph...
+[0.020s] Checking test dependency graph end
+[0.021s] test 5
+[0.021s]     Start 5: test_polympc_nlp
+[0.021s] 
+[0.021s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/ament_cmake_gtest/test_polympc_nlp.txt" "--command" "/workspace/ws/build/atas_optimizer/test_polympc_nlp" "--gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml"
+[0.021s] 5: Working Directory: /workspace/ws/build/atas_optimizer
+[0.021s] 5: Test timeout computed to be: 60
+[0.056s] 5: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+[0.056s] 5:  - /workspace/ws/build/atas_optimizer/test_polympc_nlp --gtest_output=xml:/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml
+[0.057s] 5: Running main() from /opt/ros/jazzy/src/gtest_vendor/src/gtest_main.cc
+[0.057s] 5: [==========] Running 5 tests from 1 test suite.
+[0.057s] 5: [----------] Global test environment set-up.
+[0.057s] 5: [----------] 5 tests from PolyMpNlpTest
+[0.057s] 5: [ RUN      ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle
+[0.057s] 5: [       OK ] PolyMpNlpTest.CoupledSolidaryCameraPitchAngle (0 ms)
+[0.057s] 5: [ RUN      ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep
+[0.058s] 5: [       OK ] PolyMpNlpTest.SlewRateLimiterBoundsPositionAndYawStep (0 ms)
+[0.058s] 5: [ RUN      ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback
+[0.058s] 5: [       OK ] PolyMpNlpTest.SolverDeadlineWatchdogTriggersDeterministicFallback (0 ms)
+[0.058s] 5: [ RUN      ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation
+[0.058s] 5: [       OK ] PolyMpNlpTest.OrbitalFallbackGeometricSeparation (0 ms)
+[0.058s] 5: [ RUN      ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark
+[0.058s] 5: [       OK ] PolyMpNlpTest.NlpConvergenceTimeUnder20msBenchmark (1 ms)
+[0.058s] 5: [----------] 5 tests from PolyMpNlpTest (1 ms total)
+[0.058s] 5: 
+[0.058s] 5: [----------] Global test environment tear-down
+[0.059s] 5: [==========] 5 tests from 1 test suite ran. (1 ms total)
+[0.059s] 5: [  PASSED  ] 5 tests.
+[0.059s] 5: -- run_test.py: return code 0
+[0.059s] 5: -- run_test.py: inject classname prefix into gtest result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+[0.059s] 5: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_polympc_nlp.gtest.xml'
+[0.064s] 1/1 Test #5: test_polympc_nlp .................   Passed    0.04 sec
+[0.064s] 
+[0.064s] The following tests passed:
+[0.064s] 	test_polympc_nlp
+[0.064s] 
+[0.064s] 100% tests passed, 0 tests failed out of 1
+[0.065s] 
+[0.065s] Label Time Summary:
+[0.065s] gtest    =   0.04 sec*proc (1 test)
+[0.065s] 
+[0.065s] Total Test time (real) =   0.04 sec
+[0.067s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_polympc_nlp

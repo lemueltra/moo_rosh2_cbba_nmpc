@@ -1,0 +1,10 @@
+# How many distinct targets ONE UAV is detecting right now (release 3.2.0).
+#
+# Computed in C++ by swarm_visualizer's marker publisher from the per-sensor streams
+# (`/sensors/<id>/detections`, grouped by `parent_actor_id`). It exists so the Python
+# metrics panel does not have to subscribe to ten 50 Hz streams itself: doing that
+# cost 68 % of a core in deserialisation alone (measured; see MEDICOES M7e).
+std_msgs/Header header
+uint32 drone_id
+uint32 detections_now     # distinct non-occluded actors over the UAV's own sensors
+uint32 sensor_streams     # how many sensor streams reported within the timeout

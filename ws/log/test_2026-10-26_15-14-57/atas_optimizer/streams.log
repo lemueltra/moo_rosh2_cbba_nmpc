@@ -1,0 +1,57 @@
+[0.019s] Invoking command in '/workspace/ws/build/atas_optimizer': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_node_integration
+[0.023s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.023s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.023s]    Site: dell-arch
+[0.023s]    Build name: (empty)
+[0.023s]  Add coverage exclude regular expressions.
+[0.023s] Create new tag: 20261026-1514 - Experimental
+[0.023s] UpdateCTestConfiguration  from :/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.023s] Parse Config file:/workspace/ws/build/atas_optimizer/CTestConfiguration.ini
+[0.023s] Test project /workspace/ws/build/atas_optimizer
+[0.023s] Constructing a list of tests
+[0.024s] Done constructing a list of tests
+[0.024s] Updating test list for fixtures
+[0.024s] Added 0 tests to meet fixture requirements
+[0.024s] Checking test dependency graph...
+[0.024s] Checking test dependency graph end
+[0.024s] test 7
+[0.024s]     Start 7: test_test_node_integration.py
+[0.024s] 
+[0.024s] 7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name" "atas_optimizer" "--output-file" "/workspace/ws/build/atas_optimizer/launch_test/test_test_node_integration.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/workspace/ws/src/atas_optimizer/test/test_node_integration.py" "--junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml" "--package-name=atas_optimizer"
+[0.024s] 7: Working Directory: /workspace/ws/build/atas_optimizer
+[0.024s] 7: Test timeout computed to be: 60
+[0.068s] 7: -- run_test.py: invoking following command in '/workspace/ws/build/atas_optimizer':
+[0.069s] 7:  - /usr/bin/python3 -m launch_testing.launch_test /workspace/ws/src/atas_optimizer/test/test_node_integration.py --junit-xml=/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml --package-name=atas_optimizer
+[0.404s] 7: [INFO] [launch]: All log files can be found below /home/jonatas/.ros/log/2026-10-26-15-14-57-928329-dell-arch-9261
+[0.404s] 7: [INFO] [launch]: Default logging verbosity is set to INFO
+[0.406s] 7: test_active_set_and_references_pipeline (atas_optimizer.TestOptimizerNodeIntegration.test_active_set_and_references_pipeline)
+[0.410s] 7: Verify that feeding UGVs and latency produces valid references. ... [INFO] [atas_optimizer_node-1]: process started with pid [9265]
+[0.422s] 7: [atas_optimizer_node-1] [INFO] [1793027697.962303709] [atas_optimizer_node]: ATAS Multi-Objective Optimizer v1.0.0 iniciado (Drones: 3, Rate: 10.0 Hz, Hyst: 15.0%).
+[0.822s] 7: ok
+[0.823s] 7: 
+[0.823s] 7: ----------------------------------------------------------------------
+[0.823s] 7: Ran 1 test in 0.417s
+[0.823s] 7: 
+[0.823s] 7: OK
+[0.824s] 7: [INFO] [atas_optimizer_node-1]: sending signal 'SIGINT' to process[atas_optimizer_node-1]
+[0.824s] 7: [atas_optimizer_node-1] [INFO] [1793027698.365523809] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[0.830s] 7: [INFO] [atas_optimizer_node-1]: process has finished cleanly [pid 9265]
+[0.831s] 7: 
+[0.831s] 7: ----------------------------------------------------------------------
+[0.831s] 7: Ran 0 tests in 0.000s
+[0.831s] 7: 
+[0.831s] 7: NO TESTS RAN
+[0.913s] 7: -- run_test.py: return code 0
+[0.913s] 7: -- run_test.py: verify result file '/workspace/ws/build/atas_optimizer/test_results/atas_optimizer/test_test_node_integration.py.xunit.xml'
+[0.922s] 1/1 Test #7: test_test_node_integration.py ....   Passed    0.90 sec
+[0.922s] 
+[0.922s] The following tests passed:
+[0.922s] 	test_test_node_integration.py
+[0.923s] 
+[0.923s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+[0.923s] 
+[0.923s] Label Time Summary:
+[0.923s] launch_test    =   0.90 sec*proc (1 test)
+[0.923s] 
+[0.923s] Total Test time (real) =   0.90 sec
+[0.927s] Invoked command in '/workspace/ws/build/atas_optimizer' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R test_node_integration

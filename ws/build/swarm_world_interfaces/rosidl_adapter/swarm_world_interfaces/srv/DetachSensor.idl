@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from swarm_world_interfaces/srv/DetachSensor.srv
+// generated code does not contain a copyright notice
+
+
+module swarm_world_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to detach and destroy a sensor dynamically")
+    struct DetachSensor_Request {
+      uint32 sensor_id;
+    };
+    struct DetachSensor_Response {
+      boolean success;
+
+      string error_message;
+    };
+  };
+};
